@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>learning c++ notes - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">learning c++ notes</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Wed Jul 08 2015 15:19:09 GMT+0800">
+        Jul 08, 2015
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/C/">C++</a>, <a class="category-link" href="/categories/C/study/">study</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Notes when reading C_Primer 5th edition<br><a id="more"></a></p>
+<h1 id="c_primer-5th-edition-studying-note">C_Primer 5th edition studying note</h1><!-- toc -->
+<ul>
+<li><a href="#chapter-1-getting-started"><strong>Chapter 1. getting Started</strong></a><ul>
+<li><a href="#11-writing-a-simple-c-program">1.1 Writing a simple c++ program</a></li>
+<li><a href="#12-a-first-look-at-inputoutput">1.2 A first look at Input/Output</a></li>
+<li><a href="#13-a-word-about-comments">1.3 A word about Comments</a></li>
+<li><a href="#14-flow-of-control">1.4 Flow of Control</a></li>
+<li><a href="#15-introducing-classes">1.5 Introducing Classes</a></li>
+<li><a href="#16-th-bookstore-program">1.6 Th BookStore Program</a></li>
+<li><a href="#chapter-summary">Chapter Summary</a></li>
+</ul>
+</li>
+<li><a href="#chapter-2-variables-and-basic-types"><strong>Chapter 2. Variables and Basic Types</strong></a><ul>
+<li><a href="#21primitive-built-in-types">2.1Primitive Built-in Types</a></li>
+<li><a href="#22-variables">2.2 Variables</a></li>
+<li><a href="#23-compound-types">2.3 Compound Types</a></li>
+<li><a href="#24-const-qualifier">2.4 const Qualifier</a></li>
+<li><a href="#25-dealing-with-types">2.5 Dealing with types</a><ul>
+<li><a href="#251-type-alias">2.5.1 Type Alias</a></li>
+</ul>
+</li>
+<li><a href="#26-defining-our-own-data-structures">2.6 Defining Our Own Data Structures</a></li>
+<li><a href="#chapter-summary">Chapter summary</a></li>
+</ul>
+</li>
+<li><a href="#chapter3-strings-vectors-and-arrays">Chapter3. Strings, Vectors, and Arrays</a><ul>
+<li><a href="#31-namespace-using-declarations">3.1 Namespace using Declarations</a></li>
+<li><a href="#32-library-string-type">3.2 Library string type</a><br>~ <a href="#323-dealing-with-the-characters-in-a-string">3.2.3 dealing with the characters in a string</a></li>
+<li><a href="#33-library-vector-type">3.3 Library vector type</a><br>~ <a href="#331-defining-and-initializing-vectors">3.3.1 Defining and Initializing vectors</a><br>~ <a href="#332-adding-elements-to-a-vector">3.3.2 Adding elements to a vector</a><br>~ <a href="#333-other-vector-operations">3.3.3 Other vector Operations</a></li>
+<li><a href="#34-introducing-iterators">3.4 Introducing iterators</a><br>~ <a href="#341-using-iterators">3.4.1 Using iterators</a><br>~ <a href="#342-iterator-arithmetic">3.4.2 Iterator Arithmetic</a></li>
+<li><a href="#35-arrays">3.5 Arrays</a><br>~ <a href="#351-defining-and-initializing-built-in-arrays">3.5.1 Defining and Initializing Built-in Arrays</a><br>~ <a href="#352-accessing-the-elements-of-an-array">3.5.2 Accessing the elements of an array</a><br>~ <a href="#353-poiners-and-arrays">3.5.3 poiners and arrays</a><br>~ <a href="#354-c-style-character-strings">3.5.4 C-style character strings</a><br>~ <a href="#36-multidimensional-arrays">3.6 Multidimensional Arrays</a></li>
+</ul>
+</li>
+<li><a href="#chapter-4-expressions">Chapter 4. Expressions</a><ul>
+<li><a href="#41-fundamentals">4.1 Fundamentals</a></li>
+<li><a href="#42-arithmetic-operators">4.2 Arithmetic Operators</a></li>
+<li><a href="#43-logical-and-relational-operators">4.3 Logical and Relational Operators</a></li>
+<li><a href="#44-assignment-operators">4.4 Assignment operators</a></li>
+<li><a href="#45-increment-and-decrement-operators">4.5 Increment and Decrement Operators</a></li>
+<li><a href="#46-the-mumber-access-operators">4.6 The Mumber Access Operators</a></li>
+<li><a href="#47-the-conditional-operator">4.7 The Conditional Operator</a></li>
+<li><a href="#48-the-bitwise-operators">4.8 The Bitwise Operators</a></li>
+<li><a href="#49-the-sizeof-operator">4.9 the <em>sizeof</em> Operator</a></li>
+<li><a href="#410-comma-operator">4.10 Comma Operator</a><br>~ <a href="#411-type-conversions">4.11 Type Conversions</a><br>~ <a href="#chapter-summary">Chapter Summary</a></li>
+</ul>
+</li>
+<li><a href="#chapter-5-statements"><strong>Chapter 5. Statements</strong></a><ul>
+<li><a href="#51-simple-statements">5.1 Simple Statements</a></li>
+<li><a href="#52-statement-scope">5.2 Statement Scope</a></li>
+<li><a href="#53-conditional-statements">5.3 Conditional Statements</a><br>~ <a href="#532-the-switch-statement">5.3.2 The <em>switch</em> Statement</a><br>~ <a href="#541-the-while-statement">5.4.1 The <em>while</em> statement</a><br>~ <a href="#542-traditional-for-statement">5.4.2 Traditional <em>for</em> Statement</a><br>~ <a href="#543-range-for-statement">5.4.3 Range for statement</a><br>~ <a href="#544-the-do-while-statement">5.4.4 The <em>do while</em> Statement</a></li>
+<li><a href="#55-jump-statements">5.5 Jump Statements</a></li>
+<li><a href="#56-try-blocks-and-exception-handling">5.6 <em>try</em> Blocks and Exception Handling</a><br>~ <a href="#561-a-throw-expression">5.6.1 A <code>throw</code> Expression</a><br>~ <a href="#562-the-try-block">5.6.2 The <em>try</em> Block</a><br>~ <a href="#563-standard-exceptions">5.6.3 Standard Exceptions</a></li>
+</ul>
+</li>
+<li><a href="#chatper-6-functions">Chatper 6. Functions</a><ul>
+<li><a href="#61-function-basics">6.1 Function Basics</a><br>~ <a href="#611-local-objects">6.1.1 Local Objects</a><br>~ <a href="#612-function-declarations">6.1.2 Function Declarations</a><br>~ <a href="#613-separate-compilation">6.1.3 Separate Compilation</a></li>
+<li><a href="#62-argument-passing">6.2 Argument Passing</a><br>~ <a href="#623-const-parameters-and-arguments">6.2.3 <strong>const</strong> Parameters and Arguments</a><br>~ <a href="#624-array-parameters">6.2.4 Array Parameters</a><br>~ <a href="#625-main-handling-command-line-options">6.2.5 <em>main</em>: Handling Command-Line Options</a><br>~ <a href="#626-functions-with-varying-parameters">6.2.6 Functions with Varying Parameters</a><br>~ <a href="#63-return-types-and-the-return-statement">6.3 Return Types and the return Statement</a></li>
+</ul>
+</li>
+<li><a href="#chapter-16-templates-and-generic-programming">Chapter 16 Templates and Generic Programming</a><ul>
+<li><a href="#161-definig-a-template">16.1 Definig a Template</a><br>~ <a href="#1611-function-templates">16.1.1 Function Templates</a></li>
+</ul>
+<ul>
+<li><a href="#file-io">file IO</a></li>
+</ul>
+</li>
+<li><a href="#ps-concept-clearance">PS: Concept Clearance</a><ul>
+<li><a href="#1-char-vs-string">1. char VS string</a></li>
+<li><a href="#2-heap-vs-stack">2. heap VS stack</a></li>
+<li><a href="#3-argvargvhttpstackoverflowcomquestions3024197what-does-int-argc-char-argv-mean">3. <a href="http://stackoverflow.com/questions/3024197/what-does-int-argc-char-argv-mean" target="_blank" rel="external">argv&amp;argv</a></a></li>
+<li><a href="#4-why-put-classfunction-definition-in-header-files-and-definition-of-ordinary-and-class-member-functions-in-source-files">4. Why put class&amp;function definition in header files and definition of ordinary and class-member functions in source files</a></li>
+<li><a href="#5-understanding-vectorintsize_type-xhttpstackoverflowcomquestions4849632vectorintsize-type-in-c">5. <a href="http://stackoverflow.com/questions/4849632/vectorintsize-type-in-c" target="_blank" rel="external">understanding vector<int>::size_type x;</int></a></a></li>
+<li><a href="#6vector-vs-list">6.vector VS list</a></li>
+<li><a href="#7-pointer-clarificationhttpwwwcodeprojectcomarticles7042how-to-interpret-complex-c-c-declarations">7 <a href="http://www.codeproject.com/Articles/7042/How-to-interpret-complex-C-C-declarations" target="_blank" rel="external">pointer clarification</a></a></li>
+<li><a href="#8how-to-write-a-class-templatehttpwwwcprogrammingcomtutorialtemplateshtml">8.<a href="http://www.cprogramming.com/tutorial/templates.html" target="_blank" rel="external">How to write a class template</a></a></li>
+<li><a href="#9typedef-typenamehttpstackoverflowcomquestions610245where-and-why-do-i-have-to-put-the-template-and-typename-keywords">9.<a href="http://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords" target="_blank" rel="external">typedef + typename</a></a></li>
+<li><a href="#10-typecomparehttpbbscsdnnettopics30334109">10 <a href="http://bbs.csdn.net/topics/30334109" target="_blank" rel="external">typeCompare</a></a></li>
+<li><a href="#11-pointerreferencehttpstackoverflowcomquestions8403447swapping-pointers-in-c-char-int">11 <a href="http://stackoverflow.com/questions/8403447/swapping-pointers-in-c-char-int" target="_blank" rel="external">pointer&amp;reference</a></a></li>
+<li><a href="#12-maphttpwwwcpluspluscomreferencemapmap">12 <a href="http://www.cplusplus.com/reference/map/map/" target="_blank" rel="external">map</a></a></li>
+<li><a href="#13-iterating-in-vectorhttpstackoverflowcomquestions409348iteration-over-stdvector-unsigned-vs-signed-index-variable">13 <a href="http://stackoverflow.com/questions/409348/iteration-over-stdvector-unsigned-vs-signed-index-variable" target="_blank" rel="external">iterating in vector</a></a></li>
+<li><a href="#14-preprocessor-directiveshttpwwwcpluspluscomdoctutorialpreprocessor">14 <a href="http://www.cplusplus.com/doc/tutorial/preprocessor/" target="_blank" rel="external">Preprocessor directives</a></a></li>
+<li><a href="#debug-macro">Debug macro:</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<p>Current page: 286</p>
+<h2 id="chapter-1-getting-started"><strong>Chapter 1. getting Started</strong></h2><h3 id="11-writing-a-simple-c-program">1.1 Writing a simple c++ program</h3><blockquote>
+<ul>
+<li>IDE: integrated development environment</li>
+<li>use ./XX indicate our executable is in the </li>
+<li>current directory (How to run program in CG)</li>
+</ul>
+</blockquote>
+<h3 id="12-a-first-look-at-inputoutput">1.2 A first look at Input/Output</h3><blockquote>
+<ul>
+<li>iostream: istream + ostream</li>
+<li>standard input: cin</li>
+<li>standard output: cout</li>
+<li>namespace: allow us to avoid inadvertent collisions between the name we defined and uses of those same names in side library</li>
+<li><p>to print out something to cmd:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt;       &lt;&lt;<span class="built_in">std</span>::endl;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>to input something to cmd:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">std</span>:<span class="built_in">cin</span> &gt;&gt; XXX &gt;&gt; XX;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="13-a-word-about-comments">1.3 A word about Comments</h3><blockquote>
+<ul>
+<li>Do not nest comments. (/<em> </em>/)</li>
+</ul>
+</blockquote>
+<h3 id="14-flow-of-control">1.4 Flow of Control</h3><blockquote>
+<ul>
+<li><p>while statement:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">while</span> (){</span><br><span class="line">&gt; }</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>for statement:</p>
+</li>
+<li>end of file command : control + z (windows) command + d (linux)</li>
+<li>if statement:</li>
+</ul>
+</blockquote>
+<h3 id="15-introducing-classes">1.5 Introducing Classes</h3><blockquote>
+<ul>
+<li>test of BookStoore class<h3 id="16-th-bookstore-program">1.6 Th BookStore Program</h3></li>
+</ul>
+</blockquote>
+<h3 id="chapter-summary">Chapter Summary</h3><blockquote>
+<ul>
+<li>buffer: a region of storage used to hold data</li>
+<li>cerr: object tied to the standard error, not buffered</li>
+</ul>
+</blockquote>
+<h2 id="chapter-2-variables-and-basic-types"><strong>Chapter 2. Variables and Basic Types</strong></h2><h3 id="21primitive-built-in-types">2.1Primitive Built-in Types</h3><blockquote>
+<ul>
+<li>Arithmetic types</li>
+<li>minimize size:<ul>
+<li>char: 8 bits</li>
+<li>int: 16 bits</li>
+<li>short: 16 bits</li>
+<li>long: 32 bits  </li>
+<li>short &lt; int &lt; long &lt; long long</li>
+</ul>
+</li>
+<li>a bit only stores 1 or 0</li>
+<li>use <code>double</code> for floating point computations; <code>float</code> usually does not have enought precision</li>
+<li>Type conversion<ul>
+<li>assign int to floating: truncated 3 -&gt; 3.0</li>
+<li>assign an out of range value to an object of unsigned type: `unsigned char c = -1; // assuming 8 bit chars, c has value 255</li>
+</ul>
+</li>
+<li>Escape Sequence<ul>
+<li>alert(bell) : \a</li>
+<li>vertical tab: \v</li>
+<li>double quote: \&#x201D;</li>
+<li>L&#x2019;a&#x2019; // wide character literal, type is wchar_t<ul>
+<li>u8&#x201D;hi!&#x201D; // utf-8 string literal (utf-8 encodes a Unicode character in 8 bits)</li>
+<li>42ULL // unsigned integer literal, type is unsigned long long</li>
+<li>1E-3F // single-precision floating-point literal, type is float</li>
+<li>3.14159L // extended-precision floating-point literal, type is long double</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="22-variables">2.2 Variables</h3><blockquote>
+<ul>
+<li>methods to initialization<ul>
+<li>int a = 0;</li>
+<li>int a = {0};</li>
+<li>int a(0);</li>
+<li>int a{0};</li>
+</ul>
+</li>
+<li>Uninitialized Variables may cause run-time problems</li>
+<li><em>Declaration</em>: makes a name know to the program</li>
+<li><em>Definition</em>: create the associated entity</li>
+</ul>
+</blockquote>
+<h3 id="23-compound-types">2.3 Compound Types</h3><blockquote>
+<ul>
+<li>compound type: reference and pointer</li>
+<li><strong>Reference</strong></li>
+<li><p>Reference need to be initialized at the time it&#x2019;s defined and it cannot be copied.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;   <span class="keyword">int</span> ival = <span class="number">1024</span>;</span><br><span class="line">&gt;   <span class="keyword">int</span> &amp;refVal = iVal;</span><br><span class="line">&gt;   <span class="keyword">int</span> &amp; refVal2; <span class="comment">// eror: a reference must be initialized</span></span><br><span class="line">&gt;   <span class="keyword">int</span> &amp;i = refVal; <span class="comment">//error: we can not define a reference to a reference</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<p>Manually create an alias. Val is alias to iVal. Using &amp; to create alias.</p>
+</li>
+<li><strong>Pointer</strong></li>
+<li>Pointer does not need to be initialized at the time it&#x2019;s defined and the can be assigned and copied.</li>
+<li><p>Pointer holds the address of another object</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">int</span> ival = <span class="number">42</span>;</span><br><span class="line">&gt; <span class="keyword">int</span> *p = &amp;ival; <span class="comment">// p holds the address of ival; p is a pointer to ival</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Pointer Value:</p>
+<pre><code>+ point <span class="built_in">to</span> <span class="operator">an</span> object
++ point <span class="built_in">to</span> <span class="operator">the</span> location which just immediately past <span class="operator">the</span> <span class="function"><span class="keyword">end</span> <span class="title">of</span> <span class="title">an</span> <span class="title">object</span></span>
++ <span class="constant">null</span> pointer
++ valid
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">int</span> i = <span class="number">42</span>;</span><br><span class="line">&gt; <span class="keyword">int</span> &amp;r = i; <span class="comment">// &amp; follows a type and is part of a declaration; r is a</span></span><br><span class="line">&gt; reference</span><br><span class="line">&gt; <span class="keyword">int</span> *p; <span class="comment">// * follows a type and is part of a declaration; p is a</span></span><br><span class="line">&gt; pointer</span><br><span class="line">&gt; p = &amp;i; <span class="comment">// &amp; is used in an expression as the address-of operator</span></span><br><span class="line">&gt; *p = i; <span class="comment">// * is used in an expression as the dereference operator</span></span><br><span class="line">&gt; <span class="keyword">int</span> &amp;r2 = *p; <span class="comment">// &amp; is part of the declaration; * is the dereference operator</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>+ nullptr : <span class="keyword">null</span> pointer, which can be converted <span class="keyword">to</span> any pointer <span class="class"><span class="keyword">type</span> </span>
++ <span class="keyword">void</span>* can hold athe address value <span class="keyword">of</span> any data pointer <span class="class"><span class="keyword">type</span></span>
+   + generally we <span class="keyword">use</span> a <span class="keyword">void</span>* pointer <span class="keyword">to</span> deal <span class="keyword">with</span> memory <span class="keyword">as</span> memory
+</code></pre><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;  <span class="keyword">void</span> a = &amp;bb;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Assuming p is a pointer to int then :</p>
+</li>
+<li>if (p) // check if p points to null. else execute</li>
+<li><p>if (*p) // check the value p points to</p>
+</li>
+<li><p>pointer to pointer</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">int</span> ival = <span class="number">1024</span>;</span><br><span class="line"><span class="keyword">int</span> *pi = &amp;ival; <span class="comment">// pi points to an int</span></span><br><span class="line"><span class="keyword">int</span> **ppi = &amp;pi; <span class="comment">// ppi points to a pointer to an int</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="24-const-qualifier">2.4 const Qualifier</h3><blockquote>
+<ul>
+<li>const is local to the file as if we have written definitions for separate variables in each file</li>
+<li>To share a const object among multiple files, you must define the variable<br>as extern.</li>
+<li>constant pointer VS pointer on a constant value:<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">char</span> * <span class="keyword">const</span> a;</span><br><span class="line">&gt; <span class="comment">//*a is writable, but a is not; in other words, you can modify the value pointed to by a, but you cannot modify a itself.  a is a constant pointer to char.</span></span><br><span class="line">&gt; <span class="comment">//*a = &apos;c&apos;; OK     a = &amp;b; NO</span></span><br><span class="line">&gt; <span class="keyword">const</span> <span class="keyword">char</span> * a; <span class="comment">// equals char const *a;</span></span><br><span class="line">&gt; <span class="comment">// a is writable, but *a is not; in other words, you can modify a (pointing it to a new location), but you cannot modify the value pointed to by a.</span></span><br><span class="line">&gt; <span class="comment">// a = &amp;b; OK *a = &apos;c&apos;; NO</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><a href="https://stackoverflow.com/questions/10091825/constant-pointer-vs-pointer-on-a-constant-value/10091869#10091869?newreg=9ad93cb387164a9fb2fbdad8d5c852ef" target="_blank" rel="external">Good example</a><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">int</span> i = <span class="number">42</span>;</span><br><span class="line">&gt; <span class="keyword">const</span> <span class="keyword">int</span> &amp;r1 = i; <span class="comment">// we can bind a const int&amp; to a plain int object</span></span><br><span class="line">&gt; <span class="keyword">const</span> <span class="keyword">int</span> &amp;r2 = <span class="number">42</span>; <span class="comment">// ok: r1 is a reference to const</span></span><br><span class="line">&gt; <span class="keyword">const</span> <span class="keyword">int</span> &amp;r3 = r1 * <span class="number">2</span>; <span class="comment">// ok: r3 is a reference to const</span></span><br><span class="line">&gt; <span class="keyword">int</span> &amp;r4 = r * <span class="number">2</span>; <span class="comment">// error: r4 is a plain, non const reference</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><em>constexpr</em>:  variables declared as constexpr are implicitly const and must be initialized by constant expressions.<ul>
+<li>constexpr int *q = nullptr; // q is a const pointer to int</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="25-dealing-with-types">2.5 Dealing with types</h3><blockquote>
+<p>1st method<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; - <span class="keyword">typedef</span> <span class="keyword">double</span> wages;<span class="comment">// wages is a synonym for double</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
+<p>2nd method<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">using</span> a = <span class="keyword">double</span>;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><em>Auto</em> type specifier:<ul>
+<li>let the compiler decide  the type for us</li>
+<li>must have an initializer. </li>
+<li>auto ordinarily ignores top-level consts, as usual in<br>initializations, low-level consts,detail on page 108</li>
+</ul>
+</li>
+<li><em>decltype</em> type specifier:<ul>
+<li>we want to define a variable with a type that the compiler deduces from an expression<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">decltype</span>(f()) sum = x; <span class="comment">// sum has whatever type f returns</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h5 id="251-type-alias">2.5.1 Type Alias</h5><blockquote>
+<ul>
+<li>weird part of typedef!!!!</li>
+<li>typedef char <em>pstring;<br>const pstring cstr = 0; // cstr is a constant pointer to char<br>const pstring </em>ps; // ps is a pointer to a constant pointer to char</li>
+<li>The base type in these declarations is const pstring. As usual, a const that appears in the base type modifies the given type. The type of pstring is &#xA1;&#xB0;pointer to char.&#xA1;&#xB1; So, const pstring is a constant pointer to char&#xA1;&#xAA;not a pointer to const char.</li>
+</ul>
+</blockquote>
+<h3 id="26-defining-our-own-data-structures">2.6 Defining Our Own Data Structures</h3><blockquote>
+<ul>
+<li><p><em>Struct</em>:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt; Struct nameOfClass{</span><br><span class="line">&gt; };</span><br><span class="line">&gt; <span class="keyword">struct</span> Sales_data { <span class="comment">/* ... */</span> } accum, trans, *salesptr;</span><br><span class="line">&gt; <span class="comment">// equivalent, but better way to define these objects</span></span><br><span class="line">&gt; <span class="keyword">struct</span> Sales_data { <span class="comment">/* ... */</span> };</span><br><span class="line">&gt; Sales_data accum, trans, *salesptr;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Preprocessor: make it safe to include a header mutiple times, which is a program runs before the compiler and changes the source text of our programs</p>
+</li>
+<li>fight against multiple inclusion:<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="preprocessor">#<span class="keyword">ifndef</span> SALES_DATA_H</span></span><br><span class="line">&gt; <span class="preprocessor">#<span class="keyword">define</span> SALES_DATA_H</span></span><br><span class="line">&gt; <span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line">&gt; <span class="keyword">struct</span> Sales_data {</span><br><span class="line">&gt; <span class="built_in">std</span>::<span class="built_in">string</span> bookNo;</span><br><span class="line">&gt; <span class="keyword">unsigned</span> units_sold = <span class="number">0</span>;</span><br><span class="line">&gt; <span class="keyword">double</span> revenue = <span class="number">0.0</span>;</span><br><span class="line">&gt; };</span><br><span class="line">&gt; <span class="preprocessor">#<span class="keyword">endif</span></span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="chapter-summary">Chapter summary</h3><blockquote>
+<ul>
+<li>see book Page 119</li>
+<li></li>
+</ul>
+</blockquote>
+<h2 id="chapter3-strings-vectors-and-arrays">Chapter3. Strings, Vectors, and Arrays</h2><h3 id="31-namespace-using-declarations">3.1 Namespace using Declarations</h3><blockquote>
+<ul>
+<li>scope operator : (::)</li>
+<li><code>using</code> enables us use a name from a namespace without qualifying the name with a  namespace_name:: prefix. for instance:<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&gt; - <span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line">&gt; <span class="comment">// using declaration; when we use the name cin, we get the one from the &gt; namespace   PS: save a lot of efforts!</span></span><br><span class="line">&gt; <span class="built_in">std</span></span><br><span class="line">&gt; <span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cin</span>;</span><br><span class="line">&gt; <span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line">&gt; </span>{</span><br><span class="line">&gt; <span class="keyword">int</span> i;</span><br><span class="line">&gt; <span class="built_in">cin</span> &gt;&gt; i; <span class="comment">// ok: cin is a synonym for std::cin</span></span><br><span class="line">&gt; <span class="built_in">cout</span> &lt;&lt; i; <span class="comment">// error: no using declaration; we must use the full name</span></span><br><span class="line">&gt; <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; i; <span class="comment">// ok: explicitly use cout from namepsace std</span></span><br><span class="line">&gt; <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&gt; }</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="32-library-string-type">3.2 Library string type</h3><blockquote>
+<ul>
+<li><p><code>Declaration of string</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">string</span>;</span><br><span class="line">&gt; <span class="built_in">string</span> s1; <span class="comment">// default initialization; s1 is the empty string</span></span><br><span class="line">&gt; <span class="built_in">string</span> s2 = s1; <span class="comment">// s2 is a copy of s1</span></span><br><span class="line">&gt; <span class="built_in">string</span> s3 = <span class="string">&quot;hiya&quot;</span>; <span class="comment">// s3 is a copy of the string literal</span></span><br><span class="line">&gt; <span class="function"><span class="built_in">string</span> <span class="title">s4</span><span class="params">(<span class="number">10</span>, <span class="string">&apos;c&apos;</span>)</span></span>; <span class="comment">// s4 is cccccccccc</span></span><br><span class="line">&gt; - `Operations on strings`</span><br><span class="line">&gt;  [<span class="built_in">string</span> operations](http:<span class="comment">//7xklst.com1.z0.glb.clouddn.com/string_operationstring_operation.png)</span></span><br><span class="line">&gt;  - * the <span class="built_in">string</span> operation reads characters until the next whitespace character is encounterd.*</span><br><span class="line">&gt;  - To solve <span class="keyword">this</span> problem, we need:</span><br><span class="line">&gt;  ```C++</span><br><span class="line">&gt; <span class="built_in">string</span> s1, s2;</span><br><span class="line">&gt; <span class="built_in">cin</span> &gt;&gt; s1 &gt;&gt; s2; <span class="comment">// read first input into s1, second into s2</span></span><br><span class="line">&gt; <span class="built_in">cout</span> &lt;&lt; s1 &lt;&lt; s2 &lt;&lt; endl; <span class="comment">// write both strings</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><code>Read unknown number of word (omit the whitespace)</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">string</span> word;</span><br><span class="line">&gt; <span class="keyword">while</span> (<span class="built_in">cin</span> &gt;&gt; word) <span class="comment">// read until end-of-file</span></span><br><span class="line">&gt; <span class="built_in">cout</span> &lt;&lt; word &lt;&lt; endl; <span class="comment">// write each word followed by a new line</span></span><br><span class="line">&gt; <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>To measure the length of string: we use <code>string::size_type</code></p>
+<ul>
+<li>else,we can use auto or decltype insteand</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>string comparison</code><ul>
+<li>==, !=, &gt;, &lt;, &lt;=, &gt;=</li>
+<li>compare rules: page:132</li>
+</ul>
+</li>
+<li><p><code>rules of adding strings</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">string</span> s1 = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">&gt; <span class="built_in">string</span> s4 = s1 + <span class="string">&quot;, &quot;</span>; <span class="comment">// ok: adding a string and a literal</span></span><br><span class="line">&gt; <span class="built_in">string</span> s5 = <span class="string">&quot;hello&quot;</span> + <span class="string">&quot;, &quot;</span>; <span class="comment">// error: no string operand</span></span><br><span class="line">&gt; <span class="built_in">string</span> s6 = s1 + <span class="string">&quot;, &quot;</span> + <span class="string">&quot;world&quot;</span>; <span class="comment">// ok: each + has a string operand</span></span><br><span class="line">&gt; <span class="built_in">string</span> s7 = <span class="string">&quot;hello&quot;</span> + <span class="string">&quot;, &quot;</span> + s2; <span class="comment">// error: can&apos;t add string literals</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>When we mix strings and string or character literals, at least one operand to each</p>
+</li>
+</ul>
+<ul>
+<li>operator must be of string type<h4 id="323-dealing-with-the-characters-in-a-string">3.2.3 dealing with the characters in a string</h4><em>processing characters is knowing and changing the characteristics of a character</em><br><img src="http://7xklst.com1.z0.glb.clouddn.com/bitwiseNotOperatorbitwiseNotOperator.png" alt="cctype header"><ul>
+<li><strong>Processing every character </strong><ul>
+<li>using <em>range for</em> statement <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">str</span><span class="params">(<span class="string">&quot;some string&quot;</span>)</span></span>;</span><br><span class="line"><span class="comment">// print the characters in str one character to a line</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> c : str) <span class="comment">// for every char in str</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; c &lt;&lt; endl; <span class="comment">// print the current character followed by a newline</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>count the number of punctuation</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">s</span><span class="params">(<span class="string">&quot;Hello World!!!&quot;</span>)</span></span>;</span><br><span class="line"><span class="comment">// punct_cnt has the same type that s.size returns; see &#xC2;&#xA1;&#xC3;&#xAC; 2.5.3 (p. 70)</span></span><br><span class="line"><span class="keyword">decltype</span>(s.size()) punct_cnt = <span class="number">0</span>;</span><br><span class="line"><span class="comment">// count the number of punctuation characters in s</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> c : s) <span class="comment">// for every char in s</span></span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">ispunct</span>(c)) <span class="comment">// if the character is punctuation</span></span><br><span class="line">++punct_cnt; <span class="comment">// increment the punctuation counter</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; punct_cnt</span><br><span class="line">&lt;&lt; <span class="string">&quot; punctuation characters in &quot;</span> &lt;&lt; s &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>change the value of the character in a string</p>
+<ul>
+<li><code>define the loop variable as areference type</code></li>
+<li>for (auto &amp;c:s)</li>
+</ul>
+</li>
+<li>processing some of the characters (not all of them)<ul>
+<li>first way: subscript<br>[0] for the first char, [s.size() - 1] for the last char<br><em>when using [0], check the emptyness first!</em> </li>
+<li>second way: iterator</li>
+</ul>
+</li>
+<li><code>Single quotes are for a single character. Double quotes are for a string (array of characters).</code></li>
+</ul>
+</blockquote>
+<h3 id="33-library-vector-type">3.3 Library vector type</h3><blockquote>
+<ul>
+<li>definition: vector is a collection of objects, its referred to as a <code>container</code><ul>
+<li>A vector is a class <code>template</code></li>
+<li>create classes or functions from templates is called <code>instantiation</code></li>
+<li></li>
+</ul>
+</li>
+<li>usage:<ul>
+<li>include needed header<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">vector</span>;</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; myNum; <span class="comment">// myNum hlods aobjects of type int</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4 id="331-defining-and-initializing-vectors">3.3.1 Defining and Initializing vectors</h4><blockquote>
+<ul>
+<li>creating a vector hold objects as vector<ul>
+<li>vector<vector<type> &gt;  // a space in the last is better, because the old c++ use that style</vector<type></li>
+</ul>
+</li>
+<li>how to define a vector</li>
+<li><img src="http://7xklst.com1.z0.glb.clouddn.com/defineVectordefineVector.png" alt="define vector"></li>
+<li><p>specify the size of the vector:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; ivec(<span class="number">10</span>); <span class="comment">// ten elements, each initialized to 0</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; svec(<span class="number">10</span>); <span class="comment">// ten elements,each an empty string.</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>for initialization of the vector, we must supply an initial emement value to it.</li>
+</ul>
+</li>
+<li>confusion about initialization:<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v1(<span class="number">10</span>); <span class="comment">// v1 has ten elements with value 0</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v2{<span class="number">10</span>}; <span class="comment">// v2 has one element with value 10</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v3(<span class="number">10</span>, <span class="number">1</span>); <span class="comment">// v3 has ten elements with value 1</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v4{<span class="number">10</span>, <span class="number">1</span>}; <span class="comment">// v4 has two elements with values 10 and 1</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vi(<span class="number">10</span>); <span class="comment">// ok vector has ten elements with 0</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vi = <span class="number">10</span>; <span class="comment">// error: must use direct initialization to supply a size</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h4 id="332-adding-elements-to-a-vector">3.3.2 Adding elements to a vector</h4><blockquote>
+<ul>
+<li><strong>push_back</strong>: add elements at run time<h4 id="333-other-vector-operations">3.3.3 Other vector Operations</h4></li>
+<li><img src="http://7xklst.com1.z0.glb.clouddn.com/vectorOperationsvectorOperations.png" alt="vectoroperations"></li>
+<li><em>the subscript operator on vector(and string) fetches an existing element; it does not add an element</em><ul>
+<li>so if the vector is empty, you can not use a[5] = 5; to assign values.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="34-introducing-iterators">3.4 Introducing iterators</h3><blockquote>
+<ul>
+<li>Normally we use iterator to access the characters of a string or the elements in a vector<h4 id="341-using-iterators">3.4.1 Using iterators</h4></li>
+<li>auto b = v.begin(),e = v.end(); // b and e have the same type<ul>
+<li><code>Note</code>: IF the container is empty, the iterators returned by begin and end are equal- they are both off-the-end iterators</li>
+</ul>
+</li>
+<li><p><img src="http://7xklst.com1.z0.glb.clouddn.com/standard%20container%20iterator%20operationstandard%20container%20iterator%20operation.png" alt="standard container iterator operation"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">s</span><span class="params">(<span class="string">&quot;some string&quot;</span>)</span></span>;</span><br><span class="line"><span class="keyword">if</span> (s.begin() != s.end()) { <span class="comment">// make sure s is not empty</span></span><br><span class="line"><span class="keyword">auto</span> it = s.begin(); <span class="comment">// it denotes the first character in s</span></span><br><span class="line">*it = <span class="built_in">toupper</span>(*it); <span class="comment">// make that character uppercase</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>for most iterator, we do not have the &#x201C;&lt;&#x201D; operation. So we used &#x201C;!=&#x201D;</p>
+</li>
+<li>know whether a given element is empty:<ul>
+<li>(*it).empty() // it is an iterator into this vector</li>
+</ul>
+</li>
+<li>it-&gt;item(it is a pointer) = (*it).item</li>
+<li>usage example<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> it = text.cbegin();</span><br><span class="line">it != text.cend() &amp;&amp; !it-&gt;empty(); ++it)</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; *it &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h4 id="342-iterator-arithmetic">3.4.2 Iterator Arithmetic</h4><blockquote>
+<ul>
+<li>Operate arithemetic operation on iterator</li>
+<li>begin() + end () is meaningless. Such operator does not exist.</li>
+</ul>
+</blockquote>
+<h3 id="35-arrays">3.5 Arrays</h3><blockquote>
+<ul>
+<li>Similar to vector, but offers a different trade-off between performance and flexibility.</li>
+<li><strong>size is fixed</strong></li>
+<li>better run-time performance<h4 id="351-defining-and-initializing-built-in-arrays">3.5.1 Defining and Initializing Built-in Arrays</h4></li>
+<li>it a3[5] = {0,1,2} // equivalent to a 3[] = {0,1,2,0,0}</li>
+<li>int a5[2] = {0,1,2} // error :too many initializers</li>
+<li>character arrays: <code>end with a null character!</code></li>
+<li><p>cannot initialize an array from another array or exceed the size.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt; - in order to let <span class="keyword">char</span> contain <span class="string">&apos; &apos;</span>,<span class="string">&apos;\t&apos;</span>,<span class="string">&apos;\n&apos;</span>,use **<span class="built_in">std</span>::noskipws**</span><br><span class="line"><span class="keyword">char</span> a1[] = {<span class="string">&apos;C&apos;</span>, <span class="string">&apos;+&apos;</span>, <span class="string">&apos;+&apos;</span>}; <span class="comment">// list initialization, no null</span></span><br><span class="line"><span class="keyword">char</span> a2[] = {<span class="string">&apos;C&apos;</span>, <span class="string">&apos;+&apos;</span>, <span class="string">&apos;+&apos;</span>, <span class="string">&apos;\0&apos;</span>}; <span class="comment">// list initialization, explicit null</span></span><br><span class="line"><span class="keyword">char</span> a3[] = <span class="string">&quot;C++&quot;</span>; <span class="comment">// *null terminator added</span></span><br><span class="line">automatically*</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> a4[<span class="number">6</span>] = <span class="string">&quot;Daniel&quot;</span>; <span class="comment">// error: no space for the null!</span></span><br><span class="line"><span class="keyword">int</span> a[] = {<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>}; <span class="comment">// array of three ints</span></span><br><span class="line"><span class="keyword">int</span> a2[] = a; <span class="comment">// error: cannot initialize one array with another</span></span><br><span class="line">a2 = a; <span class="comment">// error: cannot assign one array to another</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>interesting example</em></p>
+</li>
+<li>int *(&amp;arry)[10] = ptrs; // arry is a reference to an array of ten pointers</li>
+</ul>
+</blockquote>
+<h4 id="352-accessing-the-elements-of-an-array">3.5.2 Accessing the elements of an array</h4><h4 id="353-poiners-and-arrays">3.5.3 poiners and arrays</h4><blockquote>
+<ul>
+<li>pointers and arrays are closely interwined.</li>
+<li><em>in most expressions, when we use an object of array type, we are really using a pointer to the first element in that array</em></li>
+<li>string *p2 = nums; // equivalent to p2 = &amp;nums[0]</li>
+<li><p>pointers are iterators</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> arr[] = {<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>};</span><br><span class="line"><span class="keyword">int</span> *p = arr; <span class="comment">// p points to the first element in arr</span></span><br><span class="line">++p; <span class="comment">// p points to arr[1]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>begin and end in array : (not present as a class member type)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> ia[] = {<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>}; <span class="comment">// ia is an array of ten ints</span></span><br><span class="line"><span class="keyword">int</span> *beg = begin(ia); <span class="comment">// pointer to the first element in ia</span></span><br><span class="line"><span class="keyword">int</span> *last = end(ia); <span class="comment">// pointer one past the last element in ia</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>compare pointers of one array</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> *b = arr, *e = arr + sz; <span class="comment">// sz is the size</span></span><br><span class="line"><span class="keyword">while</span> (b &lt; e) {</span><br><span class="line"><span class="comment">// use *b</span></span><br><span class="line">++b;</span><br><span class="line">}</span><br><span class="line"><span class="keyword">int</span> ia[] = {<span class="number">0</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">8</span>}; <span class="comment">// array with 5 elements of type int</span></span><br><span class="line"><span class="keyword">int</span> last = *(ia + <span class="number">4</span>); <span class="comment">// ok: initializes last to 8, the value of ia[4]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>interesting example</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = ia[<span class="number">2</span>]; <span class="comment">// ia is converted to a pointer to the first element in ia</span></span><br><span class="line"><span class="comment">// ia[2] fetches the element to which (ia + 2) points</span></span><br><span class="line"><span class="keyword">int</span> *p = ia; <span class="comment">// p points to the first element in ia</span></span><br><span class="line">i = *(p + <span class="number">2</span>); <span class="comment">// equivalent to i = ia[2]</span></span><br><span class="line"><span class="keyword">int</span> *p = &amp;ia[<span class="number">2</span>]; <span class="comment">// p points to the element indexed by 2</span></span><br><span class="line"><span class="comment">// ! *attention!!!*</span></span><br><span class="line"><span class="keyword">int</span> j = p[<span class="number">1</span>]; <span class="comment">// p[1] is equivalent to *(p + 1),</span></span><br><span class="line"><span class="comment">// p[1] is the same element as ia[3]</span></span><br><span class="line"><span class="keyword">int</span> k = p[-<span class="number">2</span>]; <span class="comment">// p[-2] is the same element as ia[0]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>bear in mind:</strong> </p>
+</li>
+<li>int <em>b = arr,</em>e = arr+3; b <e is="" comparing="" their="" index="" in="" the="" array,="" *b="=*"> - e is comparing the object they are pointing to</e></li>
+</ul>
+</blockquote>
+<h4 id="354-c-style-character-strings">3.5.4 C-style character strings</h4><blockquote>
+<ul>
+<li>end with a numm termination</li>
+<li>C-style character string functions<ul>
+<li>strlen(p): returns the length of p(not counting null)</li>
+<li>strcmp(p1,p2): Compares p1 and p2 for equality. Returns 0 if p1 ==p2, a position value of p1&gt;p2, a negative value if p1&lt;p2</li>
+<li>strcat(p1,p2): Appends p2 to p1,return p1</li>
+<li>strcpy(p1,p2): Copies p2 into p1.Returns p1.</li>
+</ul>
+</li>
+<li><p><code>Importance of null terminator</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> ca[] = {<span class="string">&apos;C&apos;</span>, <span class="string">&apos;+&apos;</span>, <span class="string">&apos;+&apos;</span>}; <span class="comment">// not null terminated</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">strlen</span>(ca) &lt;&lt; endl; <span class="comment">// disaster: ca isn&apos;t null terminated</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>initialization:</p>
+<ul>
+<li>const char cstr1[]=&#x201D;Hello&#x201D;;</li>
+<li>const char cstr1[]={&#x2018;H&#x2019;,&#x2019;e&#x2019;,&#x2019;l&#x2019;,&#x2019;l&#x2019;,&#x2019;o&#x2019;,&#x2019;\0&#x2019;}</li>
+</ul>
+</li>
+<li><p>You can not initialize a char* from a string</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">s</span><span class="params">(<span class="string">&quot;hellow world&quot;</span>)</span></span>;</span><br><span class="line"><span class="keyword">char</span> *str = s; <span class="comment">// error can&apos;t initialize a char* from a string</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> *str = s.c_str(); <span class="comment">// OK</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>We can not initialzie a built-in array from another array, nor can we initialize an array from a vector</code></p>
+</li>
+<li><p>But  we can use an array to initialize a vector</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> int_arr[] = {<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>};</span><br><span class="line"><span class="comment">// ivec has six elements; each is a copy of the corresponding element in int_arr</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; ivec(begin(int_arr), end(int_arr));</span><br><span class="line"><span class="comment">// copies three elements: int_arr[1], int_arr[2], int_arr[3]</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; subVec(int_arr + <span class="number">1</span>, int_arr + <span class="number">4</span>);</span><br><span class="line">This initialization creates subVec with three elements. The values of these elements</span><br><span class="line">are copies of the values in int_arr[<span class="number">1</span>] through int_arr[<span class="number">3</span>].</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>For a modern C++ programmer, you should use <em>vectors and iterators</em> instead of <em>built in arrays and pointers</em>,strings rather than <em>C-style array-based character strings</em></p>
+</li>
+<li><p><code>Nice example importance of pointer</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> array1[](<span class="string">&quot;LBTING&quot;</span>);</span><br><span class="line">    <span class="keyword">char</span> *p = array1;</span><br><span class="line">    <span class="keyword">while</span> (p){ </span><br><span class="line">        <span class="comment">// error! never stop the while! you should use *p</span></span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; *p &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">        ++p;</span><br><span class="line">    }</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h4 id="36-multidimensional-arrays">3.6 Multidimensional Arrays</h4><blockquote>
+<ul>
+<li><p>initialization:</p>
+<ul>
+<li>int ia[3] [4];// array of size 3; each element is an array of ints of size 4</li>
+<li>in a 2 dimensional array, the first dimension is usually referred to as the row and the second as the column<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> ia[<span class="number">3</span>][<span class="number">4</span>] = { <span class="comment">// three elements; each element is an array of size 4</span></span><br><span class="line">{<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>}, <span class="comment">// initializers for the row indexed by 0</span></span><br><span class="line">{<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>}, <span class="comment">// initializers for the row indexed by 1</span></span><br><span class="line">{<span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>} <span class="comment">// initializers for the row indexed by 2</span></span><br><span class="line">};</span><br><span class="line"><span class="comment">// explicitly initialize only element 0 in each row</span></span><br><span class="line"><span class="keyword">int</span> ia[<span class="number">3</span>][<span class="number">4</span>] = {{ <span class="number">0</span> }, { <span class="number">4</span> }, { <span class="number">8</span> }};</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>assigning values to nest array</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">constexpr</span> <span class="keyword">size_t</span> rowCnt = <span class="number">3</span>, colCnt = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">int</span> ia[rowCnt][colCnt]; <span class="comment">// 12 uninitialized elements</span></span><br><span class="line"><span class="comment">// for each row</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">size_t</span> i = <span class="number">0</span>; i != rowCnt; ++i) {</span><br><span class="line">    <span class="comment">// for each column within the row</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">size_t</span> j = <span class="number">0</span>; j != colCnt; ++j) {</span><br><span class="line">        <span class="comment">// assign the element&apos;s positional index as its value</span></span><br><span class="line">        ia[i][j] = i * colCnt + j;</span><br><span class="line">}</span><br><span class="line">}</span><br><span class="line"><span class="comment">//another way of doing the same thing</span></span><br><span class="line"><span class="keyword">size_t</span> cnt = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> &amp;row : ia) <span class="comment">// for every element in the outer array</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> &amp;col : row) { <span class="comment">// for every element in the inner array</span></span><br><span class="line">    col = cnt; <span class="comment">// give this element the next value</span></span><br><span class="line">++cnt; <span class="comment">// increment cnt</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>how to loop through the nested array! book P183</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;row : ia) <span class="comment">// for every element in the outer array</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> col : row) <span class="comment">// for every element in the inner array</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; col &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Chapter Summary:</p>
+<ul>
+<li>the explanation of the term in Chapter 3</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="chapter-4-expressions">Chapter 4. Expressions</h2><h3 id="41-fundamentals">4.1 Fundamentals</h3><blockquote>
+<ul>
+<li>overloaded operators: such definitions give an alternative meaning to an existing operator symbol</li>
+<li>compound expression: an expression with two or more operators</li>
+<li>precedence(multiply, divide) &amp; associativity(add)</li>
+<li><p>undefined behavior:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; i &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; ++i &lt;&lt; endl; <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>four operators that <em>gurantee</em> the order where operands are evaluated</p>
+</li>
+<li>AND(&amp;&amp;), AND(||),CONDITIONAL(?:), COMMA(,)</li>
+<li>unary plus&amp; addition&amp;subtraction operators<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">1024</span>;</span><br><span class="line"><span class="keyword">int</span> k = -i; <span class="comment">// i is -1024</span></span><br><span class="line"><span class="keyword">bool</span> b = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">bool</span> b2 = -b; <span class="comment">// b2 is true! (1 and -1 are both true)</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="42-arithmetic-operators">4.2 Arithmetic Operators</h3><blockquote>
+<ul>
+<li>rules:<ul>
+<li>(-m)/n and m/(-n) is always equal to -(m/n)</li>
+<li>m%(-n) = m&amp;n</li>
+<li>(-m)&amp; n = -(m&amp;n)</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="43-logical-and-relational-operators">4.3 Logical and Relational Operators</h3><blockquote>
+<ul>
+<li>i != j &lt; k is equivalent to i != (j &lt; k).</li>
+<li><h3 id="44-assignment-operators">4.4 Assignment operators</h3></li>
+<li>Assignment has lower precedence than the relational operators<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//asign order matters!</span></span><br><span class="line"><span class="keyword">int</span> i;   <span class="keyword">double</span> d;</span><br><span class="line">d = i = <span class="number">3.5</span>; <span class="comment">// i = 3, d = 3.0</span></span><br><span class="line">i = d = <span class="number">3.5</span>; <span class="comment">// d = 3.5, i = 3</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="45-increment-and-decrement-operators">4.5 Increment and Decrement Operators</h3><blockquote>
+<ul>
+<li>prefix: change the operand and the object</li>
+<li><p>postfix: only change the operand but copy the unchanged value as a result</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">0</span>, j;</span><br><span class="line">j = ++i; <span class="comment">// j = 1, i = 1: prefix yields the incremented value</span></span><br><span class="line">j = i++; <span class="comment">// j = 1, i = 2: postfix yields the unincremented value</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>order of evaluation examples</p>
+</li>
+<li>first (++) then (.), then (*)<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">i = ++i + i++; <span class="comment">// undefined behavior</span></span><br><span class="line">i = i++ + <span class="number">1</span>; <span class="comment">// undefined behavior (but i = ++i + 1; is well-defined)</span></span><br><span class="line">f(++i, ++i); <span class="comment">// undefined behavior</span></span><br><span class="line">f(i = -<span class="number">1</span>, i = -<span class="number">1</span>); <span class="comment">// undefined behavior</span></span><br><span class="line">ptr != <span class="number">0</span> &amp;&amp; *ptr++  <span class="comment">// check ptr is not a nullptr, and then check the pointer value.</span></span><br><span class="line">ival++ &amp;&amp; ival <span class="comment">// check ival, and then check ival+1 whether equal zero.</span></span><br><span class="line">vec[ival++] &lt;= vec[ival] <span class="comment">// incorrect. It is an **undefined behavior.**</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="46-the-mumber-access-operators">4.6 The Mumber Access Operators</h3><blockquote>
+<ul>
+<li>dot operator: fectches a member from an object of class type</li>
+<li>ptr-&gt;mem is a synonym for (*ptr).mem</li>
+</ul>
+</blockquote>
+<p>PS:</p>
+<blockquote>
+<ul>
+<li>angle brackets: &lt;&gt;</li>
+<li>curly brackets: {}</li>
+<li>parentheses: ()</li>
+<li>operand: the target you want to operate on</li>
+</ul>
+</blockquote>
+<h3 id="47-the-conditional-operator">4.7 The Conditional Operator</h3><blockquote>
+<ul>
+<li>cond ? expr1 : expr 2</li>
+<li>you can nest conditional operations:<ul>
+<li>finalgrade = (grade &gt; 90) ? &#x201C;high pass&#x201D; : (grade &lt; 60) ? &#x201C;fail&#x201D; : &#x201C;pass&#x201D;;</li>
+</ul>
+</li>
+<li>use them in an output expression</li>
+<li>don&#x2019;t forget about the parenthesis<ul>
+<li>cout &lt;&lt; ((grade &lt; 60) ? &#x201C;fail&#x201D; : &#x201C;pass&#x201D;); // prints pass or fail</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="48-the-bitwise-operators">4.8 The Bitwise Operators</h3><blockquote>
+<ul>
+<li>bit Operators    &amp;      Function       &amp;    Use</li>
+<li>~              bitwise not            ~expr</li>
+<li>&lt;&lt;              left shift           expr1 &lt;&lt; expr2</li>
+<li><blockquote>
+<blockquote>
+<pre><code>right shift           expr1 <span class="prompt">&gt;&gt; </span>expr2
+</code></pre></blockquote>
+</blockquote>
+</li>
+<li>&amp;                bitwise AND                expr1 &amp; expr2</li>
+<li>^                bitwise XOR           expr1 ^ expr2</li>
+<li>|                bitwise or            expr1 | expr2</li>
+<li>The bits are shifted left (&lt;&lt;) or right (&gt;&gt;). Bits that are shifted off the end are discarded.</li>
+<li>NOT oerator <code>~</code>:<ul>
+<li>generates a new value with the bits of its operand inverted.</li>
+<li><img src="http://7xklst.com1.z0.glb.clouddn.com/bitwiseAndOrXorbitwiseAndOrXor.png" alt="not operator"></li>
+</ul>
+</li>
+<li>Bitwise <code>AND</code>, <code>OR</code>, and <code>XOR</code> operators:<ul>
+<li><img src="http://7xklst.com1.z0.glb.clouddn.com/bitwiseAndOrXorbitwiseAndOrXor.png" alt="pictures"></li>
+</ul>
+</li>
+<li>Interesting example P215</li>
+<li><a href="http://stackoverflow.com/questions/11055834/what-does-double-angle-brackets-mean-in-c-c-enum" target="_blank" rel="external">bit shift operator &lt;&lt; &gt;&gt;</a><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">signed</span> <span class="title">integer</span> <span class="params">(an <span class="keyword">int</span> <span class="keyword">for</span> example)</span>:</span><br><span class="line">0x80 or 10000000</span><br><span class="line">0x80 &gt;&gt; 7 </span>= <span class="number">11111111</span></span><br><span class="line"><span class="number">0x10</span> or <span class="number">00010000</span></span><br><span class="line"><span class="number">0x10</span> &gt;&gt; <span class="number">4</span> = <span class="number">00000001</span></span><br><span class="line"><span class="function"><span class="keyword">if</span> its <span class="title">unsigned</span> <span class="params">(a uint)</span>:</span><br><span class="line">0x80 or 10000000</span><br><span class="line">0x80 &gt;&gt; 7 </span>= <span class="number">00000001</span></span><br><span class="line"><span class="number">0x10</span> or <span class="number">00010000</span></span><br><span class="line"><span class="number">0x10</span> &gt;&gt; <span class="number">4</span> = <span class="number">00000001</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="49-the-sizeof-operator">4.9 the <em>sizeof</em> Operator</h3><blockquote>
+<ul>
+<li>: it return the size(in bytes) of an expression or a type name</li>
+<li><img src="http://7xklst.com1.z0.glb.clouddn.com/resultOfSizeOf.pngresultOfSizeOf.png" alt="resultOfsizeOf"></li>
+</ul>
+</blockquote>
+<h3 id="410-comma-operator">4.10 Comma Operator</h3><blockquote>
+<ul>
+<li>:take two operands, which it evaluates from left to right.</li>
+<li>for ( siz_t i = 0; i != 10; ++i,&#x2013;t)</li>
+<li></li>
+</ul>
+</blockquote>
+<h4 id="411-type-conversions">4.11 Type Conversions</h4><blockquote>
+<ul>
+<li>: two types are related if there is a conversion between them.(int add double)</li>
+<li>many examples here. P 222</li>
+<li><p><strong>Pointer Const Conversions</strong>: we can convert a pointer to a nonconst type to a pointer to the corresponding <em>const</em> type, and similarly for references. That is ,if T is a type,we can convert a pointer or a reference to T into a pointer or reference to <em>const T</em>,respectively.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> &amp;j = i; <span class="comment">// convert a nonconst to a reference to const int</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> *p = &amp;i; <span class="comment">// convert address of a nonconst to the address of a const</span></span><br><span class="line"><span class="keyword">int</span> &amp;r = j, *q = p; <span class="comment">// error: conversion from const to nonconst not allowed</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>cast</code>: a way to request an explicit conversion. </p>
+</li>
+<li>example: double slope = static_cast<double>(j) / i;<ul>
+<li>A <em>static_cst</em> is often useful informing that both the reader and the compiler are aware of and not concerned about the ptential loss of precision.</li>
+<li>you can use it to change const!!! (<em>const_cast</em>)</li>
+</ul>
+</double></li>
+<li><h4 id="chapter-summary">Chapter Summary</h4></li>
+<li>P 230</li>
+</ul>
+</blockquote>
+<h2 id="chapter-5-statements"><strong>Chapter 5. Statements</strong></h2><h3 id="51-simple-statements">5.1 Simple Statements</h3><blockquote>
+<ul>
+<li>Null Statement:<br>  -tt;// null statement</li>
+<li>Compund Statement:<ul>
+<li>as a <code>block</code>, is a sequence of statements and declarations surrounded by a pair of curly braces.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="52-statement-scope">5.2 Statement Scope</h3><blockquote>
+<ul>
+<li>Variables defined in the control structure are visible only within that statement and are out of scope after the statement ends</li>
+</ul>
+</blockquote>
+<h3 id="53-conditional-statements">5.3 Conditional Statements</h3><h4 id="532-the-switch-statement">5.3.2 The <em>switch</em> Statement</h4><blockquote>
+<ul>
+<li><p>execution continues normally from the statement through the end of the <code>switch</code> or a <code>break</code> statement.(do not execute other cases)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">switc(condition){</span><br><span class="line">    <span class="keyword">case</span> XXX:</span><br><span class="line">        term;</span><br><span class="line">    <span class="keyword">case</span> XXX:</span><br><span class="line">        term;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>list all cases:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> (ch)</span><br><span class="line">{</span><br><span class="line"><span class="comment">// alternative legal syntax</span></span><br><span class="line"><span class="keyword">case</span> <span class="string">&apos;a&apos;</span>: <span class="keyword">case</span> <span class="string">&apos;e&apos;</span>: <span class="keyword">case</span> <span class="string">&apos;i&apos;</span>: <span class="keyword">case</span> <span class="string">&apos;o&apos;</span>: <span class="keyword">case</span> <span class="string">&apos;u&apos;</span>:</span><br><span class="line">++vowelCnt;</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>default</code> label</p>
+<ul>
+<li>execute when no case label matches the value of the switch expression<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        term;</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4 id="541-the-while-statement">5.4.1 The <em>while</em> statement</h4><h4 id="542-traditional-for-statement">5.4.2 Traditional <em>for</em> Statement</h4><blockquote>
+<ul>
+<li>for (init-statement;condition;expression)<ul>
+<li>statement</li>
+</ul>
+</li>
+<li>order of evaluation</li>
+<li><ol>
+<li>init-statement</li>
+</ol>
+</li>
+<li><ol>
+<li>condition</li>
+</ol>
+</li>
+<li><ol>
+<li>statement</li>
+</ol>
+</li>
+<li><ol>
+<li>expression</li>
+</ol>
+</li>
+<li>using NULL statement<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>st</span><br><span class="line"><span class="keyword">auto</span> beg = v.begin();</span><br><span class="line"><span class="keyword">for</span> ( <span class="comment">/* null */</span>; beg != v.end() &amp;&amp; *beg &gt;= <span class="number">0</span>; ++beg)</span><br><span class="line">; <span class="comment">// no work to do</span></span><br><span class="line"><span class="number">2</span>nd</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i; <span class="built_in">cin</span> &gt;&gt; i; <span class="comment">/* no expression */</span> )</span><br><span class="line">v.push_back(i);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h4 id="543-range-for-statement">5.4.3 Range for statement</h4><blockquote>
+<ul>
+<li>used for iterate through the elements of a container or other sequence</li>
+<li>for (declaration : expression)<ul>
+<li>statement</li>
+</ul>
+</li>
+<li>On each iteration, the control variable is defined and initialized by the next value in the sequence:<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1st method</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> &amp;r : v) <span class="comment">// for each element in v</span></span><br><span class="line">r *= <span class="number">2</span>; <span class="comment">// double the value of each element in v</span></span><br><span class="line"><span class="comment">//2nd method</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> beg = v.begin(), end = v.end(); beg != end; ++beg)</span><br><span class="line">{</span><br><span class="line"><span class="keyword">auto</span> &amp;r = *beg; <span class="comment">// r must be a reference so we can change the element</span></span><br><span class="line">r *= <span class="number">2</span>; <span class="comment">// double the value of each element in v</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h4 id="544-the-do-while-statement">5.4.4 The <em>do while</em> Statement</h4><blockquote>
+<ul>
+<li>bear in mind: A <em>do while</em> ends with a semicolon after the parenthesized condition.</li>
+</ul>
+</blockquote>
+<h3 id="55-jump-statements">5.5 Jump Statements</h3><blockquote>
+<ul>
+<li><em>break</em>,<em>continue</em>,<em>goto</em>,<em>return</em></li>
+<li><code>break</code>:<ul>
+<li>terminates the nearest enclosing while, do while, for, or<br>switch statement.</li>
+</ul>
+</li>
+<li><code>continue</code>:<ul>
+<li>terminates the current iteration of the nearest enclosing loop<br>and immediately begins the next iteration.</li>
+</ul>
+</li>
+<li><code>goto</code>:<ul>
+<li>provides an unconditional jump from the goto to a another<br>statement in the same function.</li>
+<li>A jump backward over an already executed definition is okay. Jumping back to a point before a variable is defined destroys the variable and constructs it again:</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="56-try-blocks-and-exception-handling">5.6 <em>try</em> Blocks and Exception Handling</h3><blockquote>
+<ul>
+<li>deal with anomalous behavior</li>
+<li><code>throw</code> expressions : detecting part uses to indicate that it encountered something it can&#x2019;t handle.</li>
+<li><code>try</code> blocks, which the handling part uses to deal with an exception, ending with one or more <code>catch</code> clauses</li>
+</ul>
+</blockquote>
+<h4 id="561-a-throw-expression">5.6.1 A <code>throw</code> Expression</h4><blockquote>
+<ul>
+<li>example:<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// first check that the data are for the same item</span></span><br><span class="line"><span class="keyword">if</span> (item1.isbn() != item2.isbn())</span><br><span class="line"><span class="keyword">throw</span> runtime_error(<span class="string">&quot;Data must refer to same ISBN&quot;</span>);</span><br><span class="line"><span class="comment">// if we&apos;re still here, the ISBNs are the same</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; item1 + item2 &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h4 id="562-the-try-block">5.6.2 The <em>try</em> Block</h4><blockquote>
+<ul>
+<li>general form:<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> {</span><br><span class="line">program-statements</span><br><span class="line">} <span class="keyword">catch</span> (exception-declaration) {</span><br><span class="line">handler-statements</span><br><span class="line">} <span class="keyword">catch</span> (exception-declaration) {</span><br><span class="line">handler-statements</span><br><span class="line">} <span class="comment">// . . .</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h4 id="563-standard-exceptions">5.6.3 Standard Exceptions</h4><blockquote>
+<ul>
+<li>The exception header defines the most general kind of exception class named<br>exception. It communicates only that an exception occurred but provides no<br>additional information.</li>
+<li>The stdexcept header defines several general-purpose exception classes,</li>
+<li>The new header defines the bad_alloc exception type,</li>
+<li>The type_info header defines the bad_cast exception type</li>
+</ul>
+</blockquote>
+<h2 id="chatper-6-functions">Chatper 6. Functions</h2><h3 id="61-function-basics">6.1 Function Basics</h3><blockquote>
+<ul>
+<li>call operator: a pair of parentheses<h4 id="611-local-objects">6.1.1 Local Objects</h4></li>
+<li>scope of a name: the part of the program&#x2019;s text where that name is visible</li>
+<li>lifetime of an object: the time during the program&#x2019;s execution that the object exists</li>
+<li>static object:<ul>
+<li>initialized before the frist time execution</li>
+<li>loal statics are not destroyed when a function ends</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4 id="612-function-declarations">6.1.2 Function Declarations</h4><blockquote>
+<ul>
+<li>return type + function name + parameter types;</li>
+</ul>
+</blockquote>
+<h4 id="613-separate-compilation">6.1.3 Separate Compilation</h4><blockquote>
+<ul>
+<li>enable us split our programs into several files, each of which can be compiled independently.</li>
+<li>? need further study.</li>
+</ul>
+</blockquote>
+<h3 id="62-argument-passing">6.2 Argument Passing</h3><blockquote>
+<ul>
+<li><p>passing by value, pointer, reference.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> n = <span class="number">0</span>, i = <span class="number">42</span>;</span><br><span class="line"><span class="keyword">int</span> *p = &amp;n, *q = &amp;i; <span class="comment">// p points to n; q points to i</span></span><br><span class="line">*p = <span class="number">42</span>; <span class="comment">// value in n is changed; p is unchanged</span></span><br><span class="line">p = q; <span class="comment">// p now points to i; values in i and n are</span></span><br><span class="line">unchanged</span><br><span class="line">The same behavior applies to pointer parameters:</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>using reference to avoid copies</p>
+<ul>
+<li>efficient to save time of copying objects of large class types or large containers.</li>
+</ul>
+</li>
+<li>using reference to return mutiple values</li>
+</ul>
+</blockquote>
+<h4 id="623-const-parameters-and-arguments">6.2.3 <strong>const</strong> Parameters and Arguments</h4><blockquote>
+<ul>
+<li>We cannot pass a literal, an expression that evaluates to a type, an object that requires conversion.</li>
+<li>On the other hand, we can pass a string literal as the first argument to find_char.<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Page 282</span></span><br><span class="line"><span class="built_in">string</span>::<span class="function">size_type <span class="title">find_char</span><span class="params">(<span class="built_in">string</span> &amp;s, <span class="keyword">char</span> c, <span class="built_in">string</span>::size_type &amp;occurs)</span></span><br><span class="line"><span class="built_in">string</span> a </span>= <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line">find_char(a, <span class="string">&apos;o&apos;</span>, ctr); <span class="comment">// OK</span></span><br><span class="line">find_char(<span class="string">&quot;Hello World&quot;</span>, <span class="string">&apos;o&apos;</span>, ctr); <span class="comment">// fail!</span></span><br><span class="line"><span class="comment">// but...</span></span><br><span class="line"><span class="built_in">string</span>::<span class="function">size_type <span class="title">find_char</span><span class="params">(<span class="keyword">const</span> <span class="built_in">string</span> &amp;s, <span class="keyword">char</span> c, <span class="built_in">string</span>::size_type &amp;occurs)</span></span><br><span class="line"><span class="title">find_char</span><span class="params">(<span class="string">&quot;Hello World&quot;</span>, <span class="string">&apos;o&apos;</span>, ctr)</span></span>; <span class="comment">// works.</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h4 id="624-array-parameters">6.2.4 Array Parameters</h4><blockquote>
+<ul>
+<li><p>we cannot copy an array and we often convert them to a pointer(the first element) </p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// despite appearances, these three declarations of print are equivalent</span></span><br><span class="line"><span class="comment">// each function has a single parameter of type const int*</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span>*)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span>[])</span></span>; <span class="comment">// shows the intent that the function takes an</span></span><br><span class="line"><span class="function"><span class="built_in">array</span></span><br><span class="line"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span>[<span class="number">10</span>])</span></span>; <span class="comment">// dimension for documentation purposes (at</span></span><br><span class="line">best)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Regardless of appearances, these declarations are equivalent: Each declares a function<br>with a single parameter of type const int<em>. When the compiler checks a call to<br>print, it checks only that the argument has type const int</em>:</p>
+</li>
+<li>make sure that <em>all uses of the array stay within the array bounds</em>.</li>
+<li><p>Three ways to read info in the list</p>
+<ul>
+<li><p>null character in C-style strings</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *cp)</span></span><br><span class="line"></span>{</span><br><span class="line"><span class="keyword">if</span> (cp) <span class="comment">// if cp is not a null pointer</span></span><br><span class="line"><span class="keyword">while</span> (*cp) <span class="comment">// so long as the character it points to is not a null</span></span><br><span class="line">character</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; *cp++; <span class="comment">// print the character and advance the pointer</span></span><br><span class="line">}</span><br><span class="line"><span class="comment">// this methods works well with string, but works less well with data like int</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>pass pointers to the first and one past the last element in the array</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> *beg, <span class="keyword">const</span> <span class="keyword">int</span> *end)</span></span><br><span class="line"></span>{</span><br><span class="line"><span class="comment">// print every element starting at beg up to but not including end</span></span><br><span class="line"><span class="keyword">while</span> (beg != end)</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; *beg++ &lt;&lt; endl; <span class="comment">// print the current element</span></span><br><span class="line"><span class="comment">// and advance the pointer</span></span><br><span class="line">}</span><br><span class="line"><span class="comment">//The while uses the dereference and postfix increment operators</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>define a second parameter that indicates the size of the array</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// const int ia[] is equivalent to const int* ia</span></span><br><span class="line"><span class="comment">// size is passed explicitly and used to control access to elements of ia</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> ia[], size_t size)</span></span><br><span class="line"></span>{</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">size_t</span> i = <span class="number">0</span>; i != size; ++i) {</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ia[i] &lt;&lt; endl;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>array of reference is not allowed</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f(<span class="keyword">int</span> &amp;arr[<span class="number">10</span>]) <span class="comment">// error: declares arr as an array of references</span></span><br><span class="line">f(<span class="keyword">int</span> (&amp;arr)[<span class="number">10</span>]) <span class="comment">// ok: arr is a reference to an array of ten ints</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>how to pass a multidimensional array</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> *matrix[<span class="number">10</span>]; <span class="comment">// array of ten pointers</span></span><br><span class="line"><span class="keyword">int</span> (*matrix)[<span class="number">10</span>]; <span class="comment">// pointer to an array of ten ints</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h4 id="625-main-handling-command-line-options">6.2.5 <em>main</em>: Handling Command-Line Options</h4><blockquote>
+<ul>
+<li>such options are in two parameters:<pre><code>+<span class="instruction"> int </span>main(int argc, char *argv<span class="keyword">[</span>]<span class="function">)</span> { ... }
++ The second parameter, argv, is an<span class="instruction"> array </span>of pointers to C-style character strings. The
+</code></pre>first parameter, argc, passes the number of strings in that array.</li>
+<li>also we can do it in this way:<pre><code>+ <span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> **argv)</span> </span>{ ... }, argv points to a <span class="keyword">char</span>*  
+</code></pre></li>
+<li>!!! When you use the arguments in argv, remember that the optional<br>arguments begin in argv[1]; argv[0] contains the program??s name, not<br>user input.           </li>
+</ul>
+</blockquote>
+<h4 id="626-functions-with-varying-parameters">6.2.6 Functions with Varying Parameters</h4><blockquote>
+<ul>
+<li>two way to take a varying number of arguments<ul>
+<li>if all the arguments are of the same type: use <em>initializer_list</em></li>
+<li>if have varying type: write a variadic template</li>
+</ul>
+</li>
+<li>initializer_list: all the arguments are of const type P292</li>
+<li>Ellipsis: allow program to interface to C code that uses a C library facility named varargs.</li>
+<li>When we pass a sequence of values to an initializer_list parameter, we<br>must enclose the sequence in <code>curly braces</code>:</li>
+</ul>
+</blockquote>
+<h4 id="63-return-types-and-the-return-statement">6.3 Return Types and the return Statement</h4><blockquote>
+<ul>
+<li>two types of return:<ul>
+<li>return;</li>
+<li>return <code>expression</code>;</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="chapter-16-templates-and-generic-programming">Chapter 16 Templates and Generic Programming</h2><blockquote>
+<ul>
+<li>Dealing with unknown type</li>
+<li>OOP deal with types that are not known until run time</li>
+<li>Generic programming would know type during compilation(vector)<ul>
+<li>template are the foundation for generic programming</li>
+</ul>
+</li>
+</ul>
+<h3 id="161-definig-a-template">16.1 Definig a Template</h3></blockquote>
+<h4 id="1611-function-templates">16.1.1 Function Templates</h4><blockquote>
+<ul>
+<li>a formula where we can genertae type-specific versions of that function</li>
+<li><p>a small example</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// define a **function template**</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">compare</span><span class="params">(<span class="keyword">const</span> T &amp;v1, <span class="keyword">const</span> T &amp;v2)</span></span><br><span class="line"></span>{</span><br><span class="line"><span class="keyword">if</span> (v1 &lt; v2) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (v2 &lt; v1) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"><span class="comment">// type T is decided at run time.</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>define multiple typename</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// error: must precede U with either typename or class</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, U&gt; <span class="function">T <span class="title">calc</span><span class="params">(<span class="keyword">const</span> T&amp;, <span class="keyword">const</span> U&amp;)</span></span>;</span><br><span class="line"><span class="comment">//These keywords have the same meaning and can be used interchangeably inside a</span></span><br><span class="line"><span class="comment">//template parameter list. A template parameter list can use both keywords:</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>typename VS Class</p>
+<ul>
+<li>actually they mean the same thing<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ok: no distinction between typename and class in a template parameter list</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">class</span> U&gt; calc (<span class="keyword">const</span> T&amp;, <span class="keyword">const</span> U&amp;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>It may seem more intuitive to use the keyword <em>typename</em> rather than <em>class</em> to<br>designate a template type parameter. After all, we can use built-in (nonclass) types as<br>a template type argument. Moreover, typename more clearly indicates that the name<br>that follows is a type name. However, typename was added to C++ after templates<br>were already in widespread use; some programmers continue to use class<br>exclusively.</p>
+<blockquote>
+<ul>
+<li><p><strong>Nontype Template Parameters</strong></p>
+<ul>
+<li>a nontype parameter represents a value rather than a type</li>
+<li>specified by using a specific type name instead of the class or typename keyword.</li>
+<li>can be an integral type, or a pointer or (lvalue) reference to an object or to a function type</li>
+<li>must be const expressions<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">unsigned</span> N, <span class="keyword">unsigned</span> M&gt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">compare</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> (&amp;p1)</span>[N], <span class="keyword">const</span> <span class="title">char</span> <span class="params">(&amp;p2)</span>[M])</span><br><span class="line"></span>{</span><br><span class="line"><span class="keyword">return</span> <span class="built_in">strcmp</span>(p1, p2);</span><br><span class="line">}</span><br><span class="line"><span class="comment">//When we call this version of compare:</span></span><br><span class="line">compare(<span class="string">&quot;hi&quot;</span>, <span class="string">&quot;mom&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>the compiler will use the size of the literals to instantiate a version of the template with the sizes substituted for N and M. Remembering that the compiler inserts a null terminator at the end of a string literal<br>so it will be int compare(const char (&amp;p1)[3], const char (&amp;p2)[4])</p>
+</li>
+<li><p>define template as inline function:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">inline</span> T <span class="title">min</span><span class="params">(<span class="keyword">const</span> T&amp;, <span class="keyword">const</span> T&amp;)</span></span>;</span><br><span class="line"><span class="comment">// error: incorrect placement of the inline specifier</span></span><br><span class="line"><span class="keyword">inline</span> <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="function">T <span class="title">min</span><span class="params">(<span class="keyword">const</span> T&amp;, <span class="keyword">const</span> T&amp;)</span></span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>type Independence and portability(some type may not support &lt;,&gt;)</p>
+<ul>
+<li>using <code>less</code></li>
+</ul>
+</li>
+<li><p><code>exercised not done</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// version of compare that will be correct even if used on pointers; see &#xA7; 14.8.2 (p.</span></span><br><span class="line"><span class="number">575</span>)</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">int</span> <span class="title">compare</span><span class="params">(<span class="keyword">const</span> T &amp;v1, <span class="keyword">const</span> T &amp;v2)</span></span><br><span class="line"></span>{</span><br><span class="line"><span class="keyword">if</span> (less&lt;T&gt;()(v1, v2)) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (less&lt;T&gt;()(v2, v1)) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>By making the function parameters references to const, we unsure that our function can be used on types that cannot be copied</p>
+<ul>
+<li>ex if we want to use &#x201C;comare(5,6)&#x201D;, we have have const in definition since 5, 6 can not be copied as a address.</li>
+</ul>
+</li>
+<li>pointer in template <ul>
+<li>T<em> rather than </em>T.<br>16.1.2 Class Templates  P 816</li>
+</ul>
+</li>
+<li>compiler cannot deduce the template parameter type for a class template</li>
+<li><p>supply additional info inside angle brackets</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class</span> Blob {</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="keyword">typedef</span> T value_type;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">typename</span> <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;T&gt;::size_type size_type;</span><br><span class="line"><span class="comment">// constructors</span></span><br><span class="line">Blob();</span><br><span class="line">Blob(<span class="built_in">std</span>::initializer_list&lt;T&gt; il);</span><br><span class="line"><span class="comment">// number of elements in the Blob</span></span><br><span class="line"><span class="function">size_type <span class="title">size</span><span class="params">()</span> <span class="keyword">const</span> </span>{ <span class="keyword">return</span> data-&gt;size(); }</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">empty</span><span class="params">()</span> <span class="keyword">const</span> </span>{ <span class="keyword">return</span> data-&gt;empty(); }</span><br><span class="line"><span class="comment">// add and remove elements</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">push_back</span><span class="params">(<span class="keyword">const</span> T &amp;t)</span> </span>{data-&gt;push_back(t);}</span><br><span class="line"><span class="comment">// move version; see &#xA7; 13.6.3 (p. 548)</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">push_back</span><span class="params">(T &amp;&amp;t)</span> </span>{ data-&gt;push_back(<span class="built_in">std</span>::move(t)); }</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">pop_back</span><span class="params">()</span></span>;</span><br><span class="line"><span class="comment">// element access</span></span><br><span class="line"><span class="function">T&amp; <span class="title">back</span><span class="params">()</span></span>;</span><br><span class="line">T&amp; <span class="keyword">operator</span>[](size_type i); <span class="comment">// defined in &#xA7; 14.5 (p. 566)</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">shared_ptr</span>&lt;<span class="built_in">std</span>::<span class="built_in">vector</span>&lt;T&gt;&gt; data;</span><br><span class="line"><span class="comment">// throws msg if data[i] isn&apos;t valid</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">check</span><span class="params">(size_type i, <span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span> &amp;msg)</span> <span class="keyword">const</span></span>;</span><br><span class="line">};</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Instantiating a Class Template</strong></p>
+<ul>
+<li>supply extra info to use a class template.<ul>
+<li>EX: Blob <int> ia;<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//failed sample</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> iterator,<span class="keyword">typename</span> value&gt;</span><br><span class="line"><span class="function">iterator <span class="title">find</span><span class="params">(<span class="built_in">vector</span>&lt;value&gt; &amp;V, value <span class="keyword">const</span> tValue)</span></span></span><br></pre></td></tr></table></figure>
+</int></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="file-io">file IO</h1><blockquote>
+<ul>
+<li><a href="http://blog.csdn.net/jxusthusiwen/article/details/7541082" target="_blank" rel="external">help link 1</a> </li>
+<li><a href="http://blog.csdn.net/bichenggui/article/details/4600153" target="_blank" rel="external">help link 2</a></li>
+</ul>
+</blockquote>
+<h2 id="ps-concept-clearance">PS: Concept Clearance</h2><h3 id="1-char-vs-string">1. char VS string</h3><blockquote>
+<p>A char array is just that - an array of characters:</p>
+</blockquote>
+<p>If allocated on the stack (char name[256], title[256];), it will always occupy eg. 256 bytes no matter how long the text it contains is<br>If allocated on the heap (using malloc() or new char[]) you&#x2019;re responsible for releasing the memory afterwards and you will always have the overhead of a heap allocation.<br>If you copy a text of more than 256 chars into the array, it might crash, produce ugly assertion messages or cause unexplainable (mis-)behavior somewhere else in your program.<br>To determine the text&#x2019;s length, the array has to be scanned, character by character, for a \0 character.<br>A string is a class that contains a char array, but automatically manages it for you. Most string implementations have a built-in array of 16 characters (so short strings don&#x2019;t fragment the heap) and use the heap for longer strings.</p>
+<p>You can access a string&#x2019;s char array like this:</p>
+<p>std::string myString = &#x201C;Hello World&#x201D;;<br>const char *myStringChars = myString.c_str();<br>C++ strings can contain embedded \0 characters, know their length without counting, are faster than heap-allocated char arrays for short texts and protect you from buffer overruns. Plus they&#x2019;re more readable and easier to use.</p>
+<p>-</p>
+<p>However, C++ strings are not (very) suitable for usage across DLL boundaries, because this would require any user of such a DLL function to make sure he&#x2019;s using the exact same compiler and C++ runtime implementation, lest he risk his string class behaving differently.</p>
+<p>Normally, a string class would also release its heap memory on the calling heap, so it will only be able to free memory again if you&#x2019;re using a shared (.dll or .so) version of the runtime.</p>
+<p>In short: use C++ strings in all your internal functions and methods. If you ever write a .dll or .so, use C strings in your public (dll/so-exposed) functions.</p>
+<h3 id="2-heap-vs-stack">2. heap VS stack</h3><p>The stack is the memory set aside as scratch space for a thread of execution. When a function is called, a block is reserved on the top of the stack for local variables and some bookkeeping data. When that function returns, the block becomes unused and can be used the next time a function is called. The stack is always reserved in a LIFO (last in first out) order; the most recently reserved block is always the next block to be freed. This makes it really simple to keep track of the stack; freeing a block from the stack is nothing more than adjusting one pointer.</p>
+<p>The heap is memory set aside for dynamic allocation. Unlike the stack, there&#x2019;s no enforced pattern to the allocation and deallocation of blocks from the heap; you can allocate a block at any time and free it at any time. This makes it much more complex to keep track of which parts of the heap are allocated or free at any given time; there are many custom heap allocators available to tune heap performance for different usage patterns.</p>
+<p>Each thread gets a stack, while there&#x2019;s typically only one heap for the application (although it isn&#x2019;t uncommon to have multiple heaps for different types of allocation).</p>
+<p>To answer your questions directly:</p>
+<p>To what extent are they controlled by the OS or language runtime?<br>The OS allocates the stack for each system-level thread when the thread is created. Typically the OS is called by the language runtime to allocate the heap for the application.</p>
+<p>What is their scope?<br>The stack is attached to a thread, so when the thread exits the stack is reclaimed. The heap is typically allocated at application startup by the runtime, and is reclaimed when the application (technically process) exits.</p>
+<p>What determines the size of each of them?<br>The size of the stack is set when a thread is created. The size of the heap is set on application startup, but can grow as space is needed (the allocator requests more memory from the operating system).</p>
+<p>What makes one faster?<br>The stack is faster because the access pattern makes it trivial to allocate and deallocate memory from it (a pointer/integer is simply incremented or decremented), while the heap has much more complex bookkeeping involved in an allocation or free. Also, each byte in the stack tends to be reused very frequently which means it tends to be mapped to the processor&#x2019;s cache, making it very fast. Another performance hit for the heap is that the heap, being mostly a global resource, typically has to be multi-threading safe, i.e. each allocation and deallocation needs to be - typically - synchronized with &#x201C;all&#x201D; other heap accesses in the program.</p>
+<h3 id="3-argvargv">3. <a href="http://stackoverflow.com/questions/3024197/what-does-int-argc-char-argv-mean" target="_blank" rel="external">argv&amp;argv</a></h3><blockquote>
+<ul>
+<li>argv and argc are how command line arguments are passed to main() in C and C++.</li>
+</ul>
+</blockquote>
+<p>argc will be the number of strings pointed to by argv. This will (in practice) be 1 plus the number of arguments, as virtually all implementations will prepend the name of the program to the array.</p>
+<p>The variables are named argc (argument count) and argv (argument vector) by convention, but they can be given any valid identifier: int main(int num_args, char** arg_strings) is equally valid.</p>
+<p>They can also be omitted entirely, yielding int main(), if you do not intend to process command line arguments.</p>
+<h3 id="4-why-put-classfunction-definition-in-header-files-and-definition-of-ordinary-and-class-member-functions-in-source-files">4. Why put class&amp;function definition in header files and definition of ordinary and class-member functions in source files</h3><blockquote>
+<ul>
+<li>when we call a function, the compiler needs to see only a declaration for<br>the function. Similarly, when we use objects of class type, the class definition must be<br>available, but the definitions of the member functions need not be present.</li>
+</ul>
+</blockquote>
+<h3 id="5-understanding-vectorsize_type-x">5. <a href="http://stackoverflow.com/questions/4849632/vectorintsize-type-in-c" target="_blank" rel="external">understanding vector<int>::size_type x;</int></a></h3><blockquote>
+<ul>
+<li>I would read it as &#x201C;declare x as a variable of a type suitable for holding the size of a vector&#x201D;. The vector defines its own type for its length, and it&#x2019;s always cleanest to use that if possible, rather than &#x201C;guessing&#x201D; and using int, unsigned int, long, unsigned long or size_t etc directly as you&#x2019;d otherwise need to do.</li>
+</ul>
+</blockquote>
+<h3 id="6vector-vs-list">6.vector VS list</h3><p>vector:</p>
+<p>Contiguous memory.<br>Pre-allocates space for future elements, so extra space required beyond what&#x2019;s necessary for the elements themselves.<br>Each element only requires the space for the element type itself (no extra pointers).<br>Can re-allocate memory for the entire vector any time that you add an element.<br>Insertions at the end are constant, amortized time, but insertions elsewhere are a costly O(n).<br>Erasures at the end of the vector are constant time, but for the rest it&#x2019;s O(n).<br>You can randomly access its elements.<br>Iterators are invalidated if you add or remove elements to or from the vector.<br>You can easily get at the underlying array if you need an array of the elements.<br>list:</p>
+<p>Non-contiguous memory.<br>No pre-allocated memory. The memory overhead for the list itself is constant.<br>Each element requires extra space for the node which holds the element, including pointers to the next and previous elements in the list.<br>Never has to re-allocate memory for the whole list just because you add an element.<br>Insertions and erasures are cheap no matter where in the list they occur.<br>It&#x2019;s cheap to combine lists with splicing.<br>You cannot randomly access elements, so getting at a particular element in the list can be expensive.<br>Iterators remain valid even when you add or remove elements from the list.<br>If you need an array of the elements, you&#x2019;ll have to create a new one and add them all to it, since there is no underlying array.<br>In general, use vector when you don&#x2019;t care what type of sequential container that you&#x2019;re using, but if you&#x2019;re doing many insertions or erasures to and from anywhere in the container other than the end, you&#x2019;re going to want to use list. Or if you need random access, then you&#x2019;re going to want vector, not list. Other than that, there are naturally instances where you&#x2019;re going to need one or the other based on your application, but in general, those are good guidelines.</p>
+<h3 id="7-pointer-clarification">7 <a href="http://www.codeproject.com/Articles/7042/How-to-interpret-complex-C-C-declarations" target="_blank" rel="external">pointer clarification</a></h3><blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">int</span> *matrix[<span class="number">10</span>]; <span class="comment">// array of ten pointers</span></span><br><span class="line"><span class="keyword">int</span> (*matrix)[<span class="number">10</span>]; <span class="comment">// pointer to an array of ten ints</span></span><br><span class="line">&gt; <span class="keyword">char</span> * <span class="keyword">const</span> a;</span><br><span class="line">&gt; <span class="comment">//*a is writable, but a is not; in other words, you can modify the value pointed to by a, but you cannot modify a itself.  a is a constant pointer to char.</span></span><br><span class="line">&gt; <span class="comment">//*a = &apos;c&apos;; OK     a = &amp;b; NO</span></span><br><span class="line">&gt; <span class="keyword">const</span> <span class="keyword">char</span> * a; <span class="comment">// equals char const *a;</span></span><br><span class="line">&gt; <span class="comment">// a is writable, but *a is not; in other words, you can modify a (pointing it to a new location), but you cannot modify the value pointed to by a.</span></span><br><span class="line">&gt; <span class="comment">// a = &amp;b; OK *a = &apos;c&apos;; NO</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="8how-to-write-a-class-template">8.<a href="http://www.cprogramming.com/tutorial/templates.html" target="_blank" rel="external">How to write a class template</a></h3><blockquote>
+<p>-basic syntax for declaring a templated class<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> a_type&gt; <span class="keyword">class</span> a_class {...};</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>define a variable:<ul>
+<li>a_type a_var;</li>
+</ul>
+</li>
+<li>define a function:<ul>
+<li>template<class a_type=""> void a_class<a_type>::a_function(){&#x2026;}</a_type></class></li>
+</ul>
+</li>
+<li>declaring an instance:<ul>
+<li>a_class<int> an_example_class;</int></li>
+<li>an instantiated object of a templated class is called a <em>specialization</em>.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="9typedef-typename">9.<a href="http://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords" target="_blank" rel="external">typedef + typename</a></h3><blockquote>
+<ul>
+<li>typedef is defining a new type for use in your code, like a shorthand.</li>
+</ul>
+</blockquote>
+<p>typedef typename _MyBase::value_type value_type;<br>value_type v;<br>//use v<br>typename here is letting the compiler know that value_type is a type and not an object inside of _MyBase.</p>
+<p>the :: is the scope of the type. It is kind of like &#x201C;is in&#x201D; so value_type &#x201C;is in&#x201D; _MyBase. or can also be thought of as contains.</p>
+<h3 id="10-typecompare">10 <a href="http://bbs.csdn.net/topics/30334109" target="_blank" rel="external">typeCompare</a></h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T,<span class="keyword">typename</span> U&gt;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isSamtype</span><span class="params">(T a, U b)</span></span>{</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">typeid</span>(a) == <span class="keyword">typeid</span>(b);</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="11-pointerreference">11 <a href="http://stackoverflow.com/questions/8403447/swapping-pointers-in-c-char-int" target="_blank" rel="external">pointer&amp;reference</a></h3><h3 id="12-map">12 <a href="http://www.cplusplus.com/reference/map/map/" target="_blank" rel="external">map</a></h3><blockquote>
+<ul>
+<li>map containers slower&lt; unordered_map containers, but they allow the direct iteration on subsets based on their order</li>
+<li>maps in C++ is red-black tree</li>
+<li>container properties<ul>
+<li>associative<ul>
+<li>Elements in associative containers are referenced by their key and not by their absolute position in the container</li>
+</ul>
+</li>
+<li>ordered</li>
+<li>Map<ul>
+<li>key to value</li>
+</ul>
+</li>
+<li>Unique keys</li>
+<li>allocator-aware<ul>
+<li>The container uses an allocator object to dynamically handle its storage needs.<h3 id="13-iterating-in-vector">13 <a href="http://stackoverflow.com/questions/409348/iteration-over-stdvector-unsigned-vs-signed-index-variable" target="_blank" rel="external">iterating in vector</a></h3></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="14-preprocessor-directives">14 <a href="http://www.cplusplus.com/doc/tutorial/preprocessor/" target="_blank" rel="external">Preprocessor directives</a></h3><blockquote>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Preprocessor" target="_blank" rel="external">preprocessor:</a><ul>
+<li>a preprocessor is a program that processes its input data to produce output that is used as input to another program. </li>
+</ul>
+</li>
+<li>definition:<ul>
+<li>lines included by a hash sign(#)</li>
+<li>The preprocessor examines the code before actual compilation of code begins and resolves all these directives before any code is actually generated by regular statements.</li>
+<li>only a single line of code( or you can use backslash \ to extend it.)</li>
+<li>no semicolon</li>
+</ul>
+</li>
+<li>#define identifier replacement<ul>
+<li>replace any occurance of <em>identifer</em> in the rest of the code by <em>replacement</em></li>
+</ul>
+</li>
+<li>define function macros:<ul>
+<li><code>#define getmax(a,b) a&gt;b?a:b</code></li>
+</ul>
+</li>
+<li><p>A macro lasts until it&#x2019;s undefined with the <code>#undef</code> preprocessor directive</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">define</span> TABLE_SIZE <span class="number">100</span></span></span><br><span class="line"><span class="keyword">int</span> table1[TABLE_SIZE];</span><br><span class="line"><span class="preprocessor">#<span class="keyword">undef</span> TABLE_SIZE</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> TABLE_SIZE <span class="number">200</span></span></span><br><span class="line"><span class="keyword">int</span> table2[TABLE_SIZE];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>#if</code> <code>#else</code> and <code>#elif</code></p>
+</li>
+<li>Line control(#line)<ul>
+<li>The <code>#line</code> dirctive allows us to control both things, the <strong>line numbers</strong> within the code files as well as the <strong>file name</strong> that we want that appears when an error takes place.</li>
+</ul>
+</li>
+<li><p>Error directive(#error )</p>
+<ul>
+<li>This example aborts the compilation process if the macro name __cplusplus is not defined (this macro name is defined by default in all C++ compilers).<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">ifndef</span> __cplusplus</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">error</span> A C++ compiler is required!</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>Source file inclusion (#include)</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;header&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&quot;file&quot;</span></span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>&lt;&gt;: used to include headers provided by the implementation</li>
+<li>(): include a file, which generally includes the current path</li>
+</ul>
+</li>
+<li>Pragma directive (#pragma)<ul>
+<li>pagma:<ul>
+<li>In computer programming, a directive pragma (from &#x201C;pragmatic&#x201D;) is a language construct that specifies how a compiler (or assembler or interpreter) should process its input.</li>
+</ul>
+</li>
+<li>This directive is used to specify diverse options to the compiler. These options are specific for the platform and the compiler you use.</li>
+<li>If the compiler does not support a specific argument for #pragma, it is ignored - no syntax error is generated.</li>
+</ul>
+</li>
+<li>Predefined macro names<ul>
+<li><code>__LINE__</code>, <code>__FILE__</code>, <code>__DATE__</code>, <code>__TIME</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="debug-macro">Debug macro:</h3><blockquote>
+<ul>
+<li><a href="http://stackoverflow.com/questions/14251038/debug-macros-in-c" target="_blank" rel="external">stackoverflow explanation</a><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">ifdef</span> DEBUG</span></span><br><span class="line">Some code</span><br><span class="line"><span class="preprocessor">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/C/">C++</a> <a class="tag tag--primary tag--small t-link" href="/tags/note/">note</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/07/11/premierAnswers/"  data-tooltip="premierAnswers">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/07/07/jobTarget/" data-tooltip="jobTarget">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2015/07/08/learning/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2015/07/08/learning/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2015/07/08/learning/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+            <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2016 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/07/11/premierAnswers/"  data-tooltip="premierAnswers">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/07/07/jobTarget/" data-tooltip="jobTarget">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2015/07/08/learning/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2015/07/08/learning/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2015/07/08/learning/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>Student</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Pittsburgh USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js" type="text/javascript"></script>
+<!--SCRIPTS END-->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'lbtinglb';
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+
+
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>VTKStudy - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">VTKStudy</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Fri Mar 18 2016 02:20:57 GMT+0800">
+        Mar 18, 2016
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Kitware/">Kitware</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Studying notes when learning VTK<br><img src="https://images-na.ssl-images-amazon.com/images/I/51ApGZhyXLL._AC_UL320_SR238,320_.jpg" alt="VTK Image"><br><a id="more"></a></p>
+<p>#</p>
+<!-- toc -->
+<ul>
+<li><a href="#wait-to-learn">wait to learn</a></li>
+<li><a href="#chapter-3-system-overview">Chapter 3 System Overview</a></li>
+<li><a href="#part-2-learn-vtk-by-example">Part 2 Learn VTK By Example</a><ul>
+<li><a href="#41-creating-simple-models">4.1 Creating Simple Models</a></li>
+<li><a href="#42-using-vtk-interactors">4.2 Using VTK Interactors</a></li>
+<li><a href="#43-filtering-data">4.3 Filtering Data</a></li>
+<li><a href="#44-controling-the-camera">4.4 Controling The Camera</a></li>
+<li><a href="#45-controlling-lights">4.5 Controlling lights</a></li>
+<li><a href="#46-controlling-3d-props">4.6 Controlling 3D Props</a></li>
+<li><a href="#47-using-texture">4.7 Using Texture</a></li>
+<li><a href="#48-picking">4.8 Picking</a></li>
+<li><a href="#49-vtkcoordinate-and-coordinate-systems">4.9 vtkCoordinate and Coordinate Systems</a></li>
+</ul>
+</li>
+<li><a href="#others">Others</a></li>
+<li><a href="#bugs">bugs</a></li>
+<li><a href="#examples-leanrning">Examples leanrning:</a><ul>
+<li><a href="#tutorial-folder">Tutorial folder</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1 id="wait-to-learn">wait to learn</h1><blockquote>
+<ul>
+<li>how to use cout&amp; macro debug the code in C++</li>
+<li>Qt IDE - Qt Creator</li>
+<li>python wrapper docummentation:<a href="http://www.vtk.org/Wiki/VTK/Examples/Python" target="_blank" rel="external">http://www.vtk.org/Wiki/VTK/Examples/Python</a></li>
+<li>git grip<h1 id="chapter-3-system-overview">Chapter 3 System Overview</h1></li>
+<li>visualization pipeline &amp; rendering engine<ul>
+<li>visualization pipleline: acquire or create data, process that data, and either write theresuls to a file or pass it to redering engine</li>
+</ul>
+</li>
+<li>create and delete object<ul>
+<li>::new() &amp;::delete()</li>
+<li>or you can use <strong>smart pointer</strong> which would automatically manages the reference it owns.</li>
+</ul>
+</li>
+<li>The Rendering Engine<ul>
+<li>vtkProp<ul>
+<li>its subclass knows its position, size, and orientation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The Visualization Pipeline<ul>
+<li>vtkDataObject</li>
+<li>vtkAlgorithm</li>
+<li>multithreaded and streaming data to handle great data scale</li>
+</ul>
+</li>
+<li>Tcl VS Java VS Python<ul>
+<li>sometimes you cannot convert C++ into these due to pointer manipulation</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="part-2-learn-vtk-by-example">Part 2 Learn VTK By Example</h1><h2 id="41-creating-simple-models">4.1 Creating Simple Models</h2><blockquote>
+<ul>
+<li>source objects VS procedural objects VS reader objects</li>
+<li>pipeline:<ul>
+<li>primitive -&gt; mapper(make it a graphics primitive) -&gt; actor( represent the graphics primitive) -&gt; render &amp; window</li>
+<li><ol>
+<li>create the <code>geometry</code></li>
+</ol>
+</li>
+<li><ol>
+<li>feed the output of the <code>geometry</code> to <code>vtkPolyDataMapper</code> as the input</li>
+</ol>
+</li>
+<li><ol>
+<li>create an <code>actor</code> refers to the mapper. </li>
+</ol>
+</li>
+<li><ol>
+<li>create the <code>render</code>,<code>window</code> and <code>window interactor</code></li>
+</ol>
+</li>
+<li><ol>
+<li>add the <code>actor</code> to the <code>render</code></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Reader Source Object<ul>
+<li>LOD actor P55<ul>
+<li>three level: actor -&gt; point cloud -&gt; simple bounding box(degenerating)<h2 id="42-using-vtk-interactors">4.2 Using VTK Interactors</h2></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>two option:<ul>
+<li>built in class vtkRenderWindow-Interactor</li>
+<li>create your own interactor by specifying event bindings</li>
+</ul>
+</li>
+<li>position sensitive  or motion sensitive:<ul>
+<li>primitive -&gt; mapper -&gt; actor<h2 id="43-filtering-data">4.3 Filtering Data</h2><h2 id="44-controling-the-camera">4.4 Controling The Camera</h2><h2 id="45-controlling-lights">4.5 Controlling lights</h2></li>
+</ul>
+</li>
+<li>useful trick:<ul>
+<li>set the light&#x2019;s Position and FocalPoint to the camera&#x2019;s</li>
+<li><h2 id="46-controlling-3d-props">4.6 Controlling 3D Props</h2></li>
+</ul>
+</li>
+<li>what&#x2019;s a prop:<ul>
+<li>a prop is something that appears on stage</li>
+</ul>
+</li>
+<li>vtkProp3D &amp; vtkActor<ul>
+<li>vtkProp3D: props existing in 3D space</li>
+<li>vtkActor: a type of vtkProp3D whose geometry is defined by analytic primitives such as polygons and lines</li>
+<li>order of transformation in VTK(scale rotation, translate &#x2026;etc)</li>
+<li>assigning via property VS actor<ul>
+<li>assign via property can control the properties of several actors by assigning each the same property</li>
+</ul>
+</li>
+<li>Level-Of-Detail(LOD) Actors<ul>
+<li>creat a assembly<ul>
+<li>benefits: you can do transformation to a group of objects</li>
+</ul>
+</li>
+<li>vtkLODProp3D measures the time it takes to render each LOD and sorts them appropriately.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="47-using-texture">4.7 Using Texture</h2><blockquote>
+<ul>
+<li>see <em>VTK/Examples/Rendering/Cxx./TPlane.py</em></li>
+<li>Load texture map - &gt; create a plane source and actor(texture coordinates) -&gt; render all.</li>
+</ul>
+</blockquote>
+<h2 id="48-picking">4.8 Picking</h2><blockquote>
+<ul>
+<li>vtkWorldPointPicker<ul>
+<li>return the <em>x-y-z</em> global pick position</li>
+</ul>
+</li>
+<li>vtkAbstractPropPicker<ul>
+<li>API for pickers that can pick an instance of vtkProp(Ex. cell id, point ids&#x2026;etc)</li>
+<li>use <code>GetPro()</code> + <code>Getpath()</code> to get object.<ul>
+<li>otherwise you may get a <em>null</em> pointer if you have complex scene that includes assemblies, actors and other types of props</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="49-vtkcoordinate-and-coordinate-systems">4.9 vtkCoordinate and Coordinate Systems</h2><h1 id="others">Others</h1><blockquote>
+<ul>
+<li>mappers: take the <code>data</code> and converte it into a visual representation</li>
+<li><a href="http://www.tutorialspoint.com/design_pattern/observer_pattern.htm" target="_blank" rel="external">subject observer pattern</a><ul>
+<li>Observer pattern is used when there is one-to-many relationship between objects such as if one object is modified, its depenedent objects are to be notified automatically. Observer pattern falls under behavioral pattern category.</li>
+<li>Subject + Observer + Client. </li>
+</ul>
+</li>
+<li><a href="http://www.tutorialspoint.com/design_pattern/command_pattern.htm" target="_blank" rel="external">command pattern</a><ul>
+<li>Command pattern is a data driven design pattern and falls under behavioral pattern category. A request is wrapped under an object as command and passed to invoker object. Invoker object looks for the appropriate object which can handle this command and passes the command to the corresponding object which executes the command.</li>
+</ul>
+</li>
+<li><a href="http://stackoverflow.com/questions/574911/difference-between-windows-and-console-application" target="_blank" rel="external">windows application VS console application</a><ul>
+<li>the windows application has no console. That&#x2019;s it.</li>
+</ul>
+</li>
+<li><p>When running the python wrapper, run the script first.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@ECHO OFF
+set PYTHONPATH=C:\Python27\Lib
+set PYTHONHOME=C:\Python27
+set VTK_DATA_ROOT=C:\Kitware\VTKStudy\Testing
+
+PAUSE</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><a href="">C++ macro</a></p>
+</li>
+<li>glph:  geometric representation </li>
+<li>if you cannot find a definition of a function,search it in macro!<ul>
+<li>instance:<ul>
+<li>instead of searching for <code>GetPropColorValue</code>, search for <code>PropColorValue</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>vtk related cmake macro:<ul>
+<li>check folder: CMake/vtkModuleMacros.cmake </li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="bugs">bugs</h1><blockquote>
+<ul>
+<li><p><a href="">bug Example cone</a></p>
+<ul>
+<li><p>find_package(VTK COMPONENTS<br>vtkFiltersSources<br>vtkInteractionStyle<br>vtkRendering${VTK_RENDERING_BACKEND}<br>)<br><strong>to</strong></p>
+</li>
+<li><p>find_package(VTK REQUIRED) </p>
+</li>
+<li>this would pollute the namespace. Do not do that. And would not work to VTK 7.<br>-cone:<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION 2.8.5 FATAL_ERROR)
+if(POLICY CMP0025)
+  cmake_policy(SET CMP0025 NEW) # CMake 3.0
+endif()
+if(POLICY CMP0053)
+  cmake_policy(SET CMP0053 NEW) # CMake 3.1
+endif()
+
+project (Step1)
+
+find_package(VTK 7.1 COMPONENTS vtkFiltersSources vtkRenderingCore vtkCommonCore NO_MODULE)
+
+include_directories(${VTK_INCLUDE_DIRS})
+or target_include_directories(Cone PRIVATE ${VTK_INCLUDE_DIRS})
+add_executable(Cone MACOSX_BUNDLE Cone.cxx)
+
+target_link_libraries(Cone ${VTK_LIBRARIES})</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="examples-leanrning">Examples leanrning:</h1><h2 id="tutorial-folder">Tutorial folder</h2><blockquote>
+<ul>
+<li>Step1 - A &#x201C;Hello World&#x201D; style example of a simple visualization pipeline</li>
+<li>VTK/Examples/Tutorial/Step1/Cxx/CMalkeLists.txt<ul>
+<li>The problem is that <strong>vtkRendering${VTK_RENDERING_BACKEND}</strong> can not find the proper rendering engine. One hack solution would be just: In CMakeList.txt file, replace <strong>vtkRendering${VTK_RENDERING_BACKEND}</strong> with <strong>vtkRenderingOpenGL2.</strong> The reason why we need this is because Cmake does not know where the rendering core is. By specifying it, we can use the rendering core to override the proper method.<br>The proper solution should be replace the whole find_package paragraph with:</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<pre><code>find_package<span class="list">(<span class="keyword">VTK</span> REQUIRED COMPONENTS vtkCommonCore)</span> 
+find_package<span class="list">(<span class="keyword">VTK</span> COMPONENTS 
+   vtkFiltersSources
+   vtkInteractionStyle
+   vtkRendering${VTK_RENDERING_BACKEND})</span>
+</code></pre><p>The first find_package lets the CMake know where to find the packages, then  second find_package would know where to find <strong>vtkRendering${VTK_RENDERING_BACKEND}</strong>.<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION 2.8.5 FATAL_ERROR)
+if(POLICY CMP0025)
+  cmake_policy(SET CMP0025 NEW) # CMake 3.0
+endif()
+if(POLICY CMP0053)
+  cmake_policy(SET CMP0053 NEW) # CMake 3.1
+endif()
+
+project (Step1)
+
+find_package(VTK REQUIRED COMPONENTS vtkCommonCore)
+find_package(VTK
+COMPONENTS
+  vtkCommonCore
+  vtkFiltersSources
+  vtkInteractionStyle
+  vtkRendering${VTK_RENDERING_BACKEND})
+include(${VTK_USE_FILE})
+message(STATUS &quot;vtkRendering${VTK_RENDERING_BACKEND}&quot;)
+add_executable(Cone MACOSX_BUNDLE Cone.cxx)
+target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<ul>
+<li>Step2 - Adding observers to Step1 (i.e., processing events)</li>
+<li><p>VTK/Examples/Tutorial/Step2/Cxx/CMalkeLists.txt</p>
+<ul>
+<li>same as Step1</li>
+<li>add an oberver to print out coordinates</li>
+<li>static type *New()<ul>
+<li>because the constructor is hidden in VTK,you can not do new XXX for VTK. You use ::New()</li>
+<li>the * just means you return a pointer.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Step3 - Rendering with multiple renderers!</p>
+</li>
+<li>VTK/Examples/Tutorial/Step3/Cxx/CMalkeLists.txt<ul>
+<li>same as Step1</li>
+<li>how to create two renders within the same window</li>
+</ul>
+</li>
+<li>Step4 - Modifying properties and transformations</li>
+<li>Step5 - Specifying a particular interaction style</li>
+<li>Step6 - Adding a 3D widget</li>
+<li>VTK/Examples/Tutorial/Step6/Cxx/CMalkeLists.txt<ul>
+<li>reinterpret_cast</li>
+<li>How to add a 3D Widget<ul>
+<li>renderWindowInteractor to window -&gt; specify a particular interactor style -&gt; associate the 3D widget with the render -&gt; add the actor and observer to the boxWidget</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/C/">C++</a> <a class="tag tag--primary tag--small t-link" href="/tags/VTK/">VTK</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/04/10/cmakeLearning/"  data-tooltip="cmakeLearning">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/02/05/24783AdvancedCPlusPlus/" data-tooltip="24783AdvancedCPlusPlus">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/03/18/VTKStudy/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/03/18/VTKStudy/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/03/18/VTKStudy/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+            <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2016 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/04/10/cmakeLearning/"  data-tooltip="cmakeLearning">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/02/05/24783AdvancedCPlusPlus/" data-tooltip="24783AdvancedCPlusPlus">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/03/18/VTKStudy/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/03/18/VTKStudy/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/03/18/VTKStudy/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>Student</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Pittsburgh USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js" type="text/javascript"></script>
+<!--SCRIPTS END-->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'lbtinglb';
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+
+
+</html>

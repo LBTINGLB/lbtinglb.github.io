@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>openmesh - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">openmesh</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Wed Sep 02 2015 15:53:36 GMT+0800">
+        Sep 02, 2015
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/research/">research</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>The notes when I&#x2019;m studying openmesh for the NIH related project<br><img src="" alt="image"><br><a id="more"></a></p>
+<h1 id="openmesh-document-reading"><strong>OpenMesh document reading</strong></h1><!-- toc -->
+<ul>
+<li><a href="#1-compiliing-openmesh">1. Compiliing OpenMesh</a></li>
+<li><a href="#2-using-and-understanding-openmesh">2. Using and understanding OpenMesh</a><ul>
+<li><a href="#21-features-and-goads-of-openmesh">2.1 Features and Goads of OpenMesh</a></li>
+<li><a href="#22-the-halfedge-data-structure">2.2 The Halfedge Data Structure</a></li>
+</ul>
+</li>
+<li><a href="#3-openmesh-tols-documentation">3. OpenMesh tols Documentation</a></li>
+<li><a href="#4-tutorialscode-examples">4. Tutorials(code examples)</a><ul>
+<li><a href="#41-how-to-create-your-own-project-using-openmesh">4.1 How to create your own project using OpenMesh</a></li>
+<li><a href="#42-first-steps-building-a-cube">4.2 First steps - Building a cube</a></li>
+<li><a href="#43-using-iterators-and-circulators">4.3 Using iterators and circulators</a></li>
+<li><a href="#45-using-stl-algorithms">4.5 Using STL algorithms</a></li>
+<li><a href="#46-using-standard-propertieshttpwwwopenmeshorgmediadocumentationsopenmesh-doc-latesta00052html">4.6 <a href="http://www.openmesh.org/media/Documentations/OpenMesh-Doc-Latest/a00052.html" target="_blank" rel="external">Using standard properties</a></a></li>
+<li><a href="#47-using-mesh-attributes-and-traits">4.7 Using mesh attributes and traits</a></li>
+<li><a href="#48-extending-the-mesh-using-traits">4.8 Extending the mesh using traits</a></li>
+<li><a href="#49-deleting-geometry-elements">4.9 Deleting geometry elements</a></li>
+<li><a href="#410-using-ioopenmeshiooptions">4.10 Using IO::OpenMesh::IO::Options</a></li>
+<li><a href="#411-storing-custom-properties">4.11 Storing custom properties</a></li>
+</ul>
+</li>
+<li><a href="#include-needed-file">#include needed file:</a></li>
+</ul>
+<!-- tocstop -->
+<h2 id="1-compiliing-openmesh">1. Compiliing OpenMesh</h2><h2 id="2-using-and-understanding-openmesh">2. Using and understanding OpenMesh</h2><h3 id="21-features-and-goads-of-openmesh">2.1 Features and Goads of OpenMesh</h3><blockquote>
+<ul>
+<li>No restriction to triangles meshes, handle general polygonal meshes.</li>
+<li>Explicit representation of vertices, halfedges, edges, and faces.</li>
+<li>Efficient access to the one-ring neighborhood of a vertex.</li>
+<li>Ability to handle non-manifold vertices (like two faces meeting in only one vertex).<h3 id="22-the-halfedge-data-structure">2.2 The Halfedge Data Structure</h3></li>
+</ul>
+</blockquote>
+<h2 id="3-openmesh-tols-documentation">3. OpenMesh tols Documentation</h2><h2 id="4-tutorialscode-examples">4. Tutorials(code examples)</h2><blockquote>
+<ul>
+<li><a href="http://www.openmesh.org/media/Documentations/OpenMesh-Doc-Latest/a00066.html" target="_blank" rel="external">Description</a></li>
+</ul>
+</blockquote>
+<h3 id="41-how-to-create-your-own-project-using-openmesh">4.1 How to create your own project using OpenMesh</h3><blockquote>
+<ul>
+<li>be careful with project names and file suffices</li>
+<li>Create your file</li>
+</ul>
+</blockquote>
+<h3 id="42-first-steps-building-a-cube">4.2 First steps - Building a cube</h3><blockquote>
+<ul>
+<li>How to declare your type MyMesh</li>
+<li>How to add vertices and faces to a meshes</li>
+<li>How to write a mesh using the IO functions<br>mesh type: OpenMesh::PolyMesh_ArrayKernelT&lt;&gt;<br>add vertice list. add face.</li>
+</ul>
+<ul>
+<li>orientation of the face:<ul>
+<li>defined by the order vertices are given</li>
+<li>If you look at the frontfacing side of the polygon, then the vertices are in counter-clockwise order.</li>
+</ul>
+</li>
+<li>write file<ul>
+<li>if ( !OpenMesh::IO::write_mesh(mesh, &#x201C;output.off&#x201D;) )</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="comment">// -------------------- OpenMesh</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;OpenMesh/Core/IO/MeshIO.hh&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;OpenMesh/Core/Mesh/PolyMesh_ArrayKernelT.hh&gt;</span></span></span><br><span class="line"><span class="comment">// ----------------------------------------------------------------------------</span></span><br><span class="line"><span class="keyword">typedef</span> OpenMesh::PolyMesh_ArrayKernelT&lt;&gt;  MyMesh;</span><br><span class="line"><span class="comment">// ----------------------------------------------------------------------------</span></span><br><span class="line"><span class="comment">// Build a simple cube and write it to std::cout</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>{</span><br><span class="line">    MyMesh mesh;</span><br><span class="line">    <span class="comment">// generate vertices</span></span><br><span class="line">    MyMesh::VertexHandle vhandle[<span class="number">8</span>];</span><br><span class="line">    vhandle[<span class="number">0</span>] = mesh.add_vertex(MyMesh::Point(-<span class="number">1</span>, -<span class="number">1</span>, <span class="number">1</span>));</span><br><span class="line">    vhandle[<span class="number">1</span>] = mesh.add_vertex(MyMesh::Point(<span class="number">1</span>, -<span class="number">1</span>, <span class="number">1</span>));</span><br><span class="line">    vhandle[<span class="number">2</span>] = mesh.add_vertex(MyMesh::Point(<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>));</span><br><span class="line">    vhandle[<span class="number">3</span>] = mesh.add_vertex(MyMesh::Point(-<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>));</span><br><span class="line">    vhandle[<span class="number">4</span>] = mesh.add_vertex(MyMesh::Point(-<span class="number">1</span>, -<span class="number">1</span>, -<span class="number">1</span>));</span><br><span class="line">    vhandle[<span class="number">5</span>] = mesh.add_vertex(MyMesh::Point(<span class="number">1</span>, -<span class="number">1</span>, -<span class="number">1</span>));</span><br><span class="line">    vhandle[<span class="number">6</span>] = mesh.add_vertex(MyMesh::Point(<span class="number">1</span>, <span class="number">1</span>, -<span class="number">1</span>));</span><br><span class="line">    vhandle[<span class="number">7</span>] = mesh.add_vertex(MyMesh::Point(-<span class="number">1</span>, <span class="number">1</span>, -<span class="number">1</span>));</span><br><span class="line">    <span class="comment">// generate (quadrilateral) faces</span></span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;MyMesh::VertexHandle&gt;  face_vhandles;</span><br><span class="line">    face_vhandles.clear();</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">0</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">1</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">2</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">3</span>]);</span><br><span class="line">    mesh.add_face(face_vhandles);</span><br><span class="line"></span><br><span class="line">    face_vhandles.clear();</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">7</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">6</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">5</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">4</span>]);</span><br><span class="line">    mesh.add_face(face_vhandles);</span><br><span class="line">    face_vhandles.clear();</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">1</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">0</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">4</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">5</span>]);</span><br><span class="line">    mesh.add_face(face_vhandles);</span><br><span class="line">    face_vhandles.clear();</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">2</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">1</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">5</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">6</span>]);</span><br><span class="line">    mesh.add_face(face_vhandles);</span><br><span class="line">    face_vhandles.clear();</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">3</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">2</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">6</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">7</span>]);</span><br><span class="line">    mesh.add_face(face_vhandles);</span><br><span class="line">    face_vhandles.clear();</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">0</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">3</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">7</span>]);</span><br><span class="line">    face_vhandles.push_back(vhandle[<span class="number">4</span>]);</span><br><span class="line">    mesh.add_face(face_vhandles);</span><br><span class="line">    <span class="comment">// write mesh to output.obj</span></span><br><span class="line">    <span class="keyword">try</span></span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">if</span> (!OpenMesh::IO::write_mesh(mesh, <span class="string">&quot;output.off&quot;</span>))</span><br><span class="line">        {</span><br><span class="line">            <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Cannot write mesh to file &apos;output.off&apos;&quot;</span> &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">catch</span> (<span class="built_in">std</span>::exception&amp; x)</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; x.what() &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="43-using-iterators-and-circulators">4.3 Using iterators and circulators</h3><blockquote>
+<ul>
+<li>linearly enumerate  e.g all vertices of a mesh</li>
+<li>read &amp; write mesh also included</li>
+<li>have access to one ring neighbours</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="comment">// -------------------- OpenMesh</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;OpenMesh/Core/IO/MeshIO.hh&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> OpenMesh::TriMesh_ArrayKernelT&lt;&gt;  MyMesh;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> **argv)</span></span><br><span class="line"></span>{</span><br><span class="line">    MyMesh  mesh;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// read mesh from stdin</span></span><br><span class="line">    <span class="keyword">if</span> (!OpenMesh::IO::read_mesh(mesh, argv[<span class="number">2</span>]))</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Error: Cannot read mesh from &quot;</span> &lt;&lt; argv[<span class="number">2</span>] &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// this vector stores the computed centers of gravity</span></span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;MyMesh::Point&gt;  cogs;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;MyMesh::Point&gt;::iterator cog_it;</span><br><span class="line">    cogs.reserve(mesh.n_vertices());</span><br><span class="line">    <span class="comment">// smoothing mesh argv[1] times</span></span><br><span class="line">    MyMesh::VertexIter          v_it, v_end(mesh.vertices_end());</span><br><span class="line">    MyMesh::VertexVertexIter    vv_it; <span class="comment">// one ring iterator</span></span><br><span class="line">    MyMesh::Point               cog;</span><br><span class="line">    MyMesh::Scalar              valence;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span>                i, N(atoi(argv[<span class="number">1</span>]));</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; N; ++i)</span><br><span class="line">    {</span><br><span class="line">        cogs.clear();</span><br><span class="line">        <span class="comment">// loop through all the vertices.</span></span><br><span class="line">        <span class="keyword">for</span> (v_it = mesh.vertices_begin(); v_it != v_end; ++v_it)</span><br><span class="line">        {</span><br><span class="line">            cog[<span class="number">0</span>] = cog[<span class="number">1</span>] = cog[<span class="number">2</span>] = valence = <span class="number">0.0</span>;</span><br><span class="line">            <span class="comment">// loop through one ring iterator for each vertices</span></span><br><span class="line">            <span class="keyword">for</span> (vv_it = mesh.vv_iter(*v_it); vv_it.is_valid(); ++vv_it)</span><br><span class="line">            {</span><br><span class="line">                cog += mesh.point(*vv_it);</span><br><span class="line">                ++valence;</span><br><span class="line">            }</span><br><span class="line">            cogs.push_back(cog / valence);</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (v_it = mesh.vertices_begin(), cog_it = cogs.begin();</span><br><span class="line">            v_it != v_end; ++v_it, ++cog_it)</span><br><span class="line">            <span class="keyword">if</span> (!mesh.is_boundary(*v_it))</span><br><span class="line">                mesh.set_point(*v_it, *cog_it);</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// write mesh to stdout</span></span><br><span class="line">    <span class="keyword">if</span> (!OpenMesh::IO::write_mesh(mesh, argv[<span class="number">3</span>]))</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Error: cannot write mesh to &quot;</span> &lt;&lt; argv[<span class="number">3</span>] &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">### <span class="number">4.4</span> Using properties</span></span><br><span class="line">&gt; * How to add and remove custom properties</span><br><span class="line">&gt; * How to get and <span class="built_in">set</span> the value of a custom propertysubl</span><br><span class="line">&gt; * We want to store the data in the mesh and let OpenMesh manage the data</span><br><span class="line">&gt; * custom property</span><br><span class="line">&gt;     - user-defined property and is accessed via the member function property iva a handle and an entity handle</span><br><span class="line">&gt; - useful points:</span><br><span class="line">&gt;     + <span class="function">add <span class="title">properity</span> <span class="params">(a new <span class="built_in">vector</span> variable)</span></span><br><span class="line">&gt;     + have access to the member in the new <span class="title">variable</span> <span class="params">(mesh.property(cogs,*v_it)</span>)</span><br><span class="line">```C++</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;<span class="built_in">vector</span>&gt;</span><br><span class="line"><span class="comment">// --------------------</span></span><br><span class="line">#include &lt;OpenMesh/Core/IO/MeshIO.hh&gt;</span><br><span class="line">#include &lt;OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh&gt;</span><br><span class="line"><span class="keyword">typedef</span> OpenMesh::TriMesh_ArrayKernelT&lt;&gt;  MyMesh</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> **argv)</span></span><br><span class="line"></span>{</span><br><span class="line">    MyMesh  mesh;</span><br><span class="line">    <span class="comment">// check command line options</span></span><br><span class="line">    <span class="keyword">if</span> (argc != <span class="number">4</span>)</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Usage:  &quot;</span> &lt;&lt; argv[<span class="number">0</span>] &lt;&lt; <span class="string">&quot; #iterations infile outfile\n&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// read mesh from stdin</span></span><br><span class="line">    <span class="keyword">if</span> (!OpenMesh::IO::read_mesh(mesh, argv[<span class="number">2</span>]))</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Error: Cannot read mesh from &quot;</span> &lt;&lt; argv[<span class="number">2</span>] &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// this vertex property stores the computed centers of gravity</span></span><br><span class="line">    OpenMesh::VPropHandleT&lt;MyMesh::Point&gt; cogs;</span><br><span class="line">    mesh.add_property(cogs);</span><br><span class="line">    <span class="comment">// smoothing mesh argv[1] times</span></span><br><span class="line">    MyMesh::VertexIter          v_it, v_end(mesh.vertices_end());</span><br><span class="line">    MyMesh::VertexVertexIter    vv_it;</span><br><span class="line">    MyMesh::Point               cog;</span><br><span class="line">    MyMesh::Scalar              valence;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span>                i, N(atoi(argv[<span class="number">1</span>]));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; N; ++i)</span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">for</span> (v_it = mesh.vertices_begin(); v_it != v_end; ++v_it)</span><br><span class="line">        {</span><br><span class="line">            mesh.property(cogs, *v_it).vectorize(<span class="number">0.0f</span>);</span><br><span class="line">            valence = <span class="number">0.0</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (vv_it = mesh.vv_iter(*v_it); vv_it; ++vv_it)</span><br><span class="line">            {</span><br><span class="line">                <span class="comment">// get the corresponding cog</span></span><br><span class="line">                mesh.property(cogs, *v_it) += mesh.point(*vv_it);</span><br><span class="line">                ++valence;</span><br><span class="line">            }</span><br><span class="line">            mesh.property(cogs, *v_it) /= valence;</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (v_it = mesh.vertices_begin(); v_it != v_end; ++v_it)</span><br><span class="line">            <span class="keyword">if</span> (!mesh.is_boundary(*v_it))</span><br><span class="line">                mesh.set_point(*v_it, mesh.property(cogs, *v_it));</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// write mesh to stdout</span></span><br><span class="line">    <span class="keyword">if</span> (!OpenMesh::IO::write_mesh(mesh, argv[<span class="number">3</span>]))</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Error: cannot write mesh to &quot;</span> &lt;&lt; argv[<span class="number">3</span>] &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="45-using-stl-algorithms">4.5 Using STL algorithms</h3><blockquote>
+<ul>
+<li>in openmesh we all use template, no class.</li>
+<li>currently ignore.</li>
+</ul>
+</blockquote>
+<h3 id="46-using-standard-properties">4.6 <a href="http://www.openmesh.org/media/Documentations/OpenMesh-Doc-Latest/a00052.html" target="_blank" rel="external">Using standard properties</a></h3><blockquote>
+<ul>
+<li>add and remove a standard property</li>
+<li>get and set value of a standard property</li>
+<li>get normal information: mesh.request_XX_normals()</li>
+<li>request,release, has XXX functions<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="comment">// --------------------</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;OpenMesh/Core/IO/MeshIO.hh&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> OpenMesh::TriMesh_ArrayKernelT&lt;&gt;  MyMesh;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> **argv)</span></span><br><span class="line"></span>{</span><br><span class="line">    MyMesh  mesh;</span><br><span class="line">    <span class="keyword">if</span> (argc != <span class="number">2</span>)</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Usage: &quot;</span> &lt;&lt; argv[<span class="number">0</span>] &lt;&lt; <span class="string">&quot; &lt;input&gt;\n&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// request vertex normals, so the mesh reader can use normal information</span></span><br><span class="line">    <span class="comment">// if available</span></span><br><span class="line">    mesh.request_vertex_normals();</span><br><span class="line">    <span class="comment">// assure we have vertex normals</span></span><br><span class="line">    <span class="keyword">if</span> (!mesh.has_vertex_normals())</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;ERROR: Standard vertex property &apos;Normals&apos; not available!\n&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    OpenMesh::IO::Options opt;</span><br><span class="line">    <span class="keyword">if</span> (!OpenMesh::IO::read_mesh(mesh, argv[<span class="number">1</span>], opt))</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Error loading mesh from file &quot;</span> &lt;&lt; argv[<span class="number">1</span>] &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// If the file did not provide vertex normals, then calculate them</span></span><br><span class="line">    <span class="keyword">if</span> (!opt.check(OpenMesh::IO::Options::VertexNormal))</span><br><span class="line">    {</span><br><span class="line">        <span class="comment">// we need face normals to update the vertex normals</span></span><br><span class="line">        mesh.request_face_normals();</span><br><span class="line">        <span class="comment">// let the mesh update the normals</span></span><br><span class="line">        mesh.update_normals();</span><br><span class="line">        <span class="comment">// dispose the face normals, as we don&apos;t need them anymore</span></span><br><span class="line">        mesh.release_face_normals();</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// move all vertices one unit length along it&apos;s normal direction</span></span><br><span class="line">    <span class="keyword">for</span> (MyMesh::VertexIter v_it = mesh.vertices_begin();</span><br><span class="line">        v_it != mesh.vertices_end(); ++v_it)</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Vertex #&quot;</span> &lt;&lt; *v_it &lt;&lt; <span class="string">&quot;: &quot;</span> &lt;&lt; mesh.point(*v_it);</span><br><span class="line">        mesh.set_point(*v_it, mesh.point(*v_it) + mesh.normal(*v_it));</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">&quot; moved to &quot;</span> &lt;&lt; mesh.point(*v_it) &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// don&apos;t need the normals anymore? Remove them!</span></span><br><span class="line">    mesh.release_vertex_normals();</span><br><span class="line">    <span class="comment">// just check if it really works</span></span><br><span class="line">    <span class="keyword">if</span> (mesh.has_vertex_normals())</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Ouch! ERROR! Shouldn&apos;t have any vertex normals anymore!\n&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="47-using-mesh-attributes-and-traits">4.7 Using mesh attributes and traits</h3><blockquote>
+<ul>
+<li>chagne the data type for positions, normals, colors and texture.</li>
+<li>With traits, we can customize and extend the mesh data structure.<ul>
+<li>change the data type for positions, normals, colors and texture coordinates</li>
+<li>extend mesh entities Vertex, Face, Edge, and Halfedge</li>
+</ul>
+</li>
+</ul>
+<h3 id="48-extending-the-mesh-using-traits">4.8 Extending the mesh using traits</h3><ul>
+<li>how to extend the behaviour of entities using traits<ul>
+<li>we can chagne the behaviour of the mesh entties Vertex, Face, Edge, and Halfedge</li>
+</ul>
+</li>
+<li>In the example rather than add cog as a new property, we add cog to the vertex definition.</li>
+</ul>
+</blockquote>
+<h3 id="49-deleting-geometry-elements">4.9 Deleting geometry elements</h3><blockquote>
+<ul>
+<li>how to remove a face and verties from a mesh<ul>
+<li>If we want our mesh class to be able to remove vertices, faces or edges we have to extend the default traits for our mesh class. Vertices, faces and (half-)edges need the OpenMesh::Attributes::Status attribute which is used to hold the flag &#x201C;deleted&#x201D; if an element is deleted.<br>If isolated vertices result in a face deletion they have to be deleted manually. If you want this to happen automatically, change the second parameter to true.<br>```C++<br>#include <iostream><br>// &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2013; OpenMesh<br>#include <openmesh core="" io="" meshio.hh=""><br>#include <openmesh core="" mesh="" polymesh_arraykernelt.hh=""><br>#include <openmesh core="" system="" config.h=""><br>#include <openmesh core="" mesh="" status.hh=""><br>// &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;-<br>struct MyTraits : public OpenMesh::DefaultTraits<br>{<br>};<br>typedef OpenMesh::PolyMesh_ArrayKernelT<mytraits>  MyMesh;<br>// &#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;-<br>// Build a simple cube and delete it except one face</mytraits></openmesh></openmesh></openmesh></openmesh></iostream></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>int main()<br>{<br>    MyMesh mesh;<br>    // the request has to be called before a vertex/face/edge can be deleted.<br>    //it grants access to the status attribute<br>    mesh.request_face_status();<br>    mesh.request_edge_status();<br>    mesh.request_vertex_status();<br>    // generate vertices<br>    MyMesh::VertexHandle vhandle[8];<br>    MyMesh::FaceHandle   fhandle[6];<br>    vhandle[0] = mesh.add_vertex(MyMesh::Point(-1, -1, 1));<br>    vhandle[1] = mesh.add_vertex(MyMesh::Point(1, -1, 1));<br>    vhandle[2] = mesh.add_vertex(MyMesh::Point(1, 1, 1));<br>    vhandle[3] = mesh.add_vertex(MyMesh::Point(-1, 1, 1));<br>    vhandle[4] = mesh.add_vertex(MyMesh::Point(-1, -1, -1));<br>    vhandle[5] = mesh.add_vertex(MyMesh::Point(1, -1, -1));<br>    vhandle[6] = mesh.add_vertex(MyMesh::Point(1, 1, -1));<br>    vhandle[7] = mesh.add_vertex(MyMesh::Point(-1, 1, -1));<br>    // generate (quadrilateral) faces<br>    std::vector<mymesh::vertexhandle>  tmp_face_vhandles;<br>    tmp_face_vhandles.clear();<br>    tmp_face_vhandles.push_back(vhandle[0]);<br>    tmp_face_vhandles.push_back(vhandle[1]);<br>    tmp_face_vhandles.push_back(vhandle[2]);<br>    tmp_face_vhandles.push_back(vhandle[3]);<br>    fhandle[0] = mesh.add_face(tmp_face_vhandles);</mymesh::vertexhandle></p>
+<pre><code>tmp_face_vhandles.clear();
+tmp_face_vhandles.push_back(vhandle[<span class="number">7</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">6</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">5</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">4</span>]);
+fhandle[<span class="number">1</span>] = mesh.add_face(tmp_face_vhandles);
+
+tmp_face_vhandles.clear();
+tmp_face_vhandles.push_back(vhandle[<span class="number">1</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">0</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">4</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">5</span>]);
+fhandle[<span class="number">2</span>] = mesh.add_face(tmp_face_vhandles);
+
+tmp_face_vhandles.clear();
+tmp_face_vhandles.push_back(vhandle[<span class="number">2</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">1</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">5</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">6</span>]);
+fhandle[<span class="number">3</span>] = mesh.add_face(tmp_face_vhandles);
+tmp_face_vhandles.clear();
+tmp_face_vhandles.push_back(vhandle[<span class="number">3</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">2</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">6</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">7</span>]);
+fhandle[<span class="number">4</span>] = mesh.add_face(tmp_face_vhandles);
+
+tmp_face_vhandles.clear();
+tmp_face_vhandles.push_back(vhandle[<span class="number">0</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">3</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">7</span>]);
+tmp_face_vhandles.push_back(vhandle[<span class="number">4</span>]);
+fhandle[<span class="number">5</span>] = mesh.add_face(tmp_face_vhandles);
+<span class="comment">// And now delete all faces and vertices</span>
+<span class="comment">// except face (vh[7], vh[6], vh[5], vh[4])</span>
+<span class="comment">// whose handle resides in fhandle[1]</span>
+
+<span class="comment">// Delete face 0</span>
+mesh.delete_face(fhandle[<span class="number">0</span>], <span class="literal">false</span>);
+<span class="comment">// ... face 2</span>
+mesh.delete_face(fhandle[<span class="number">2</span>], <span class="literal">false</span>);
+<span class="comment">// ... face 3</span>
+mesh.delete_face(fhandle[<span class="number">3</span>], <span class="literal">false</span>);
+<span class="comment">// ... face 4</span>
+mesh.delete_face(fhandle[<span class="number">4</span>], <span class="literal">false</span>);
+<span class="comment">// ... face 5</span>
+mesh.delete_face(fhandle[<span class="number">5</span>], <span class="literal">false</span>);
+
+<span class="comment">// If isolated vertices result in a face deletion</span>
+<span class="comment">// they have to be deleted manually. If you want this</span>
+<span class="comment">// to happen automatically, change the second parameter</span>
+<span class="comment">// to true.</span>
+<span class="comment">// Now delete the isolated vertices 0, 1, 2 and 3</span>
+mesh.delete_vertex(vhandle[<span class="number">0</span>], <span class="literal">false</span>);
+mesh.delete_vertex(vhandle[<span class="number">1</span>], <span class="literal">false</span>);
+mesh.delete_vertex(vhandle[<span class="number">2</span>], <span class="literal">false</span>);
+mesh.delete_vertex(vhandle[<span class="number">3</span>], <span class="literal">false</span>);
+<span class="comment">// Delete all elements that are marked as deleted</span>
+<span class="comment">// from memory.</span>
+mesh.garbage_collection();
+<span class="comment">// write mesh to output.obj</span>
+<span class="keyword">try</span> {
+    <span class="keyword">if</span> (!OpenMesh::IO::write_mesh(mesh, <span class="string">&quot;output.off&quot;</span>)) {
+        <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; <span class="string">&quot;Cannot write mesh to file &apos;output.off&apos;&quot;</span> &lt;&lt; <span class="built_in">std</span>::endl;
+        <span class="keyword">return</span> <span class="number">1</span>;
+    }
+}
+<span class="keyword">catch</span> (<span class="built_in">std</span>::exception&amp; x)
+{
+    <span class="built_in">std</span>::<span class="built_in">cerr</span> &lt;&lt; x.what() &lt;&lt; <span class="built_in">std</span>::endl;
+    <span class="keyword">return</span> <span class="number">1</span>;
+}
+<span class="keyword">return</span> <span class="number">0</span>;
+</code></pre><p>}<br>``` </p>
+<h3 id="410-using-ioopenmeshiooptions">4.10 Using IO::OpenMesh::IO::Options</h3><blockquote>
+<ul>
+<li>How to control the behaviour of Mesh::IO::read_mesh()</li>
+<li>How to control the behaviour of Mesh::IO::write_mesh()</li>
+<li>how to read binary code</li>
+</ul>
+</blockquote>
+<h3 id="411-storing-custom-properties">4.11 Storing custom properties</h3><h2 id="include-needed-file">#include needed file:</h2><blockquote>
+<ul>
+<li>PolyMesh: #include <openmesh core="" mesh="" polymesh_arraykernelt.hh=""></openmesh></li>
+<li>TriMesh: #include <openmesh core="" mesh="" trimesh_arraykernelt.hh=""></openmesh></li>
+<li>I/O: #include <openmesh core="" io="" meshio.hh=""></openmesh></li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/C/">C++</a> <a class="tag tag--primary tag--small t-link" href="/tags/openmesh/">openmesh</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/09/03/javaLearning/"  data-tooltip="javaLearning">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/09/02/24650StudyNote/" data-tooltip="24650StudyNote">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2015/09/02/openmesh/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2015/09/02/openmesh/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2015/09/02/openmesh/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+            <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2016 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/09/03/javaLearning/"  data-tooltip="javaLearning">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/09/02/24650StudyNote/" data-tooltip="24650StudyNote">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2015/09/02/openmesh/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2015/09/02/openmesh/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2015/09/02/openmesh/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>Student</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Pittsburgh USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js" type="text/javascript"></script>
+<!--SCRIPTS END-->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'lbtinglb';
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+
+
+</html>

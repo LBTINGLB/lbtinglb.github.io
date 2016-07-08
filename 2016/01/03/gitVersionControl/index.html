@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>gitVersionControl - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">gitVersionControl</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Sun Jan 03 2016 21:31:04 GMT+0800">
+        Jan 03, 2016
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/git/">git</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Notes and ideas when learning about Github using ubuntu<br><a id="more"></a></p>
+<p>#</p>
+<!-- toc -->
+<ul>
+<li><a href="#&#x5ED6;&#x96EA;&#x5CF0;git&#x6559;&#x7A0B;httpwwwliaoxuefengcomwiki0013739516305929606dd18361248578c67b8067c8c017b000001373962845513aefd77a99f4145f0a2c7a7ca057e7570000"><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001373962845513aefd77a99f4145f0a2c7a7ca057e7570000" target="_blank" rel="external">&#x5ED6;&#x96EA;&#x5CF0;GIT&#x6559;&#x7A0B;</a></a></li>
+<li><a href="#trygit-coursehttpstrygithubiolevels1challenges1"><a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">tryGit Course</a></a><ul>
+<li><a href="#learning-notes">Learning notes</a></li>
+</ul>
+</li>
+<li><a href="#ubuntu-command">Ubuntu command</a></li>
+<li><a href="#others">Others:</a></li>
+<li><a href="#introduction-to-git-with-scott-chacon-of-githubhttpswwwyoutubecomwatchvzdr433b0hjy"><a href="https://www.youtube.com/watch?v=ZDR433b0HJY" target="_blank" rel="external">Introduction to Git with Scott Chacon of GitHub</a></a></li>
+</ul>
+<!-- tocstop -->
+<h1 id="&#x5ED6;&#x96EA;&#x5CF0;git&#x6559;&#x7A0B;"><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001373962845513aefd77a99f4145f0a2c7a7ca057e7570000" target="_blank" rel="external">&#x5ED6;&#x96EA;&#x5CF0;GIT&#x6559;&#x7A0B;</a></h1><h1 id="trygit-course"><a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">tryGit Course</a></h1><h2 id="learning-notes">Learning notes</h2><blockquote>
+<ul>
+<li>show the current path: pwd</li>
+<li>show the hidden files: ls -ah</li>
+<li>[ ] initialize a git repository<ul>
+<li><code>git init</code></li>
+</ul>
+</li>
+<li>[ ] add a file to git repository<ul>
+<li>1st step: git add &#x201C;filename&#x201D;<ul>
+<li>add many files of the same type: <code>git add &apos;*.txt&apos;</code></li>
+</ul>
+</li>
+<li>2nd step: git commit -m &#x201C;comment&#x201D;<ul>
+<li>-m means that you are writing the explanation for current push</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] check status and see difference<ul>
+<li><code>git status</code> # tell you about the current status of the repository     </li>
+<li><code>git diff</code>   # find out what has changed</li>
+<li><code>git diff HEAD -- &lt;file name&gt;</code></li>
+<li><code>git diff HEAD</code><ul>
+<li>we want the diff of our most recent commit, which we can refer to using the <strong>HEAD</strong> pointer.</li>
+</ul>
+</li>
+<li><code>git diff --staged</code> <ul>
+<li>check the changes we just staged</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] check version and go back<ul>
+<li><code>git log</code></li>
+<li><code>git log --pretty=oneline</code> # show files in one linegit</li>
+<li><code>git reset -- hard HEAD^</code><ul>
+<li>HEAD^ is the last version, HEAD^ is last and last version,  you can use HEAD~100 to go to 100 versions back</li>
+</ul>
+</li>
+<li><code>git reflog</code><ul>
+<li>a writeup for all your records</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] learning directory &amp; repository &amp; stage<ul>
+<li>learning directory -&gt; learnGit folder</li>
+<li>repository -&gt; .git ban</li>
+<li>stage</li>
+</ul>
+</li>
+<li>[ ] How to cancel the changes <ul>
+<li>[] resetting the Stage<ul>
+<li><code>git reset &lt;file&gt;</code><ul>
+<li>we unstage the files (but the file is still there.)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] discard changes in the working directory(You want to discard changes, and they have not already been added.)<ul>
+<li><code>git checkout -- &lt;file&gt;</code><ul>
+<li>&#x2013; is important because without &#x2013;, checkout would become switch to another branch</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] discard changes in the repository (You want to discard changes, and they have already been added.)<ul>
+<li><code>git reset HEAD &lt;file&gt;</code><ul>
+<li>by using <strong>git reset</strong>, you can retreat the change from reprository to working area</li>
+</ul>
+</li>
+<li>then use <code>git checkout -- &lt;file&gt;</code></li>
+</ul>
+</li>
+<li>[ ] already been added and commited<ul>
+<li>use git reset &#x2013; hard HEAD</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] delete files<ul>
+<li>two options<ul>
+<li>you really want to delete the file from git repository<ul>
+<li><code>git rm &lt;filename&gt;</code><ul>
+<li>it would remove the actual files from the disk and stage the removal of the files </li>
+</ul>
+</li>
+<li>git commit -m &#x201C;Add the comment you want&#x201D;</li>
+</ul>
+</li>
+<li>you want to retrive the file back<ul>
+<li>git checkout &#x2013; <filename></filename></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] delete a branch<ul>
+<li><code>git branch -d &lt;branch name&gt;</code></li>
+</ul>
+</li>
+<li>[ ] push the local files to the remote repository (such as github)<ul>
+<li>connect a remote repository<ul>
+<li><code>git remote add origin git@server-name:path/repo-name.git</code></li>
+</ul>
+</li>
+<li>Pushing Remotely<ul>
+<li><code>git push -u origin master</code><ul>
+<li><strong>origin</strong>: the name of our remote</li>
+<li><em>master*</em>: the name of the default local branch</li>
+<li><strong>-u</strong>: it tells Git to remember the parameters, so that next time we can simply run <strong>git push</strong> and git will know what to do</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>git push origin master</code><ul>
+<li>if you want to push the newest update, just use <code>git push origin master</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] check for changes on our Github repository sand pull down any new changes<ul>
+<li><code>git pull origin master</code></li>
+</ul>
+</li>
+<li>[ ] <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375233990231ac8cf32ef1b24887a5209f83e01cb94b000" target="_blank" rel="external">how to clone repository from remote</a></li>
+<li>[ ] <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000" target="_blank" rel="external">build and combine branch</a><ul>
+<li>why create a new branch? - you can keep your own work in your own respository while not interfering other people</li>
+<li><code>git checkout -b &lt;new branch name&gt;</code><ul>
+<li>create a new branch</li>
+<li>it works as two commands 1. git barnch dev 2. git checkout dev</li>
+</ul>
+</li>
+<li><code>git branch</code><ul>
+<li>check current branch</li>
+</ul>
+</li>
+<li><code>git merge &lt;the name of the branch you want to merge&gt;</code><ul>
+<li>first, checkout to the branch that you want as the final one.</li>
+<li>type <code>git merge &lt;branch with changes&gt;</code></li>
+</ul>
+</li>
+<li><code>git branch -d &lt;branch name&gt;</code><ul>
+<li>delete the branch</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] merge confliction<ul>
+<li><code>git log --graph --pretty=oneline --abbrev-commit</code></li>
+<li><code>git log --oneline --graph --all --decorate</code><ul>
+<li>show the git log in a beautiful graph</li>
+</ul>
+</li>
+<li>when there is an conflict in git so that it could not merge by itself, you need to solve the conflict first.</li>
+</ul>
+</li>
+<li>[ ] how to manage confliction and management strategy<ul>
+<li>`git merge &#x2013;no-ff -m &#x201C;<comment>&#x201C; dev<ul>
+<li>do not merge with <em>Fast forward</em> model</li>
+<li>Using FF model cannot let you view the merge history, but normal forward model can.</li>
+</ul>
+</comment></li>
+<li>keep master stable, work on other repository</li>
+</ul>
+</li>
+<li>[ ] bug branch<ul>
+<li>if you have a bug, you can use a temporary branch to fix it. After the repairment, you can merge them and delete the temporary branch.</li>
+<li><a href="https://git-scm.com/docs/git-stash" target="_blank" rel="external"><code>git stash</code></a><ul>
+<li>Stash the changes in a dirty working directory away<br>git</li>
+</ul>
+</li>
+<li><code>git stash apply</code><ul>
+<li>restore the working directory but keep the stash content(you need to insert <code>git stash drop</code> to delete the stash)</li>
+</ul>
+</li>
+<li><code>git stash pop</code><ul>
+<li>restor the working directory and delete the stash content</li>
+</ul>
+</li>
+<li>summary: dev&#x4E0A;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x4FEE;&#x590D;master&#x4E0A;&#x7684;bug&#xFF0C;&#x4F7F;&#x7528;git stash &#x4FDD;&#x5B58;dev&#x73B0;&#x573A;&#x540E;&#x5207;&#x6362;&#x81F3;master&#x4FEE;&#x590D;bug&#xFF0C;&#x4FEE;&#x590D;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;dev&#x4E0A;&#x7684;&#x76F8;&#x540C;bug&#x88AB;&#x4FEE;&#x590D;&#xFF0C;&#x9700;&#x8981;&#x5C06;master&#x5408;&#x5E76;&#x81F3;dev&#x4E0A;&#xFF1A;checkout dev&#x5207;&#x6362;&#x56DE;dev&#x5206;&#x652F;&#xFF0C;git merge master&#x5408;&#x5E76;master&#x81F3;dev&#x4E0A;&#xFF0C;&#x5219;dev&#x4E0A;&#x5DF2;&#x7ECF;&#x4FEE;&#x590D;&#x7684;bug&#x4F1A;&#x88AB;&#x540C;&#x6B65;&#x81F3;dev&#x4E0A;&#x3002;</li>
+</ul>
+</li>
+<li>[ ] feature branch<ul>
+<li>when adding some new functionality, never did you want to distrub the main branch. So when adding a new feature, you&#x2019;d better add a new feature branch. Work on it, after the whole development the merge and delete i.t</li>
+<li>&#x2018;git branch -D feature-vulcan&#x2019;<ul>
+<li>delete a branch that is not fully merged</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] multiple people work on the same project<ul>
+<li><code>git push origin &lt;branch name&gt;</code><ul>
+<li>push local files to the github<ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013760174128707b935b0be6fc4fc6ace66c4f15618f8d000" target="_blank" rel="external">multiple people working together guidance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] build a tag for your repository<ul>
+<li>Sometimes you want to find a specific version. Instead of trying to find the commit id as &#x201C;892b892a3f7&#x201D;, you can find it via label. (git show v1.1)</li>
+<li><code>git tag &lt;tag name&gt;</code><ul>
+<li>tag the current branch</li>
+<li><code>git tag -a &lt;tag name&gt; -m &lt;comment for the tag&gt; &lt;commit id&gt;</code><ul>
+<li>tag a history version</li>
+</ul>
+</li>
+<li><code>git tag -d &lt;tag name&gt;</code><ul>
+<li>delete a tag</li>
+</ul>
+</li>
+<li><code>git tag</code><ul>
+<li>show the tag for the current branch</li>
+</ul>
+</li>
+<li><code>git push origin &lt;tag name&gt;</code><ul>
+<li>push tag to the remote repository</li>
+</ul>
+</li>
+<li><code>git push origin tags</code><ul>
+<li>push tags to the remote repository</li>
+</ul>
+</li>
+<li><code>git push origin :refs/tags/&lt;tagname&gt;</code><ul>
+<li>delete a tag on a remote repository</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="ubuntu-command">Ubuntu command</h1><blockquote>
+<ul>
+<li>see the hidden file:<ul>
+<li>ctrl + H</li>
+</ul>
+</li>
+<li><code>cat</code> command<ul>
+<li>cat file1 file2 &#x2026; will show the contents of file, file2 and the others one after the other, as if the contents were in a single file. See thecatgit </li>
+</ul>
+</li>
+<li>create a new txt file<ul>
+<li><code>touch</code> <filename></filename></li>
+</ul>
+</li>
+<li>delete a file<ul>
+<li><code>rm</code> remove a file</li>
+<li><code>rm -rf &lt;filename&gt;</code> remove a folderpmd</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="others">Others:</h1><blockquote>
+<ul>
+<li>Staged files:<ul>
+<li>it means the files we have told git that are ready to be committed.</li>
+<li></li>
+</ul>
+</li>
+<li>if you are working on a bug branch, and the origin/master changed:<ul>
+<li>do <code>git merge origin/master</code> with the bug branch</li>
+<li>solve the conflicts. Then your bug branch would be in update with the orgin/master branch</li>
+</ul>
+</li>
+<li>get all the updates from the remote branch:<ul>
+<li><a href="https://git-scm.com/docs/git-fetch" target="_blank" rel="external">get fetch &#x2013;all</a></li>
+</ul>
+</li>
+<li>you create a local bug-branch -&gt; <code>git push -u gitlab bug-branch</code><ul>
+<li>the mean of this command is that now you push your local new branch to your gitlab account. In the future, you can just safely type <code>git push</code> to push all the changes.</li>
+</ul>
+</li>
+<li>restore your branch back to some time /or new branch<ul>
+<li>restore your master branch to origin/master branch<ul>
+<li><code>git reset --hard origin/master</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>visualize the gitlab tree<ul>
+<li><code>gitk --all&amp;</code></li>
+</ul>
+</li>
+<li>pre-hook failure<ul>
+<li><code>vim .git/config</code></li>
+<li>use <code>git config</code> to replace and change your name or email!</li>
+</ul>
+</li>
+<li><a href="https://ariejan.net/2011/07/05/git-squash-your-latests-commits-into-one/" target="_blank" rel="external">How to Squash Two Commits</a></li>
+<li><a href="http://chris.beams.io/posts/git-commit/" target="_blank" rel="external">How to Write a Git Commit Message</a><ul>
+<li><ol>
+<li>Separate subject from body with a blank line<ul>
+<li>Example: &#x201C;Fix typo in introduction to user guide&#x201D;</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Derezz <span class="keyword">the</span> master control program</span><br><span class="line">MCP turned out <span class="keyword">to</span> be evil <span class="keyword">and</span> had become intent <span class="function_start"><span class="keyword">on</span></span> world domination.</span><br><span class="line">This commit throws Tron&apos;s disc <span class="keyword">into</span> MCP (causing <span class="keyword">its</span> deresolution)</span><br><span class="line"><span class="keyword">and</span> turns <span class="keyword">it</span> <span class="keyword">back</span> <span class="keyword">into</span> a chess game.</span><br></pre></td></tr></table></figure>
+<ul>
+<li><ol>
+<li>Limit the subject line to 50 characters</li>
+</ol>
+</li>
+<li><ol>
+<li>Capitalize the subject line</li>
+</ol>
+</li>
+<li><ol>
+<li>Don not end the subject wline with a period</li>
+</ol>
+</li>
+<li><ol>
+<li>Use the imperative mood in the subject line<ul>
+<li>spoken or written as if giving a command or instruction</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><ol>
+<li>Wrap the body at 72 characters</li>
+</ol>
+</li>
+<li><ol>
+<li>Use the body to explain what and why vs. how</li>
+</ol>
+<ul>
+<li>amend the commit log:</li>
+</ul>
+</li>
+<li>git commit -amend<ul>
+<li>git grep + <code>things you want to search for</code></li>
+</ul>
+<ul>
+<li>Print lines matching a pattern</li>
+</ul>
+<ul>
+<li>git blame(find when each line in a file was changed)</li>
+<li>git bisect(version switch)</li>
+<li><a href="http://stackoverflow.com/questions/14467953/shorthand-to-view-diff-of-previous-version-of-file/14468031#14468031" target="_blank" rel="external">shorthand to view diff of previous version of file</a></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="introduction-to-git-with-scott-chacon-of-github"><a href="https://www.youtube.com/watch?v=ZDR433b0HJY" target="_blank" rel="external">Introduction to Git with Scott Chacon of GitHub</a></h1><blockquote>
+<ul>
+<li>Book: <code>Pro Git</code></li>
+<li>git-scm</li>
+<li>git reference   </li>
+<li><a href="http://stackoverflow.com/questions/292357/what-are-the-differences-between-git-pull-and-git-fetch" target="_blank" rel="external">git push VS git pull</a></li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/git/">git</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/11/2016springToDoList/"  data-tooltip="2016springToDoList">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/11/20/cocSummary/" data-tooltip="cocSummary">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/01/03/gitVersionControl/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/01/03/gitVersionControl/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/01/03/gitVersionControl/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+            <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2016 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/11/2016springToDoList/"  data-tooltip="2016springToDoList">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/11/20/cocSummary/" data-tooltip="cocSummary">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/01/03/gitVersionControl/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/01/03/gitVersionControl/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/01/03/gitVersionControl/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>Student</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Pittsburgh USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js" type="text/javascript"></script>
+<!--SCRIPTS END-->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'lbtinglb';
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+
+
+</html>
