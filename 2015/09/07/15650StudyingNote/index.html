@@ -24,7 +24,7 @@ var _hmt = _hmt || [];
         <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
     
     <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
     <!--STYLES END-->
     
     
@@ -162,13 +162,13 @@ var _hmt = _hmt || [];
         <h1 class="post-title" itemprop="headline">15650StudyingNote</h1>
     
     <div class="post-meta">
-    <time  itemprop="datePublished" content="Mon Sep 07 2015 00:20:46 GMT+0800">
+    <time  itemprop="datePublished" content="Mon Sep 07 2015 00:20:46 GMT-0400">
         Sep 07, 2015
     </time>
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/CMU/">CMU</a>
+    <a class="category-link" href="/categories/CMU/">CMU</a>, <a class="category-link" href="/categories/CMU/technique/">technique</a>
 
 
     
@@ -177,7 +177,7 @@ var _hmt = _hmt || [];
     
     <div class="post-content markdown main-content-wrap" itemprop="articleBody">
         <p>Studying notes when taking this lesson.<br><a id="more"></a></p>
-<h1 id="15650-algorithm-design-and-advanced-data-structure">15650 Algorithm Design and Advanced Data Structure</h1><!-- toc -->
+<h1 id="15650-algorithm-design-and-advanced-data-structure"><a href="#15650-Algorithm-Design-and-Advanced-Data-Structure" class="headerlink" title="15650 Algorithm Design and Advanced Data Structure"></a>15650 Algorithm Design and Advanced Data Structure</h1><!-- toc -->
 <ul>
 <li><a href="#week-1">Week 1</a><ul>
 <li><a href="#lec00-introduction">lec00 Introduction</a></li>
@@ -222,7 +222,7 @@ var _hmt = _hmt || [];
 <li><a href="#red-black-tree-map-in-c">Red black tree &amp; map in C++</a></li>
 </ul>
 <!-- tocstop -->
-<h2 id="week-1">Week 1</h2><h3 id="lec00-introduction">lec00 Introduction</h3><blockquote>
+<h2 id="week-1"><a href="#Week-1" class="headerlink" title="Week 1"></a>Week 1</h2><h3 id="lec00-introduction"><a href="#lec00-Introduction" class="headerlink" title="lec00 Introduction"></a>lec00 Introduction</h3><blockquote>
 <ul>
 <li>Analysi of Algorithms<ul>
 <li>Prove <strong>correctness</strong></li>
@@ -233,7 +233,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec01-minimum-spanning-trees">Lec01 Minimum Spanning Trees</h3><blockquote>
+<h3 id="lec01-minimum-spanning-trees"><a href="#Lec01-Minimum-Spanning-Trees" class="headerlink" title="Lec01 Minimum Spanning Trees"></a>Lec01 Minimum Spanning Trees</h3><blockquote>
 <ul>
 <li>Graph:<ul>
 <li>specify pairwise relationships between objects</li>
@@ -264,8 +264,8 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </li>
-<li>Prim&#x2019;s MST algorithm<br>  step 1:<pre><code>Given <span class="keyword">graph</span> <span class="keyword">G</span> = (V,<span class="keyword">E</span>), select <span class="keyword">an</span> arbitrary vertex s &#x2208; V and
-</code></pre>let T be a &#x201C;tree&#x201D; that contains only s.<br>  step 2:<br>  Repeat the following |V| - 1 times: (deal with all the remaining nodes)<pre><code><span class="keyword">Add</span> <span class="keyword">to</span> T the lowest-cost edge fu; vg <span class="keyword">where</span> u &#x2208; T <span class="keyword">and</span> v &#x2209; T.
+<li>Prim&#x2019;s MST algorithm<br>  step 1:<pre><code>Given graph G = (V,E), select an arbitrary vertex s &#x2208; V and
+</code></pre>let T be a &#x201C;tree&#x201D; that contains only s.<br>  step 2:<br>  Repeat the following |V| - 1 times: (deal with all the remaining nodes)<pre><code>Add to T the lowest-cost edge fu; vg where u &#x2208; T and v &#x2209; T.
 </code></pre></li>
 <li>Further study on MST:</li>
 <li>Thoerem following statements are equivalent:<ul>
@@ -293,7 +293,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec02-kruskals-mst-algorithm-union-find-data-structures">Lec02 Kruskals&#x2019; MST algorithm &amp; Union-Find Data Structures</h3><blockquote>
+<h3 id="lec02-kruskals-mst-algorithm-union-find-data-structures"><a href="#Lec02-Kruskals&#x2019;-MST-algorithm-amp-Union-Find-Data-Structures" class="headerlink" title="Lec02 Kruskals&#x2019; MST algorithm &amp; Union-Find Data Structures"></a>Lec02 Kruskals&#x2019; MST algorithm &amp; Union-Find Data Structures</h3><blockquote>
 <ul>
 <li>Greedy MSP rules:<ol>
 <li>Starting with any root node, add the frontier edge with the smallest weight.(<strong>Prim&#x2019;s Algorithm</strong>)</li>
@@ -337,7 +337,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec03-approximation-algorithms-i-traveling-salesman">Lec03 Approximation Algorithms, I: Traveling Salesman</h3><blockquote>
+<h3 id="lec03-approximation-algorithms-i-traveling-salesman"><a href="#Lec03-Approximation-Algorithms-I-Traveling-Salesman" class="headerlink" title="Lec03 Approximation Algorithms, I: Traveling Salesman"></a>Lec03 Approximation Algorithms, I: Traveling Salesman</h3><blockquote>
 <ul>
 <li>see commented slides</li>
 <li>Approximation Guaranteee:<ul>
@@ -360,7 +360,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec04-data-structures-for-minimum-spanning-trees-graphs-heaps">lec04 Data Structures for Minimum Spanning Trees: Graphs &amp; Heaps</h3><blockquote>
+<h3 id="lec04-data-structures-for-minimum-spanning-trees-graphs-heaps"><a href="#lec04-Data-Structures-for-Minimum-Spanning-Trees-Graphs-amp-Heaps" class="headerlink" title="lec04 Data Structures for Minimum Spanning Trees: Graphs &amp; Heaps"></a>lec04 Data Structures for Minimum Spanning Trees: Graphs &amp; Heaps</h3><blockquote>
 <ul>
 <li>RAM: random access memory</li>
 <li>ADT: Abstract data types</li>
@@ -387,7 +387,7 @@ var _hmt = _hmt || [];
 <li>stack LIFO</li>
 </ul>
 </blockquote>
-<h3 id="lec05-clustering-with-minimum-spanning-tree">Lec05 Clustering with minimum Spanning Tree</h3><blockquote>
+<h3 id="lec05-clustering-with-minimum-spanning-tree"><a href="#Lec05-Clustering-with-minimum-Spanning-Tree" class="headerlink" title="Lec05 Clustering with minimum Spanning Tree"></a>Lec05 Clustering with minimum Spanning Tree</h3><blockquote>
 <ul>
 <li>Clustering: an application of MST </li>
 <li>Clustering: <ul>
@@ -413,7 +413,7 @@ var _hmt = _hmt || [];
 <li>It is exactly Kruskal&#x2019;s algorithm</li>
 </ul>
 </blockquote>
-<h3 id="lec06-asymptotic-analysis">Lec06 Asymptotic Analysis</h3><blockquote>
+<h3 id="lec06-asymptotic-analysis"><a href="#Lec06-Asymptotic-Analysis" class="headerlink" title="Lec06 Asymptotic Analysis"></a>Lec06 Asymptotic Analysis</h3><blockquote>
 <ul>
 <li>Independent Set<ul>
 <li>Definitation: Given a graph G = (V, E) an independent set is a set S \subsetq  V if no two nodes in S are joined by an edge.</li>
@@ -456,18 +456,18 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec07-graph-traversals">Lec07 Graph Traversals</h3><blockquote>
+<h3 id="lec07-graph-traversals"><a href="#Lec07-Graph-Traversals" class="headerlink" title="Lec07 Graph Traversals"></a>Lec07 Graph Traversals</h3><blockquote>
 <ul>
 <li>Depth-First Search:<ul>
 <li>result: a search tree(depth-first serach tree in unweighted, undirected graph)</li>
 <li>One starts at the root and explores as far as possible along each branch before backtracking.</li>
-<li>in general the DFS tree will be very different than the BFS tree <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Pseudocode</span></span><br><span class="line"><span class="number">1</span>  procedure DFS-iterative(G,v):</span><br><span class="line"><span class="number">2</span>      let S be a <span class="built_in">stack</span></span><br><span class="line"><span class="number">3</span>      S.push(v)</span><br><span class="line"><span class="number">4</span>      <span class="keyword">while</span> S is not empty</span><br><span class="line"><span class="number">5</span>            v = S.pop()</span><br><span class="line"><span class="number">6</span>            <span class="keyword">if</span> v is not labeled as discovered:</span><br><span class="line"><span class="number">7</span>                label v as discovered</span><br><span class="line"><span class="number">8</span>                <span class="keyword">for</span> all edges from v to w in G.adjacentEdges(v) <span class="keyword">do</span></span><br><span class="line"><span class="number">9</span>                    S.push(w)</span><br><span class="line"><span class="comment">// recursive one</span></span><br><span class="line"><span class="number">1</span>  <span class="function">procedure <span class="title">DFS</span><span class="params">(G,v)</span>:</span><br><span class="line">2      label v as discovered</span><br><span class="line">3      <span class="keyword">for</span> all edges w in G.<span class="title">adjacentEdges</span><span class="params">(v)</span> <span class="keyword">do</span></span><br><span class="line">4          <span class="keyword">if</span> vertex w is not labeled as discovered then</span><br><span class="line">5              recursively call <span class="title">DFS</span><span class="params">(G,w)</span></span></span><br></pre></td></tr></table></figure>
+<li>in general the DFS tree will be very different than the BFS tree <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Pseudocode</span></div><div class="line"><span class="number">1</span>  procedure DFS-iterative(G,v):</div><div class="line"><span class="number">2</span>      let S be a <span class="built_in">stack</span></div><div class="line"><span class="number">3</span>      S.push(v)</div><div class="line"><span class="number">4</span>      <span class="keyword">while</span> S is not empty</div><div class="line"><span class="number">5</span>            v = S.pop()</div><div class="line"><span class="number">6</span>            <span class="keyword">if</span> v is not labeled as discovered:</div><div class="line"><span class="number">7</span>                label v as discovered</div><div class="line"><span class="number">8</span>                <span class="keyword">for</span> all edges from v to w in G.adjacentEdges(v) <span class="keyword">do</span></div><div class="line"><span class="number">9</span>                    S.push(w)</div><div class="line"><span class="comment">// recursive one</span></div><div class="line"><span class="number">1</span>  procedure DFS(G,v):</div><div class="line"><span class="number">2</span>      label v as discovered</div><div class="line"><span class="number">3</span>      <span class="keyword">for</span> all edges w in G.adjacentEdges(v) <span class="keyword">do</span></div><div class="line"><span class="number">4</span>          <span class="keyword">if</span> vertex w is not labeled as discovered then</div><div class="line"><span class="number">5</span>              recursively call DFS(G,w)</div></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
 </blockquote>
-<pre><code>+ running time:  &#x398;(|<span class="string">V</span>|<span class="string"> + </span>|<span class="string">E</span>|<span class="string">)</span>
+<pre><code>+ running time:  &#x398;(|V| + |E|)
 </code></pre><blockquote>
 <ul>
 <li>Property of Non-DFS-Tree Edges   </li>
@@ -484,7 +484,7 @@ var _hmt = _hmt || [];
 </li>
 <li><p>Property of Non-BFS-Tree Edges</p>
 <ul>
-<li>edge of G that do not appear in the tree connect nodes either in the same layer or adjacent layer. <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Breadth-First-Search(G, v):</span><br><span class="line"> <span class="number">2</span> </span><br><span class="line"> <span class="number">3</span>     <span class="keyword">for</span> each node n in G:            </span><br><span class="line"> <span class="number">4</span>         n.distance = INFINITY        </span><br><span class="line"> <span class="number">5</span>         n.parent = NIL</span><br><span class="line"> <span class="number">6</span> </span><br><span class="line"> <span class="number">7</span>     create empty <span class="built_in">queue</span> Q      </span><br><span class="line"> <span class="number">8</span> </span><br><span class="line"> <span class="number">9</span>     v.distance = <span class="number">0</span></span><br><span class="line"><span class="number">10</span>     Q.enqueue(v)                      </span><br><span class="line"><span class="number">11</span> </span><br><span class="line"><span class="number">12</span>     <span class="keyword">while</span> Q is not empty:        </span><br><span class="line"><span class="number">13</span>     </span><br><span class="line"><span class="number">14</span>         u = Q.dequeue()</span><br><span class="line"><span class="number">15</span>     </span><br><span class="line"><span class="number">16</span>         <span class="keyword">for</span> each node n that is adjacent to u:</span><br><span class="line"><span class="number">17</span>             <span class="keyword">if</span> n.distance == INFINITY:</span><br><span class="line"><span class="number">18</span>                 n.distance = u.distance + <span class="number">1</span></span><br><span class="line"><span class="number">19</span>                 n.parent = u</span><br><span class="line"><span class="number">20</span>                 Q.enqueue(n)</span><br></pre></td></tr></table></figure>
+<li>edge of G that do not appear in the tree connect nodes either in the same layer or adjacent layer. <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">Breadth-First-Search(G, v):</div><div class="line"> <span class="number">2</span> </div><div class="line"> <span class="number">3</span>     <span class="keyword">for</span> each node n in G:            </div><div class="line"> <span class="number">4</span>         n.distance = INFINITY        </div><div class="line"> <span class="number">5</span>         n.parent = NIL</div><div class="line"> <span class="number">6</span> </div><div class="line"> <span class="number">7</span>     create empty <span class="built_in">queue</span> Q      </div><div class="line"> <span class="number">8</span> </div><div class="line"> <span class="number">9</span>     v.distance = <span class="number">0</span></div><div class="line"><span class="number">10</span>     Q.enqueue(v)                      </div><div class="line"><span class="number">11</span> </div><div class="line"><span class="number">12</span>     <span class="keyword">while</span> Q is not empty:        </div><div class="line"><span class="number">13</span>     </div><div class="line"><span class="number">14</span>         u = Q.dequeue()</div><div class="line"><span class="number">15</span>     </div><div class="line"><span class="number">16</span>         <span class="keyword">for</span> each node n that is adjacent to u:</div><div class="line"><span class="number">17</span>             <span class="keyword">if</span> n.distance == INFINITY:</div><div class="line"><span class="number">18</span>                 n.distance = u.distance + <span class="number">1</span></div><div class="line"><span class="number">19</span>                 n.parent = u</div><div class="line"><span class="number">20</span>                 Q.enqueue(n)</div></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -508,7 +508,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec08-applications-of-dfs-and-bfs">Lec08 Applications of DFS and BFS</h3><blockquote>
+<h3 id="lec08-applications-of-dfs-and-bfs"><a href="#Lec08-Applications-of-DFS-and-BFS" class="headerlink" title="Lec08 Applications of DFS and BFS"></a>Lec08 Applications of DFS and BFS</h3><blockquote>
 <ul>
 <li>bipartiteness<ul>
 <li>if you can divide its nodes into 2 parts so that every edge goes between the two parts and not within a single part(&#x6240;&#x6709;&#x7684;&#x8FB9;&#x90FD;&#x94FE;&#x63A5;&#x4E00;&#x4E2A;&#x5DE6;&#x8FB9;&#x70B9;&#xFF0C;&#x4E00;&#x4E2A;&#x53F3;&#x8FB9;&#x70B9;)</li>
@@ -533,7 +533,7 @@ var _hmt = _hmt || [];
 <li>a topological sort (sometimes abbreviated toposort) or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering</li>
 <li>runing time: O(\left|{V}\right| + \left|{E}\right|).O(|E|+|V|)</li>
 <li><p>slide 11 Topological Sort Algorithm</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">pseudocode</span><br><span class="line">Topological sort:</span><br><span class="line"><span class="number">1.</span> Let i = <span class="number">1</span></span><br><span class="line"><span class="number">2.</span> Find a node u with no incoming edges, <span class="function">and let <span class="title">f</span> <span class="params">(u)</span> </span>= i</span><br><span class="line"><span class="number">3.</span> Delete u from the graph</span><br><span class="line"><span class="number">4.</span> Increment i</span><br><span class="line">Implementation: Maintain</span><br><span class="line">I Income[w] = number of incoming edges <span class="keyword">for</span> node w</span><br><span class="line">I a <span class="built_in">list</span> S of nodes that currently have no incoming edges.</span><br><span class="line"><span class="comment">// from wikipedia</span></span><br><span class="line">L &#x2190; Empty <span class="built_in">list</span> that will contain the sorted elements</span><br><span class="line">S &#x2190; Set of all nodes with no incoming edges</span><br><span class="line"><span class="keyword">while</span> S is non-<span class="function">empty <span class="keyword">do</span></span><br><span class="line">    remove a node n from S</span><br><span class="line">    add n to tail of L</span><br><span class="line">    <span class="keyword">for</span> each node m with an edge e from n to m <span class="keyword">do</span></span><br><span class="line">        remove edge e from the graph</span><br><span class="line">        <span class="keyword">if</span> m has no other incoming edges then</span><br><span class="line">            insert m into S</span><br><span class="line"><span class="keyword">if</span> graph has edges then</span><br><span class="line">    return <span class="title">error</span> <span class="params">(graph has at least one cycle)</span></span><br><span class="line"><span class="keyword">else</span> </span><br><span class="line">    return <span class="title">L</span> <span class="params">(a topologically sorted order)</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">pseudocode</div><div class="line">Topological sort:</div><div class="line"><span class="number">1.</span> Let i = <span class="number">1</span></div><div class="line"><span class="number">2.</span> Find a node u with no incoming edges, and let f (u) = i</div><div class="line"><span class="number">3.</span> Delete u from the graph</div><div class="line"><span class="number">4.</span> Increment i</div><div class="line">Implementation: Maintain</div><div class="line">I Income[w] = number of incoming edges <span class="keyword">for</span> node w</div><div class="line">I a <span class="built_in">list</span> S of nodes that currently have no incoming edges.</div><div class="line"><span class="comment">// from wikipedia</span></div><div class="line">L &#x2190; Empty <span class="built_in">list</span> that will contain the sorted elements</div><div class="line">S &#x2190; Set of all nodes with no incoming edges</div><div class="line"><span class="keyword">while</span> S is non-empty <span class="keyword">do</span></div><div class="line">    remove a node n from S</div><div class="line">    add n to tail of L</div><div class="line">    <span class="keyword">for</span> each node m with an edge e from n to m <span class="keyword">do</span></div><div class="line">        remove edge e from the graph</div><div class="line">        <span class="keyword">if</span> m has no other incoming edges then</div><div class="line">            insert m into S</div><div class="line"><span class="keyword">if</span> graph has edges then</div><div class="line">    <span class="keyword">return</span> error (graph has at least one cycle)</div><div class="line"><span class="keyword">else</span> </div><div class="line">    <span class="keyword">return</span> L (a topologically sorted order)</div></pre></td></tr></table></figure>
 </li>
 <li><p>Any DAG has at least one topological ordering, and algorithms are known for constructing a topological ordering of any DAG in linear time.</p>
 </li>
@@ -555,7 +555,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec09-applications-of-shortest-paths-and-a">Lec09 Applications of Shortest paths and A*</h3><blockquote>
+<h3 id="lec09-applications-of-shortest-paths-and-a"><a href="#Lec09-Applications-of-Shortest-paths-and-A" class="headerlink" title="Lec09 Applications of Shortest paths and A*"></a>Lec09 Applications of Shortest paths and A*</h3><blockquote>
 <ul>
 <li>Dijkstra&#x2019;s algorithm:<ul>
 <li>finding the shortest paths between nodes in a graph</li>
@@ -576,7 +576,7 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 <li>when h(u) = 0 for all u: A* = Dijkstra&#x2019;s algorithm</li>
-<li>if h(u) is admissible, then A* is guaranteed to find an optimal route to the destination t.<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//pseudocode</span></span><br><span class="line"><span class="number">1</span>: g[s]   <span class="number">0</span></span><br><span class="line"><span class="number">2</span>: f[s]   g[s] + h[s]</span><br><span class="line"><span class="number">3</span>: <span class="function">Heap   <span class="title">MakeHeap</span><span class="params">((s,f[s])</span>) # heap key is f[s]</span><br><span class="line">4: repeat</span><br><span class="line">5: u   <span class="title">DeleteMin</span><span class="params">(Heap)</span> # Expand node with minimum f[u]</span><br><span class="line">6: <span class="keyword">if</span> u </span>= goal then <span class="keyword">return</span></span><br><span class="line"><span class="number">7</span>: <span class="keyword">for</span> v <span class="number">2</span> Neighbors(u) <span class="keyword">do</span></span><br><span class="line"><span class="number">8</span>: <span class="keyword">if</span> g[u] + d(u,v) &lt; g[v] then</span><br><span class="line"><span class="number">9</span>: parent[v]   u</span><br><span class="line"><span class="number">10</span>: g[v]   g[u] + d(u,v)</span><br><span class="line"><span class="number">11</span>: f[v]   g[v] + h(v)</span><br><span class="line"><span class="number">12</span>: <span class="keyword">if</span> v <span class="number">62</span> Heap then</span><br><span class="line"><span class="number">13</span>: Insert(Heap, v, f[v])</span><br><span class="line"><span class="number">14</span>: <span class="keyword">else</span></span><br><span class="line"><span class="number">15</span>: ReduceKey(Heap, v, f[v]) <span class="preprocessor"># Sift up for new key</span></span><br><span class="line"><span class="number">16</span>: until Heap is empty</span><br></pre></td></tr></table></figure>
+<li>if h(u) is admissible, then A* is guaranteed to find an optimal route to the destination t.<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">//pseudocode</div><div class="line">1: g[s]   0</div><div class="line">2: f[s]   g[s] + h[s]</div><div class="line">3: Heap   MakeHeap((s,f[s])) # heap key is f[s]</div><div class="line">4: repeat</div><div class="line">5: u   DeleteMin(Heap) # Expand node with minimum f[u]</div><div class="line">6: if u = goal then return</div><div class="line">7: for v 2 Neighbors(u) do</div><div class="line">8: if g[u] + d(u,v) &lt; g[v] then</div><div class="line">9: parent[v]   u</div><div class="line">10: g[v]   g[u] + d(u,v)</div><div class="line">11: f[v]   g[v] + h(v)</div><div class="line">12: if v 62 Heap then</div><div class="line">13: Insert(Heap, v, f[v])</div><div class="line">14: else</div><div class="line">15: ReduceKey(Heap, v, f[v]) # Sift up for new key</div><div class="line">16: until Heap is empty</div></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -616,7 +616,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec10-shortest-paths-in-a-graph">Lec10 Shortest Paths in a Graph</h3><blockquote>
+<h3 id="lec10-shortest-paths-in-a-graph"><a href="#Lec10-Shortest-Paths-in-a-Graph" class="headerlink" title="Lec10 Shortest Paths in a Graph"></a>Lec10 Shortest Paths in a Graph</h3><blockquote>
 <ul>
 <li>Goal: find the shortest path from a given node s to every other node in the graph(Directed weighted graph)</li>
 <li>Prim&#x2019;s algorithm: find MST</li>
@@ -626,7 +626,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec11-minimum-spanning-arborescences">Lec11 Minimum Spanning Arborescences</h3><blockquote>
+<h3 id="lec11-minimum-spanning-arborescences"><a href="#Lec11-Minimum-Spanning-Arborescences" class="headerlink" title="Lec11 Minimum Spanning Arborescences"></a>Lec11 Minimum Spanning Arborescences</h3><blockquote>
 <ul>
 <li>minimum cost arborescene[,&#x251;rb&#x259;&#x2019;r&#x25B;sns] MCA<ul>
 <li>an arborescene of G(directed graph) rooted at r is a subgraph of G with no cycles such that there is a path from r to every other vertex of r.</li>
@@ -669,7 +669,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec12-shortest-paths-with-negative-weights">Lec12 Shortest paths with Negative Weights</h3><blockquote>
+<h3 id="lec12-shortest-paths-with-negative-weights"><a href="#Lec12-Shortest-paths-with-Negative-Weights" class="headerlink" title="Lec12 Shortest paths with Negative Weights"></a>Lec12 Shortest paths with Negative Weights</h3><blockquote>
 <ul>
 <li>problem: Given directed graph G with weighted edges d(u,v) that may be positive or negative, find the shorest path from s to t.(&#x4E00;&#x70B9;&#x53BB;&#x53E6;&#x4E00;&#x70B9;)<ul>
 <li>you can not add a large weight(the number of edges matters)</li>
@@ -678,7 +678,7 @@ var _hmt = _hmt || [];
 <li><p><a href="https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm" target="_blank" rel="external">Bellman-Ford:</a></p>
 <ul>
 <li><p>after applying the ford step until dist(u)+d(u,v) &gt; dist(v) for all edges, dist(u) will equal the shortest - path distance from s to u for all u.</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ShortestPath(G, s, t):</span><br><span class="line">    Initialize dist[u] = <span class="number">1</span> <span class="keyword">for</span> all u</span><br><span class="line">    dist[s] = <span class="number">0</span></span><br><span class="line">    <span class="preprocessor"># queue tracks nodes that are candidates for Ford rule</span></span><br><span class="line">    <span class="built_in">queue</span> = [s]</span><br><span class="line">    <span class="keyword">while</span> <span class="built_in">queue</span> is not empty:</span><br><span class="line">        v = <span class="function">front of <span class="title">queue</span> <span class="params">(and remove v)</span></span><br><span class="line">        <span class="keyword">for</span> u 2 <span class="title">neighbors</span><span class="params">(v)</span>:</span><br><span class="line">            # Apply Ford rule <span class="keyword">if</span> we can</span><br><span class="line">            <span class="keyword">if</span> dist[v] + <span class="title">d</span><span class="params">(v,u)</span> &lt; dist[u]:</span><br><span class="line">                dist[u] </span>= dist[v] + d(v,u)</span><br><span class="line">                parent[u] = v</span><br><span class="line">                <span class="keyword">if</span> u <span class="number">62</span> <span class="built_in">queue</span>: put w at end of <span class="built_in">queue</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">ShortestPath(G, s, t):</div><div class="line">    Initialize dist[u] = <span class="number">1</span> <span class="keyword">for</span> all u</div><div class="line">    dist[s] = <span class="number">0</span></div><div class="line">    # <span class="built_in">queue</span> tracks nodes that are candidates <span class="keyword">for</span> Ford rule</div><div class="line">    <span class="built_in">queue</span> = [s]</div><div class="line">    <span class="keyword">while</span> <span class="built_in">queue</span> is not empty:</div><div class="line">        v = front of <span class="built_in">queue</span> (and remove v)</div><div class="line">        <span class="keyword">for</span> u <span class="number">2</span> neighbors(v):</div><div class="line">            # Apply Ford rule <span class="keyword">if</span> we can</div><div class="line">            <span class="keyword">if</span> dist[v] + d(v,u) &lt; dist[u]:</div><div class="line">                dist[u] = dist[v] + d(v,u)</div><div class="line">                parent[u] = v</div><div class="line">                <span class="keyword">if</span> u <span class="number">62</span> <span class="built_in">queue</span>: put w at end of <span class="built_in">queue</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>running time: O(mn)</p>
 </li>
@@ -724,7 +724,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h3 id="lec13-skip-lists">Lec13 Skip Lists</h3><blockquote>
+<h3 id="lec13-skip-lists"><a href="#Lec13-Skip-Lists" class="headerlink" title="Lec13 Skip Lists"></a>Lec13 Skip Lists</h3><blockquote>
 <ul>
 <li>General List (abstract data type)<ul>
 <li>linked list:<ul>
@@ -771,7 +771,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-14-splay-trees">Lecture 14 Splay Trees</h1><blockquote>
+<h1 id="lecture-14-splay-trees"><a href="#Lecture-14-Splay-Trees" class="headerlink" title="Lecture 14 Splay Trees"></a>Lecture 14 Splay Trees</h1><blockquote>
 <ul>
 <li>Binary search Trees<ul>
 <li>if a node has key <strong>k</strong>, then all the keys in the left subtree are &lt; k.<br>right side vice versa</li>
@@ -815,7 +815,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-15-b-trees">lecture 15 B-Trees</h1><blockquote>
+<h1 id="lecture-15-b-trees"><a href="#lecture-15-B-Trees" class="headerlink" title="lecture 15 B-Trees"></a>lecture 15 B-Trees</h1><blockquote>
 <ul>
 <li>when we have overflow:<ul>
 <li>we check the neighbors first, try to do <strong>key rotation</strong> slide 16</li>
@@ -839,7 +839,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-16-suffix-trees">lecture 16 Suffix trees</h1><blockquote>
+<h1 id="lecture-16-suffix-trees"><a href="#lecture-16-Suffix-trees" class="headerlink" title="lecture 16 Suffix trees"></a>lecture 16 Suffix trees</h1><blockquote>
 <ul>
 <li>Given a suffix trie(pronounced as try) T and a string q, how can we:<ul>
 <li>determine whether q is a substring of T <ul>
@@ -896,7 +896,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-17-dynamic-programming-subset-sum-knapsack">lecture 17 Dynamic Programming: Subset Sum &amp; Knapsack</h1><blockquote>
+<h1 id="lecture-17-dynamic-programming-subset-sum-knapsack"><a href="#lecture-17-Dynamic-Programming-Subset-Sum-amp-Knapsack" class="headerlink" title="lecture 17 Dynamic Programming: Subset Sum &amp; Knapsack"></a>lecture 17 Dynamic Programming: Subset Sum &amp; Knapsack</h1><blockquote>
 <ul>
 <li>generally applies to algorithms where the <strong>brute force algorithm would be exponential</strong></li>
 <li>problem: <code>subset sum</code><ul>
@@ -918,7 +918,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-18-more-dynamic-programming-examples">lecture 18 More Dynamic Programming Examples</h1><blockquote>
+<h1 id="lecture-18-more-dynamic-programming-examples"><a href="#lecture-18-More-Dynamic-Programming-Examples" class="headerlink" title="lecture 18 More Dynamic Programming Examples"></a>lecture 18 More Dynamic Programming Examples</h1><blockquote>
 <ul>
 <li>segmented Least Squares<ul>
 <li>C*K + sigma_fit(Si) P 4</li>
@@ -928,7 +928,7 @@ var _hmt = _hmt || [];
 <li>Optimal Binary Search Trees</li>
 </ul>
 </blockquote>
-<h1 id="lecture-19-string-comparison">lecture 19 String Comparison</h1><blockquote>
+<h1 id="lecture-19-string-comparison"><a href="#lecture-19-String-Comparison" class="headerlink" title="lecture 19 String Comparison"></a>lecture 19 String Comparison</h1><blockquote>
 <ul>
 <li>gap:<ul>
 <li>the cost of inserting a &#x201C;-&#x201C; character, representing an <code>insertion</code> or <code>deletion</code></li>
@@ -988,9 +988,9 @@ var _hmt = _hmt || [];
 <li>recursive solution - P 19</li>
 </ul>
 </blockquote>
-<h1 id="lecture-20-rna-folding">lecture 20 RNA Folding</h1><blockquote>
+<h1 id="lecture-20-rna-folding"><a href="#lecture-20-RNA-Folding" class="headerlink" title="lecture 20 RNA Folding"></a>lecture 20 RNA Folding</h1><blockquote>
 <ul>
-<li>OPT(i, j) = max {OPT(i, j -1) # no connecting<pre><code><span class="collection">{maxt<span class="collection">{<span class="number">1</span> + OPT<span class="list">(<span class="keyword">i</span>, t <span class="number">-1</span>)</span> + OPT<span class="list">(<span class="keyword">t+1</span>,j-1)</span></span></span>
+<li>OPT(i, j) = max {OPT(i, j -1) # no connecting<pre><code>{maxt{1 + OPT(i, t -1) + OPT(t+1,j-1)
 </code></pre></li>
 <li>In order of increasing j - i </li>
 <li>running time:<ul>
@@ -1001,7 +1001,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-21-network-flows">lecture 21 Network Flows</h1><blockquote>
+<h1 id="lecture-21-network-flows"><a href="#lecture-21-Network-Flows" class="headerlink" title="lecture 21 Network Flows"></a>lecture 21 Network Flows</h1><blockquote>
 <ul>
 <li>maximum Flow problem.</li>
 <li>residual graph <ul>
@@ -1035,7 +1035,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-21-maximum-bipartite-matching">lecture 21 Maximum Bipartite Matching</h1><blockquote>
+<h1 id="lecture-21-maximum-bipartite-matching"><a href="#lecture-21-Maximum-Bipartite-Matching" class="headerlink" title="lecture 21 Maximum Bipartite Matching"></a>lecture 21 Maximum Bipartite Matching</h1><blockquote>
 <ul>
 <li>same as network flow but without flows or even networks</li>
 <li>Maximum Bipartite Matching:<ul>
@@ -1054,12 +1054,12 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-22-image-segmentation">lecture 22 image Segmentation</h1><blockquote>
+<h1 id="lecture-22-image-segmentation"><a href="#lecture-22-image-Segmentation" class="headerlink" title="lecture 22 image Segmentation"></a>lecture 22 image Segmentation</h1><blockquote>
 <ul>
 <li></li>
 </ul>
 </blockquote>
-<h1 id="lecture-23-max-flow-extensions">lecture 23 Max-flow extensions</h1><blockquote>
+<h1 id="lecture-23-max-flow-extensions"><a href="#lecture-23-Max-flow-extensions" class="headerlink" title="lecture 23 Max-flow extensions"></a>lecture 23 Max-flow extensions</h1><blockquote>
 <ul>
 <li>circulations with demands<ul>
 <li>represent supply as negative demand  </li>
@@ -1078,7 +1078,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-24-linear-programming">lecture 24 linear programming</h1><blockquote>
+<h1 id="lecture-24-linear-programming"><a href="#lecture-24-linear-programming" class="headerlink" title="lecture 24 linear programming"></a>lecture 24 linear programming</h1><blockquote>
 <ul>
 <li>we have:<ul>
 <li>A matrix with m rows and n columns</li>
@@ -1119,7 +1119,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-25-the-simplex-algorithm">lecture 25 The simplex Algorithm</h1><blockquote>
+<h1 id="lecture-25-the-simplex-algorithm"><a href="#lecture-25-The-simplex-Algorithm" class="headerlink" title="lecture 25 The simplex Algorithm"></a>lecture 25 The simplex Algorithm</h1><blockquote>
 <ul>
 <li><ol>
 <li>write LP with slack variables </li>
@@ -1143,7 +1143,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-26-the-classes-p-and-np">lecture 26 The classes P and NP</h1><blockquote>
+<h1 id="lecture-26-the-classes-p-and-np"><a href="#lecture-26-The-classes-P-and-NP" class="headerlink" title="lecture 26 The classes P and NP"></a>lecture 26 The classes P and NP</h1><blockquote>
 <ul>
 <li>NP-hard:<ul>
 <li>no polynomial algorithm exists to solve this problem </li>
@@ -1162,7 +1162,7 @@ var _hmt = _hmt || [];
 <li><strong>P belongs to NP</strong></li>
 </ul>
 </blockquote>
-<h1 id="lecture-27-reductions-np-completeness">lecture 27 Reductions &amp; NP-completeness</h1><blockquote>
+<h1 id="lecture-27-reductions-np-completeness"><a href="#lecture-27-Reductions-amp-NP-completeness" class="headerlink" title="lecture 27 Reductions &amp; NP-completeness"></a>lecture 27 Reductions &amp; NP-completeness</h1><blockquote>
 <ul>
 <li>reductions as tool for hardness <ul>
 <li>if you had a black box that can solve instances of problem X, how can you solve any instance of Y using polynomial number of steps, plus a polynomial number of calls to the balck box that solves X?</li>
@@ -1200,7 +1200,7 @@ var _hmt = _hmt || [];
 <li><code>Warning</code>: reduce the known NP-complete problem to the problem you are interested in </li>
 </ul>
 </blockquote>
-<h1 id="lecture-28-satcoloring-hamiltonian-cycle-tsp">lecture 28 SAT,Coloring, Hamiltonian Cycle, TSP</h1><blockquote>
+<h1 id="lecture-28-satcoloring-hamiltonian-cycle-tsp"><a href="#lecture-28-SAT-Coloring-Hamiltonian-Cycle-TSP" class="headerlink" title="lecture 28 SAT,Coloring, Hamiltonian Cycle, TSP"></a>lecture 28 SAT,Coloring, Hamiltonian Cycle, TSP</h1><blockquote>
 <ul>
 <li>P2  reductions graph: very importmant</li>
 <li>P3 boolean formulas<ul>
@@ -1237,12 +1237,12 @@ var _hmt = _hmt || [];
 <li>2nd step: prove reduce to </li>
 </ul>
 </blockquote>
-<h1 id="lecture-29-np-completeness-of-3-dimensional-matching-and-subset-sum">lecture 29 NP-completeness of 3 Dimensional Matching and Subset Sum</h1><h1 id="lecture-30-randomized-mincut">lecture 30 Randomized Mincut</h1><blockquote>
+<h1 id="lecture-29-np-completeness-of-3-dimensional-matching-and-subset-sum"><a href="#lecture-29-NP-completeness-of-3-Dimensional-Matching-and-Subset-Sum" class="headerlink" title="lecture 29 NP-completeness of 3 Dimensional Matching and Subset Sum"></a>lecture 29 NP-completeness of 3 Dimensional Matching and Subset Sum</h1><h1 id="lecture-30-randomized-mincut"><a href="#lecture-30-Randomized-Mincut" class="headerlink" title="lecture 30 Randomized Mincut"></a>lecture 30 Randomized Mincut</h1><blockquote>
 <ul>
 <li>allow our algorithms to flip some random coins to make their choices </li>
 <li>often run innnn expectation faster than deterministic algorithms</li>
 <li><p>Contraction Algorithm  </p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> G contains more than <span class="number">2</span> nodes</span><br><span class="line">  choose an edge e uniformly at random</span><br><span class="line">  contract e, replacing its endpoints with a <span class="keyword">new</span> node w</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span> G contains more than <span class="number">2</span> nodes</div><div class="line">  choose an edge e uniformly at random</div><div class="line">  contract e, replacing its endpoints with a <span class="keyword">new</span> node w</div></pre></td></tr></table></figure>
 <ul>
 <li>a polynomial algorithm</li>
 </ul>
@@ -1257,7 +1257,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="lecture-31-approximation-algorithms">lecture 31 approximation algorithms</h1><blockquote>
+<h1 id="lecture-31-approximation-algorithms"><a href="#lecture-31-approximation-algorithms" class="headerlink" title="lecture 31 approximation algorithms"></a>lecture 31 approximation algorithms</h1><blockquote>
 <ul>
 <li>one way to solve NP-complete problems<ul>
 <li>heuristics </li>
@@ -1265,7 +1265,7 @@ var _hmt = _hmt || [];
 </li>
 <li>split the solution into two parts:<ul>
 <li>the contribution of the last item on M </li>
-<li>the rest of load on M <h1 id="final-examination-preparation">final examination preparation</h1></li>
+<li>the rest of load on M <h1 id="final-examination-preparation"><a href="#final-examination-preparation" class="headerlink" title="final examination preparation"></a>final examination preparation</h1></li>
 </ul>
 </li>
 <li>slides + homework </li>
@@ -1300,7 +1300,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="other-stuff-learned-by-myself">other stuff learned by myself</h1><h2 id="red-black-tree-map-in-c">Red black tree &amp; map in C++</h2><p><a href="https://www.youtube.com/watch?v=O3hI9FdxFOM" target="_blank" rel="external">https://www.youtube.com/watch?v=O3hI9FdxFOM</a></p>
+<h1 id="other-stuff-learned-by-myself"><a href="#other-stuff-learned-by-myself" class="headerlink" title="other stuff learned by myself"></a>other stuff learned by myself</h1><h2 id="red-black-tree-map-in-c"><a href="#Red-black-tree-amp-map-in-C" class="headerlink" title="Red black tree &amp; map in C++"></a>Red black tree &amp; map in C++</h2><p><a href="https://www.youtube.com/watch?v=O3hI9FdxFOM" target="_blank" rel="external">https://www.youtube.com/watch?v=O3hI9FdxFOM</a></p>
 <blockquote>
 <ul>
 <li>Balanced search trees ( tree of height O(logn) )<ul>
@@ -1422,10 +1422,6 @@ var _hmt = _hmt || [];
 
 
         
-            <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-        
     </div>
 </article>
 
@@ -1433,7 +1429,7 @@ var _hmt = _hmt || [];
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">
-        Copyrights &copy; 2016 LBTING. All Rights Reserved.
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
     </span>
 </footer>
 
@@ -1508,7 +1504,7 @@ var _hmt = _hmt || [];
             <h5 id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p>Student</p>
+                <p>R&amp;D Engineer</p>
 
             </h5>
         
@@ -1516,7 +1512,7 @@ var _hmt = _hmt || [];
             <h5 id="about-card-location">
                 <i class="fa fa-map-marker"></i>
                 <br/>
-                Pittsburgh USA
+                Albany USA
             </h5>
         
     </div>
@@ -1524,19 +1520,8 @@ var _hmt = _hmt || [];
         <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
     </body>
     <!--SCRIPTS-->
-<script src="/assets/js/script.min.js" type="text/javascript"></script>
+<script src="/assets/js/script.min.js"></script>
 <!--SCRIPTS END-->
-
-    <script type="text/javascript">
-        var disqus_shortname = 'lbtinglb';
-        (function() {
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
 
 
 

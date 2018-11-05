@@ -24,7 +24,7 @@ var _hmt = _hmt || [];
         <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
     
     <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
     <!--STYLES END-->
     
     
@@ -162,13 +162,13 @@ var _hmt = _hmt || [];
         <h1 class="post-title" itemprop="headline">VTKStudy</h1>
     
     <div class="post-meta">
-    <time  itemprop="datePublished" content="Fri Mar 18 2016 02:20:57 GMT+0800">
+    <time  itemprop="datePublished" content="Fri Mar 18 2016 02:20:57 GMT-0400">
         Mar 18, 2016
     </time>
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/Kitware/">Kitware</a>
+    <a class="category-link" href="/categories/Kitware/">Kitware</a>, <a class="category-link" href="/categories/Kitware/technique/">technique</a>
 
 
     
@@ -180,9 +180,10 @@ var _hmt = _hmt || [];
 <p>#</p>
 <!-- toc -->
 <ul>
-<li><a href="#wait-to-learn">wait to learn</a></li>
-<li><a href="#chapter-3-system-overview">Chapter 3 System Overview</a></li>
-<li><a href="#part-2-learn-vtk-by-example">Part 2 Learn VTK By Example</a><ul>
+<li><a href="#chapter-1-welcome">Chapter 1. Welcome</a></li>
+<li><a href="#chapter-2-installation">Chapter 2. Installation</a></li>
+<li><a href="#chapter-3-system-overview">Chapter 3. System Overview</a></li>
+<li><a href="#chpater-4-the-basics">Chpater 4. The Basics</a><ul>
 <li><a href="#41-creating-simple-models">4.1 Creating Simple Models</a></li>
 <li><a href="#42-using-vtk-interactors">4.2 Using VTK Interactors</a></li>
 <li><a href="#43-filtering-data">4.3 Filtering Data</a></li>
@@ -194,20 +195,63 @@ var _hmt = _hmt || [];
 <li><a href="#49-vtkcoordinate-and-coordinate-systems">4.9 vtkCoordinate and Coordinate Systems</a></li>
 </ul>
 </li>
-<li><a href="#others">Others</a></li>
-<li><a href="#bugs">bugs</a></li>
+<li><a href="#chapter-5-visualization-techniques">Chapter 5. Visualization Techniques</a><ul>
+<li><a href="#52-visualizing-polygonal-data">5.2 Visualizing Polygonal Data</a></li>
+<li><a href="#53-visualizin-structured-grids">5.3 Visualizin Structured Grids</a></li>
+<li><a href="#54-visualizing-rectilinear-grids">5.4 Visualizing Rectilinear Grids</a></li>
+<li><a href="#55-visualizing-unstructured-grids">5.5 Visualizing Unstructured Grids</a></li>
+</ul>
+</li>
+<li><a href="#6-image-procesing-visualization">6. Image procesing &amp;  Visualization</a><ul>
+<li><a href="#61-manually-creating-vtkimagedata">6.1 Manually Creating vtkImageData</a></li>
+</ul>
+</li>
+<li><a href="#chapter-14-contributing-code">Chapter 14. Contributing Code</a><ul>
+<li><a href="#141-coding-considerations">14.1 Coding Considerations</a></li>
+<li><a href="#142-standard-methods-creating-and-deleting-objects">14.2 Standard Methods: Creating and Deleting Objects</a></li>
+<li><a href="#143-copying-objects-and-protected-methods">14.3 Copying Objects and Protected Methods</a></li>
+<li><a href="#144-using-stl">14.4 Using STL</a></li>
+<li><a href="#145-manging-include-files">14.5 Manging Include Files</a></li>
+<li><a href="#146-writing-a-vtk-class-an-overview">14.6 Writing A VTK Class: An Overview</a></li>
+<li><a href="#147-object-factories">14.7 Object Factories</a></li>
+<li><a href="#148-kitwares-quality-software-process">14.8 Kitware&#x2019;s Quality  Software Process</a></li>
+</ul>
+</li>
+<li><a href="#chapter-15-managing-pipeline-execution">Chapter 15. Managing Pipeline Execution</a><ul>
+<li><a href="#151-information-objects">15.1 Information Objects</a></li>
+<li><a href="#152-pipeline-eecution-models">15.2 Pipeline Eecution Models</a></li>
+<li><a href="#153-pipeline-information-flow">15.3 Pipeline Information flow</a></li>
+<li><a href="#154-interface-of-information-objects">15.4 Interface of information Objects</a></li>
+<li><a href="#155-standard-executive">15.5 Standard Executive</a></li>
+</ul>
+</li>
+<li><a href="#chapter-16-interfacing-to-vtk-data-objects">Chapter 16. Interfacing To VTK Data Objects</a><ul>
+<li><a href="#161-data-arrays">16.1 Data Arrays</a></li>
+<li><a href="#162-datasets">16.2 Datasets</a></li>
+<li><a href="#167-polygonal-data">16.7 Polygonal Data</a></li>
+</ul>
+</li>
+<li><a href="#chapter-17-how-to-write-an-algorithm-for-vtk">Chapter 17. How To Write an Algorithm for VTK</a><ul>
+<li><a href="#171-overview">17.1 Overview</a></li>
+</ul>
+</li>
 <li><a href="#examples-leanrning">Examples leanrning:</a><ul>
 <li><a href="#tutorial-folder">Tutorial folder</a></li>
 </ul>
 </li>
+<li><a href="#slides-and-tutorial-pdf-from-david-e-demarle">slides and tutorial pdf from David E DeMarle</a><ul>
+<li><a href="#section-1-vtk-data-structures">Section 1: VTK Data Structures</a></li>
+<li><a href="#section-2-the-rendering-pipeline-pdf-p40">Section 2: The Rendering Pipeline pdf P40</a></li>
+<li><a href="#section-3-processing-data">Section 3: Processing Data</a></li>
+</ul>
+</li>
+<li><a href="#others">Others</a></li>
+<li><a href="#bugs">bugs</a></li>
+<li><a href="#from-utkrash">From UTkrash</a></li>
 </ul>
 <!-- tocstop -->
-<h1 id="wait-to-learn">wait to learn</h1><blockquote>
+<h1 id="chapter-1-welcome"><a href="#Chapter-1-Welcome" class="headerlink" title="Chapter 1. Welcome"></a>Chapter 1. Welcome</h1><h1 id="chapter-2-installation"><a href="#Chapter-2-Installation" class="headerlink" title="Chapter 2. Installation"></a>Chapter 2. Installation</h1><h1 id="chapter-3-system-overview"><a href="#Chapter-3-System-Overview" class="headerlink" title="Chapter 3. System Overview"></a>Chapter 3. System Overview</h1><blockquote>
 <ul>
-<li>how to use cout&amp; macro debug the code in C++</li>
-<li>Qt IDE - Qt Creator</li>
-<li>python wrapper docummentation:<a href="http://www.vtk.org/Wiki/VTK/Examples/Python" target="_blank" rel="external">http://www.vtk.org/Wiki/VTK/Examples/Python</a></li>
-<li>git grip<h1 id="chapter-3-system-overview">Chapter 3 System Overview</h1></li>
 <li>visualization pipeline &amp; rendering engine<ul>
 <li>visualization pipleline: acquire or create data, process that data, and either write theresuls to a file or pass it to redering engine</li>
 </ul>
@@ -225,7 +269,10 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 <li>The Visualization Pipeline<ul>
-<li>vtkDataObject</li>
+<li>vtkDataObject<ul>
+<li>general representation of visualization data</li>
+</ul>
+</li>
 <li>vtkAlgorithm</li>
 <li>multithreaded and streaming data to handle great data scale</li>
 </ul>
@@ -236,7 +283,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="part-2-learn-vtk-by-example">Part 2 Learn VTK By Example</h1><h2 id="41-creating-simple-models">4.1 Creating Simple Models</h2><blockquote>
+<h1 id="chpater-4-the-basics"><a href="#Chpater-4-The-Basics" class="headerlink" title="Chpater 4. The Basics"></a>Chpater 4. The Basics</h1><h2 id="41-creating-simple-models"><a href="#4-1-Creating-Simple-Models" class="headerlink" title="4.1 Creating Simple Models"></a>4.1 Creating Simple Models</h2><blockquote>
 <ul>
 <li>source objects VS procedural objects VS reader objects</li>
 <li>pipeline:<ul>
@@ -250,7 +297,7 @@ var _hmt = _hmt || [];
 </ol>
 </li>
 <li><ol>
-<li>create an <code>actor</code> refers to the mapper. </li>
+<li>create an <code>actor</code> refers to the mapper.</li>
 </ol>
 </li>
 <li><ol>
@@ -265,25 +312,36 @@ var _hmt = _hmt || [];
 </li>
 <li>Reader Source Object<ul>
 <li>LOD actor P55<ul>
-<li>three level: actor -&gt; point cloud -&gt; simple bounding box(degenerating)<h2 id="42-using-vtk-interactors">4.2 Using VTK Interactors</h2></li>
+<li>three level: actor -&gt; point cloud -&gt; simple bounding box(degenerating)</li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+</blockquote>
+<h2 id="42-using-vtk-interactors"><a href="#4-2-Using-VTK-Interactors" class="headerlink" title="4.2 Using VTK Interactors"></a>4.2 Using VTK Interactors</h2><blockquote>
+<ul>
 <li>two option:<ul>
 <li>built in class vtkRenderWindow-Interactor</li>
 <li>create your own interactor by specifying event bindings</li>
 </ul>
 </li>
 <li>position sensitive  or motion sensitive:<ul>
-<li>primitive -&gt; mapper -&gt; actor<h2 id="43-filtering-data">4.3 Filtering Data</h2><h2 id="44-controling-the-camera">4.4 Controling The Camera</h2><h2 id="45-controlling-lights">4.5 Controlling lights</h2></li>
+<li>primitive -&gt; mapper -&gt; actor</li>
 </ul>
 </li>
+</ul>
+</blockquote>
+<h2 id="43-filtering-data"><a href="#4-3-Filtering-Data" class="headerlink" title="4.3 Filtering Data"></a>4.3 Filtering Data</h2><h2 id="44-controling-the-camera"><a href="#4-4-Controling-The-Camera" class="headerlink" title="4.4 Controling The Camera"></a>4.4 Controling The Camera</h2><h2 id="45-controlling-lights"><a href="#4-5-Controlling-lights" class="headerlink" title="4.5 Controlling lights"></a>4.5 Controlling lights</h2><blockquote>
+<ul>
 <li>useful trick:<ul>
-<li>set the light&#x2019;s Position and FocalPoint to the camera&#x2019;s</li>
-<li><h2 id="46-controlling-3d-props">4.6 Controlling 3D Props</h2></li>
+<li>set the light&#x2019;s Position and FocalPoint to the camera&#x2019;s<br>+</li>
 </ul>
 </li>
+</ul>
+</blockquote>
+<h2 id="46-controlling-3d-props"><a href="#4-6-Controlling-3D-Props" class="headerlink" title="4.6 Controlling 3D Props"></a>4.6 Controlling 3D Props</h2><blockquote>
+<ul>
 <li>what&#x2019;s a prop:<ul>
 <li>a prop is something that appears on stage</li>
 </ul>
@@ -308,13 +366,13 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h2 id="47-using-texture">4.7 Using Texture</h2><blockquote>
+<h2 id="47-using-texture"><a href="#4-7-Using-Texture" class="headerlink" title="4.7 Using Texture"></a>4.7 Using Texture</h2><blockquote>
 <ul>
 <li>see <em>VTK/Examples/Rendering/Cxx./TPlane.py</em></li>
 <li>Load texture map - &gt; create a plane source and actor(texture coordinates) -&gt; render all.</li>
 </ul>
 </blockquote>
-<h2 id="48-picking">4.8 Picking</h2><blockquote>
+<h2 id="48-picking"><a href="#4-8-Picking" class="headerlink" title="4.8 Picking"></a>4.8 Picking</h2><blockquote>
 <ul>
 <li>vtkWorldPointPicker<ul>
 <li>return the <em>x-y-z</em> global pick position</li>
@@ -330,115 +388,187 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h2 id="49-vtkcoordinate-and-coordinate-systems">4.9 vtkCoordinate and Coordinate Systems</h2><h1 id="others">Others</h1><blockquote>
+<h2 id="49-vtkcoordinate-and-coordinate-systems"><a href="#4-9-vtkCoordinate-and-Coordinate-Systems" class="headerlink" title="4.9 vtkCoordinate and Coordinate Systems"></a>4.9 vtkCoordinate and Coordinate Systems</h2><h1 id="chapter-5-visualization-techniques"><a href="#Chapter-5-Visualization-Techniques" class="headerlink" title="Chapter 5. Visualization Techniques"></a>Chapter 5. Visualization Techniques</h1><h2 id="52-visualizing-polygonal-data"><a href="#5-2-Visualizing-Polygonal-Data" class="headerlink" title="5.2 Visualizing Polygonal Data"></a>5.2 Visualizing Polygonal Data</h2><blockquote>
 <ul>
-<li>mappers: take the <code>data</code> and converte it into a visual representation</li>
-<li><a href="http://www.tutorialspoint.com/design_pattern/observer_pattern.htm" target="_blank" rel="external">subject observer pattern</a><ul>
-<li>Observer pattern is used when there is one-to-many relationship between objects such as if one object is modified, its depenedent objects are to be notified automatically. Observer pattern falls under behavioral pattern category.</li>
-<li>Subject + Observer + Client. </li>
+<li>vtkPolyData:<ul>
+<li>consists of combinations of vertices adn polyvertices;lines and polylines; triangles, quadrilaterals ,and polygons; and <a href="https://en.wikipedia.org/wiki/Triangle_strip" target="_blank" rel="external">triangle strips</a>.</li>
 </ul>
 </li>
-<li><a href="http://www.tutorialspoint.com/design_pattern/command_pattern.htm" target="_blank" rel="external">command pattern</a><ul>
-<li>Command pattern is a data driven design pattern and falls under behavioral pattern category. A request is wrapped under an object as command and passed to invoker object. Invoker object looks for the appropriate object which can handle this command and passes the command to the corresponding object which executes the command.</li>
+<li>Decimation:<ul>
+<li>also know as <code>polygonal reduction</code>, <code>mesh simplification</code>, <code>multiresolution modeling</code></li>
 </ul>
 </li>
-<li><a href="http://stackoverflow.com/questions/574911/difference-between-windows-and-console-application" target="_blank" rel="external">windows application VS console application</a><ul>
-<li>the windows application has no console. That&#x2019;s it.</li>
-</ul>
-</li>
-<li><p>When running the python wrapper, run the script first.</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@ECHO OFF
-set PYTHONPATH=C:\Python27\Lib
-set PYTHONHOME=C:\Python27
-set VTK_DATA_ROOT=C:\Kitware\VTKStudy\Testing
-
-PAUSE</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><a href="">C++ macro</a></p>
-</li>
-<li>glph:  geometric representation </li>
-<li>if you cannot find a definition of a function,search it in macro!<ul>
-<li>instance:<ul>
-<li>instead of searching for <code>GetPropColorValue</code>, search for <code>PropColorValue</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>vtk related cmake macro:<ul>
-<li>check folder: CMake/vtkModuleMacros.cmake </li>
-</ul>
-</li>
+<li>Smooth Mesh</li>
+<li>Clip Data</li>
+<li>Generate Texture Coordinates</li>
 </ul>
 </blockquote>
-<h1 id="bugs">bugs</h1><blockquote>
+<h2 id="53-visualizin-structured-grids"><a href="#5-3-Visualizin-Structured-Grids" class="headerlink" title="5.3 Visualizin Structured Grids"></a>5.3 Visualizin Structured Grids</h2><blockquote>
 <ul>
-<li><p><a href="">bug Example cone</a></p>
+<li>used in numerical analysis</li>
+<li>Manually Create vtkStructureGrid</li>
+</ul>
+</blockquote>
+<h2 id="54-visualizing-rectilinear-grids"><a href="#5-4-Visualizing-Rectilinear-Grids" class="headerlink" title="5.4 Visualizing Rectilinear Grids"></a>5.4 Visualizing Rectilinear Grids</h2><h2 id="55-visualizing-unstructured-grids"><a href="#5-5-Visualizing-Unstructured-Grids" class="headerlink" title="5.5 Visualizing Unstructured Grids"></a>5.5 Visualizing Unstructured Grids</h2><blockquote>
 <ul>
-<li><p>find_package(VTK COMPONENTS<br>vtkFiltersSources<br>vtkInteractionStyle<br>vtkRendering${VTK_RENDERING_BACKEND}<br>)<br><strong>to</strong></p>
+<li>all cell types can be represented in an unstructured grid</li>
+<li>call <code>Allocate()</code> prior to <code>insertNextCell()</code> into an  istance of vtkUnstructuredGrid</li>
+</ul>
+</blockquote>
+<h1 id="6-image-procesing-visualization"><a href="#6-Image-procesing-amp-Visualization" class="headerlink" title="6. Image procesing &amp;  Visualization"></a>6. Image procesing &amp;  Visualization</h1><h2 id="61-manually-creating-vtkimagedata"><a href="#6-1-Manually-Creating-vtkImageData" class="headerlink" title="6.1 Manually Creating vtkImageData"></a>6.1 Manually Creating vtkImageData</h2><h1 id="chapter-14-contributing-code"><a href="#Chapter-14-Contributing-Code" class="headerlink" title="Chapter 14. Contributing Code"></a>Chapter 14. Contributing Code</h1><h2 id="141-coding-considerations"><a href="#14-1-Coding-Considerations" class="headerlink" title="14.1 Coding Considerations"></a>14.1 Coding Considerations</h2><blockquote>
+<ul>
+<li><code>Variables</code>, <code>methods</code>, <code>class names</code>: changing capitalization</li>
+<li><code>instance variables</code> and <code>methods</code>: begin with a capital letter</li>
+<li><code>local variable</code>: begin with a lower-case letter</li>
+<li><code>Class name</code>: previx with vtk</li>
+<li><code>instance variable</code>: make them <em>protected</em> or <em>privated</em>. Access its instance variables is through <em>Set/Get</em> methods (check VTK/Common/vtkSetGet.h)</li>
+<li><a href="http://stackoverflow.com/questions/60570/why-should-the-pimpl-idiom-be-used" target="_blank" rel="external">PIMPL</a><ul>
+<li>Pointer to IMPLementation<ul>
+<li><strong>data hiding</strong> used to hide internal implementation details and data from the user of the library,</li>
+<li><strong>remove compilation dependencies and decrease recompilation time</strong></li>
+<li><strong>binary compatibility</strong>  Since the class declaration doesn&#x2019;t change, it is safe to just update the library (assuming you are creating a library)</li>
+</ul>
 </li>
-<li><p>find_package(VTK REQUIRED) </p>
-</li>
-<li>this would pollute the namespace. Do not do that. And would not work to VTK 7.<br>-cone:<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION 2.8.5 FATAL_ERROR)
-if(POLICY CMP0025)
-  cmake_policy(SET CMP0025 NEW) # CMake 3.0
-endif()
-if(POLICY CMP0053)
-  cmake_policy(SET CMP0053 NEW) # CMake 3.1
-endif()
-
-project (Step1)
-
-find_package(VTK 7.1 COMPONENTS vtkFiltersSources vtkRenderingCore vtkCommonCore NO_MODULE)
-
-include_directories(${VTK_INCLUDE_DIRS})
-or target_include_directories(Cone PRIVATE ${VTK_INCLUDE_DIRS})
-add_executable(Cone MACOSX_BUNDLE Cone.cxx)
-
-target_link_libraries(Cone ${VTK_LIBRARIES})</span><br></pre></td></tr></table></figure>
+<li><a href="http://www.cppsamples.com/common-tasks/pimpl.html" target="_blank" rel="external">definition</a><ul>
+<li>d-pointer, an opaque pointer defined in C++, used to  hide the implementation details of an interface from ordinary clients, so that the implementation may be c hanged without the need to recompile the modules using it.</li>
+</ul>
 </li>
 </ul>
 </li>
 </ul>
 </blockquote>
-<h1 id="examples-leanrning">Examples leanrning:</h1><h2 id="tutorial-folder">Tutorial folder</h2><blockquote>
+<h2 id="142-standard-methods-creating-and-deleting-objects"><a href="#14-2-Standard-Methods-Creating-and-Deleting-Objects" class="headerlink" title="14.2 Standard Methods: Creating and Deleting Objects"></a>14.2 Standard Methods: Creating and Deleting Objects</h2><h2 id="143-copying-objects-and-protected-methods"><a href="#14-3-Copying-Objects-and-Protected-Methods" class="headerlink" title="14.3 Copying Objects and Protected Methods"></a>14.3 Copying Objects and Protected Methods</h2><blockquote>
+<ul>
+<li><code>shallow copy</code>: copy of an object that copies references to objects</li>
+<li><code>deep copy</code>: used to copy an instance</li>
+</ul>
+</blockquote>
+<h2 id="144-using-stl"><a href="#14-4-Using-STL" class="headerlink" title="14.4 Using STL"></a>14.4 Using STL</h2><blockquote>
+<ul>
+<li>it can be problematic in cross-platform,  causing namespace management, DLL bvoundary problems and threading issues.<ul>
+<li>all STL references should be contained in a .cxx calss implementation file. Neverin the <em>.h</em> header file.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="145-manging-include-files"><a href="#14-5-Manging-Include-Files" class="headerlink" title="14.5 Manging Include Files"></a>14.5 Manging Include Files</h2><blockquote>
+<ul>
+<li>In the build process, whenever any one of the header files changes, all the code that depends on that file must be <strong>recompiled</strong>.<ul>
+<li>so, a classs definition(.h) file should include <strong>at most one</strong> other #include file-its superclass definition file. All other #includes&#x2019;s should be placed in the class implementation(.cxx) file.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="146-writing-a-vtk-class-an-overview"><a href="#14-6-Writing-A-VTK-Class-An-Overview" class="headerlink" title="14.6 Writing A VTK Class: An Overview"></a>14.6 Writing A VTK Class: An Overview</h2><h2 id="147-object-factories"><a href="#14-7-Object-Factories" class="headerlink" title="14.7 Object Factories"></a>14.7 Object Factories</h2><h2 id="148-kitwares-quality-software-process"><a href="#14-8-Kitware&#x2019;s-Quality-Software-Process" class="headerlink" title="14.8 Kitware&#x2019;s Quality  Software Process"></a>14.8 Kitware&#x2019;s Quality  Software Process</h2><blockquote>
+<p>-</p>
+</blockquote>
+<h1 id="chapter-15-managing-pipeline-execution"><a href="#Chapter-15-Managing-Pipeline-Execution" class="headerlink" title="Chapter 15. Managing Pipeline Execution"></a>Chapter 15. Managing Pipeline Execution</h1><blockquote>
+<ul>
+<li>Filter<ul>
+<li>algorithm: processing information and data</li>
+<li><em>executive</em> object: tell an algorithm when to execute and what information and data to proces</li>
+<li>input connection: stored in Input ports, which reference the output ports of other filters providing information and data</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="151-information-objects"><a href="#15-1-Information-Objects" class="headerlink" title="15.1 Information Objects"></a>15.1 Information Objects</h2><blockquote>
+<ul>
+<li>Pipeline Information<ul>
+<li>one pipeline information object per output port</li>
+</ul>
+</li>
+<li>Port Information<ul>
+<li>objects hold information about the data types produced on output ports and consumed by input ports</li>
+</ul>
+</li>
+<li>Request Information<ul>
+<li>objects hold information about a specific request being sent to an executive or algorithm</li>
+</ul>
+</li>
+<li>Data Information</li>
+<li>Algorithm Information</li>
+</ul>
+</blockquote>
+<h2 id="152-pipeline-eecution-models"><a href="#15-2-Pipeline-Eecution-Models" class="headerlink" title="15.2 Pipeline Eecution Models"></a>15.2 Pipeline Eecution Models</h2><blockquote>
+<ul>
+<li>execution model: a set of requests defined by a specific executive</li>
+<li>vtkAlgorithm::ProcessRequest needs <em>input pipeline info</em> and <em>output pipeline info</em></li>
+</ul>
+</blockquote>
+<h2 id="153-pipeline-information-flow"><a href="#15-3-Pipeline-Information-flow" class="headerlink" title="15.3 Pipeline Information flow"></a>15.3 Pipeline Information flow</h2><blockquote>
+<ul>
+<li>downstream flow: modify the output pipeline information</li>
+<li>upstream flow: modify the in pu t pipeline information</li>
+</ul>
+</blockquote>
+<h2 id="154-interface-of-information-objects"><a href="#15-4-Interface-of-information-Objects" class="headerlink" title="15.4 Interface of information Objects"></a>15.4 Interface of information Objects</h2><blockquote>
+<ul>
+<li><code>vtkInformation</code>: provide a heterogeneous key-to-value map.<ul>
+<li>Keys to this map are instances of the abstract cla ss <code>vtkInformationKey</code></li>
+<li>address of the key: store and retrieve values in the map</li>
+<li>type of a key object: interpret the key values</li>
+<li>Ex:   create a vtkInformation instance - &gt; create a key -&gt; Set the value</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="155-standard-executive"><a href="#15-5-Standard-Executive" class="headerlink" title="15.5 Standard Executive"></a>15.5 Standard Executive</h2><blockquote>
+<p>-</p>
+</blockquote>
+<h1 id="chapter-16-interfacing-to-vtk-data-objects"><a href="#Chapter-16-Interfacing-To-VTK-Data-Objects" class="headerlink" title="Chapter 16. Interfacing To VTK Data Objects"></a>Chapter 16. Interfacing To VTK Data Objects</h1><h2 id="161-data-arrays"><a href="#16-1-Data-Arrays" class="headerlink" title="16.1 Data Arrays"></a>16.1 Data Arrays</h2><blockquote>
+<ul>
+<li>store numerical information and always for information that is not heterogeneous</li>
+<li>vtkDataArray represents data as an <strong>array of tuples</strong>, each tuple consisting of the same number of components and each of the same native data type.</li>
+</ul>
+</blockquote>
+<h2 id="162-datasets"><a href="#16-2-Datasets" class="headerlink" title="16.2 Datasets"></a>16.2 Datasets</h2><blockquote>
+<ul>
+<li><code>data object</code>: arbitrary data<ul>
+<li>vtkSelection, vtkGraph, vtkTable</li>
+</ul>
+</li>
+<li><code>datasets</code>: has an inherent spatial structure</li>
+</ul>
+</blockquote>
+<h2 id="167-polygonal-data"><a href="#16-7-Polygonal-Data" class="headerlink" title="16.7 Polygonal Data"></a>16.7 Polygonal Data</h2><blockquote>
+<ul>
+<li>call <code>BuildCells()</code>: If random access to cells is requried.</li>
+<li>call <code>BuildLinks()</code>: If topological information is required.</li>
+</ul>
+</blockquote>
+<h1 id="chapter-17-how-to-write-an-algorithm-for-vtk"><a href="#Chapter-17-How-To-Write-an-Algorithm-for-VTK" class="headerlink" title="Chapter 17. How To Write an Algorithm for VTK"></a>Chapter 17. How To Write an Algorithm for VTK</h1><h2 id="171-overview"><a href="#17-1-Overview" class="headerlink" title="17.1 Overview"></a>17.1 Overview</h2><blockquote>
+<ul>
+<li>port: corresponds to a logical input or output of the algorithm</li>
+<li>user interface: define <code>parameters</code> in VTK filter</li>
+<li>Fulfilling Pipeline Requests</li>
+<li><code>ProcessRequest()</code>: send the executive object of a filter to the algorithm</li>
+<li><code>inputVector</code>:<ul>
+<li>contains the input pipeline information</li>
+<li>each element of the array represents one input port</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="examples-leanrning"><a href="#Examples-leanrning" class="headerlink" title="Examples leanrning:"></a>Examples leanrning:</h1><h2 id="tutorial-folder"><a href="#Tutorial-folder" class="headerlink" title="Tutorial folder"></a>Tutorial folder</h2><blockquote>
 <ul>
 <li>Step1 - A &#x201C;Hello World&#x201D; style example of a simple visualization pipeline</li>
-<li>VTK/Examples/Tutorial/Step1/Cxx/CMalkeLists.txt<ul>
-<li>The problem is that <strong>vtkRendering${VTK_RENDERING_BACKEND}</strong> can not find the proper rendering engine. One hack solution would be just: In CMakeList.txt file, replace <strong>vtkRendering${VTK_RENDERING_BACKEND}</strong> with <strong>vtkRenderingOpenGL2.</strong> The reason why we need this is because Cmake does not know where the rendering core is. By specifying it, we can use the rendering core to override the proper method.<br>The proper solution should be replace the whole find_package paragraph with:</li>
+<li>VTK/Examples/Tutorial/Step1/Cxx/CMakeLists.txt<ul>
+<li>The problem is that <strong>vtkRendering${VTK_RENDERING_BACKEND}</strong> can not find the proper rendering engine. One hack solution would be just: In CMakeLists.txt file, replace <strong>vtkRendering${VTK_RENDERING_BACKEND}</strong> with <strong>vtkRenderingOpenGL2.</strong> The reason why we need this is because Cmake does not know where the rendering core is. By specifying it, we can use the rendering core to override the proper method.<br>The proper solution should be replace the whole find_package paragraph with:</li>
 </ul>
 </li>
 </ul>
 </blockquote>
-<pre><code>find_package<span class="list">(<span class="keyword">VTK</span> REQUIRED COMPONENTS vtkCommonCore)</span> 
-find_package<span class="list">(<span class="keyword">VTK</span> COMPONENTS 
+<pre><code>find_package(VTK REQUIRED COMPONENTS vtkCommonCore)
+find_package(VTK COMPONENTS
    vtkFiltersSources
    vtkInteractionStyle
-   vtkRendering${VTK_RENDERING_BACKEND})</span>
-</code></pre><p>The first find_package lets the CMake know where to find the packages, then  second find_package would know where to find <strong>vtkRendering${VTK_RENDERING_BACKEND}</strong>.<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION 2.8.5 FATAL_ERROR)
-if(POLICY CMP0025)
-  cmake_policy(SET CMP0025 NEW) # CMake 3.0
-endif()
-if(POLICY CMP0053)
-  cmake_policy(SET CMP0053 NEW) # CMake 3.1
-endif()
-
-project (Step1)
-
-find_package(VTK REQUIRED COMPONENTS vtkCommonCore)
-find_package(VTK
-COMPONENTS
-  vtkCommonCore
-  vtkFiltersSources
-  vtkInteractionStyle
-  vtkRendering${VTK_RENDERING_BACKEND})
-include(${VTK_USE_FILE})
-message(STATUS &quot;vtkRendering${VTK_RENDERING_BACKEND}&quot;)
-add_executable(Cone MACOSX_BUNDLE Cone.cxx)
-target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td></tr></table></figure></p>
+   vtkRendering${VTK_RENDERING_BACKEND})
+</code></pre><p>The first find_package lets the CMake know where to find the packages, then  second find_package would know where to find <strong>vtkRendering${VTK_RENDERING_BACKEND}</strong>.<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">cmake_minimum_required</span>(VERSION <span class="number">2.8</span>.<span class="number">5</span> FATAL_ERROR)</div><div class="line"><span class="keyword">if</span>(POLICY CMP0025)</div><div class="line">  <span class="keyword">cmake_policy</span>(<span class="keyword">SET</span> CMP0025 NEW) <span class="comment"># CMake 3.0</span></div><div class="line"><span class="keyword">endif</span>()</div><div class="line"><span class="keyword">if</span>(POLICY CMP0053)</div><div class="line">  <span class="keyword">cmake_policy</span>(<span class="keyword">SET</span> CMP0053 NEW) <span class="comment"># CMake 3.1</span></div><div class="line"><span class="keyword">endif</span>()</div><div class="line"></div><div class="line"><span class="keyword">project</span> (Step1)</div><div class="line"></div><div class="line"><span class="keyword">find_package</span>(VTK REQUIRED COMPONENTS vtkCommonCore)</div><div class="line"><span class="keyword">find_package</span>(VTK</div><div class="line">COMPONENTS</div><div class="line">  vtkCommonCore</div><div class="line">  vtkFiltersSources</div><div class="line">  vtkInteractionStyle</div><div class="line">  vtkRendering<span class="variable">${VTK_RENDERING_BACKEND}</span>)</div><div class="line"><span class="keyword">include</span>(<span class="variable">${VTK_USE_FILE}</span>)</div><div class="line"><span class="keyword">message</span>(STATUS <span class="string">&quot;vtkRendering${VTK_RENDERING_BACKEND}&quot;</span>)</div><div class="line"><span class="keyword">add_executable</span>(Cone MACOSX_BUNDLE Cone.cxx)</div><div class="line"><span class="keyword">target_link_libraries</span>(Cone LINK_PRIVATE <span class="variable">${VTK_LIBRARIES}</span>)</div></pre></td></tr></table></figure></p>
 <blockquote>
 <ul>
 <li>Step2 - Adding observers to Step1 (i.e., processing events)</li>
-<li><p>VTK/Examples/Tutorial/Step2/Cxx/CMalkeLists.txt</p>
+<li><p>VTK/Examples/Tutorial/Step2/Cxx/CMakeLists.txt</p>
 <ul>
 <li>same as Step1</li>
 <li>add an oberver to print out coordinates</li>
@@ -451,7 +581,7 @@ target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td><
 </li>
 <li><p>Step3 - Rendering with multiple renderers!</p>
 </li>
-<li>VTK/Examples/Tutorial/Step3/Cxx/CMalkeLists.txt<ul>
+<li>VTK/Examples/Tutorial/Step3/Cxx/CMakeLists.txt<ul>
 <li>same as Step1</li>
 <li>how to create two renders within the same window</li>
 </ul>
@@ -459,7 +589,7 @@ target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td><
 <li>Step4 - Modifying properties and transformations</li>
 <li>Step5 - Specifying a particular interaction style</li>
 <li>Step6 - Adding a 3D widget</li>
-<li>VTK/Examples/Tutorial/Step6/Cxx/CMalkeLists.txt<ul>
+<li>VTK/Examples/Tutorial/Step6/Cxx/CMakeLists.txt<ul>
 <li>reinterpret_cast</li>
 <li>How to add a 3D Widget<ul>
 <li>renderWindowInteractor to window -&gt; specify a particular interactor style -&gt; associate the 3D widget with the render -&gt; add the actor and observer to the boxWidget</li>
@@ -467,6 +597,350 @@ target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td><
 </li>
 </ul>
 </li>
+</ul>
+</blockquote>
+<h1 id="slides-and-tutorial-pdf-from-david-e-demarle"><a href="#slides-and-tutorial-pdf-from-David-E-DeMarle" class="headerlink" title="slides and tutorial pdf from David E DeMarle"></a>slides and tutorial pdf from David E DeMarle</h1><h2 id="section-1-vtk-data-structures"><a href="#Section-1-VTK-Data-Structures" class="headerlink" title="Section 1: VTK Data Structures"></a>Section 1: VTK Data Structures</h2><blockquote>
+<ul>
+<li>vtkDataObject<ul>
+<li>definition: represents a &#x201C;blob&#x201D; of data</li>
+<li>contain instance of <code>vtkFieldData</code> (a set of arrays)</li>
+<li>no geometric/topological structure</li>
+<li>superclass of all VTK data objects</li>
+</ul>
+</li>
+<li>vtkDataSet (<em>subclass</em> of vtkDataObject)<ul>
+<li>definition: a data object with geometric/topological structure</li>
+<li>geometry(points) + topology(cells)<ul>
+<li><code>pointData = aDataSet-&gt;GetPointData()</code></li>
+<li><code>cellData = aDataSet-&gt;GetCellData()</code></li>
+</ul>
+</li>
+<li>associated point- and cell-centered data which is stored in vtkDataArray objects and managed by vtkPointData and vtkCellData</li>
+</ul>
+</li>
+<li>vtkDataArrays<ul>
+<li>definition: pointer to contiguous buffer</li>
+<li>of ints, floats, chars, strings, variants</li>
+<li>array = type [tuples][components]</li>
+<li>methods:<ul>
+<li><code>Set</code>: you just write stuff without <em>range check</em>. So use <code>SetNumberOfTuples() prior to invoke</code>Set` method</li>
+<li><code>Insert</code>: you do range check, allocate memory as necessary, write into index specified&#x201D;<br>Common Operation: Copy Input to Output</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In a filter we wish to copy the input to the output(check detail on  pdf: P20)<ul>
+<li><code>PassData()</code>, <code>CopyAllocate()</code>, <code>CopyData()</code></li>
+</ul>
+</li>
+<li>vtkFieldData VS vtkDataSetAttribute<ul>
+<li>vtkFieldData: add/remove named arrays, a model of a field as m x n matrix of data values</li>
+<li>vtkDataSetAttribute: represent and manipulate attribute data(e.g, scalars, vectors, normals, texture coordinates, tensors, global ids. pedigreeids, and field data)<br>Exercise 1: Attribute Data</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Create an instance of vtkPointData</span></div><div class="line">vtkSmartPointer&lt;vtkPointData&gt; pointData =</div><div class="line">  vtkSmartPointer&lt;vtkPointData&gt;::New();</div><div class="line"><span class="comment">// create an instance of vtkFloatArray with three components</span></div><div class="line">vtkSmartPointer&lt;vtkFloatArray&gt; FA =</div><div class="line">  vtkSmartPointer&lt;vtkFloatArray&gt;::New();</div><div class="line"><span class="comment">//   solution 1</span></div><div class="line">FA-&gt;SetNumberOfComponments(<span class="number">3</span>); <span class="comment">// set the number of elements inside a tuple</span></div><div class="line">FA-&gt;SetNumberofValues(<span class="number">1</span>); <span class="comment">// set the number of tuples the array will have</span></div><div class="line"><span class="keyword">for</span>(vtkIDType i = <span class="number">0</span>; i &lt; FA-&gt;GetNumberOfComponents(); ++i)</div><div class="line">{</div><div class="line">  distances-&gt;SetComponent(i,<span class="number">0.1</span>);</div><div class="line">}</div><div class="line"><span class="comment">//   solution 2</span></div><div class="line">FA-&gt;SetNumberofTuples(<span class="number">3</span>);</div><div class="line">FA-&gt;InsertNextValue(<span class="number">0.0</span>);</div><div class="line">FA-&gt;InsertNextValue(<span class="number">0.0</span>);</div><div class="line">FA-&gt;InsertNextValue(<span class="number">0.0</span>);</div><div class="line"><span class="comment">//   solution 3 directly assign the data buffer</span></div><div class="line"><span class="keyword">float</span> *<span class="built_in">array</span> = <span class="keyword">new</span> <span class="keyword">float</span>[<span class="number">3</span>];</div><div class="line"><span class="built_in">array</span>[<span class="number">0</span>] = <span class="built_in">array</span>[<span class="number">1</span>] = <span class="built_in">array</span>[<span class="number">2</span>] = <span class="number">0.0</span>;</div><div class="line">FA-&gt;SetArray(<span class="built_in">array</span>,<span class="number">3</span>,<span class="number">1</span>);</div><div class="line"></div><div class="line"><span class="comment">// assign it a name</span></div><div class="line">FA-&gt;SetName(<span class="string">&quot;a sample float array&quot;</span>);</div><div class="line"><span class="comment">// add it to vtkPoint Data as an array and scalars</span></div><div class="line">pointData-&gt;SetArray(FA); <span class="comment">// add as an array</span></div><div class="line">pointData-&gt;SetScalars(FA); <span class="comment">// add as an scalars</span></div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>Dataset API<ul>
+<li>all simple dataset types are subclasses of vtkDataSet, therefore all data can be treated as instances of vtkDataSet<br>Exercise 2 - Creating vtkPolyData</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Create instance of vtkPolyData and store the point, poly, scalar data</span></div><div class="line">vtkPoints *points = vtkPoints::New();</div><div class="line">points-&gt;InsertNextPoint(<span class="number">0</span>, <span class="number">0.0</span>, <span class="number">0.0</span>, <span class="number">0.0</span>);</div><div class="line">points-&gt;InsertNextPoint(<span class="number">1</span>, <span class="number">1.0</span>, <span class="number">0.0</span>, <span class="number">0.0</span>);</div><div class="line">points-&gt;InsertNextPoint(<span class="number">2</span>, <span class="number">0.0</span>, <span class="number">1.0</span>, <span class="number">0.0</span>);</div><div class="line">...</div><div class="line">vtkCellArray *polys = vtkCellArray::New();</div><div class="line">polys-&gt;InsertNextCell(<span class="number">3</span>);</div><div class="line">polys-&gt;InsertCellPoint(<span class="number">0</span>);</div><div class="line">polys-&gt;InsertCellPoint(<span class="number">1</span>);</div><div class="line">polys-&gt;InsertCellPoint(<span class="number">2</span>);</div><div class="line">...</div><div class="line">vtkFloatArray *scalars = vtkFloatArray::New();</div><div class="line">scalars-&gt;SetNumberOfComponents(<span class="number">1</span>);</div><div class="line">scalars-&gt;InsertNextTuple1(<span class="number">0.0</span>);</div><div class="line">...</div><div class="line">vtkPolyData *tri = vtkPolyData::New();</div><div class="line">tri-&gt;SetPoints(points);</div><div class="line">tri-&gt;SetPolys(polys);</div><div class="line">tri-&gt;GetCellData()-&gt;SetScalars(scalars);</div><div class="line">points-&gt;Delete(); polys-&gt;Delete(); scalars-&gt;Delete();</div></pre></td></tr></table></figure>
+<h2 id="section-2-the-rendering-pipeline-pdf-p40"><a href="#Section-2-The-Rendering-Pipeline-pdf-P40" class="headerlink" title="Section 2: The Rendering Pipeline pdf P40"></a>Section 2: The Rendering Pipeline pdf P40</h2><blockquote>
+<ul>
+<li>From Processing to Graphic pipeline<ul>
+<li><code>Mapper</code> -&gt; <code>ViewProp</code> -&gt; <code>Renderer</code> -&gt; <code>RenWin</code> -&gt; <code>Interactor</code></li>
+<li>source(data) -&gt; Mapper -&gt; Actor -&gt; Renderer &gt; WIndow -&gt; Interactor</li>
+<li><code>vtkLookupTable</code>: choose color for attribute</li>
+<li><code>vtkFollower</code>: actor alwasys faces the renderer&#x2019;s camera</li>
+<li><code>Picking</code>: pdf P68</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="section-3-processing-data"><a href="#Section-3-Processing-Data" class="headerlink" title="Section 3: Processing Data"></a>Section 3: Processing Data</h2><blockquote>
+<ul>
+<li>Readers: parse files and produce VTK data structures<ul>
+<li>vtkDataSetReader, vtkPNGReader, vtkPLOT3DReader,<br>vtkParticleReader, vtkExodusReader, vtkOpenFOAMReader</li>
+</ul>
+</li>
+<li>Contour: extract isocontours within data<ul>
+<li>vtkContourFilter</li>
+</ul>
+</li>
+<li>Probing: sample attributes at set of locations<ul>
+<li>vtkProbeFilter</li>
+</ul>
+</li>
+<li>Warping: bend geometry by value<ul>
+<li>vtkWarpScalar, vtkWarpVector</li>
+</ul>
+</li>
+<li>Glyph: place and orient markers within data<ul>
+<li>vtkGlyph2D, vtkGlyph3D</li>
+</ul>
+</li>
+<li>Streamline: advect along data to display or compute flow<br>characteristics<ul>
+<li>vtkStreamline</li>
+</ul>
+</li>
+<li>Demand Driven Pipeline</li>
+</ul>
+</blockquote>
+<h1 id="others"><a href="#Others" class="headerlink" title="Others"></a>Others</h1><blockquote>
+<ul>
+<li>mappers: take the <code>data</code> and converte it into a visual representation</li>
+<li><a href="http://www.tutorialspoint.com/design_pattern/observer_pattern.htm" target="_blank" rel="external">subject observer pattern</a><ul>
+<li>Observer pattern is used when there is one-to-many relationship between objects such as if one object is modified, its depenedent objects are to be notified automatically. Observer pattern falls under behavioral pattern category.</li>
+<li>Subject + Observer + Client.</li>
+</ul>
+</li>
+<li><a href="http://www.tutorialspoint.com/design_pattern/command_pattern.htm" target="_blank" rel="external">command pattern</a><ul>
+<li>Command pattern is a data driven design pattern and falls under behavioral pattern category. A request is wrapped under an object as command and passed to invoker object. Invoker object looks for the appropriate object which can handle this command and passes the command to the corresponding object which executes the command.</li>
+</ul>
+</li>
+<li><a href="http://stackoverflow.com/questions/574911/difference-between-windows-and-console-application" target="_blank" rel="external">windows application VS console application</a><ul>
+<li>the windows application has no console. That&#x2019;s it.</li>
+</ul>
+</li>
+<li>When running the python wrapper, run the script first.</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@ECHO OFF</div><div class="line">set PYTHONPATH=C:\Python27\Lib</div><div class="line">set PYTHONHOME=C:\Python27</div><div class="line">set VTK_DATA_ROOT=C:\Kitware\VTKStudy\Testing</div><div class="line"></div><div class="line">PAUSE</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><a href="">C++ macro</a></li>
+<li>glyph:  geometric representation</li>
+<li>if you cannot find a definition of a function,search it in macro!<ul>
+<li>instance:<ul>
+<li>instead of searching for <code>GetPropColorValue</code>, search for <code>PropColorValue</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>vtk related cmake macro:<ul>
+<li>check folder: CMake/vtkModuleMacros.cmake</li>
+</ul>
+</li>
+<li>vtk_module(<name>)<ul>
+<li>check definition in vtkModuleMacros.cmake line 15.</li>
+</ul>
+</name></li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"># vtk_module(&lt;name&gt;)</div><div class="line"> 16 #</div><div class="line"> 17 # Main function for declaring a VTK module, usually in a module.cmake file i    n</div><div class="line"> 18 # the module search path. The module name is the only required argument, all</div><div class="line"> 19 # others are optional named arguments that will be outlined below. The follo    wing</div><div class="line"> 20 # named options take one (or more) arguments, such as the names of dependent</div><div class="line"> 21 # modules:</div><div class="line"> 22 #  DEPENDS = Modules that will be publicly linked to this module</div><div class="line"> 23 #  PRIVATE_DEPENDS = Modules that will be privately linked to this module</div><div class="line"> 24 #  COMPILE_DEPENDS = Modules that are needed at compile time by this module</div><div class="line"> 25 #  TEST_DEPENDS = Modules that are needed by this modules testing executable    s</div><div class="line"> 26 #  DESCRIPTION = Free text description of the module</div><div class="line"> 27 #  TCL_NAME = Alternative name for the TCL wrapping (cannot contain numbers)</div><div class="line"> 28 #  IMPLEMENTS = Modules that this module implements, using the auto init fea    ture</div><div class="line"> 29 #  BACKEND = An implementation backend that this module belongs (valid with</div><div class="line"> 30 #            IMPLEMENTS only)</div><div class="line"> 31 #  GROUPS = Module groups this module should be included in</div><div class="line"> 32 #  TEST_LABELS = Add labels to the tests for the module</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><a href="http://m.vtk.org/index.php/Main_Page" target="_blank" rel="external">VTK-m</a><ul>
+<li>a toolkit for emerging processor architectures</li>
+<li>support fine-grained concurrency for data analysis and visualization algorithm required to drive extreme scale computing by providing abstract models for data and execution that can be applied to a variety of algorithms across many different processor architectures.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="bugs"><a href="#bugs" class="headerlink" title="bugs"></a>bugs</h1><blockquote>
+<ul>
+<li><p><a href="">bug Example cone</a></p>
+<ul>
+<li><p>find_package(VTK COMPONENTS<br>vtkFiltersSources<br>vtkInteractionStyle<br>vtkRendering${VTK_RENDERING_BACKEND}<br>)<br><strong>to</strong></p>
+</li>
+<li><p>find_package(VTK REQUIRED)</p>
+</li>
+<li>this would pollute the namespace. Do not do that. And would not work to VTK 7.<br>-cone:</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">cmake_minimum_required(VERSION 2.8.5 FATAL_ERROR)</div><div class="line">if(POLICY CMP0025)</div><div class="line">  cmake_policy(SET CMP0025 NEW) # CMake 3.0</div><div class="line">endif()</div><div class="line">if(POLICY CMP0053)</div><div class="line">  cmake_policy(SET CMP0053 NEW) # CMake 3.1</div><div class="line">endif()</div><div class="line"></div><div class="line">project (Step1)</div><div class="line"></div><div class="line">find_package(VTK 7.1 COMPONENTS vtkFiltersSources vtkRenderingCore vtkCommonCore NO_MODULE)</div><div class="line"></div><div class="line">include_directories(${VTK_INCLUDE_DIRS})</div><div class="line">or target_include_directories(Cone PRIVATE ${VTK_INCLUDE_DIRS})</div><div class="line">add_executable(Cone MACOSX_BUNDLE Cone.cxx)</div><div class="line"></div><div class="line">target_link_libraries(Cone ${VTK_LIBRARIES})</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>add testcases for MPI from mutiple to single proecess:<ul>
+<li>just add the file name to vtk_add_test_cxx in CMakeLists.txt</li>
+<li><code>Test-file,NO_VALID,NO_RT,NO_DATA</code> could silence the build warnings.</li>
+</ul>
+</li>
+<li>vtkPoints VS vtkVertex<ul>
+<li><a href="http://www.vtk.org/doc/nightly/html/classvtkPoints.html" target="_blank" rel="external">vtkPoints</a>:<ul>
+<li>works like an array</li>
+</ul>
+</li>
+<li><a href="http://www.vtk.org/doc/nightly/html/classvtkVertex.html" target="_blank" rel="external">vtkVertex</a>:<ul>
+<li>a child class of vtkCell</li>
+<li>you can do interpolation, intersection test or griangulation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>how to find VTK testCases<ul>
+<li>check the <strong>test</strong> in VTK repo</li>
+<li>search the class name and check the <strong>test</strong></li>
+</ul>
+</li>
+<li><a href="http://www.vtk.org/doc/nightly/html/classvtkGlyph3D.html#details" target="_blank" rel="external">vtkGlyph3D</a><ul>
+<li>copy oriented and scaled glyph geometry to every input point</li>
+<li><strong>glyph</strong>: geometric representation</li>
+<li>typically this object operates on input data with scalar and/or vector data(Ex. gradient filter)</li>
+</ul>
+</li>
+<li><code>vtkDataObject</code> works like an API, then safe_down_cast into different data types</li>
+<li><code>vtkMath::UninitializeBounds()</code><ul>
+<li>Xmin = 1, xMax = -1, &#x2026;. which makes it as uninitialized</li>
+</ul>
+</li>
+<li><a href="http://www.vtk.org/Wiki/VTK/VTK_6_Migration/Replacement_of_SetInput" target="_blank" rel="external">SetInput VS SetInputConnection</a><ul>
+<li>If you want to establish a pipeline connection, use SetInputConnection</li>
+<li>If you want to process a stand-alone dataset, use SetInputData</li>
+</ul>
+</li>
+<li><a href="http://teem.sourceforge.net/nrrd/" target="_blank" rel="external">nrrd file</a><ul>
+<li>nrrd: nearly raw raster data</li>
+<li>Nrrd is a library and file format designed to support scientific visualization and image processing involving N-dimensional raster data</li>
+<li>nhdr: a detached header which allow data stored in one or mre separte files, with or without headers of another format.</li>
+<li>very useful in situations where very large amounts of data are to be read or written with direct IO, since you can transfer data between blocks on disk and user-space memory</li>
+</ul>
+</li>
+<li>[raw data]<ul>
+<li>has potential to become &#x201C;information&#x201D;, but need selective extraction, organization and analysis</li>
+</ul>
+</li>
+<li>writing test class<ul>
+<li>add a MD5 file<ul>
+<li>run ctest, and you can get one from Testing/Temporary</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>print the class in VTK<ul>
+<li>use <code>classname-&gt;print(std:cout);</code></li>
+</ul>
+</li>
+<li>get data from reader<ul>
+<li>reader just does the reader&#x2019;s job. You need to use get outputData then downcast it into the data you would like to use</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">vtkSmartPointer&lt;vtkXMLStructuredGridReader&gt; reader =</div><div class="line">  vtkSmartPointer&lt;vtkXMLStructuredGridReader&gt;::New();</div><div class="line">reader-&gt;SetFileName(inputFilename.c_str());</div><div class="line">reader-&gt;Update();</div><div class="line">vtkDataSet* data = vtkDataSet::SafeDownCast(reader-&gt;GetOutputAsDataSet());</div><div class="line">vtkPointData* pointData =  data-&gt;GetPointData();</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><a href="http://www.vtk.org/gitweb?p=VTK.git;a=blob;f=Examples/DataManipulation/Cxx/Arrays.cxx" target="_blank" rel="external">how to set value in vtkDataArray</a></li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">vtkSmartPointer&lt;vtkStructuredGrid&gt; structuredGrid =</div><div class="line">  vtkSmartPointer&lt;vtkStructuredGrid&gt;::New();</div><div class="line"></div><div class="line">vtkSmartPointer&lt;vtkPoints&gt; points =</div><div class="line">  vtkSmartPointer&lt;vtkPoints&gt;::New();</div><div class="line"></div><div class="line">points-&gt;InsertNextPoint(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>);</div><div class="line">points-&gt;InsertNextPoint(<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>);</div><div class="line">points-&gt;InsertNextPoint(<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">points-&gt;InsertNextPoint(<span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">vtkPointData* pointData = structuredGrid-&gt;GetPointData();</div><div class="line">vtkSmartPointer&lt;vtkDoubleArray&gt; doubleArray =</div><div class="line">    vtkSmartPointer&lt;vtkDoubleArray&gt;::New();</div><div class="line">doubleArray-&gt;SetNumberOfComponents(<span class="number">3</span>);</div><div class="line">doubleArray-&gt;SetName(<span class="string">&quot;solire&quot;</span>);</div><div class="line">doubleArray-&gt;SetNumberOfTuples(<span class="number">4</span>);</div><div class="line"><span class="keyword">double</span> tupleValue[<span class="number">4</span>][<span class="number">3</span>] = {{<span class="number">5.0</span>, <span class="number">-5.0</span>, <span class="number">0.0</span>},{<span class="number">1.0</span>, <span class="number">0.0</span>, <span class="number">0.0</span>},</div><div class="line">                     {<span class="number">5.0</span>, <span class="number">10.0</span>, <span class="number">3.0</span>},{<span class="number">5.0</span>, <span class="number">5.0</span>, <span class="number">12.0</span>}};</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i&lt; <span class="number">4</span>; ++i)</div><div class="line">  {</div><div class="line">  doubleArray-&gt;SetTuple(i,tupleValue[i]);</div><div class="line">  }</div><div class="line">pointData-&gt;AddArray(doubleArray);</div><div class="line"></div><div class="line"><span class="comment">// Specify the dimensions of the grid</span></div><div class="line">structuredGrid-&gt;SetDimensions(<span class="number">2</span>,<span class="number">2</span>,<span class="number">1</span>);</div><div class="line">structuredGrid-&gt;SetPoints(points);</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><a href="http://www.vtk.org/doc/nightly/html/classvtkReflectionFilter.html#details" target="_blank" rel="external">vtkReflectionFilter</a><ul>
+<li><code>vtkReflectionFilter</code> reflects the data sets into unstructured grids(no matter what the input is). So after reflection, if you want to access the data, you need to cast it into <code>vtkUnstructuredGrid</code>.</li>
+</ul>
+</li>
+<li><a href="http://www.aosabook.org/en/vtk.html" target="_blank" rel="external">wait to see</a></li>
+<li>MTime in VTK:<ul>
+<li>When graphic card is rendering a scene, it&#x2019;s too expensive to update every geometry. So we use <strong>MTime</strong> to log when the geomery is updated, then for every time step we only update the things that has been changed.</li>
+</ul>
+</li>
+<li>vtkRenderingLIC<ul>
+<li>vtkRendering Line Integral Convolution, a techinique for imaging vector fields, visualizing fluid motion, such as the wind movement in a tornado</li>
+</ul>
+</li>
+<li>actors are tied to a particular render window<ul>
+<li>Essentially yes, mainly because an actor has a mapper and mappers should not be shared between windows.</li>
+</ul>
+</li>
+<li>mappers are likewise tied to a particular render window<ul>
+<li>Yes. Mappers create buffer objects that are tied to a window&#x2019;s OpenGL context. Right now we do not support sharing buffers between contexts (it could be added) so having the same mapper in two windows would either cause the buffers to be rebuilt and sent down every frame or an OpenGL error. You could share an actor/mapper between two windows if you knew only one would active at a time. You would need to call release graphics resources every time you switch which window is active to make sure the buffers etc all rebuilt. But the general answer is they are not designed to be shared.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="from-utkrash"><a href="#From-UTkrash" class="headerlink" title="From UTkrash"></a>From UTkrash</h1><p>source -&gt; filter -&gt; filter -&gt; sink<br>RequestInformation( -&gt; source to sink)<br>    Do it in the beginning, so sink know how many filters and sources there are, corresponding ports<br>RequestUpdateExtent(&lt;- sink to source)<br>RequestData(_-&gt;)<br>source -&gt; mapper(an algorithm subclass)-&gt; actor(prop, you can add texture here) -&gt; rendering<br>Rendering<br>vtkRendering, vtkViewPort</p>
+<p>pvpatch, iPython, tomato timer</p>
+<p>PV add server manager to vtk.<br>    Data server - Render server -Client</p>
+<p>vtkSMProxy - vtkObject(server corresponding on vtk side)<br>    a XML file<br>        property 1<br>        property 2<br>        which array<br>        range<br>            domain<br>    updateVTKObject( -&gt; )<br>    updateLocal Object( &lt;-)<br>    we can only change data in proxy and pass to object, normally not the reverse way</p>
+<p>PV GUI<br>```</p>
+<blockquote>
+<ul>
+<li>[call back function]<ul>
+<li><a href="http://www.vtk.org/Wiki/VTK/Tutorials/Callbacks" target="_blank" rel="external">link</a></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h1><blockquote>
+<ul>
+<li>when debugging configure and build<ul>
+<li>understand building environment. Does it include modules that are not enabled? Wrong path?</li>
+</ul>
+</li>
+<li>ctest advanced<ul>
+<li>ctest &#x2013;rerun-failed -VV 2&gt;&amp;1 | less</li>
+<li>ctest &#x2013;rerun-failed -VV</li>
+</ul>
+</li>
+<li>when you have error has XXX which already has a custom rule:<ul>
+<li>it means that you have include the  same file or module twice.</li>
+</ul>
+</li>
+<li>when you are adding a test file:<ul>
+<li>normally you need a png file for validation. So the workflow is:<ul>
+<li>add your test file and build the current branch -&gt; copy the .png file in build/Testing/Tempory/ to the corresponding baseline folder in your source directory -&gt; cd build and run <code>cmake .</code> to convert the .png file in baseline/ into .png.md5/ -&gt; add png.md5 file and push your branch using <code>git gitlab-push</code> rather than simple <code>git push</code>(needed for adding the md5 file into dashboard)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>warning C4100: &apos;argv&apos; : unreferenced formal parameter</code><ul>
+<li>just use <code>vtkNotUsed</code> in front of the parameter, this would silence the compiler warning.</li>
+</ul>
+</li>
+<li><code>vtkNotUsed</code>: used to quite compiler warnings about unused parameters</li>
+<li>Run time and Compile time<ul>
+<li>in <strong>module.cmake</strong> file, header based inclusion is compile time dependency. For some module, you can not judge them by header.</li>
+</ul>
+</li>
+<li>use <a href="https://www.vtk.org/Wiki/VTK/Tutorials/SmartPointers" target="_blank" rel="external">vtkSmartPointer</a><ul>
+<li>No need to worry about <em>Register()</em></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="data-model-and-visualization-pipeline-from-dave"><a href="#Data-Model-and-Visualization-Pipeline-from-Dave" class="headerlink" title="Data Model and Visualization Pipeline from Dave"></a>Data Model and Visualization Pipeline from Dave</h1><blockquote>
+<ul>
+<li></li>
+</ul>
+</blockquote>
+<h2 id="write-a-multiblock-dataset-out-into-disk-and-visualize-it"><a href="#Write-a-multiblock-dataset-out-into-disk-and-visualize-it" class="headerlink" title="Write a multiblock dataset out into disk and visualize it"></a>Write a multiblock dataset out into disk and visualize it</h2><blockquote>
+<ul>
+<li><a href="https://lorensen.github.io/VTKExamples/site/Cxx/IO/ExportPolyDataScene/" target="_blank" rel="external">vtkXMLMultiBlockDataWriter example</a></li>
+</ul>
+</blockquote>
+<h2 id="vtk-new-pipeline"><a href="#VTK-New-Pipeline" class="headerlink" title="VTK  New Pipeline"></a><a href="https://www.vtk.org/Wiki/VTK/Tutorials/New_Pipeline" target="_blank" rel="external">VTK  New Pipeline</a></h2><blockquote>
+<ul>
+<li>downstream request: input to output</li>
+<li>ProcessRequest: request - specifies what you are asking the algorithm to do, inputVector - inputs to this algorithm and outputVector - one for the outputs of this algorithm</li>
+<li>Typical Pipeline Execution: Request Information(What output would look like?) -&gt; Request Update Extent(an algorithm should take the update extents in its output&#x2019;s information and then set the correct update extents in its input&#x2019;s information) -&gt; Request Data(fill in the output ports)</li>
+<li><a href="https://blog.kitware.com/streaming-in-vtk-spatial/" target="_blank" rel="external">streaming in VTK</a></li>
+</ul>
+</blockquote>
+<h3 id="typical-pipeline-execution"><a href="#Typical-Pipeline-Execution" class="headerlink" title="Typical Pipeline Execution"></a>Typical Pipeline Execution</h3><blockquote>
+<ul>
+<li>First the use instantiates an Algorithm such as vtkImageGradient, when the algorithm is instantiated it will automatically create a default executive and connect the algorithm and executive together. The algorithm will also call <code>FillInputPortInformation</code> and <code>FillOutputPortInformation</code> on each input and output port respectively.</li>
+<li>request information: It askes the algorithm to provide as much information as it can about what the output data will look like once the algorithm has generate it.</li>
+<li>Request Update Extent</li>
+<li>Request data</li>
+<li>BUG: vtkStreamingDemandDrivenPipeline (0x22db870): The update extent specified<ul>
+<li>Override the ReequestUpdateExtent function in your algorithm</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="vtknew-vs-vtksmartpointer"><a href="#vtkNew-vs-vtkSmartPointer" class="headerlink" title="vtkNew vs vtkSmartPointer"></a><a href="https://blog.kitware.com/a-tour-of-vtk-pointer-classes/" target="_blank" rel="external">vtkNew vs vtkSmartPointer</a></h2><blockquote>
+<ul>
+<li>vtkSmartPointer is the older one. It&#x2019;s more suitable for the case where the class has API to set what the member variable is pointing to, while maintaining ownership of that class. Ownership of the instance is maintained. The class may or may not instantiate the initial object<br>and the instance being pointed to can be changed.</li>
+<li>vtkNew has no assignment operator or copy constructor. It has a strong ownership, where the class instantiates an object which it owns for the lifetime of the class.</li>
+<li>vtkWeakPointer: Weak ownership, where the class does not instantiate an object. If the object instance is deleted, then the weak pointer is null, which avoids dangling pointers without ownership.</li>
 </ul>
 </blockquote>
 
@@ -488,7 +962,7 @@ target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td><
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/04/10/cmakeLearning/"  data-tooltip="cmakeLearning">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/04/10/CMakeLearning/"  data-tooltip="cmakeLearning">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -532,10 +1006,6 @@ target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td><
 
 
         
-            <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-        
     </div>
 </article>
 
@@ -543,7 +1013,7 @@ target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td><
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">
-        Copyrights &copy; 2016 LBTING. All Rights Reserved.
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
     </span>
 </footer>
 
@@ -555,7 +1025,7 @@ target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td><
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/04/10/cmakeLearning/"  data-tooltip="cmakeLearning">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/04/10/CMakeLearning/"  data-tooltip="cmakeLearning">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -618,7 +1088,7 @@ target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td><
             <h5 id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p>Student</p>
+                <p>R&amp;D Engineer</p>
 
             </h5>
         
@@ -626,7 +1096,7 @@ target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td><
             <h5 id="about-card-location">
                 <i class="fa fa-map-marker"></i>
                 <br/>
-                Pittsburgh USA
+                Albany USA
             </h5>
         
     </div>
@@ -634,19 +1104,8 @@ target_link_libraries(Cone LINK_PRIVATE ${VTK_LIBRARIES})</span><br></pre></td><
         <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
     </body>
     <!--SCRIPTS-->
-<script src="/assets/js/script.min.js" type="text/javascript"></script>
+<script src="/assets/js/script.min.js"></script>
 <!--SCRIPTS END-->
-
-    <script type="text/javascript">
-        var disqus_shortname = 'lbtinglb';
-        (function() {
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
 
 
 

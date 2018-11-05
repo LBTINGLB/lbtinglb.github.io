@@ -186,7 +186,15 @@ var _hmt = _hmt || [];
 </li>
 <li><a href="#item-3-understand-decltype">Item 3: Understand decltype</a></li>
 <li><a href="#item-4-know-how-to-view-deduced-types">Item 4: Know how to view deduced types</a></li>
-<li><a href="#chapeter-2-auto">Chapeter 2: auto</a></li>
+<li><a href="#chapeter-2-auto">Chapeter 2: auto</a><ul>
+<li><a href="#item-9-prefer-alias-declarations-to-typedefs">Item 9: Prefer alias declarations to typedefs</a></li>
+<li><a href="#item-12-declare-overriding-functions-override">Item 12: Declare overriding functions override</a></li>
+<li><a href="#item-13-prefer-const_iterators-to-iterators">Item 13: Prefer const_iterators to iterators</a></li>
+<li><a href="#item-14-declare-functions-noexcept-if-they-wont-emit-exceptions">Item: 14: Declare functions noexcept if they won&#x2019;t emit exceptions</a></li>
+<li><a href="#item-15-use-constexpr-whenever-possible">Item 15: Use constexpr whenever possible</a></li>
+<li><a href="#item-16-make-const-member-functions-thread-safe">Item 16: Make const member functions thread safe</a></li>
+</ul>
+</li>
 </ul>
 <!-- tocstop -->
 <h1 id="chapter1-deducting-types"><a href="#Chapter1-Deducting-Types" class="headerlink" title="Chapter1: Deducting Types"></a>Chapter1: Deducting Types</h1><blockquote>
@@ -220,7 +228,7 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 <li><p>std::vector<bool> is special. Operator [] does not return a <em>bool&amp;</em>. Instead, it returns a brand new object. So a decltype is needed here.</bool></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">template &lt;typename Container, typename index&gt;</div><div class="line">auto authAndAccess(Container&amp; c, index i) -&gt;decltype(i)</div><div class="line">// or decltype(auto authAndAccess(Container&amp; c, index i)</div><div class="line">{</div><div class="line">  authenticateUser();</div><div class="line">  return c[i];</div><div class="line">}</div><div class="line"></div><div class="line">Widget w;</div><div class="line">const Widget&amp; cw = w;</div><div class="line">auto myWidget = cw; myWidet -&gt;Widget</div><div class="line">decltype(auto) myWidget = cw; myWidget -&gt; const Widget&amp;;</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">template &lt;typename Container, typename index&gt;</div><div class="line">auto authAndAccess(Container&amp; c, index i) -&gt;decltype(i)</div><div class="line">// or decltype(auto authAndAccess(Container&amp; c, index i)</div><div class="line">{</div><div class="line">  authenticateUser();</div><div class="line">  return c[i];</div><div class="line">}</div><div class="line">Widget w;</div><div class="line">const Widget&amp; cw = w;</div><div class="line">auto myWidget = cw; myWidet -&gt;Widget</div><div class="line">decltype(auto) myWidget = cw; myWidget -&gt; const Widget&amp;;</div></pre></td></tr></table></figure>
 </li>
 <li><p>For lvalue expressions of type T other than names, decltype always reports a type of T&amp;. Ex decltype(x) - &gt; int but decpltype((x))-&gt; int&amp; where x = 4;</p>
 </li>
@@ -234,7 +242,45 @@ var _hmt = _hmt || [];
 <li><strong>Boost.TypeIndex</strong> is your friend</li>
 </ul>
 </blockquote>
-<h1 id="chapeter-2-auto"><a href="#Chapeter-2-auto" class="headerlink" title="Chapeter 2: auto"></a>Chapeter 2: auto</h1>
+<h1 id="chapeter-2-auto"><a href="#Chapeter-2-auto" class="headerlink" title="Chapeter 2: auto"></a>Chapeter 2: auto</h1><h2 id="item-9-prefer-alias-declarations-to-typedefs"><a href="#Item-9-Prefer-alias-declarations-to-typedefs" class="headerlink" title="Item 9: Prefer alias declarations to typedefs"></a>Item 9: Prefer alias declarations to typedefs</h2><blockquote>
+<ul>
+<li><strong>alias declarations</strong> can be templated but not typedefs!</li>
+<li>Alias tempaltes avoid t he &#x201C;::type&#x201D; suffix</li>
+<li>C++14 offers alias templates for all the c++11 type traits transformation</li>
+</ul>
+</blockquote>
+<h2 id="item-12-declare-overriding-functions-override"><a href="#Item-12-Declare-overriding-functions-override" class="headerlink" title="Item 12: Declare overriding functions override"></a>Item 12: Declare overriding functions override</h2><h2 id="item-13-prefer-const_iterators-to-iterators"><a href="#Item-13-Prefer-const-iterators-to-iterators" class="headerlink" title="Item 13: Prefer const_iterators to iterators"></a>Item 13: Prefer const_iterators to iterators</h2><h2 id="item-14-declare-functions-noexcept-if-they-wont-emit-exceptions"><a href="#Item-14-Declare-functions-noexcept-if-they-won&#x2019;t-emit-exceptions" class="headerlink" title="Item: 14: Declare functions noexcept if they won&#x2019;t emit exceptions"></a>Item: 14: Declare functions noexcept if they won&#x2019;t emit exceptions</h2><blockquote>
+<ul>
+<li>in C++11, a function might emit an exception  or it guaranteed that it wouldn&#x2019;t</li>
+<li>it permits the compiler to generate better object code</li>
+<li>example: std::vector::push_back would move if it can and copy if it must</li>
+<li>in C++11, all memory deallocation functions and destructors-both user-defined and compiler-generated-are implicitly <code>noexcept</code></li>
+<li>noexcept is particularly valuable for the move operations, swap, memory deallocation functions and destructors</li>
+</ul>
+</blockquote>
+<h2 id="item-15-use-constexpr-whenever-possible"><a href="#Item-15-Use-constexpr-whenever-possible" class="headerlink" title="Item 15: Use constexpr whenever possible"></a>Item 15: Use constexpr whenever possible</h2><blockquote>
+<ul>
+<li>The value of constexpr is known at translation time.</li>
+<li>When a constexpr function is called  with one or more values that are not known during compilation tiem, it acts like a normal function.</li>
+<li>constexpr is part of an object&#x2019;s or function&#x2019;s interface which means  if you remove it, you may cause arbitrarily large amounds of client code to stop compiling</li>
+</ul>
+</blockquote>
+<h2 id="item-16-make-const-member-functions-thread-safe"><a href="#Item-16-Make-const-member-functions-thread-safe" class="headerlink" title="Item 16: Make const member functions thread safe"></a>Item 16: Make const member functions thread safe</h2><blockquote>
+<ul>
+<li>use <code>mutable</code> keyword when you want to change something via a const function or in a class</li>
+<li><code>std::atomic</code>: different threads can simultaneously operate on the instance, without raising undefined behavior. Good for only a single variable or memory location</li>
+<li><p><code>std::memory_order</code>:</p>
+<ul>
+<li><code>memory_order_release</code>: no reads or writes in the current thread can be reordered <strong>after</strong> this store. All writes in the current thread are visible</li>
+<li><code>memory_order_acquire</code>: a load option with this memory order performs the acquire operation on the affected memory location: no reads or writes in the current thread can be reordered <strong>before</strong> this load. All writes in other threads that release the same atomic variable are visible in the current thread.<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">void</span>* sharedData = <span class="literal">nullptr</span>;</div><div class="line"><span class="built_in">std</span>::atomic&lt;<span class="keyword">int</span>&gt; ready_flag = <span class="number">0</span>;</div><div class="line"></div><div class="line"><span class="comment">// Thread 1</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">produce</span><span class="params">()</span></span></div><div class="line">{</div><div class="line">    sharedData = generateData();</div><div class="line">    ready_flag.store(<span class="number">1</span>, <span class="built_in">std</span>::memory_order_release);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Thread 2</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">consume</span><span class="params">()</span></span></div><div class="line">{</div><div class="line">    <span class="keyword">while</span> (ready_flag.load(<span class="built_in">std</span>::memory_order_acquire) == <span class="number">0</span>)</div><div class="line">    {</div><div class="line">        <span class="built_in">std</span>::this_thread::yield();</div><div class="line">    }</div><div class="line"></div><div class="line">    assert(sharedData != <span class="literal">nullptr</span>); <span class="comment">// will never trigger</span></div><div class="line">    processData(sharedData);</div><div class="line">}</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>extended reading: <a href="https://en.cppreference.com/w/cpp/atomic/memory_order#Release-Consume_ordering" target="_blank" rel="external">release-consume ordering</a></p>
+</li>
+</ul>
+</blockquote>
+
         
             
         

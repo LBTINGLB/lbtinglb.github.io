@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>CudaLearning - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">CudaLearning</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Fri Jun 08 2018 10:16:00 GMT-0400">
+        Jun 08, 2018
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/technique/">technique</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Nvidia_CUDA_Logo.jpg/300px-Nvidia_CUDA_Logo.jpg" alt="teaser"><br><a id="more"></a></p>
+<h1 id="learning-cuda"><a href="#Learning-Cuda" class="headerlink" title="Learning Cuda"></a>Learning Cuda</h1><!-- toc -->
+<ul>
+<li><a href="#useful-links">Useful links</a></li>
+<li><a href="#an-even-easier-introduction-to-cudahttpsdevblogsnvidiacomeven-easier-introduction-cuda"><a href="https://devblogs.nvidia.com/even-easier-introduction-cuda/" target="_blank" rel="external">An Even Easier Introduction to CUDA</a></a></li>
+<li><a href="#unified-memory-for-cuda-beginnershttpsdevblogsnvidiacomunified-memory-cuda-beginners"><a href="https://devblogs.nvidia.com/unified-memory-cuda-beginners/" target="_blank" rel="external">Unified Memory for CUDA Beginners</a></a></li>
+<li><a href="#maximizing-unified-memory-performance-in-cudahttpsdevblogsnvidiacommaximizing-unified-memory-performance-cuda"><a href="https://devblogs.nvidia.com/maximizing-unified-memory-performance-cuda/" target="_blank" rel="external">Maximizing Unified Memory Performance in CUDA</a></a></li>
+<li><a href="#grid-stride-loopshttpsdevblogsnvidiacomcuda-pro-tip-write-flexible-kernels-grid-stride-loops"><a href="https://devblogs.nvidia.com/cuda-pro-tip-write-flexible-kernels-grid-stride-loops/" target="_blank" rel="external">Grid-Stride loops</a></a></li>
+</ul>
+<!-- tocstop -->
+<h1 id="useful-links"><a href="#Useful-links" class="headerlink" title="Useful links"></a>Useful links</h1><blockquote>
+<ul>
+<li><a href="https://devblogs.nvidia.com/even-easier-introduction-cuda/" target="_blank" rel="external">Nvidia official cuda introduction</a></li>
+<li><a href="https://devblogs.nvidia.com/building-cuda-applications-cmake/" target="_blank" rel="external">Use CMake with CUDA</a></li>
+</ul>
+</blockquote>
+<h1 id="an-even-easier-introduction-to-cuda"><a href="#An-Even-Easier-Introduction-to-CUDA" class="headerlink" title="An Even Easier Introduction to CUDA"></a><a href="https://devblogs.nvidia.com/even-easier-introduction-cuda/" target="_blank" rel="external">An Even Easier Introduction to CUDA</a></h1><blockquote>
+<ul>
+<li><code>__global__</code>: a specifier added to a function which tells the CUDA C++ compiler that this is a function that runs on the GPU and canbe called from CPU code. It&#x2019;s known ad <em>kernels</em> and code that runs on the GPU is often called <em>device code</em> while code that runs on the CPU is <em>host code</em>.</li>
+<li>Memory allocation in CUDA:<ul>
+<li><a href="https://devblogs.nvidia.com/unified-memory-in-cuda-6/" target="_blank" rel="external"><code>Unified memory</code></a> provides a single memory space accessible by all GPUs and CPUs in the system. cudaMallocManaged() + cudaFree()</li>
+<li><code>cudaDeviceSynchronize()</code>: let CPU wait untill the kernel is done before it accesses the results(because CUDA kernel launches don&#x2019;t block the calling CPU thread)</li>
+<li><code>nvprof</code>: a profile tool provided by Nvidia</li>
+<li><code>&lt;&lt;&lt;numBlocks, blockSize&gt;&gt;&gt;</code>: execution configuration. It tells the CUDA runtime how many parallel threads to use for the launch on the GPU.</li>
+<li>CUDA GPUs have many parallel processors grouped into <code>Streaming Multiprocessors</code>, or <code>SMs</code>. Each SM can run multiple concurrent thread blocks. As an example, a Tesla P100 GPU based on the Pascal GPU Architecture has 56 SMs, each capable of supporting up to 2048 active threads. To take full advantage of all these threads, I should launch the kernel with multiple thread blocks.</li>
+<li>numberOfSMs -&gt; number of thread blocks in the grid(gridDim.x) -&gt; number of threads in each block(blockDim.x)</li>
+<li><code>blockId.x</code>: the index of the current thread block in the grid</li>
+<li><code>threadIdx.x</code>: the index of the current thread within the block</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="unified-memory-for-cuda-beginners"><a href="#Unified-Memory-for-CUDA-Beginners" class="headerlink" title="Unified Memory for CUDA Beginners"></a><a href="https://devblogs.nvidia.com/unified-memory-cuda-beginners/" target="_blank" rel="external">Unified Memory for CUDA Beginners</a></h1><blockquote>
+<ul>
+<li>Unified memory: a single memory address space accessible from any processor in a system. This hardware/sfotware technology allows applications to allocate data that can be read or written from code running on either CPUs or GPUs. <strong>Pascal</strong> GPU architecture is the first with hardware support for virtual memory page faulting and migration via the Page Migration Engine.</li>
+<li><a href="https://en.wikipedia.org/wiki/Page_fault" target="_blank" rel="external">Page fault</a>: when a running program is accessing a memory page that is not currently mapped by the memory management unit into the virtual address space of a process.</li>
+<li>The Page Migration engine allows GPU thread to fault on non-resident memory accesses so the system migrate pages on demand from anywhere in the system to the GPU&#x2019;s memory for efficient processing.</li>
+</ul>
+</blockquote>
+<h1 id="maximizing-unified-memory-performance-in-cuda"><a href="#Maximizing-Unified-Memory-Performance-in-CUDA" class="headerlink" title="Maximizing Unified Memory Performance in CUDA"></a><a href="https://devblogs.nvidia.com/maximizing-unified-memory-performance-cuda/" target="_blank" rel="external">Maximizing Unified Memory Performance in CUDA</a></h1><blockquote>
+<ul>
+<li>what happens when a <code>cudaMallocManaged</code> allocation is accessed on GPU:<ul>
+<li>alloate new pages on the GPU</li>
+<li>unmap old pages on the GPU</li>
+<li>Copy data from the CPU to the GPU</li>
+<li>Map new pages on the GPU</li>
+<li>Free old CPU pages</li>
+</ul>
+</li>
+<li>page faulting is a significant overhead to streaming performance of unified Memory on current generateion GPU architectures.</li>
+<li><code>density prefetching</code>: works by testing how much of the predefined region has been or is being transferred; if it meets a certain threshold the driver prefetches the rest of the pages</li>
+<li>warp-per-page approach: Instead of having multiple hardware warps accessing the same page, we can divide pages between warps to have a one-to-one mapping and have each warp perform multiple iterations over the 64k region.</li>
+<li><code>Overlapping kernels and Prefetches</code>: on-demand access with migration will <strong>never beat</strong> explicit bulk data copies or prefetches in terms of performance for large contiguous memory regions.It&#x2019;s the price for simplicity and ease of use.</li>
+<li>It&#x2019;s important to make sure that we have the device-to-host prefetch issued in a busy stream while the host-to-device prefetch is issued in an idle stream so that we have overlap to optimize.</li>
+<li><a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#um-programming-model-hd" target="_blank" rel="external">unified memory programing model</a><ul>
+<li>All managed memory must be allocated from the host or at global scope (see the next section). Allocations on the device heap using malloc() in a kernel will not be created in the managed memory space, and so will not be accessible to CPU code.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="grid-stride-loops"><a href="#Grid-Stride-loops" class="headerlink" title="Grid-Stride loops"></a><a href="https://devblogs.nvidia.com/cuda-pro-tip-write-flexible-kernels-grid-stride-loops/" target="_blank" rel="external">Grid-Stride loops</a></h1><blockquote>
+<ul>
+<li><p>Common CUDA guidance is to launch one <em>thread per data element</em></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// monolithic kernel - completely eliminating the loop</span></div><div class="line"><span class="number">__</span><span class="function">global__</span></div><div class="line"><span class="keyword">void</span> <span class="title">saxpy</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">float</span> a, <span class="keyword">float</span> *x, <span class="keyword">float</span> *y)</span></div><div class="line">{</div><div class="line">    <span class="keyword">int</span> i = blockIdx.x * blockDim.x + threadIdx.x;</div><div class="line">    <span class="keyword">if</span> (i &lt; n)</div><div class="line">        y[i] = a * x[i] + y[i];</div><div class="line">}</div><div class="line"><span class="comment">// grid-stride loop - loops over the data array one grid-size at a time</span></div><div class="line"><span class="comment">// So if there are 1280 threads in the grid, thread 0 will compute elements 0, 1280, 2560, etc.</span></div><div class="line"><span class="number">__</span><span class="function">global__</span></div><div class="line"><span class="keyword">void</span> <span class="title">saxpy</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">float</span> a, <span class="keyword">float</span> *x, <span class="keyword">float</span> *y)</span></div><div class="line">{</div><div class="line">    <span class="keyword">int</span> i = blockIdx.x * blockDim.x + threadIdx.x;</div><div class="line">    <span class="keyword">if</span> (i &lt; n)</div><div class="line">        y[i] = a * x[i] + y[i];</div><div class="line">}</div></pre></td></tr></table></figure>
+</li>
+<li><p>Benefit:</p>
+<pre><code>+ All addressing within warps is unit-stride, so we get maximum memory coalescing.
++ Scalability and thread reuse
++ Debugging
++ Portability and readability
+</code></pre></li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/cuda/">cuda</a> <a class="tag tag--primary tag--small t-link" href="/tags/gpu/">gpu</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/07/01/CloudComputing/"  data-tooltip="CloudComputing">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/06/04/ImproveWriting/" data-tooltip="ImproveWriting">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2018/06/08/CudaLearning/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2018/06/08/CudaLearning/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2018/06/08/CudaLearning/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/07/01/CloudComputing/"  data-tooltip="CloudComputing">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/06/04/ImproveWriting/" data-tooltip="ImproveWriting">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2018/06/08/CudaLearning/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2018/06/08/CudaLearning/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2018/06/08/CudaLearning/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>

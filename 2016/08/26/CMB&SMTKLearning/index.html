@@ -250,14 +250,20 @@ var _hmt = _hmt || [];
 <li><a href="#new-selection-manager">New selection manager</a></li>
 <li><a href="#nlohmann_jsonhttpsgithubcomnlohmannjson"><a href="https://github.com/nlohmann/json" target="_blank" rel="external">nlohmann_json</a></a></li>
 <li><a href="#how-to-add-a-custom-operator-view">How to add a custom operator view</a><ul>
-<li><a href="#rgg">RGG</a></li>
+<li><a href="#rgghttppress3mcsanlgovsigmameshkit-libraryrgg"><a href="http://press3.mcs.anl.gov/sigma/meshkit-library/rgg/" target="_blank" rel="external">RGG</a></a></li>
 </ul>
 </li>
-<li><a href="#build">build</a></li>
-<li><a href="#nuclear-reactor-corehttpsenwikipediaorgwikinuclear_reactor_core"><a href="https://en.wikipedia.org/wiki/Nuclear_reactor_core" target="_blank" rel="external">Nuclear reactor core</a></a></li>
+<li><a href="#build-on-linux">build on linux</a></li>
+<li><a href="#build-on-windows">build on windows</a></li>
+<li><a href="#rgg-official-documentation">RGG official documentation</a></li>
+<li><a href="#nuclear-reactor-corehttpsenwikipediaorgwikinuclear_reactor_core"><a href="https://en.wikipedia.org/wiki/Nuclear_reactor_core" target="_blank" rel="external">Nuclear reactor core</a></a><ul>
+<li><a href="#meshkithttppress3mcsanlgovsigmameshkit-library"><a href="http://press3.mcs.anl.gov/sigma/meshkit-library/" target="_blank" rel="external">MeshKit</a></a></li>
+</ul>
+</li>
 <li><a href="#entitytype">EntityType</a></li>
 <li><a href="#other-classes">Other classes</a></li>
 <li><a href="#docker-build-instructions">Docker build instructions</a></li>
+<li><a href="#computational-modeling-and-simulation-strategic-planning-meeting">Computational Modeling and Simulation Strategic Planning Meeting</a></li>
 </ul>
 <!-- tocstop -->
 <h2 id="cmb-official-website"><a href="#CMB-official-website" class="headerlink" title="CMB official website"></a><a href="http://www.computationalmodelbuilder.org/" target="_blank" rel="external">CMB official website</a></h2><blockquote>
@@ -834,11 +840,46 @@ var _hmt = _hmt || [];
 <li>fullfil createViewWidget()and createWidget()</li>
 </ul>
 </blockquote>
-<h1 id="rgg"><a href="#RGG" class="headerlink" title="RGG"></a>RGG</h1><h2 id="build"><a href="#build" class="headerlink" title="build"></a>build</h2><blockquote>
+<h1 id="rgg"><a href="#RGG" class="headerlink" title="RGG"></a><a href="http://press3.mcs.anl.gov/sigma/meshkit-library/rgg/" target="_blank" rel="external">RGG</a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">// build instructions</div><div class="line">mkdir rgg</div><div class="line">cd rgg</div><div class="line">git clone git@gitlab.kitware.com:cmb/rgg.git rggSrc</div><div class="line">cd rggSrc</div><div class="line">git checkout scottw/get-superbuild-working-again</div><div class="line">cd ../</div><div class="line">mkdir sb-build</div><div class="line">cd sb-build</div><div class="line">ccmake ../rggSrc/superbuild</div><div class="line"></div><div class="line">I believe the only two options you need to change from the defaults are as follows:</div><div class="line"></div><div class="line">BUILD_MESHKIT_MASTER:BOOL=ON</div><div class="line">ENABLE_meshkit:BOOL=ON</div><div class="line"></div><div class="line">You may also want to turn OFF the SUPPRESS_..._OUTPUT variables in case there are build errors in one or more of the projects and you want to see what they are.</div><div class="line"></div><div class="line">From Ben:</div><div class="line">git checkout Enable-qt5-OSX-support</div><div class="line">git worktree add ../superbuild superbuild</div><div class="line">cd ../superbuild</div></pre></td></tr></table></figure>
+<blockquote>
 <ul>
+<li>meshkit commit: 8hab7U5q8ufRgm9KWB9c<h2 id="build-on-linux"><a href="#build-on-linux" class="headerlink" title="build on linux"></a>build on linux</h2></li>
 <li>install lapack by <code>sudo apt-get install libblas-dev liblapack-dev</code></li>
 <li>install libsm-dev</li>
-<li>install libXt-dev</li>
+<li>install libXt-dev<ul>
+<li><code>sudo apt-get install libx11-dev</code></li>
+</ul>
+</li>
+<li>install xmu<ul>
+<li><code>sudo apt-get install libxmu-dev libxi-dev</code></li>
+</ul>
+</li>
+<li>missing &#x2018;XInput.h&#x2019;<ul>
+<li><a href="http://melp.nl/2013/11/building-opengl-sdk-compile-error-x11-extensions-xinput-h/" target="_blank" rel="external">solution</a></li>
+</ul>
+</li>
+<li>missing &#x2018;Xrender.h&#x2019;<ul>
+<li>install libxrender.dev</li>
+</ul>
+</li>
+<li>XDevice/XDeviceInfo has not been declared<ul>
+<li><a href="https://bugreports.qt.io/browse/QTBUG-9422" target="_blank" rel="external">solution</a><h2 id="build-on-windows"><a href="#build-on-windows" class="headerlink" title="build on windows"></a>build on windows</h2></li>
+</ul>
+</li>
+<li>download jam from <strong><a href="https://sourceforge.net/projects/freetype/files/ftjam/2.5.2" target="_blank" rel="external">https://sourceforge.net/projects/freetype/files/ftjam/2.5.2</a></strong></li>
+<li>hdf5: H50mtime.c - s/timezone/_timezone/g</li>
+<li>apply patch: /home/haochengliu/Kitware/CMB/cmb-superbuild/superbuild/projects/win32/patches/netcdf-VS2015.patch</li>
+</ul>
+</blockquote>
+<h2 id="rgg-official-documentation"><a href="#RGG-official-documentation" class="headerlink" title="RGG official documentation"></a>RGG official documentation</h2><blockquote>
+<ul>
+<li>RGG methodology for reactor core model generation can be broken into three steps:<ul>
+<li>assembly geometry generation</li>
+<li>assembly meshing</li>
+<li>core mesh generation</li>
+</ul>
+</li>
+<li>run examples: copy <code>rgg_test_dirs</code> to ~/Kitware/CMB/RGG/buildRGG1/meshkit/src/meshkit-build/install/bin then call <code>`make</code> in the sub folders</li>
 </ul>
 </blockquote>
 <h2 id="nuclear-reactor-core"><a href="#Nuclear-reactor-core" class="headerlink" title="Nuclear reactor core"></a><a href="https://en.wikipedia.org/wiki/Nuclear_reactor_core" target="_blank" rel="external">Nuclear reactor core</a></h2><blockquote>
@@ -853,6 +894,16 @@ var _hmt = _hmt || [];
 <li>Theory: The heat released by fission in nuclear reactors is captured and transferred for use in electricity geneartion. The coolants that remove heat from the core where the fuel is processed and carry it to electrical generators.</li>
 <li><a href="https://en.wikipedia.org/wiki/Nuclear_reactor#Reactivity_control" target="_blank" rel="external">Nuclear reactor</a><ul>
 <li>asmmembly: insert fuel/control rods and guide thimble(used for instrumentation and test fuel segment)</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="meshkit"><a href="#MeshKit" class="headerlink" title="MeshKit"></a><a href="http://press3.mcs.anl.gov/sigma/meshkit-library/" target="_blank" rel="external">MeshKit</a></h1><blockquote>
+<ul>
+<li>MeshKit is an open-source library of mesh generation functionality</li>
+<li>design philosophy is two-fold<ul>
+<li>it provides a collection of meshing algorithms for use in real meshing problems, along with other tools commonly needed to support mesh generation (coordination of BREP-based meshing process, mesh smoothing, etc.)</li>
+<li>it serves as a platform in which to perform mesh generation algorithm research.</li>
 </ul>
 </li>
 </ul>
@@ -938,6 +989,12 @@ var _hmt = _hmt || [];
 </blockquote>
 <h2 id="docker-build-instructions"><a href="#Docker-build-instructions" class="headerlink" title="Docker build instructions"></a>Docker build instructions</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">docker pull gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest</div><div class="line">docker run -it --rm gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest /bin/bash</div><div class="line">scl <span class="built_in">enable</span> devtoolset-4 rh-git29 python27 -- /bin/bash</div><div class="line"></div><div class="line"><span class="comment"># Attach another terminal to the docker instance</span></div><div class="line">docker ps <span class="_">-a</span></div><div class="line">docker <span class="built_in">exec</span> -t -i unruffled_yonath /bin/bash</div></pre></td></tr></table></figure>
 <p>haochengliu@ ~$docker pull gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest<br>Error response from daemon: Get <a href="https://gitlab.kitware.com:4567/v2/buildbot/buildbot/cmbbinsdash/manifests/latest" target="_blank" rel="external">https://gitlab.kitware.com:4567/v2/buildbot/buildbot/cmbbinsdash/manifests/latest</a>: denied: access forbidden<br>haochengliu@ ~$docker login gitlab.kitware.com:4567<br>Username: haocheng.liu<br>Password:<br>Login Succeeded<br>haochengliu@ ~$docker pull gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest<br>Error response from daemon: repository gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash not found: does not exist or no pull access<br>haochengliu@ ~$docker pull <a href="https://gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest" target="_blank" rel="external">https://gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest</a><br>Error parsing reference: &#x201C;<a href="https://gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest" target="_blank" rel="external">https://gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest</a>&#x201C; is not a valid repository/tag: invalid reference format<br>haochengliu@ ~$docker pull gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest<br>Error response from daemon: repository gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash not found: does not exist or no pull access<br>haochengliu@ ~$docker pull gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest<br>sha256:f6910e847d77a660affc324dd98d6dfad0ff64c325986e9674e3fdf5bed4c959<br>Status: Downloaded newer image for gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest<br>haochengliu@ ~$dockerc^C<br>haochengliu@ ~$docker run -it &#x2013;rm gitlab.kitware.com:4567/buildbot/buildbot/cmbbinsdash:latest /bin/bash<br>/////////////////////////////////////////////////////<br>docker ps -a<br>docker exec -t -i unruffled_yonath /bin/bash</p>
+<h2 id="computational-modeling-and-simulation-strategic-planning-meeting"><a href="#Computational-Modeling-and-Simulation-Strategic-Planning-Meeting" class="headerlink" title="Computational Modeling and Simulation Strategic Planning Meeting"></a>Computational Modeling and Simulation Strategic Planning Meeting</h2><blockquote>
+<ul>
+<li>modflow vs adh vs moose(Peacock) vs FEBio</li>
+<li>SimScale - a cloud based simulation software</li>
+</ul>
+</blockquote>
 
         
             

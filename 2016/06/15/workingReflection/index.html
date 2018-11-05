@@ -16,7 +16,7 @@ var _hmt = _hmt || [];
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="LBTING&#39; Blog">
-    <title>workingReflection - LBTING&#39; Blog</title>
+    <title>workReflection - reflection - LBTING&#39; Blog</title>
     <meta name="author" content="LBTING">
     <meta name="description" content="LBTING&#39; Blog">
     <link rel="icon" href="/assets/images/null">
@@ -24,7 +24,7 @@ var _hmt = _hmt || [];
         <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
     
     <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
     <!--STYLES END-->
     
     
@@ -159,10 +159,10 @@ var _hmt = _hmt || [];
     
         <div class="post-header main-content-wrap">
     
-        <h1 class="post-title" itemprop="headline">workingReflection</h1>
+        <h1 class="post-title" itemprop="headline">workReflection - reflection</h1>
     
     <div class="post-meta">
-    <time  itemprop="datePublished" content="Wed Jun 15 2016 10:34:40 GMT+0800">
+    <time  itemprop="datePublished" content="Wed Jun 15 2016 10:34:40 GMT-0400">
         Jun 15, 2016
     </time>
     
@@ -176,37 +176,137 @@ var _hmt = _hmt || [];
 </div>
     
     <div class="post-content markdown main-content-wrap" itemprop="articleBody">
-        <p>Reflection when working at Kitware.<br><a id="more"></a><br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0q5Ym7YsOHeouJimH4Lt9vWy3Pt1nd7mjwlNYi0NVra7bl1GRg" alt=""></p>
+        <p>Reflection when working at Kitware.<br><a href="https://www.google.com/search?tbm=isch&amp;tbs=rimg%3ACfJj77_1lDAYlIjjcFYvpFfnAmMCO0v4MrWvS02UEPo0bJ5_13tafrBEnH94-2gh_16feY0SYapj3Re7yiLR_1GcFLmCMSoSCdwVi-kV-cCYEQALparOEwugKhIJwI7S_1gyta9IRFugKzo6gthoqEgnTZQQ-jRsnnxE1CScDIkwXZSoSCfe1p-sEScf3EWuIZlIfWkHuKhIJj7aCH_1p95jQRiphHbRdWf6kqEglJhqmPdF7vKBGewiWBLHgyiSoSCYtH8ZwUuYIxERuX9z_1I4uT8&amp;q&amp;hl=en&amp;bih=917&amp;biw=1920&amp;ved=0ahUKEwjG29jNjZfOAhXHez4KHVvUChQQ9C8ICQ&amp;dpr=1" target="_blank" rel="external">interesting coding images</a><br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0q5Ym7YsOHeouJimH4Lt9vWy3Pt1nd7mjwlNYi0NVra7bl1GRg" alt=""><br><a id="more"></a></p>
 <!-- toc -->
 <ul>
 <li><a href="#to-do-list">To do list</a></li>
 <li><a href="#softwares-and-packages">Softwares and packages:</a></li>
 <li><a href="#tips-and-ideas">Tips and ideas:</a></li>
-<li><a href="#yacc">Yacc</a></li>
+<li><a href="#yacc">Yacc</a><ul>
+<li><a href="#why-4x4-matrixhttpmathstackexchangecomquestions336why-are-3d-transformation-matrices-4-times-4-instead-of-3-times-3"><a href="http://math.stackexchange.com/questions/336/why-are-3d-transformation-matrices-4-times-4-instead-of-3-times-3" target="_blank" rel="external">why 4x4 matrix</a></a></li>
+<li><a href="#pseudo-random-number-generationhttpwww0csuclacukstaffdjonesgoodpracticerngpdf"><a href="http://www0.cs.ucl.ac.uk/staff/d.jones/GoodPracticeRNG.pdf" target="_blank" rel="external">Pseudo random Number Generation</a></a></li>
+<li><a href="#hash-md5httpsenwikipediaorgwikimd5"><a href="https://en.wikipedia.org/wiki/MD5" target="_blank" rel="external">hash-MD5</a></a></li>
+</ul>
+</li>
+<li><a href="#regular-expression">regular expression</a><ul>
+<li><a href="#regular-expression-syntax">regular expression syntax</a></li>
+</ul>
+</li>
+<li><a href="#whats-vpnhttpswwwquoracomwhats-the-difference-between-vpn-and-vps"><a href="https://www.quora.com/Whats-the-difference-between-VPN-and-VPS" target="_blank" rel="external">what&#x2019;s VPN</a></a></li>
+<li><a href="#boost-libraryhttpwwwboostorg"><a href="http://www.boost.org/" target="_blank" rel="external">boost library</a></a></li>
+<li><a href="#learn-different-file-format">Learn different file format</a><ul>
+<li><a href="#rst-restructuredtexthttpsenwikipediaorgwikirestructuredtext"><a href="https://en.wikipedia.org/wiki/ReStructuredText" target="_blank" rel="external">rst - reStructuredText</a></a></li>
+</ul>
+</li>
+<li><a href="#with-overline-for-parts">with overline, for parts</a><ul>
+<li><a href="#xml-extensible-markup-languagehttpsenwikipediaorgwikixml"><a href="https://en.wikipedia.org/wiki/XML" target="_blank" rel="external">xml - Extensible Markup Language</a></a></li>
+</ul>
+</li>
+<li><a href="#computer-science-notion">Computer science notion:</a><ul>
+<li><a href="#how-to-hold-ssh-keys-with-multiple-github-accountshttpsmediumcomtrionkidnapperssh-keys-with-multiple-github-accounts-c67db56f191e"><a href="https://medium.com/@trionkidnapper/ssh-keys-with-multiple-github-accounts-c67db56f191e" target="_blank" rel="external">how to hold ssh-keys with multiple github accounts</a></a></li>
+<li><a href="#make-git-ignore-files-locallyhttpsstackoverflowcomquestions1753070how-do-i-configure-git-to-ignore-somes-files-locally"><a href="https://stackoverflow.com/questions/1753070/how-do-i-configure-git-to-ignore-somes-files-locally" target="_blank" rel="external">Make git ignore files locally</a></a></li>
+<li><a href="#json-vs-yaml-vs-bson-vs-messagepackhttpswwwsitepointcomdata-serialization-comparison-json-yaml-bson-messagepack"><a href="https://www.sitepoint.com/data-serialization-comparison-json-yaml-bson-messagepack/" target="_blank" rel="external">JSON VS YAML VS BSON VS MessagePack</a></a></li>
+<li><a href="#generate-your-book-cover-from-davidhttpsdevtorly"><a href="https://dev.to/rly" target="_blank" rel="external">Generate your book cover from David</a></a></li>
+<li><a href="#software-testing-anti-patternshttpblogcodepipescomtestingsoftware-testing-antipatternshtml"><a href="http://blog.codepipes.com/testing/software-testing-antipatterns.html" target="_blank" rel="external">Software Testing Anti-patterns</a></a></li>
+<li><a href="#tech-lead-guidehttpshackernooncomthe-effective-tech-lead-is-a-100x-engineer-fe49c0372a63"><a href="https://hackernoon.com/the-effective-tech-lead-is-a-100x-engineer-fe49c0372a63" target="_blank" rel="external">Tech lead guide</a></a></li>
+<li><a href="#xtermhttpswwwcomputerhopecomunixuxtermhtm"><a href="https://www.computerhope.com/unix/uxterm.htm" target="_blank" rel="external">xterm</a></a></li>
+<li><a href="#secure-your-systems-with-ssh-on-linus-and-putty-on-windowshttpsscaryglidersnet20120404secure-your-systems-with-ssh"><a href="https://scarygliders.net/2012/04/04/secure-your-systems-with-ssh/" target="_blank" rel="external">Secure your systems with ssh on Linus and puTTY on Windows</a></a></li>
+</ul>
+</li>
 </ul>
 <!-- tocstop -->
-<h1 id="to-do-list">To do list</h1><blockquote>
+<h1 id="to-do-list"><a href="#To-do-list" class="headerlink" title="To do list"></a>To do list</h1><blockquote>
 <ul>
 <li>Windows:<ul>
 <li>do not pollute your system PATH. Use a script instead.</li>
 <li>[X] learn cmd + vim</li>
-<li>[ ] learn GDB debuging</li>
-<li>[ ] learn QtCreator</li>
-<li>[X] bit operator (maybe take a snip of 15213?)</li>
-<li>[X] macro and its usage in VTK</li>
-<li>[ ] what&#x2019;s c processor</li>
-<li>[ ] VS breaking point &amp; debugger</li>
-<li>[ ] why 4X4 matrix</li>
-<li>[ ] MPI &amp; paralleling computing</li>
-<li>[ ] <a href="http://www.vtk.org/Wiki/ITK/Coding_Style_Guide#Naming_Local_Variables" target="_blank" rel="external">VTK name rule</a></li>
-<li>[ ] use C++ debugger to debug python!</li>
-<li>[ ] python traceback function!</li>
+<li>[x] learn GDB debuging<ul>
+<li>mpirun -np2  -xterm 0,1   gdb &#x2013;args</li>
 </ul>
 </li>
 </ul>
-</blockquote>
-<h1 id="softwares-and-packages">Softwares and packages:</h1><blockquote>
-<ul>
+</li>
+<li>Linux:<ul>
+<li>[ ] <code>fc</code> command</li>
+<li>[ ] xwindow</li>
+<li>[x] xterm</li>
+<li>[ ] epoll</li>
+</ul>
+</li>
+<li>[ ] Kubernetes management infrastructure</li>
+<li>[ ] Design pattern</li>
+<li>[ ] Parallel computing</li>
+<li>[ ] WebGL</li>
+<li>[ ] How to write script</li>
+<li>[x] <a href="http://codegolf.stackexchange.com/questions/35569/tweetable-mathematical-art" target="_blank" rel="external">Tweetable Mathematical Art</a></li>
+<li>[ ] <a href="http://ufldl.stanford.edu/wiki/index.php/UFLDL_Tutorial" target="_blank" rel="external">Unsupervised Feature Learning and Deep Learning</a></li>
+<li>[x] <a href="https://en.wikipedia.org/wiki/Hungarian_notation" target="_blank" rel="external">hungarian notion</a></li>
+<li>[ ] <a href="https://www.epicgames.com/" target="_blank" rel="external">game engine</a><ul>
+<li>[ ] Unity engine</li>
+</ul>
+</li>
+<li>[ ] hankerrank</li>
+<li>[ ] CS75 + martin fowler</li>
+<li>[ ] Knuth&#x2019;s  Algorithm X + Dancing Links</li>
+<li>[ ] pymesh</li>
+<li>[x] <a href="http://create.pro/blog/opencl-vs-cuda/" target="_blank" rel="external">OpenCL vs CUDA</a></li>
+<li>[x] rpc calls</li>
+<li>[X] learn QtCreator</li>
+<li>[X] bit operator (maybe take a snip of 15213?)</li>
+<li>[X] macro and its usage in VTK</li>
+<li>[ ] what&#x2019;s c processor</li>
+<li>[Not needed] VS breaking point &amp; debugger</li>
+<li>[X] why 4X4 matrix</li>
+<li>[ ] Memorization</li>
+<li>[X] MPI &amp; paralleling computing</li>
+<li>[X] <a href="http://www.vtk.org/Wiki/ITK/Coding_Style_Guide#Naming_Local_Variables" target="_blank" rel="external">VTK name rule</a></li>
+<li>[x] use C++ debugger to debug python!</li>
+<li>[ ] python traceback function!</li>
+<li>[X] Ubuntu Advanced</li>
+<li>[x] Metaprogramming</li>
+<li>[ ] Category theory</li>
+<li>[ ] Shell</li>
+<li>[x] ctest</li>
+<li>[x] Pseudo Random Number Generation</li>
+<li>[x] hash MD5</li>
+<li>[ ] Boost</li>
+<li>[*] Haskell language</li>
+<li>[x] regular expression<ul>
+<li>regular expression advanced</li>
+</ul>
+</li>
+<li>[ ] rasterization</li>
+<li>[ ] python pachong</li>
+<li>[ ] leetcode</li>
+<li>[ ] valgrind<ul>
+<li>MALLOC<em>CHECK\</em>=3 MALLOC_PERTURB_=15 bin/ModelBuilder</li>
+<li>valgrind &#x2013;log-file=valgrind.log bin/ModelBuilder</li>
+</ul>
+</li>
+<li>[x] game of life<ul>
+<li>[x] <a href="https://en.wikipedia.org/wiki/John_Horton_Conway" target="_blank" rel="external">Conway</a></li>
+</ul>
+</li>
+<li>[x] youtube video<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=o9pEzgHorH0" target="_blank" rel="external">do not use class</a></li>
+</ul>
+</li>
+<li>[ ] OpenCASCADE, MOAB, ACIS, parasolid ?</li>
+<li>[x] Qt</li>
+<li>[ ] FEM</li>
+<li>[ ] <a href="https://bisqwit.iki.fi/story/howto/openmp/#LoopDirectiveFor" target="_blank" rel="external">OpenMP</a></li>
+<li>[ ] Intel@TBB</li>
+<li>[ ] MangoDB,sql</li>
+<li>[ ] design pattern</li>
+<li>[ ] window API: Carbon and Cocoa</li>
+<li>blogs to read:<ul>
+<li>[x]<a href="http://www.pnas.org/content/113/34/9384.full" target="_blank" rel="external">Opinion: Science in the age of selfies</a></li>
+</ul>
+</li>
+<li>personal interest:<ul>
+<li>[ ] quadratic decimation<h1 id="softwares-and-packages"><a href="#Softwares-and-packages" class="headerlink" title="Softwares and packages:"></a>Softwares and packages:</h1></li>
+</ul>
+</li>
 <li>ConEmu:<ul>
 <li>force it to become the default cmd</li>
 </ul>
@@ -216,21 +316,22 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 <li>ninja:<ul>
-<li>a powerful makeFile creater. </li>
+<li>a powerful makeFile creater.</li>
 <li>You need to specify the compiler for it. Open CMake from VS Native Tool Command should be fine.</li>
+<li><code>ninja -j1 -v</code> is useful when  debugging</li>
+</ul>
+</li>
+<li>[x] tmux</li>
+<li>[ ] Rasberry Pi<ul>
+<li>HTPC</li>
 </ul>
 </li>
 </ul>
 </blockquote>
-<h1 id="tips-and-ideas">Tips and ideas:</h1><blockquote>
+<h1 id="tips-and-ideas"><a href="#Tips-and-ideas" class="headerlink" title="Tips and ideas:"></a>Tips and ideas:</h1><blockquote>
 <ul>
 <li><p>run VTK python wrapper:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@ECHO OFF
-# change them accordingly to your own computer
-set PYTHONPATH=C:\Python27\Lib
-set PYTHONHOME=C:\Python27
-set VTK_DATA_ROOT=C:\Kitware\VTKStudy\Testing
-PAUSE</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">@ECHO OFF # change them accordingly to your own computer set PYTHONPATH=C:\Python27\Lib</div><div class="line">set PYTHONHOME=C:\Python27</div><div class="line">set VTK_DATA_ROOT=C:\Kitware\VTKStudy\Testing</div><div class="line">PAUSE</div></pre></td></tr></table></figure>
 </li>
 <li><p>let ninja choose VS as your C++ compiler</p>
 <ul>
@@ -247,7 +348,7 @@ PAUSE</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </blockquote>
-<h1 id="yacc">Yacc</h1><blockquote>
+<h1 id="yacc"><a href="#Yacc" class="headerlink" title="Yacc"></a>Yacc</h1><blockquote>
 <ul>
 <li><a href="https://luv.asn.au/overheads/lex_yacc/" target="_blank" rel="external">notion clarification</a></li>
 <li>Lex:<ul>
@@ -268,19 +369,369 @@ PAUSE</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </blockquote>
-
+<h2 id="why-4x4-matrix"><a href="#why-4x4-matrix" class="headerlink" title="why 4x4 matrix"></a><a href="http://math.stackexchange.com/questions/336/why-are-3d-transformation-matrices-4-times-4-instead-of-3-times-3" target="_blank" rel="external">why 4x4 matrix</a></h2><blockquote>
+<ul>
+<li>you need to extra to translate/rotatethe origin</li>
+<li>make a translation representable by a matrix</li>
+</ul>
+</blockquote>
+<h2 id="pseudo-random-number-generation"><a href="#Pseudo-random-Number-Generation" class="headerlink" title="Pseudo random Number Generation"></a><a href="http://www0.cs.ucl.ac.uk/staff/d.jones/GoodPracticeRNG.pdf" target="_blank" rel="external">Pseudo random Number Generation</a></h2><blockquote>
+<ul>
+<li><a href="http://www.howtogeek.com/183051/htg-explains-how-computers-generate-random-numbers/" target="_blank" rel="external">how random number is generated in computer</a><ul>
+<li>to generate real random, use the entropy in physical world</li>
+</ul>
+</li>
+<li>three simple rules<ul>
+<li>Rule1: Do not use system generators</li>
+<li>Rule2: Use a good RNG and build it into your code</li>
+<li>Rule3: Properly seed your generator<ul>
+<li>be careful with <em>birthday paradox</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Warm up your generator first<ul>
+<li>set the seeds to your desired starting values and then before your program starts its real  work, generate a few hundred or even a few thousand random numbers and discard them. Especially important to those with very long periods</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="hash-md5"><a href="#hash-MD5" class="headerlink" title="hash-MD5"></a><a href="https://en.wikipedia.org/wiki/MD5" target="_blank" rel="external">hash-MD5</a></h2><blockquote>
+<ul>
+<li>used to verify data integrity  through the createion of a 128-bit message digest from data input</li>
+</ul>
+</blockquote>
+<h1 id="regular-expression"><a href="#regular-expression" class="headerlink" title="regular expression"></a>regular expression</h1><blockquote>
+<ul>
+<li><a href="https://github.com/shihyu/Regular_Expressions/blob/master/Oreilly.Mastering.Regular.Expressions.3rd.Aug.2006.pdf" target="_blank" rel="external">Mastering Regular Expression</a> </li>
+<li><a href="https://docs.python.org/2/library/re.html" target="_blank" rel="external">learn RE from python</a></li>
+<li>use <code>\</code> to indicate special forms or to all special characters to be used without invking their special meaning.</li>
+<li><a href="http://regexone.com/lesson/" target="_blank" rel="external">interactive tutorial</a></li>
+</ul>
+</blockquote>
+<h2 id="regular-expression-syntax"><a href="#regular-expression-syntax" class="headerlink" title="regular expression syntax"></a>regular expression syntax</h2><blockquote>
+<ul>
+<li>ordinary characters <ul>
+<li>Ex. <code>A</code>, <code>a</code>,  <code>0</code></li>
+</ul>
+</li>
+<li>special characters<ul>
+<li><code>.</code>: matchs any character except a newline <ul>
+<li>(letter, digit, whitespace, everything)</li>
+</ul>
+</li>
+<li><code>^</code>: matches the <strong>start</strong> of the string</li>
+<li><code>$</code>: match the <strong>end</strong> of the string or just before the newline at the end of the string<ul>
+<li>Ex. <code>foo%</code> would only match <code>foo</code> but <code>foo</code> would match <code>foo</code> and <code>foobar</code></li>
+</ul>
+</li>
+<li><code>*</code>: Causes the resulting RE to match 0 or more repetitions of the preceding RE, as many repetitions as are possible. <ul>
+<li>Ex. ab* will match &#x2018;a&#x2019;, &#x2018;ab&#x2019;, or &#x2018;a&#x2019; followed by any number of &#x2018;b&#x2019;s</li>
+</ul>
+</li>
+<li><code>+</code>: Causes the resulting RE to match 1 or more repetitions of the preceding RE.<ul>
+<li>[abc]+ (one or more of any a, b, or c character)</li>
+<li>Ex. ab+ will match &#x2018;a&#x2019; followed by any non-zero number of &#x2018;b&#x2019;s; it will not match just &#x2018;a&#x2019;.</li>
+</ul>
+</li>
+<li><code>?</code>: Causes the resulting RE to match 0 or 1 repetitions of the preceding RE. <ul>
+<li>Ex. ab? will match either &#x2018;a&#x2019; or &#x2018;ab&#x2019;.</li>
+</ul>
+</li>
+<li><code>?,+?,??</code>: <ul>
+<li>The &#x2018;<em>&#x2018;, &#x2018;+&#x2019;, and &#x2018;?&#x2019; qualifiers are all greedy; they match as much text as possible. Sometimes this behaviour isn&#x2019;t desired; if the RE &lt;.</em>&gt; is matched against <a> b <c>, it will match the entire string, and not just <a>. Adding ? after the qualifier makes it perform the match in non-greedy or minimal fashion; as few characters as possible will be matched. Using the RE &lt;.*?&gt; will match only <a>.</a></a></c></a></li>
+</ul>
+</li>
+<li><code>{m}</code>: Specifies that exactly m copies of the previous RE should be matched<ul>
+<li><strong>how many repetitions you want</strong></li>
+</ul>
+</li>
+<li><code>{m,n}</code>: Causes the resulting RE to match from m to n repetitions of the preceding RE, attempting to match as <strong>many repetitions as possible</strong>. <ul>
+<li>Ex. a{3,5} will match from 3 to 5 &#x2018;a&#x2019; characters. Omitting m specifies a lower bound of zero, and omitting n specifies an infinite upper bound. As an example, a{4,}b will match aaaab or a thousand &#x2018;a&#x2019; characters followed by a b, but not aaab. The comma may not be omitted or the modifier would be confused with the previously described form.</li>
+</ul>
+</li>
+<li><code>{m,n}?</code>: Causes the resulting RE to match from m to n repetitions of the preceding RE, attempting to match as <strong>few repetitions as possible</strong>. This is the non-greedy version of the previous qualifier. For example, on the 6-character string &#x2018;aaaaaa&#x2019;, a{3,5} will match 5 &#x2018;a&#x2019; characters, while a{3,5}? will only match 3 characters.</li>
+<li><code>\</code>: Either escapes special characters (permitting you to match characters like &#x2018;*&#x2019;, &#x2018;?&#x2019;, and so forth), or signals a special sequence<ul>
+<li>If you&#x2019;re not using a raw string to express the pattern, remember that Python also uses the backslash as an escape sequence in string literals; if the escape sequence isn&#x2019;t recognized by Python&#x2019;s parser, the backslash and subsequent character are included in the resulting string. However, if Python would recognize the resulting sequence, the backslash should be repeated twice. This is complicated and hard to understand, so it&#x2019;s highly recommended that you use raw strings for all but the simplest expressions.</li>
+</ul>
+</li>
+<li>more on the website&#x2026;</li>
+<li><code>\w</code>: (lowercase w) matches a &#x201C;word&#x201D; character: a letter or digit or underbar [a-zA-Z0-9_]</li>
+<li><code>\W</code>: \W (upper case W) matches any non-word character.</li>
+<li><code>\b</code>: boundary between word and non-word <ul>
+<li>EX a$</li>
+<li>very useful when try to capture entire words <code>\w+\b</code></li>
+</ul>
+</li>
+<li><code>\s</code>: matches a single whitespace character</li>
+<li><code>\d</code>: decimal digit [0-9]<ul>
+<li><code>\D</code>: the opposite of sets of digit - <strong>non-digit</strong> character</li>
+<li><code>\W</code>, <code>\S</code> works in the same way</li>
+</ul>
+</li>
+<li><code>-</code>: the dash indicate a range<ul>
+<li>example: <ul>
+<li>[a-z]: match a character from range a to z </li>
+<li>[az]: match a character as a and z</li>
+<li>[az-]: : match a character as a, z, and -</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>conditional <ul>
+<li>| logical OR </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>functions and contents</li>
+</ul>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">prog = re.compile(pattern)</div><div class="line">result = prog.match(string)</div><div class="line">//<span class="keyword">is</span> equivalent to</div><div class="line"></div><div class="line">result = re.match(pattern, string)</div></pre></td></tr></table></figure>
+<blockquote>
+<pre><code>+ using `re.compile()` is more efficient when the expression will be used several times in a single program
+</code></pre><ul>
+<li><a href="https://developers.google.com/edu/python/regular-expressions" target="_blank" rel="external">re.search()</a><ul>
+<li>The search proceeds through the string from start to end, stopping at the first match found</li>
+</ul>
+</li>
+<li><a href="https://developers.google.com/edu/python/regular-expressions" target="_blank" rel="external">Square Brackets</a><ul>
+<li>used to indicate a set of chars, so [abc] matches &#x2018;a&#x2019; or &#x2018;b&#x2019; or &#x2018;c&#x2019;</li>
+<li>useful in email address search!</li>
+<li>used to exclude characters, so [^abc] matches any <strong>single</strong> character except for the letters a,b, or c.</li>
+</ul>
+</li>
+<li>Group Extraction ()<ul>
+<li>The &#x201C;group&#x201D; feature of a regular expression allows you to pick out parts of the matching text.</li>
+<li>Ex. i RE the email address, and i only want the hostname</li>
+<li>EX. i RE the #include headers, and i only want the headers</li>
+<li>it works different for re.findall() and re.search()(1 index based, 0 is preserved for the whole match)</li>
+</ul>
+</li>
+<li>re.findall()<ul>
+<li>findall() finds <em>all</em> the matches and returns them as a list of strings, with each string representing one match.</li>
+</ul>
+</li>
+<li>options in search() or findall()<ul>
+<li>IGNORECASE &#x2013; ignore upper/lowercase differences for matching, so &#x2018;a&#x2019; matches both &#x2018;a&#x2019; and &#x2018;A&#x2019;.</li>
+<li>DOTALL &#x2013; allow dot (.) to match newline &#x2013; normally it matches anything but newline. This can trip you up &#x2013; you think .<em> matches everything, but by default it <strong>does not go past the end of a line</strong>. Note that \s (whitespace) includes newlines, so if you want to match a run of whitespace that may include a newline, you can just use \s</em></li>
+<li>MULTILINE &#x2013; Within a string made of many lines, allow ^ and $ to match the start and end of each line. Normally ^/$ would just match the start and end of the whole string.</li>
+</ul>
+</li>
+<li>re.sub()<ul>
+<li>do substitution in RE!</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="whats-vpn"><a href="#what&#x2019;s-VPN" class="headerlink" title="what&#x2019;s VPN"></a><a href="https://www.quora.com/Whats-the-difference-between-VPN-and-VPS" target="_blank" rel="external">what&#x2019;s VPN</a></h1><blockquote>
+<ul>
+<li>1) V.P.S is about taking a physical device and distributing it among different client as if each of them getting a dedicated server of there own</li>
+<li>2) V.P.N is a way we access a private network from a public network</li>
+<li>how VPN encrypt a communication: <ul>
+<li>tunnel protocols</li>
+<li>penetration detection and route</li>
+</ul>
+</li>
+<li>your speed is limited by the internet. But in local lan, you can have 1000Gps </li>
+</ul>
+</blockquote>
+<h1 id="boost-library"><a href="#boost-library" class="headerlink" title="boost library"></a><a href="http://www.boost.org/" target="_blank" rel="external">boost library</a></h1><blockquote>
+<ul>
+<li><a href="http://theboostcpplibraries.com/preface" target="_blank" rel="external">tutorial book link</a></li>
+</ul>
+</blockquote>
+<h1 id="learn-different-file-format"><a href="#Learn-different-file-format" class="headerlink" title="Learn different file format"></a>Learn different file format</h1><h2 id="rst-restructuredtext"><a href="#rst-reStructuredText" class="headerlink" title="rst - reStructuredText"></a><a href="https://en.wikipedia.org/wiki/ReStructuredText" target="_blank" rel="external">rst - reStructuredText</a></h2><blockquote>
+<ul>
+<li>a file format for textual data used primarily in Python programming language community for <strong>technical documentation</strong></li>
+<li>a part of the Docutils project which can extract comments and information from Python programs, and format them into various forms of program documentation (Doxygen for C++)</li>
+<li><a href="https://github.com/mgaitan/sublime-rst-completion" target="_blank" rel="external">sublime rst plugin</a></li>
+<li><a href="http://blog.useasp.net/archive/2014/09/05/rst-file-restructuredtext-markup-syntax-quikstart.aspx" target="_blank" rel="external">syntax introduction in Chinese</a><br><a href="http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html" target="_blank" rel="external">RST syntax learning</a></li>
+<li>Introduction<ul>
+<li><em>sensative to indentation</em>, requires <em>blank lines</em> between <em>paragraphs</em></li>
+</ul>
+</li>
+<li>Text Formatting<ul>
+<li>italic <em>SOLAIRE</em></li>
+<li>bold <strong>SIEGMEYER</strong></li>
+<li>link <code>www.lbting.lb</code>_</li>
+<li>verbatim <code>mimic</code></li>
+<li>they must be separated from surrounding text by non-word characters like a space<ul>
+<li>Ex. this is a long<em>ish</em> paragraph (wrong) this is a long\ <em>ish</em> paragraph(right)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Headings<ul>
+<li><h1 id="with-overline-for-parts"><a href="#with-overline-for-parts" class="headerlink" title="with overline, for parts"></a>with overline, for parts</h1></li>
+<li><ul>
+<li>with overline, for chapters</li>
+</ul>
+</li>
+<li>=, for sections</li>
+<li>-, for subsections</li>
+<li>^, for subsubsections</li>
+<li>&#x201C;, for paragraphs</li>
+<li>rules<ul>
+<li>If under and overline are used, their length must be identical</li>
+<li>The length of the underline must be at least as long as the title itself</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>links<ul>
+<li>External links(http-like) <ul>
+<li><code>Python &lt;http://www.python.org&gt;</code>_<ul>
+<li>If you have an underscore within the label/name, you got to escape it with a &#x2018;\&#x2019; character.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Implicit Links to Titles<ul>
+<li>All titles are considered as hyperlinks<ul>
+<li><code>Internal and External links</code>_: This syntax works only if the title and link are within the same RST file. If this is not the case, then you need to create a label before the title and refer to this new link explicitly, as explained in Explicit Links section.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Explicit Links<ul>
+<li>check tutorial </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>List and bullets<ul>
+<li><code>*</code>, <code>1.</code>, <code>#.</code> </li>
+</ul>
+</li>
+<li>What are directives<ul>
+<li><strong>code-block</strong> syntax: allows you to insert code within document </li>
+<li>Here, <code>code-block</code> is the name of the directive. <code>html</code> is an argument telling that the code is in HTML format, <code>lineos</code> is an option telling to insert line number and finally after a blank line is the text to include.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.. code-block:: html</div><div class="line">    :linenos:</div><div class="line"></div><div class="line">    &lt;h1&gt;code block example&lt;/h1&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>Inserting Code and Literal blocks</li>
+<li>you can even insert a block of code from somefile</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">::</div><div class="line">The code you want to type in</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>Tables</li>
+<li>Include other RST files with the toctree directive<ul>
+<li>using <code>toctree</code> command to insert other files within a RST file. You can also control the output by several options</li>
+</ul>
+</li>
+<li>Images:</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.. image:: stars.jpg</div><div class="line">    :width: 200px</div><div class="line">    :align: center</div><div class="line">    :height: 100px</div><div class="line">    :alt: alternate text</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>Figures<ul>
+<li>similiar to images, but you can add a cpation</li>
+</ul>
+</li>
+<li>Boxes<ul>
+<li><code>.. seealso:: Text-You-Want-To-Write</code></li>
+<li><code>.. Note:: Text-You-Want-To-note</code></li>
+<li><code>.. Warning:: Text-You-Want-To-warn</code></li>
+<li><code>.. todo:: Text-You-Want-To-do</code></li>
+</ul>
+</li>
+<li>sidebar</li>
+<li>comments<ul>
+<li>add <code>.. comments</code> to the beginning of a line</li>
+</ul>
+</li>
+<li>substitution<ul>
+<li>define substitution as <code>.. _Python: http://www.python.org/</code>, then refer to it as <code>Python_</code></li>
+<li>or define <code>.. |longtext| replace:: this is a very very long text to include</code>, then refer to it by inserting |longtext|</li>
+</ul>
+</li>
+<li>others as <strong>Field list</strong>, <strong>glossary</strong>, <strong>index</strong>, <strong>download</strong>, <strong>hlist directive</strong>, <strong>Footnote</strong>, <strong>citations</strong>, &#x2026;etc</li>
+</ul>
+</blockquote>
+<h2 id="xml-extensible-markup-language"><a href="#xml-Extensible-Markup-Language" class="headerlink" title="xml - Extensible Markup Language"></a><a href="https://en.wikipedia.org/wiki/XML" target="_blank" rel="external">xml - Extensible Markup Language</a></h2><blockquote>
+<ul>
+<li>a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable</li>
+<li>Rss, XHTL, work, iWork all use XML syntax</li>
+<li>common use for the interchange of data over the Internet</li>
+<li>version:<ul>
+<li>XML 1.0(mostly wide used) and XML 1.1</li>
+</ul>
+</li>
+<li>What&#x2019;s Markup?<ul>
+<li>XML is not itself a markup language rather it&#x2019;s a set of rules for building markup languages</li>
+<li>Markup is information added to a document that enhances its meaning in certain ways<br><a href="http://www.tutorialspoint.com/xml/xml_quick_guide.htm" target="_blank" rel="external">How to write XML</a> </li>
+</ul>
+</li>
+<li>XML Declaration<ul>
+<li><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</code></li>
+</ul>
+</li>
+<li>Tags and Elements<ul>
+<li><code>&lt;element&gt;...&lt;/element&gt;</code></li>
+<li>Nesting of elements</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot;?&gt;</div><div class="line">&lt;contact-info&gt;</div><div class="line">   &lt;company&gt;TutorialsPoint&lt;/company&gt;</div><div class="line">&lt;contact-info&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<pre><code>+ Root element
++ Attributes
+    * we can have one or more attributes as name value pair: `&lt;a href=&quot;http://www.tutorialspoint.com/&quot;&gt;Tutorialspoint!&lt;/a&gt;`
+</code></pre><ul>
+<li>Reserved characters<ul>
+<li><code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code>, <code>&apos;&apos;,</code>&#x201C;` are reserved for XML</li>
+</ul>
+</li>
+<li>Tag - Element - Attribute</li>
+<li>Comment <code>\&lt;\!-------Your comment-----\&gt;</code><h1 id="computer-science-notion"><a href="#Computer-science-notion" class="headerlink" title="Computer science notion:"></a>Computer science notion:</h1></li>
+<li><a href="http://mestrelab.com/resources/annual-perpetual/" target="_blank" rel="external">Perpetual license VS Annual license</a><ul>
+<li>perpetual license: the customer can use the licensed software indefinitely </li>
+<li>annual license:  An annual license will allow the customer to use the licensed software for one year</li>
+<li>on-premise license: <strong>On-premises</strong> software is installed and runs on computers on the premises of the person or organization using the software, rather than at a remote facility such as a server farm or cloud</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="how-to-hold-ssh-keys-with-multiple-github-accounts"><a href="#how-to-hold-ssh-keys-with-multiple-github-accounts" class="headerlink" title="how to hold ssh-keys with multiple github accounts"></a><a href="https://medium.com/@trionkidnapper/ssh-keys-with-multiple-github-accounts-c67db56f191e" target="_blank" rel="external">how to hold ssh-keys with multiple github accounts</a></h2><h2 id="make-git-ignore-files-locally"><a href="#Make-git-ignore-files-locally" class="headerlink" title="Make git ignore files locally"></a><a href="https://stackoverflow.com/questions/1753070/how-do-i-configure-git-to-ignore-somes-files-locally" target="_blank" rel="external">Make git ignore files locally</a></h2><h2 id="json-vs-yaml-vs-bson-vs-messagepack"><a href="#JSON-VS-YAML-VS-BSON-VS-MessagePack" class="headerlink" title="JSON VS YAML VS BSON VS MessagePack"></a><a href="https://www.sitepoint.com/data-serialization-comparison-json-yaml-bson-messagepack/" target="_blank" rel="external">JSON VS YAML VS BSON VS MessagePack</a></h2><blockquote>
+<ul>
+<li><a href="https://rubentorresbonet.wordpress.com/2014/08/25/an-overview-of-data-serialization-techniques-in-c/" target="_blank" rel="external">overview of data serialization</a></li>
+<li>serialization(sender) and deserialization(receiver)</li>
+</ul>
+</blockquote>
+<h2 id="generate-your-book-cover-from-david"><a href="#Generate-your-book-cover-from-David" class="headerlink" title="Generate your book cover from David"></a><a href="https://dev.to/rly" target="_blank" rel="external">Generate your book cover from David</a></h2><h2 id="software-testing-anti-patterns"><a href="#Software-Testing-Anti-patterns" class="headerlink" title="Software Testing Anti-patterns"></a><a href="http://blog.codepipes.com/testing/software-testing-antipatterns.html" target="_blank" rel="external">Software Testing Anti-patterns</a></h2><blockquote>
+<ul>
+<li><a href="https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html" target="_blank" rel="external">Just Say no to more End-to-End Tests</a><ul>
+<li>unit test + integration test + end-to-end test</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="tech-lead-guide"><a href="#Tech-lead-guide" class="headerlink" title="Tech lead guide"></a><a href="https://hackernoon.com/the-effective-tech-lead-is-a-100x-engineer-fe49c0372a63" target="_blank" rel="external">Tech lead guide</a></h2><h2 id="xterm"><a href="#xterm" class="headerlink" title="xterm"></a><a href="https://www.computerhope.com/unix/uxterm.htm" target="_blank" rel="external">xterm</a></h2><blockquote>
+<ul>
+<li>a terminal emulator for the <a href="https://en.wikipedia.org/wiki/X_Window_System" target="_blank" rel="external">X Window System</a></li>
+<li><a href="https://scarygliders.net/2011/12/01/customize-xterm-the-original-and-best-terminal/" target="_blank" rel="external">a nice and simple tutorial</a><ul>
+<li>By pressing <code>CTRL</code> key with a combibnation of the <code>Left</code>, <code>Middle</code>, or <code>Right</code> mouse keys, you can alter xterm&#x2019;s appearance and behaviour</li>
+<li>you can use a <code>.Xresources</code> file to save the layout you like</li>
+</ul>
+</li>
+<li>If an option begins with a &#x201C;+&#x201D; instead of a &#x201C;-&#x201C;,  the option is restored to tis default value.</li>
+</ul>
+</blockquote>
+<h2 id="secure-your-systems-with-ssh-on-linus-and-putty-on-windows"><a href="#Secure-your-systems-with-ssh-on-Linus-and-puTTY-on-Windows" class="headerlink" title="Secure your systems with ssh on Linus and puTTY on Windows"></a><a href="https://scarygliders.net/2012/04/04/secure-your-systems-with-ssh/" target="_blank" rel="external">Secure your systems with ssh on Linus and puTTY on Windows</a></h2>
         
             
         
     </div>
     <div class="post-footer main-content-wrap">
-        
-            <div class="post-footer-tags">
-                <span class="text-color-light text-small">TAGGED IN</span><br/>
-                
-    <a class="tag tag--primary tag--small t-link" href="/tags/reflection/">reflection</a>
-
-            </div>
         
         <div class="post-actions-wrap">
     <nav>
@@ -331,10 +782,6 @@ PAUSE</span><br></pre></td></tr></table></figure>
 
 
         
-            <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-        
     </div>
 </article>
 
@@ -342,7 +789,7 @@ PAUSE</span><br></pre></td></tr></table></figure>
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">
-        Copyrights &copy; 2016 LBTING. All Rights Reserved.
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
     </span>
 </footer>
 
@@ -417,7 +864,7 @@ PAUSE</span><br></pre></td></tr></table></figure>
             <h5 id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p>Student</p>
+                <p>R&amp;D Engineer</p>
 
             </h5>
         
@@ -425,7 +872,7 @@ PAUSE</span><br></pre></td></tr></table></figure>
             <h5 id="about-card-location">
                 <i class="fa fa-map-marker"></i>
                 <br/>
-                Pittsburgh USA
+                Albany USA
             </h5>
         
     </div>
@@ -433,19 +880,8 @@ PAUSE</span><br></pre></td></tr></table></figure>
         <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
     </body>
     <!--SCRIPTS-->
-<script src="/assets/js/script.min.js" type="text/javascript"></script>
+<script src="/assets/js/script.min.js"></script>
 <!--SCRIPTS END-->
-
-    <script type="text/javascript">
-        var disqus_shortname = 'lbtinglb';
-        (function() {
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
 
 
 

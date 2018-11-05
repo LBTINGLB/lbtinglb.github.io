@@ -16,7 +16,7 @@ var _hmt = _hmt || [];
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="LBTING&#39; Blog">
-    <title>MPIStudy - LBTING&#39; Blog</title>
+    <title> - LBTING&#39; Blog</title>
     <meta name="author" content="LBTING">
     <meta name="description" content="LBTING&#39; Blog">
     <link rel="icon" href="/assets/images/null">
@@ -159,7 +159,7 @@ var _hmt = _hmt || [];
     
         <div class="post-header main-content-wrap">
     
-        <h1 class="post-title" itemprop="headline">MPIStudy</h1>
+        <h1 class="post-title" itemprop="headline">(no title)</h1>
     
     <div class="post-meta">
     <time  itemprop="datePublished" content="Fri Jul 08 2016 10:11:36 GMT-0400">
@@ -190,19 +190,23 @@ var _hmt = _hmt || [];
 <li><a href="#dynamic-receiving-with-mpi-probe">Dynamic Receiving with MPI Probe</a></li>
 <li><a href="#the-application-example-using-mpi_send-mpi_recv-and-mpi_probe">the application example using MPI_Send, MPI_Recv, and MPI_Probe</a></li>
 <li><a href="#reflections">reflections</a></li>
-<li><a href="#others">Others</a></li>
+<li><a href="#others">Others</a><ul>
+<li><a href="#processes-vs-threads">Processes vs threads</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <!-- tocstop -->
 <h1 id="useful-materials"><a href="#Useful-materials" class="headerlink" title="Useful materials"></a>Useful materials</h1><blockquote>
 <ul>
-<li><a href="http://www.cs.cmu.edu/~srini/15-440/syllabus.html" target="_blank" rel="external">CMU 15440</a><ul>
+<li><a href="https://www.andrew.cmu.edu/course/15-440/" target="_blank" rel="external">CMU 15440</a><ul>
 <li>echo + server</li>
 <li>thread + lock</li>
 <li>thread + tcp communication</li>
 </ul>
 </li>
+<li><a href="http://15418.courses.cs.cmu.edu/spring2017/" target="_blank" rel="external">CMU 15418</a></li>
 <li><a href="http://mpitutorial.com/" target="_blank" rel="external">MPI Tutorial</a></li>
 </ul>
 </blockquote>
@@ -324,6 +328,33 @@ var _hmt = _hmt || [];
 <li><p>How to debug in parallel</p>
 <ul>
 <li>mpirun -n -2 xterm -e gdb -ex run &#x2013;arg &#x2026;.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="processes-vs-threads"><a href="#Processes-vs-threads" class="headerlink" title="Processes vs threads"></a>Processes vs threads</h3><blockquote>
+<ul>
+<li><a href="https://www.seas.upenn.edu/~cit595/cit595s10/lectures/processvsthreads.pdf" target="_blank" rel="external">upenn pdf explanation</a></li>
+<li>Process:<ul>
+<li>An executing instance of a program is called a process.</li>
+<li>Some operating systems use the term &#x2018;task&#x2018; to refer to a program that is being executed.</li>
+<li>A process is always stored in the main memory also termed as the primary memory or random access memory.</li>
+<li>Therefore, a process is termed as an active entity. It disappears if the machine is rebooted.</li>
+<li>Several process may be associated with a same program.</li>
+<li>On a multiprocessor system, multiple processes can be executed in parallel.</li>
+<li>On a uni-processor system, though true parallelism is not achieved, a process scheduling algorithm is applied and the processor is scheduled to execute each process one at a time yielding an illusion of concurrency.</li>
+<li>Example: Executing multiple instances of the &#x2018;Calculator&#x2019; program. Each of the instances are termed as a process.</li>
+</ul>
+</li>
+<li>Thread:<ul>
+<li>A thread is a subset of the process.</li>
+<li>It is termed as a &#x2018;lightweight process&#x2019;, since it is similar to a real process but executes within the context of a process and shares the same resources allotted to the process by the kernel.</li>
+<li>Usually, a process has only one thread of control &#x2013; one set of machine instructions executing at a time.</li>
+<li>A process may also be made up of multiple threads of execution that execute instructions concurrently.</li>
+<li>Multiple threads of control can exploit the true parallelism possible on multiprocessor systems.</li>
+<li>On a uni-processor system, a thread scheduling algorithm is applied and the processor is scheduled to run each thread one at a time.</li>
+<li>All the threads running within a process share the same address space, file descriptors, stack and other process related attributes.</li>
+<li>Since the threads of a process share the same memory, synchronizing the access to the shared data withing the process gains unprecedented importance.</li>
 </ul>
 </li>
 </ul>

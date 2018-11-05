@@ -177,6 +177,11 @@ var _hmt = _hmt || [];
     
     <div class="post-content markdown main-content-wrap" itemprop="articleBody">
         <p>Notes when learning Modern C++ Design by Andrei Alexandrescu.<br><a id="more"></a></p>
+<h1 id="useful-links"><a href="#Useful-links" class="headerlink" title="Useful links"></a>Useful links</h1><blockquote>
+<ul>
+<li><a href="https://sourcemaking.com/design_patterns/structural_patterns" target="_blank" rel="external">Structural patterns in a simple way</a></li>
+</ul>
+</blockquote>
 <h1 id="modern-c-design"><a href="#Modern-C-Design" class="headerlink" title="Modern C++ Design"></a>Modern C++ Design</h1><!-- toc -->
 <ul>
 <li><a href="#preface">Preface</a></li>
@@ -209,6 +214,45 @@ var _hmt = _hmt || [];
 <li><a href="#jargons">Jargons</a></li>
 <li><a href="#visitor-design-pattern">Visitor design pattern</a></li>
 <li><a href="#decorator-design-patternhttpsenwikipediaorgwikidecorator_pattern"><a href="https://en.wikipedia.org/wiki/Decorator_pattern" target="_blank" rel="external">Decorator Design pattern</a></a></li>
+<li><a href="#curiously-recurring-template-patternhttpssourcemakingcomdesign_patternsstructural_patterns"><a href="https://sourcemaking.com/design_patterns/structural_patterns" target="_blank" rel="external">Curiously recurring template pattern</a></a></li>
+</ul>
+</li>
+<li><a href="#structural-patterns-in-a-simple-way">Structural patterns in a simple way</a><ul>
+<li><a href="#creational-design-patterns">Creational design patterns</a><ul>
+<li><a href="#abstract-factoryhttpssourcemakingcomdesign_patternsabstract_factory"><a href="https://sourcemaking.com/design_patterns/abstract_factory" target="_blank" rel="external">Abstract Factory</a></a></li>
+<li><a href="#builder-design-patternhttpssourcemakingcomdesign_patternsbuilder"><a href="https://sourcemaking.com/design_patterns/builder" target="_blank" rel="external">Builder Design Pattern</a></a></li>
+<li><a href="#factory-methodhttpssourcemakingcomdesign_patternsfactory_method"><a href="https://sourcemaking.com/design_patterns/factory_method" target="_blank" rel="external">Factory Method</a></a></li>
+<li><a href="#object-pool-design-patternhttpssourcemakingcomdesign_patternsobject_pool"><a href="https://sourcemaking.com/design_patterns/object_pool" target="_blank" rel="external">Object Pool Design Pattern</a></a></li>
+<li><a href="#prototype-design-patternhttpssourcemakingcomdesign_patternsprototype"><a href="https://sourcemaking.com/design_patterns/prototype" target="_blank" rel="external">Prototype Design Pattern</a></a></li>
+<li><a href="#singleton-design-patternhttpssourcemakingcomdesign_patternssingleton"><a href="https://sourcemaking.com/design_patterns/singleton" target="_blank" rel="external">Singleton Design Pattern</a></a></li>
+<li><a href="#structural-patternshttpssourcemakingcomdesign_patternsstructural_patterns"><a href="https://sourcemaking.com/design_patterns/structural_patterns" target="_blank" rel="external">Structural patterns</a></a></li>
+</ul>
+</li>
+<li><a href="#structural-design-patterns">Structural design patterns</a><ul>
+<li><a href="#adapterhttpssourcemakingcomdesign_patternsadapter-match-interfaces-of-different-classes"><a href="https://sourcemaking.com/design_patterns/adapter" target="_blank" rel="external">Adapter</a> - Match interfaces of different classes</a></li>
+<li><a href="#bridge-design-patternhttpssourcemakingcomdesign_patternsbridge-separates-an-objects-interface-from-its-implementation"><a href="https://sourcemaking.com/design_patterns/bridge" target="_blank" rel="external">Bridge Design Pattern</a> - Separates an object&#x2019;s interface from its implementation</a></li>
+<li><a href="#compositehttpssourcemakingcomdesign_patternscomposite-a-tree-structure-of-simple-and-composite-objects"><a href="https://sourcemaking.com/design_patterns/composite" target="_blank" rel="external">Composite</a> - A tree structure of simple and composite objects</a></li>
+<li><a href="#decoratorhttpssourcemakingcomdesign_patternsdecorator-add-responsibilities-to-objects-dynamically"><a href="https://sourcemaking.com/design_patterns/decorator" target="_blank" rel="external">Decorator</a> - Add responsibilities to objects dynamically</a></li>
+<li><a href="#facadehttpssourcemakingcomdesign_patternsfacade-a-single-class-that-represents-an-entire-subsystem"><a href="https://sourcemaking.com/design_patterns/facade" target="_blank" rel="external">Facade</a> - A single class that represents an entire subsystem</a></li>
+<li><a href="#flyweighthttpssourcemakingcomdesign_patternsflyweight-a-fine-grained-instance-used-for-efficient-sharing"><a href="https://sourcemaking.com/design_patterns/flyweight" target="_blank" rel="external">Flyweight</a> - A fine-grained instance used for efficient sharing</a></li>
+<li><a href="#private-class-datahttpssourcemakingcomdesign_patternsprivate_class_data-restricts-accessormutator-access"><a href="https://sourcemaking.com/design_patterns/private_class_data" target="_blank" rel="external">Private Class Data</a> - Restricts accessor/mutator access</a></li>
+<li><a href="#proxyhttpssourcemakingcomdesign_patternsproxy-an-object-representing-another-object"><a href="https://sourcemaking.com/design_patterns/proxy" target="_blank" rel="external">Proxy</a> - An object representing another object</a></li>
+</ul>
+</li>
+<li><a href="#behavioral-design-patterns">Behavioral design patterns</a><ul>
+<li><a href="#chain-of-responsibilityhttpssourcemakingcomdesign_patternschain_of_responsibility"><a href="https://sourcemaking.com/design_patterns/chain_of_responsibility" target="_blank" rel="external">Chain of Responsibility</a></a></li>
+<li><a href="#command-design-patternhttpssourcemakingcomdesign_patternscommand"><a href="https://sourcemaking.com/design_patterns/command" target="_blank" rel="external">Command Design Pattern</a></a></li>
+<li><a href="#interpreter-design-patternhttpssourcemakingcomdesign_patternsinterpreter"><a href="https://sourcemaking.com/design_patterns/interpreter" target="_blank" rel="external">Interpreter Design Pattern</a></a></li>
+<li><a href="#mediator-design-patternhttpssourcemakingcomdesign_patternsmediator"><a href="https://sourcemaking.com/design_patterns/mediator" target="_blank" rel="external">Mediator Design Pattern</a></a></li>
+<li><a href="#memento-design-patternhttpssourcemakingcomdesign_patternsmemento"><a href="https://sourcemaking.com/design_patterns/memento" target="_blank" rel="external">Memento Design Pattern</a></a></li>
+<li><a href="#null-object-design-patternhttpssourcemakingcomdesign_patternsnull_object"><a href="https://sourcemaking.com/design_patterns/null_object" target="_blank" rel="external">Null Object Design Pattern</a></a></li>
+<li><a href="#observer-design-patternhttpssourcemakingcomdesign_patternsobserver"><a href="https://sourcemaking.com/design_patterns/observer" target="_blank" rel="external">Observer Design Pattern</a></a></li>
+<li><a href="#state-design-patternhttpssourcemakingcomdesign_patternsstate"><a href="https://sourcemaking.com/design_patterns/state" target="_blank" rel="external">State Design Pattern</a></a></li>
+<li><a href="#strategy-design-patternhttpssourcemakingcomdesign_patternsstrategy"><a href="https://sourcemaking.com/design_patterns/strategy" target="_blank" rel="external">Strategy Design Pattern</a></a></li>
+<li><a href="#template-method-design-patternhttpssourcemakingcomdesign_patternstemplate_method"><a href="https://sourcemaking.com/design_patterns/template_method" target="_blank" rel="external">Template Method Design Pattern</a></a></li>
+<li><a href="#visitor-design-patternhttpssourcemakingcomdesign_patternsvisitor"><a href="https://sourcemaking.com/design_patterns/visitor" target="_blank" rel="external">Visitor Design Pattern</a></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -242,7 +286,7 @@ var _hmt = _hmt || [];
 </blockquote>
 <h2 id="chapter-2-techniques"><a href="#Chapter-2-Techniques" class="headerlink" title="Chapter 2. Techniques"></a>Chapter 2. Techniques</h2><h3 id="21-compile-time-assertions"><a href="#2-1-Compile-Time-Assertions" class="headerlink" title="2.1 Compile-Time Assertions"></a>2.1 Compile-Time Assertions</h3><blockquote>
 <ul>
-<li>You can not create an array of length zero<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// runtime check</span></div><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> To, <span class="keyword">class</span> From&gt;</div><div class="line"><span class="function">To <span class="title">safe_reinterpret_cast</span><span class="params">(From from)</span></span></div><div class="line">{</div><div class="line">assert(<span class="keyword">sizeof</span>(From) &lt;= <span class="keyword">sizeof</span>(To));</div><div class="line"><span class="keyword">return</span> <span class="keyword">reinterpret_cast</span>&lt;To&gt;(from);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// compile time check</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> STATIC_CHECK(expr) { char unnamed[(expr) ? 1 : 0]; }</span></div><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> To, <span class="keyword">class</span> From&gt;</div><div class="line"><span class="function">To <span class="title">safe_reinterpret_cast</span><span class="params">(From from)</span></span></div><div class="line">{</div><div class="line">STATIC_CHECK(<span class="keyword">sizeof</span>(From) &lt;= <span class="keyword">sizeof</span>(To));</div><div class="line"><span class="keyword">return</span> <span class="keyword">reinterpret_cast</span>&lt;To&gt;(from);</div><div class="line">}</div><div class="line">...</div><div class="line"><span class="keyword">void</span>* somePointer = ...;</div><div class="line"><span class="keyword">char</span> c = safe_reinterpret_cast&lt;<span class="keyword">char</span>&gt;(somePointer);</div></pre></td></tr></table></figure>
+<li>You can not create an array of length zero<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// runtime check</span></div><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> To, <span class="keyword">class</span> From&gt;</div><div class="line"><span class="function">To <span class="title">safe_reinterpret_cast</span><span class="params">(From from)</span></span></div><div class="line">{</div><div class="line">assert(<span class="keyword">sizeof</span>(From) &lt;= <span class="keyword">sizeof</span>(To));</div><div class="line"><span class="keyword">return</span> <span class="keyword">reinterpret_cast</span>&lt;To&gt;(from);</div><div class="line">}</div><div class="line"><span class="comment">// compile time check</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> STATIC_CHECK(expr) { char unnamed[(expr) ? 1 : 0]; }</span></div><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> To, <span class="keyword">class</span> From&gt;</div><div class="line"><span class="function">To <span class="title">safe_reinterpret_cast</span><span class="params">(From from)</span></span></div><div class="line">{</div><div class="line">STATIC_CHECK(<span class="keyword">sizeof</span>(From) &lt;= <span class="keyword">sizeof</span>(To));</div><div class="line"><span class="keyword">return</span> <span class="keyword">reinterpret_cast</span>&lt;To&gt;(from);</div><div class="line">}</div><div class="line">...</div><div class="line"><span class="keyword">void</span>* somePointer = ...;</div><div class="line"><span class="keyword">char</span> c = safe_reinterpret_cast&lt;<span class="keyword">char</span>&gt;(somePointer);</div></pre></td></tr></table></figure>
 </li>
 </ul>
 </blockquote>
@@ -257,7 +301,7 @@ var _hmt = _hmt || [];
 <li>boilerplate code or boilerplate refers to sections of code that have to be included in many places with little or no alteration.<h2 id="visitor-design-pattern"><a href="#Visitor-design-pattern" class="headerlink" title="Visitor design pattern"></a>Visitor design pattern</h2></li>
 </ul>
 </li>
-<li><a href="https://sourcemaking.com/design_patterns/visitor" target="_blank" rel="external">SOURCE MAKEING example</a></li>
+<li><a href="https://sourcemaking.com/design_patterns/visitor" target="_blank" rel="external">SOURCE MAKING example</a></li>
 <li>Benefit:<ul>
 <li>In essence, the visitor allows adding new virtual functions to a family of classes, without modifying the classes.</li>
 <li>Visitor&#x2019;s primary purpose is to abstract functionality that can be applied to an aggregate hierarchy of &#x201C;element&#x201D; objects. The approach encourages designing lightweight Element classes - because processing functionality is removed from their list of responsibilities. New functionality can easily be added to the original inheritance hierarchy by creating a new Visitor subclass.</li>
@@ -272,6 +316,253 @@ var _hmt = _hmt || [];
 <li>vs subclassing: <code>Subclassing</code> adds behaviors at compile time, and the change affects all instances of the original classes. <code>Decorating</code> can provide new behavior at run-time for selected objects</li>
 <li>when to use: If we cannot predict, at design time, what combinations of extensions will be needed. Which means that a new classes would be made for every possible combination</li>
 <li><a href="https://sourcemaking.com/design_patterns/decorator/cpp/1" target="_blank" rel="external">c++ implementation</a></li>
+</ul>
+</blockquote>
+<h2 id="curiously-recurring-template-pattern"><a href="#Curiously-recurring-template-pattern" class="headerlink" title="Curiously recurring template pattern"></a><a href="https://sourcemaking.com/design_patterns/structural_patterns" target="_blank" rel="external">Curiously recurring template pattern</a></h2><blockquote>
+<ul>
+<li>An idiom in C++ where a class <code>X</code> derives from a class template instantiation using <code>X</code> itself as template argument. More generally it&#x2019;s known as F-bound polymorphism. It&#x2019;s used for <code>static polymorphism</code></li>
+<li>You can use members of the derived class within its own member functions</li>
+<li>You can achieve a similiar effect to the use of virtual functions, without the cost(and some flexibility) of dynamic polymorphism. The overridden functions in the derived class will be selected at compile time. This effectively <em>emulates the virtual function call system at compile time</em> without the <em>costs in size or function call overhead</em> (VTBL structures, and method lookups, multiple-inheritance VTBL machinery) at the disadvantage of not being able to make this choice at runtime.</li>
+</ul>
+</blockquote>
+<h1 id="structural-patterns-in-a-simple-way"><a href="#Structural-patterns-in-a-simple-way" class="headerlink" title="Structural patterns in a simple way"></a>Structural patterns in a simple way</h1><h2 id="creational-design-patterns"><a href="#Creational-design-patterns" class="headerlink" title="Creational design patterns"></a>Creational design patterns</h2><h3 id="abstract-factory"><a href="#Abstract-Factory" class="headerlink" title="Abstract Factory"></a><a href="https://sourcemaking.com/design_patterns/abstract_factory" target="_blank" rel="external">Abstract Factory</a></h3><blockquote>
+<ul>
+<li>Brief introduction: Provide an interface for creating <strong>families</strong> of related or dependent objects without specifying their concrete classes.</li>
+<li>Problem to solve: Making the application portable can be hard. Two many conditions to support.</li>
+<li>Benefits: This mechanism makes exchanging product families easy because the specific class of the factory object <code>appears only once in the application</code> - where it is instantiated. The application can wholesale replace the entire family of products simply by instantiating a different concrete instance of the abstract factory.</li>
+<li>Check list:<ul>
+<li>Decide if &#x201C;plateform independence&#x201D; and creation services are the current source of pain<ul>
+<li>Define a factory derived class for each platform that encapsulates all references to the new operator.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="builder-design-pattern"><a href="#Builder-Design-Pattern" class="headerlink" title="Builder Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/builder" target="_blank" rel="external">Builder Design Pattern</a></h3><blockquote>
+<ul>
+<li>Brief introduction: Separate the construction of a complex object from its representation so that the same construction process can create different representations. A director invokes the builder services as it interprets the external format. Unlike creational patterns that construct products in one shot, the Builder pattern constructs the product step by step under the control of the director.</li>
+<li>Check list:<ul>
+<li>Decide if a common input and many possible representations(or outputs) is the problem  at hand.</li>
+</ul>
+</li>
+<li>Example: Ordering foor in MC. Build burger? donouts? fries?</li>
+</ul>
+</blockquote>
+<h3 id="factory-method"><a href="#Factory-Method" class="headerlink" title="Factory Method"></a><a href="https://sourcemaking.com/design_patterns/factory_method" target="_blank" rel="external">Factory Method</a></h3><blockquote>
+<ul>
+<li>Brief introduction: Define an interface for creating an object, but let the subclasses decide which class to instantiate.</li>
+<li>Problem to solve: A framework needs to standardize the architectural model for a range of applications, but allow for individual applications to define their own domain objects and provide for their instantiation.</li>
+<li>Factory Method is similar to Abstract Factory but without the emphasis on families.</li>
+</ul>
+</blockquote>
+<h3 id="object-pool-design-pattern"><a href="#Object-Pool-Design-Pattern" class="headerlink" title="Object Pool Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/object_pool" target="_blank" rel="external">Object Pool Design Pattern</a></h3><blockquote>
+<ul>
+<li>Brief introduction: Used in situations where the cost of initializing a class instance is hight, the rate is high but the number of instantiations in use at any one time is low.</li>
+<li>Problem to solve: Object pools (otherwise known as resource pools) are used to manage the object caching. A client with access to a Object pool can avoid creating a new Objects by simply asking the pool for one that has already been instantiated instead. Generally the pool will be a growing pool, i.e. the pool itself will create new objects if the pool is empty, or we can have a pool, which restricts the number of objects created.</li>
+<li>Think it as a warehouse. It gives out tools when there are unused ones and reclaim then they are not in use.</li>
+</ul>
+</blockquote>
+<h3 id="prototype-design-pattern"><a href="#Prototype-Design-Pattern" class="headerlink" title="Prototype Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/prototype" target="_blank" rel="external">Prototype Design Pattern</a></h3><blockquote>
+<ul>
+<li>Brief introduction: Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.</li>
+<li>Problem to solve: Application hard wires the class of object to create in each &#x201C;new&#x201D; expression</li>
+</ul>
+</blockquote>
+<h3 id="singleton-design-pattern"><a href="#Singleton-Design-Pattern" class="headerlink" title="Singleton Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/singleton" target="_blank" rel="external">Singleton Design Pattern</a></h3><blockquote>
+<ul>
+<li>Brief introduction: Ensure a class has only one instance, and provide a global point of access to it.</li>
+<li>Problem to solve: Application needs one, and only one, instance of an object. Additionally, lazy inititialization and global access are necessary.</li>
+<li>Ownership of the single instance cannot be reasonably assigned + lazy initialization is desirable + Global access</li>
+</ul>
+</blockquote>
+<h3 id="structural-patterns"><a href="#Structural-patterns" class="headerlink" title="Structural patterns"></a><a href="https://sourcemaking.com/design_patterns/structural_patterns" target="_blank" rel="external">Structural patterns</a></h3><h2 id="structural-design-patterns"><a href="#Structural-design-patterns" class="headerlink" title="Structural design patterns"></a>Structural design patterns</h2><h3 id="adapter-match-interfaces-of-different-classes"><a href="#Adapter-Match-interfaces-of-different-classes" class="headerlink" title="Adapter - Match interfaces of different classes"></a><a href="https://sourcemaking.com/design_patterns/adapter" target="_blank" rel="external">Adapter</a> - Match interfaces of different classes</h3><blockquote>
+<ul>
+<li>brief introduction: It&#x2019;s used to convert the interface of a class into another interface which clients expect(Wrap an existing class with a new interface). It creates an intermediary abstraction that translates, or maps, the old componment to the new system.</li>
+<li>Problem to solve: An &#x201C;off the shelf&#x201D; component offers compelling functionality that you would like to reuse, but its &#x201C;view of the world&#x201D; is not compatible with the philosophy and architecture of the system currently being developed.</li>
+<li>adapter vs proxy vs decorateor vs facade: different interface vs same interface vs enhanced interface vs new</li>
+</ul>
+</blockquote>
+<h3 id="bridge-design-pattern-separates-an-objects-interface-from-its-implementation"><a href="#Bridge-Design-Pattern-Separates-an-object&#x2019;s-interface-from-its-implementation" class="headerlink" title="Bridge Design Pattern - Separates an object&#x2019;s interface from its implementation"></a><a href="https://sourcemaking.com/design_patterns/bridge" target="_blank" rel="external">Bridge Design Pattern</a> - Separates an object&#x2019;s interface from its implementation</h3><blockquote>
+<ul>
+<li>brief introduction: Decouple an abstraction from its implementation so that two can vary independently. Interface in an inheritance hierarchy + implementation in its own inheritance hierarchy(Decouple the problem into orthogonal classes hierarchies). It uses handle/body idiom<ul>
+<li>The <code>interface</code> object is known to the client while the implementation object, or &#x201C;body&#x201D;, is safely encapsualted to ensure that it may continue to evolove, or be entirely replaced</li>
+</ul>
+</li>
+<li>Problem to solve: &#x201C;Hardening of the software arteries&#x201D; has occurred by using subclassing of an abstract base class to provide alternative implementations. This locks in compile-time binding between interface and implementation. The abstraction and implementation cannot be independently extended or composed. The number of classes you need is exponential.</li>
+<li>Benefit:<ul>
+<li>run-time bindng of the implementation</li>
+<li>a proliferation of classes resulting from a coupled interface and numerous implementations</li>
+<li>share an implementation among multiple objects</li>
+<li>hide the detail from the client</li>
+<li>improve the extensibility.</li>
+</ul>
+</li>
+<li>Check list:<ul>
+<li>decide if two <code>orthogonal</code> dimensions exist in the domain. abstraction/plateform, domain/infrastructure, or front-end/back-end, or interface/implementation</li>
+<li>Design the separation of concerns: what does the client want, and waht do the platforms provide.</li>
+<li>create the abstraction base class that &#x201C;has a&#x201D; platform object and delegates the platform-oriented functionality to i</li>
+</ul>
+</li>
+<li>adapter vs bridge<ul>
+<li>Adapter make things work after they&#x2019;re designed; Bridge makes them work before they are.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="composite-a-tree-structure-of-simple-and-composite-objects"><a href="#Composite-A-tree-structure-of-simple-and-composite-objects" class="headerlink" title="Composite - A tree structure of simple and composite objects"></a><a href="https://sourcemaking.com/design_patterns/composite" target="_blank" rel="external">Composite</a> - A tree structure of simple and composite objects</h3><blockquote>
+<ul>
+<li>brief introduction: treat individual objects and compositions of objects uniformly.</li>
+<li>Problem to solve: Application needs to manipulate a hierarchical collection of &#x201C;primitive&#x201D; and &#x201C;composite&#x201D; objects. Processing of a primitive object is handled one way, and processing of a composite object is handled differently. Having to query the &#x201C;type&#x201D; of each object before attempting to process it is not desirable.</li>
+<li>Read Gang of Four for a discussion of  `<strong>safety</strong> versus <strong>transparency</strong> trade-offs.</li>
+<li>benefit:<ul>
+<li>the composite can be treated atomically, just like a leaf.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="decorator-add-responsibilities-to-objects-dynamically"><a href="#Decorator-Add-responsibilities-to-objects-dynamically" class="headerlink" title="Decorator - Add responsibilities to objects dynamically"></a><a href="https://sourcemaking.com/design_patterns/decorator" target="_blank" rel="external">Decorator</a> - Add responsibilities to objects dynamically</h3><blockquote>
+<ul>
+<li>brief introduction: attach additional responsibilities to an object dynamically - an alternative to subclassing for extending functionality</li>
+<li>Check list:<ul>
+<li>a single core(or non-optional) component, several optional embellishments or wrappers, and an interface that&#x2019;s common to all</li>
+<li>create a <code>Lowest common denominator(LCD)</code> interface that makes all classes interchangeable</li>
+<li>the core and decorator classes inherit from the LCD interface. The Decorator class declares a composition relationship to the LCD interface, and this data member is initialized in its constructor.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="facade-a-single-class-that-represents-an-entire-subsystem"><a href="#Facade-A-single-class-that-represents-an-entire-subsystem" class="headerlink" title="Facade - A single class that represents an entire subsystem"></a><a href="https://sourcemaking.com/design_patterns/facade" target="_blank" rel="external">Facade</a> - A single class that represents an entire subsystem</h3><blockquote>
+<ul>
+<li>brief introduction: Provide a unified interface to a set of interfaces in a subsystem. It defines a higher-level interface that makes the subsystem easier to use.</li>
+<li>Problem to solve: A segment of the client community needs a simplified interface to the overall functionality of a complex subsystem.<ul>
+<li>so the facade object should be a fairly simple advocate or facilitator. It should not become an all-knowing oracle or &#x2018;god&#x2019; object.</li>
+</ul>
+</li>
+<li>check list:<ul>
+<li>identify a simpler, unified interface for the subsystem or component</li>
+</ul>
+</li>
+<li>benefit:<ul>
+<li>It can make multiple interfaces work together</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="flyweight-a-fine-grained-instance-used-for-efficient-sharing"><a href="#Flyweight-A-fine-grained-instance-used-for-efficient-sharing" class="headerlink" title="Flyweight - A fine-grained instance used for efficient sharing"></a><a href="https://sourcemaking.com/design_patterns/flyweight" target="_blank" rel="external">Flyweight</a> - A fine-grained instance used for efficient sharing</h3><blockquote>
+<ul>
+<li>brief introduction: Use sharing to support large numbers of fine-grained objects efficiently</li>
+<li>Problem to solve: Designing objects down to the lowest levels of system &#x201C;granularity&#x201D; provides optimal flexibility, but can be unacceptably expensive in terms of performance and memory usage.</li>
+<li>check list:<ul>
+<li>ensure that object overhead is an issue needing attention. And the client is willing to absorb the responsibility realignment</li>
+<li>divide the target class&#x2019;s state into: shareable(intrinsic) state and non-shareable(extrinsic)state</li>
+<li>Create a Factory that can cache and reuse existing class instances.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="private-class-data-restricts-accessormutator-access"><a href="#Private-Class-Data-Restricts-accessor-mutator-access" class="headerlink" title="Private Class Data - Restricts accessor/mutator access"></a><a href="https://sourcemaking.com/design_patterns/private_class_data" target="_blank" rel="external">Private Class Data</a> - Restricts accessor/mutator access</h3><blockquote>
+<ul>
+<li>brief introduction: Control write access to class attributes. The motivation for this design pattern comes from the design goal of protecting class state by minimizing the visibility of its attributes (data).</li>
+<li>example: vtkInternal<em> ``` *</em> `</li>
+</ul>
+</blockquote>
+<h3 id="proxy-an-object-representing-another-object"><a href="#Proxy-An-object-representing-another-object" class="headerlink" title="Proxy - An object representing another object"></a><a href="https://sourcemaking.com/design_patterns/proxy" target="_blank" rel="external">Proxy</a> - An object representing another object</h3><blockquote>
+<ul>
+<li>brief introduction: Provide a surrogate or placeholder for another object to control access to it. Use an extra level of indirection to support <code>distributed</code>, <code>controlled</code>, or <code>intelligent</code> access`</li>
+<li>Add a wrapper and delegation to protect the real component from undue complexity</li>
+<li>Problem: You need to support resource-hungry objects, and you do not want to instantiate such objects unless and until they are actually requested by the client.(vtkPipeLine!)</li>
+<li>four common situations in which the proxy pattern is applicable<ul>
+<li>A virtual proxy is a placeholder for &#x201C;expensive to create&#x201D; objects. The real object is only created when a client first requests/accesses the object.</li>
+<li>A remote proxy provides a local representative for an object that resides in a different address space. This is what the &#x201C;stub&#x201D; code in RPC and CORBA provides.</li>
+<li>A protective proxy controls access to a sensitive master object. The &#x201C;surrogate&#x201D; object checks that the caller has the access permissions required prior to forwarding the request.</li>
+<li>A smart proxy interposes additional actions when an object is accessed. (reference coutning, lock checking)</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="behavioral-design-patterns"><a href="#Behavioral-design-patterns" class="headerlink" title="Behavioral design patterns"></a>Behavioral design patterns</h2><h3 id="chain-of-responsibility"><a href="#Chain-of-Responsibility" class="headerlink" title="Chain of Responsibility"></a><a href="https://sourcemaking.com/design_patterns/chain_of_responsibility" target="_blank" rel="external">Chain of Responsibility</a></h3><blockquote>
+<ul>
+<li>brief introduction: avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request</li>
+<li>problem to solve: Need to efficiently process the requests without hard-wiring handler relationships and precedence</li>
+<li>Now each sender keeps a single reference to the head of the chain, and each receiver keeps a single reference to its immediate successor in the chain. <strong>Do not use it</strong> when each request is only handled by one handler</li>
+<li>check list:<ul>
+<li>the base class matains a next pointer.</li>
+<li>each derived class implements its contribution for handling the request.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="command-design-pattern"><a href="#Command-Design-Pattern" class="headerlink" title="Command Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/command" target="_blank" rel="external">Command Design Pattern</a></h3><blockquote>
+<ul>
+<li>brief introduction: Encapsulate a request as an object, promoting &#x201C;invocation of a method on an object&#x201D;</li>
+<li>example: check at a dinner</li>
+</ul>
+</blockquote>
+<h3 id="interpreter-design-pattern"><a href="#Interpreter-Design-Pattern" class="headerlink" title="Interpreter Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/interpreter" target="_blank" rel="external">Interpreter Design Pattern</a></h3><blockquote>
+<ul>
+<li>Map a domain to a language, the language to a grammar, and the grammar to a hierarchical object-oriented design.</li>
+</ul>
+</blockquote>
+<h3 id="mediator-design-pattern"><a href="#Mediator-Design-Pattern" class="headerlink" title="Mediator Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/mediator" target="_blank" rel="external">Mediator Design Pattern</a></h3><blockquote>
+<ul>
+<li>brief introduction: Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.</li>
+<li>problem to solve: We want to design reusable components, but dependencies between the potentially reusable pieces demonstrates the &#x201C;spaghetti code&#x201D; phenomenon (trying to scoop a single serving results in an &#x201C;all or nothing clump&#x201D;). (Permission to access a system)</li>
+</ul>
+</blockquote>
+<h3 id="memento-design-pattern"><a href="#Memento-Design-Pattern" class="headerlink" title="Memento Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/memento" target="_blank" rel="external">Memento Design Pattern</a></h3><blockquote>
+<ul>
+<li>problem to solve: Need to restore an object back to its previous state (e.g. &#x201C;undo&#x201D; or &#x201C;rollback&#x201D; operations).</li>
+<li>three distinct roles:<ul>
+<li>Originator - the object that knows how to save itself</li>
+<li>Caretaker - the object that knows why and when the Originator needs to save and restore itself</li>
+<li>Memento - the lock box that is written and read by the Originator, and shepherded by the Caretaker.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="null-object-design-pattern"><a href="#Null-Object-Design-Pattern" class="headerlink" title="Null Object Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/null_object" target="_blank" rel="external">Null Object Design Pattern</a></h3><blockquote>
+<ul>
+<li>brief introduction: encapsulate the absence of an object by providing a substitutable alternative that offers suitable default do nothing behavior</li>
+<li>problem to solve: Given that an object reference may be optionally null, and that the result of a null check is to do nothing or use some default value, how can the absence of an object &#x2014; the presence of a null reference &#x2014; be treated transparently?</li>
+</ul>
+</blockquote>
+<h3 id="observer-design-pattern"><a href="#Observer-Design-Pattern" class="headerlink" title="Observer Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/observer" target="_blank" rel="external">Observer Design Pattern</a></h3><blockquote>
+<ul>
+<li>brief introduction: Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.</li>
+<li>Observers register themselves with the subject as they are created. When the subject changes, it broadcast to all registered observers that it&#x2019;s changed.</li>
+<li>Check list:<ul>
+<li>Differentiate between the core(independent) functionality - goes into the subject and the optional(dependent) functionality - goes into the observer</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="state-design-pattern"><a href="#State-Design-Pattern" class="headerlink" title="State Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/state" target="_blank" rel="external">State Design Pattern</a></h3><blockquote>
+<ul>
+<li>brief introduction: Allow one object to alter its behavior when its internal state changes. The object will appear to change its class.</li>
+</ul>
+</blockquote>
+<h3 id="strategy-design-pattern"><a href="#Strategy-Design-Pattern" class="headerlink" title="Strategy Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/strategy" target="_blank" rel="external">Strategy Design Pattern</a></h3><blockquote>
+<ul>
+<li>brief introduction: Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.:w</li>
+</ul>
+</blockquote>
+<h3 id="template-method-design-pattern"><a href="#Template-Method-Design-Pattern" class="headerlink" title="Template Method Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/template_method" target="_blank" rel="external">Template Method Design Pattern</a></h3><blockquote>
+<ul>
+<li>brief introduction: Define the skeleton of an algorithm in an operation, deferring some steps to client subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm&#x2019;s structure.</li>
+</ul>
+</blockquote>
+<h3 id="visitor-design-pattern"><a href="#Visitor-Design-Pattern" class="headerlink" title="Visitor Design Pattern"></a><a href="https://sourcemaking.com/design_patterns/visitor" target="_blank" rel="external">Visitor Design Pattern</a></h3><blockquote>
+<ul>
+<li>brief introduction: define a new operation without changing the classes of the elements on which it operates</li>
+<li>problem to solve: Many distinct and unrelated operations need to be performed on node objects in a heterogeneous aggregate structure. You want to avoid &#x201C;polluting&#x201D; the node classes with these operations.</li>
+<li>discussion:<ul>
+<li>single dispatch: the operation executed depends on: the name of the request, and the type of receiver<ul>
+<li>double dispatch: the operation executed depends on: the name of the request, and the type of TWO receivers (the type of the Visitor and the type of the element it visits)</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -293,7 +584,7 @@ var _hmt = _hmt || [];
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/16/English/"  data-tooltip="English slangs and nice paragraphs">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/11/28/pythonLearning/"  data-tooltip="pythonLearning">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -356,7 +647,7 @@ var _hmt = _hmt || [];
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/16/English/"  data-tooltip="English slangs and nice paragraphs">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/11/28/pythonLearning/"  data-tooltip="pythonLearning">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>

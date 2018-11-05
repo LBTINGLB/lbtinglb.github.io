@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>VTK-mLearning - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">VTK-mLearning</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Fri May 11 2018 09:23:57 GMT-0400">
+        May 11, 2018
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/kitware/">kitware</a>, <a class="category-link" href="/categories/kitware/technique/">technique</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Notes when learning and developing VTK-m.<br><img src="http://images.slideplayer.com/26/8706139/slides/slide_3.jpg" alt="teaser"><br><a id="more"></a></p>
+<h1 id="vtk-m"><a href="#VTK-m" class="headerlink" title="VTK-m"></a>VTK-m</h1><!-- toc -->
+<ul>
+<li><a href="#useful-links">Useful links</a></li>
+<li><a href="#build-instructions">Build instructions</a></li>
+<li><a href="#jagons">Jagons</a></li>
+<li><a href="#vtkmusersguide">VTKmUsersGuide</a><ul>
+<li><a href="#chapter-3-file-io">Chapter 3. FILE I/O</a></li>
+<li><a href="#chapter-4-provided-filters">Chapter 4. PROVIDED FILTERS</a></li>
+<li><a href="#chapter-5-rendering">Chapter 5. RENDERING</a></li>
+<li><a href="#chapter-6-basic-provisions">Chapter 6. BASIC PROVISIONS</a><br>~ <a href="#66-list-tags">6.6 List tags</a></li>
+<li><a href="#chapter-7-array-handles">Chapter 7. ARRAY HANDLES</a><br>~ <a href="#73-allocating-and-populating-array-handles">7.3 Allocating and Populating Array Handles</a></li>
+<li><a href="#chapter-8-device-adapters">Chapter 8. DEVICE ADAPTERS</a><br>~ <a href="#81-device-adapter-tag">8.1 DEVICE ADAPTER TAG</a><ul>
+<li><a href="#845-reduce">8.4.5 Reduce</a></li>
+</ul>
+</li>
+<li><a href="#chapter-9-timers">Chapter 9. TIMERS</a></li>
+<li><a href="#chapter-10-fancy-array-storage">Chapter 10. FANCY ARRAY STORAGE</a><br>~ <a href="#101-basic-storage">10.1 Basic Storage</a><br>~ <a href="#102-provided-fancy-arrays">10.2 Provided Fancy arrays</a></li>
+<li><a href="#chapter-11-dynamic-array-handles">Chapter 11. DYNAMIC ARRAY HANDLES</a></li>
+<li><a href="#chapter-12-data-sets">Chapter 12. DATA SETS</a><br>~ <a href="#122-cell-sets">12.2 Cell Sets</a><ul>
+<li><a href="#1221-structured-cell-sets">12.2.1 Structured Cell Sets</a></li>
+<li><a href="#1222-explicit-cell-sets">12.2.2 Explicit Cell Sets</a></li>
+<li><a href="#1224-dynamic-cell-sets">12.2.4 Dynamic Cell Sets</a><br>~ <a href="#123-fields">12.3 Fields</a><br>~ <a href="#124-coordinate-systems">12.4 Coordinate Systems</a></li>
+</ul>
+</li>
+<li><a href="#chapter-13-worklets">Chapter 13. WORKLETS</a><br>~ <a href="#131-worklet-types">13.1 Worklet Types</a><br>~ <a href="#132-dispatchers">13.2 Dispatchers</a><br>~ <a href="#133-provided-worklets">13.3 Provided Worklets</a><br>~ <a href="#134-creating-worklets">13.4 Creating Worklets</a><ul>
+<li><a href="#1344-worklet-operator">13.4.4 Worklet Operator</a><br>~ <a href="#135-worklet-type-reference">13.5  Worklet Type Reference</a></li>
+<li><a href="#1352-topology-map">13.5.2 Topology Map</a></li>
+<li><a href="#138-whole-cell-sets">13.8 Whole Cell Sets</a></li>
+</ul>
+</li>
+<li><a href="#chapter-15-working-with-cells">Chapter 15. Working with cells</a><br>~ <a href="#1512-cell-traits">15.1.2 Cell Traits</a><br>~ <a href="#chapter-153">Chapter 15.3</a></li>
+<li><a href="#chapter-17-creating-filters">Chapter 17. Creating Filters</a><br>~ <a href="#171-field-filters">17.1 Field Filters</a><br>~ <a href="#172-field-filters-using-cell-connectivity">17.2 Field Filters Using Cell Connectivity</a><br>~ <a href="#173-data-set-filters">17.3 Data Set Filters</a><br>~ <a href="#174-data-set-with-field-filters">17.4 Data Set With Field Filters</a><br>~ <a href="#173-data-set-filters">17.3 Data Set Filters</a><br>~ <a href="#174-data-set-with-field-filters">17.4 Data Set with Field Filters</a></li>
+</ul>
+<ul>
+<li><a href="#others">Others</a></li>
+</ul>
+</li>
+<li><a href="#tbbhttpswwwthreadingbuildingblocksorg"><a href="https://www.threadingbuildingblocks.org/" target="_blank" rel="external">TBB</a></a></li>
+<li><a href="#filter-summary">Filter summary:</a></li>
+<li><a href="#worklet-summary">Worklet summary</a></li>
+<li><a href="#undefined-reference-to-some-instantiated-functions">Undefined reference to some instantiated functions</a></li>
+<li><a href="#trying-to-modify-a-no-storage-data-type-void-error">Trying to modify a no storage data type (void* error)</a></li>
+<li><a href="#brigand-a-metaprogramming-c-libraryhttpsgithubcomedouardabrigandwikiintroduction"><a href="https://github.com/edouarda/brigand/wiki/Introduction" target="_blank" rel="external">Brigand - a metaprogramming C++ library</a></a></li>
+<li><a href="#functioninterface-class">FunctionInterface class</a></li>
+<li><a href="#copy-array">Copy array</a></li>
+</ul>
+<!-- tocstop -->
+<h2 id="useful-links"><a href="#Useful-links" class="headerlink" title="Useful links"></a>Useful links</h2><blockquote>
+<ul>
+<li><a href="m.vtk.org/index.php/Main_page">official webpage</a><pre><code>+ One of the biggest recent changes in high-performance computing is the increasing use of accelerators. Accelerators contain processing cores that independently are inferior to a core in a typical CPU, but these cores are replicated and grouped such that their aggregate execution provides a very high computation rate at a much lower power. Current and future CPU processors also require much more explicit parallelism. Each successive version of the hardware packs more cores into each processor, and technologies like hyperthreading and vector operations require even more parallel processing to leverage each core&#x2019;s full potential.
+</code></pre></li>
+</ul>
+</blockquote>
+<p>VTK-m is a toolkit of scientific visualization algorithms for emerging processor architectures. VTK-m supports the fine-grained concurrency for data analysis and visualization algorithms required to drive extreme scale computing by providing abstract models for data and execution that can be applied to a variety of algorithms across many different processor architectures.</p>
+<blockquote>
+<ul>
+<li><a href="https://godbolt.org/" target="_blank" rel="external">godbolt</a></li>
+<li><a href="http://pyexpander.sourceforge.net/" target="_blank" rel="external">pyexpander</a></li>
+</ul>
+</blockquote>
+<h2 id="build-instructions"><a href="#Build-instructions" class="headerlink" title="Build instructions"></a>Build instructions</h2><blockquote>
+<ul>
+<li>linux:<pre><code>+ enable TBB
+</code></pre></li>
+</ul>
+</blockquote>
+<h2 id="jagons"><a href="#Jagons" class="headerlink" title="Jagons"></a>Jagons</h2><blockquote>
+<ul>
+<li>Device</li>
+<li>worklet:P53<ul>
+<li>a programming construct which operates on a very fine granularity of data. It&#x2019;s designed as serial components and VTK-m handles whatever layers of concurrency are necessary.</li>
+<li>It&#x2019;s essentially a <code>small functor</code> or <code>kernel</code> designed to operate on a small element of data. It&#x2019;s constrained to contain a <em>serial</em> and <em>stateless</em> function.<ul>
+<li>benefit of the constraints: allow VTK-m to schedule worklet invocations on a great many independent concurrent threads; provide thread safety by controlling the memory access;encourge good programming practives</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>array handles:<ul>
+<li>think it as a shared smart pointer which is used in control environment and capable of allocating memory</li>
+</ul>
+</li>
+<li>array portals:<ul>
+<li>provide direct access into its data, thinking it as an STL-type iterator</li>
+</ul>
+</li>
+<li>device adapter:<ul>
+<li>a unit which has a specialization encapsulated for a certain architecture</li>
+</ul>
+</li>
+<li>Field Filters<ul>
+<li>A field describes some numerical value associated with different parts of the data set in space</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="vtkmusersguide"><a href="#VTKmUsersGuide" class="headerlink" title="VTKmUsersGuide"></a>VTKmUsersGuide</h2><h3 id="chapter-3-file-io"><a href="#Chapter-3-FILE-I-O" class="headerlink" title="Chapter 3. FILE I/O"></a>Chapter 3. FILE I/O</h3><blockquote>
+<ul>
+<li>vtkm::cont::DataSet</li>
+</ul>
+</blockquote>
+<h3 id="chapter-4-provided-filters"><a href="#Chapter-4-PROVIDED-FILTERS" class="headerlink" title="Chapter 4. PROVIDED FILTERS"></a>Chapter 4. PROVIDED FILTERS</h3><blockquote>
+<ul>
+<li>Filters operate on <code>vtkm::cont::Dataset</code>. Every dataset contains a list of fields. It takes data as input and write new data as output.</li>
+</ul>
+</blockquote>
+<h3 id="chapter-5-rendering"><a href="#Chapter-5-RENDERING" class="headerlink" title="Chapter 5. RENDERING"></a>Chapter 5. RENDERING</h3><h3 id="chapter-6-basic-provisions"><a href="#Chapter-6-BASIC-PROVISIONS" class="headerlink" title="Chapter 6. BASIC PROVISIONS"></a>Chapter 6. BASIC PROVISIONS</h3><blockquote>
+<ul>
+<li>The core facilities provided by VTK-m. It&#x2019;s designed to provide a pervasive parallelism throughout all its visualization algorithms, meaning that the algorithm is designed to operate with the independent concurrency at the finest possible level throughout.<h4 id="66-list-tags"><a href="#6-6-List-tags" class="headerlink" title="6.6 List tags"></a>6.6 List tags</h4></li>
+</ul>
+</blockquote>
+<h3 id="chapter-7-array-handles"><a href="#Chapter-7-ARRAY-HANDLES" class="headerlink" title="Chapter 7. ARRAY HANDLES"></a>Chapter 7. ARRAY HANDLES</h3><blockquote>
+<ul>
+<li>Array handle may have up to two copies of the array, one for the control environment and one for the execution environment. Think it as a shared smart pointer.</li>
+<li>It makes a shallow pointer copy</li>
+</ul>
+</blockquote>
+<h4 id="73-allocating-and-populating-array-handles"><a href="#7-3-Allocating-and-Populating-Array-Handles" class="headerlink" title="7.3 Allocating and Populating Array Handles"></a>7.3 Allocating and Populating Array Handles</h4><blockquote>
+<ul>
+<li>Being able to allocate memory is a key difference between ArrayHandle and many other common forms of smart pointers. Once an Arrayhandle is allocated, it can be populated by<br>using the portal return from ArrayHandle::GetPortalControl</li>
+</ul>
+</blockquote>
+<h3 id="chapter-8-device-adapters"><a href="#Chapter-8-DEVICE-ADAPTERS" class="headerlink" title="Chapter 8. DEVICE ADAPTERS"></a>Chapter 8. DEVICE ADAPTERS</h3><blockquote>
+<ul>
+<li>Devices runs in different compiler environments and libraries such as CUDA, OpenMP and various threading libraries. We defined the code specialization that is encapsulated in a unit called a device adapter</li>
+</ul>
+</blockquote>
+<h4 id="81-device-adapter-tag"><a href="#8-1-DEVICE-ADAPTER-TAG" class="headerlink" title="8.1 DEVICE ADAPTER TAG"></a>8.1 DEVICE ADAPTER TAG</h4><blockquote>
+<ul>
+<li>A <em>device adapter</em> is identified by a <em>device adapter tag</em>.</li>
+</ul>
+</blockquote>
+<h5 id="845-reduce"><a href="#8-4-5-Reduce" class="headerlink" title="8.4.5 Reduce"></a>8.4.5 Reduce</h5><blockquote>
+<ul>
+<li>takes an input array, initial value, and a binary function and computs a <em>total</em> of applying the binary function to all entries in the array( Add, multiply)</li>
+</ul>
+</blockquote>
+<h3 id="chapter-9-timers"><a href="#Chapter-9-TIMERS" class="headerlink" title="Chapter 9. TIMERS"></a>Chapter 9. TIMERS</h3><h3 id="chapter-10-fancy-array-storage"><a href="#Chapter-10-FANCY-ARRAY-STORAGE" class="headerlink" title="Chapter 10. FANCY ARRAY STORAGE"></a>Chapter 10. FANCY ARRAY STORAGE</h3><h4 id="101-basic-storage"><a href="#10-1-Basic-Storage" class="headerlink" title="10.1 Basic Storage"></a>10.1 Basic Storage</h4><blockquote>
+<ul>
+<li>Currently the only practical storage: Allocates a continuous section of memory of the given base type<h4 id="102-provided-fancy-arrays"><a href="#10-2-Provided-Fancy-arrays" class="headerlink" title="10.2 Provided Fancy arrays"></a>10.2 Provided Fancy arrays</h4></li>
+<li>Fancy array: calculate/fetch value with out using memory space<ul>
+<li>constant array: same value in all of its entries</li>
+<li>counting array: Ex. index</li>
+<li>cast array:</li>
+<li>discard array:</li>
+<li>permuted array: reorder the elements in an array</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="chapter-11-dynamic-array-handles"><a href="#Chapter-11-DYNAMIC-ARRAY-HANDLES" class="headerlink" title="Chapter 11. DYNAMIC ARRAY HANDLES"></a>Chapter 11. DYNAMIC ARRAY HANDLES</h3><blockquote>
+<ul>
+<li>a configurable storage mechanism that allows the user, through efficient template configuration, to redefine how data are stored and retrived.</li>
+<li>It holds a reference to an array.</li>
+</ul>
+</blockquote>
+<h3 id="chapter-12-data-sets"><a href="#Chapter-12-DATA-SETS" class="headerlink" title="Chapter 12. DATA SETS"></a>Chapter 12. DATA SETS</h3><h4 id="122-cell-sets"><a href="#12-2-Cell-Sets" class="headerlink" title="12.2 Cell Sets"></a>12.2 Cell Sets</h4><blockquote>
+<ul>
+<li>cell set: determins the topological structure of the data in a data set.<ul>
+<li>structured cell set: defines 1-, 2-, or 3-dimensional grid of points with lines, quadrilaterals, or hexahedra</li>
+<li>explicit cell set: irregular collection of cells</li>
+<li>cell set permutation: rearranges the cells ofo one cell set to create another cell set</li>
+<li>dynamic cell set: used to manage CellSets without knowing their types</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h5 id="1221-structured-cell-sets"><a href="#12-2-1-Structured-Cell-Sets" class="headerlink" title="12.2.1 Structured Cell Sets"></a>12.2.1 Structured Cell Sets</h5><blockquote>
+<ul>
+<li>vtkm::cont::CellSetStructures: a 1-, 2-, or 3-dimensional grid of points with lines, quadrilaterals or hexahedra</li>
+<li>It cannot represent irregular data. And it does not distinct between uniform, rectilinear and curvilinear grids.</li>
+</ul>
+</blockquote>
+<h5 id="1222-explicit-cell-sets"><a href="#12-2-2-Explicit-Cell-Sets" class="headerlink" title="12.2.2 Explicit Cell Sets"></a>12.2.2 Explicit Cell Sets</h5><blockquote>
+<ul>
+<li>vtkm::cont::CellSetExplicit: defines an irregualr collection of cells(arbitrary collection of cells but requires a significant amount of memory to represent the topology)</li>
+<li>vtkm::cont::CellSetSingleType: an explicit cell set constrained to contain cells that all have the same shape and all have the same number of points</li>
+</ul>
+</blockquote>
+<h5 id="1224-dynamic-cell-sets"><a href="#12-2-4-Dynamic-Cell-Sets" class="headerlink" title="12.2.4 Dynamic Cell Sets"></a>12.2.4 Dynamic Cell Sets</h5><blockquote>
+<ul>
+<li>Store cell set without knowing types.</li>
+</ul>
+</blockquote>
+<h4 id="123-fields"><a href="#12-3-Fields" class="headerlink" title="12.3 Fields"></a>12.3 Fields</h4><blockquote>
+<ul>
+<li>A field on a data set provides a value on every point in space on the mesh. It&#x2019;s used to describe physical properties such s pressure, temperature, mass, velocity, and much more. It holds its data with a dynamicArrayHandle, which itself is a container for an ArrayHandle.</li>
+</ul>
+</blockquote>
+<h4 id="124-coordinate-systems"><a href="#12-4-Coordinate-Systems" class="headerlink" title="12.4 Coordinate Systems"></a>12.4 Coordinate Systems</h4><h3 id="chapter-13-worklets"><a href="#Chapter-13-WORKLETS" class="headerlink" title="Chapter 13. WORKLETS"></a>Chapter 13. WORKLETS</h3><blockquote>
+<ul>
+<li>The simplest way to implement an algorithm in VTK-m is to create a worklet. A worklet is fundamentally a<br><code>functor</code> that operates on an element of data. Thus, it is a class or struct that has an overloaded parenthesis<br>operator (which must be declared const for thread safety).</li>
+</ul>
+</blockquote>
+<h4 id="131-worklet-types"><a href="#13-1-Worklet-Types" class="headerlink" title="13.1 Worklet Types"></a>13.1 Worklet Types</h4><blockquote>
+<ul>
+<li>Field Map: performs a basic mapping operation that applies a function on all the field values at a single point or cell and creates<br>a new field value at that same location(Map operation)</li>
+<li>Topology Map: applies a function on all elements of a particualr type and creates a new field for those elements. The difference of it and<br>Field Map is that it has access to incident fields</li>
+<li>Reduce by key: operates on an array of keys and one or more associated arrays of values. Reduce by key worklets are very useful for combining<br>like items such as shared topology elements or coincident points.</li>
+</ul>
+</blockquote>
+<h4 id="132-dispatchers"><a href="#13-2-Dispatchers" class="headerlink" title="13.2 Dispatchers"></a>13.2 Dispatchers</h4><blockquote>
+<ul>
+<li>Control environment must have a means to invoke worklets that start running in the execution  environment.</li>
+<li>an object in the control environment that has an instance of a worklet and can invovke that worklet with a set of arguments,</li>
+</ul>
+</blockquote>
+<h4 id="133-provided-worklets"><a href="#13-3-Provided-Worklets" class="headerlink" title="13.3 Provided Worklets"></a>13.3 Provided Worklets</h4><h4 id="134-creating-worklets"><a href="#13-4-Creating-Worklets" class="headerlink" title="13.4 Creating Worklets"></a>13.4 Creating Worklets</h4><h5 id="1344-worklet-operator"><a href="#13-4-4-Worklet-Operator" class="headerlink" title="13.4.4 Worklet Operator"></a>13.4.4 Worklet Operator</h5><blockquote>
+<ul>
+<li>A functor that operates on an element of data. First, it must have the same arity as the ExecutionSignature, and the types of the parameters and return must be compatible. Second, because it runs in the execution environment, it must be declared with the VTKM EXEC (or VTKM EXEC CONT) modifier. Third, the method must be declared const to help preserve thread safety(Since the same worklet  object may be shared between threads, its internal state cannot be modified during execution).</li>
+<li>ControlSignature: specifies what arguments are expected when invoking the class with a dispatcher in the control environment</li>
+<li>ExecutionSignature: specifies how the data gets passed from the argument in the control environment to the worklet running in the execution environment.</li>
+</ul>
+</blockquote>
+<h4 id="135-worklet-type-reference"><a href="#13-5-Worklet-Type-Reference" class="headerlink" title="13.5  Worklet Type Reference"></a>13.5  Worklet Type Reference</h4><h5 id="1352-topology-map"><a href="#13-5-2-Topology-Map" class="headerlink" title="13.5.2 Topology Map"></a>13.5.2 Topology Map</h5><blockquote>
+<ul>
+<li>It applies a function(the operator inthe worklet) on all the elements of a DataSet of a particular type(point, edge face, or cell)</li>
+</ul>
+</blockquote>
+<h5 id="138-whole-cell-sets"><a href="#13-8-Whole-Cell-Sets" class="headerlink" title="13.8 Whole Cell Sets"></a>13.8 Whole Cell Sets</h5><blockquote>
+<ul>
+<li>a whole cell set: provide random access to the entire topology</li>
+<li>from: which topological elements can be queried</li>
+<li>to: which incdient elements are returned</li>
+</ul>
+</blockquote>
+<h3 id="chapter-15-working-with-cells"><a href="#Chapter-15-Working-with-cells" class="headerlink" title="Chapter 15. Working with cells"></a>Chapter 15. Working with cells</h3><blockquote>
+<ul>
+<li>In the control environment, data is defined in mesh structures that comprise a set of finite cells. In execution environment,  the grid structures are broken into their independent cells and the data is handed to the worklet. Thus the cell-based operations exclusively operate on independent cells</li>
+</ul>
+</blockquote>
+<h4 id="1512-cell-traits"><a href="#15-1-2-Cell-Traits" class="headerlink" title="15.1.2 Cell Traits"></a>15.1.2 Cell Traits</h4><blockquote>
+<ul>
+<li>TopologicalDimensionsTag: 3-polyhera 2-polygons 1-lines 0-points</li>
+</ul>
+</blockquote>
+<h4 id="chapter-153"><a href="#Chapter-15-3" class="headerlink" title="Chapter 15.3"></a>Chapter 15.3</h4><h3 id="chapter-17-creating-filters"><a href="#Chapter-17-Creating-Filters" class="headerlink" title="Chapter 17. Creating Filters"></a>Chapter 17. Creating Filters</h3><h4 id="171-field-filters"><a href="#17-1-Field-Filters" class="headerlink" title="17.1 Field Filters"></a>17.1 Field Filters</h4><blockquote>
+<ul>
+<li>Subclass <code>vktm::filter::FilterField</code> then implement the <code>DoExecute</code> method(Curiously Recurring Template Pattern(CRTP), which allows the general implementation fo these algorithms to run <code>DoExecute</code> in the subclass)</li>
+<li>specialize the <code>vtkm::filter::FilterTraits templated class for</code>FieldMagnitude<code>. It provides</code>hints` used internally in the base filter classes to modify its behavior based on the subclass(optional)</li>
+<li>InputFiledTypeList: a list that containing all the types that are valid for the input field</li>
+</ul>
+</blockquote>
+<h4 id="172-field-filters-using-cell-connectivity"><a href="#17-2-Field-Filters-Using-Cell-Connectivity" class="headerlink" title="17.2 Field Filters Using Cell Connectivity"></a>17.2 Field Filters Using Cell Connectivity</h4><blockquote>
+<ul>
+<li>If you take into account the connectivity of a cell set to compute derivative fields, subclassing <code>vtkm::filter::FilterCell</code><h4 id="173-data-set-filters"><a href="#17-3-Data-Set-Filters" class="headerlink" title="17.3 Data Set Filters"></a>17.3 Data Set Filters</h4></li>
+<li>Data set filters are a category of filters that generate a data set with a new cell set bsed off the cells of an input data set. For example, a data set can be significantly altered by adding, removing, or replacing cells.<h4 id="174-data-set-with-field-filters"><a href="#17-4-Data-Set-With-Field-Filters" class="headerlink" title="17.4 Data Set With Field Filters"></a>17.4 Data Set With Field Filters</h4></li>
+<li>Filters that generate a data set with a new cell set bsed off the cells of an input data set along withthe data in at least one field(cell info + at least one field info).</li>
+</ul>
+</blockquote>
+<h4 id="173-data-set-filters"><a href="#17-3-Data-Set-Filters-1" class="headerlink" title="17.3 Data Set Filters"></a>17.3 Data Set Filters</h4><blockquote>
+<ul>
+<li>A category of filters that generate a data set with a new cell set based off the cells of an input data set. All <strong>FilterDataSet</strong> subclasses must implement two methods: <code>DoExecute</code> and <code>DoMapField</code></li>
+<li><code>DoExecute</code>: do the real work of the filter. E.g. generate a new cellset and add it to a new dataset</li>
+<li><code>DoMapField</code>: check what elements the given field is associated with(point or cell?), process the field data as necessary, and adds the field to the dataset.</li>
+</ul>
+</blockquote>
+<h4 id="174-data-set-with-field-filters"><a href="#17-4-Data-Set-with-Field-Filters" class="headerlink" title="17.4 Data Set with Field Filters"></a>17.4 Data Set with Field Filters</h4><blockquote>
+<ul>
+<li>A category of filters that generate a data set with a new cell set based off the cells of an input data set along with the data in at least one field</li>
+<li><code>DoMapField</code>: check to see what elements the given field is associated with(eg. points or cells), processing the field data as necessary, and adds the field to the DataSet</li>
+</ul>
+</blockquote>
+<h1 id="others"><a href="#Others" class="headerlink" title="Others"></a>Others</h1><h2 id="tbb"><a href="#TBB" class="headerlink" title="TBB"></a><a href="https://www.threadingbuildingblocks.org/" target="_blank" rel="external">TBB</a></h2><blockquote>
+<ul>
+<li>You can write parallel C++ programs that take full advantage of multicore perforance with Threading Building Block.</li>
+<li>generic parallel algorithms, concurrent containers, a scalable memory allocator, work-stealing task scheduler, and low-level synchronization primitives.</li>
+</ul>
+</blockquote>
+<h2 id="filter-summary"><a href="#Filter-summary" class="headerlink" title="Filter summary:"></a>Filter summary:</h2><blockquote>
+<ul>
+<li>Get the output of the filter instead of passing it into a mapper: TestVTKMGradientAndVorticity</li>
+<li>SetInputArrayToProcess: TestVTMThreshold</li>
+<li>Ideally the worklet should do all the heavy lifting(cast to the real type and do the calculation).</li>
+<li>ApplyPolicy: apply a policy and a typelist onto a field. The input and output are all dynamic types. Given these two info, the worklet can do the right cast. <code>PolicyBase.h</code></li>
+<li>ResetTypeList: only change the typelist.</li>
+<li>You do not need to use FilterTrait(used to reduce types) and functor in the filter.hxx.</li>
+</ul>
+</blockquote>
+<h2 id="worklet-summary"><a href="#Worklet-summary" class="headerlink" title="Worklet summary"></a>Worklet summary</h2><blockquote>
+<ul>
+<li>It should provide a <code>run</code> function as convenience.</li>
+</ul>
+</blockquote>
+<h2 id="undefined-reference-to-some-instantiated-functions"><a href="#Undefined-reference-to-some-instantiated-functions" class="headerlink" title="Undefined reference to some instantiated functions"></a>Undefined reference to some instantiated functions</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">lib/libvtkAcceleratorsVTKm-9.0.so.1: undefined reference to `vtkm::cont::ArrayHandle&lt;vtkm::Range, vtkm::cont::StorageTagBasic&gt; vtkm::cont::ArrayRangeCompute&lt;vtkm::cont::ArrayHandle&lt;vtkm::Vec&lt;double, 4&gt;, tovtkm::vtkAOSArrayContainerTag&gt; &gt;(vtkm::cont::ArrayHandle&lt;vtkm::Vec&lt;double, 4&gt;, tovtkm::vtkAOSArrayContainerTag&gt; const&amp;, vtkm::cont::RuntimeDeviceTracker)&apos;</div><div class="line">lib/libvtkAcceleratorsVTKm-9.0.so.1: undefined reference to `vtkm::cont::ArrayHandle&lt;vtkm::Range, vtkm::cont::StorageTagBasic&gt; vtkm::cont::ArrayRangeCompute&lt;vtkm::cont::ArrayHandle&lt;vtkm::Vec&lt;int, 3&gt;, tovtkm::vtkAOSArrayContainerTag&gt; &gt;(vtkm::cont::ArrayHandle&lt;vtkm::Vec&lt;int, 3&gt;, tovtkm::vtkAOSArrayContainerTag&gt; const&amp;, vtkm::cont::RuntimeDeviceTracker)&apos;</div><div class="line">lib/libvtkAcceleratorsVTKm-9.0.so.1: undefined reference to `vtkm::cont::ArrayHandle&lt;vtkm::Range, vtkm::cont::StorageTagBasic&gt; vtkm::cont::ArrayRangeCompute&lt;vtkm::cont::ArrayHandle&lt;unsigned short, tovtkm::vtkAOSArrayContainerTag&gt; &gt;(vtkm::cont::ArrayHandle&lt;unsigned short, tovtkm::vtkAOSArrayContainerTag&gt; const&amp;, vtkm::cont::RuntimeDeviceTracker)&apos;</div><div class="line">lib/libvtkAcceleratorsVTKm-9.0.so.1: undefined reference to `vtkm::cont::ArrayHandle&lt;vtkm::Range, vtkm::cont::StorageTagBasic&gt; vtkm::cont::ArrayRangeCompute&lt;vtkm::cont::ArrayHandle&lt;vtkm::Vec&lt;unsigned char, 4&gt;, tovtkm::vtkAOSArrayContainerTag&gt; &gt;(vtkm::cont::ArrayHandle&lt;vtkm::Vec&lt;unsigned char, 4&gt;, tovtkm::vtkAOSArrayContainerTag&gt; const&amp;, vtkm::cont::RuntimeDeviceTracker)&apos;</div><div class="line">lib/libvtkAcceleratorsVTKm-9.0.so.1: undefined reference to `vtkm::cont::ArrayHandle&lt;vtkm::Range, vtkm::cont::StorageTagBasic&gt; vtkm::cont::ArrayRangeCompute&lt;vtkm::cont::ArrayHandle&lt;short, tovtkm::vtkAOSArrayContainerTag&gt; &gt;(vtkm::cont::ArrayHandle&lt;short, tovtkm::vtkAOSArrayContainerTag&gt; const&amp;, vtkm::cont::RuntimeDeviceTracker)&apos;</div><div class="line">lib/libvtkAcceleratorsVTKm-9.0.so.1: undefined reference to `vtkm::cont::ArrayHandle&lt;vtkm::Range, vtkm::cont::StorageTagBasic&gt; vtkm::cont::ArrayRangeCompute&lt;vtkm::cont::ArrayHandle&lt;unsigned int, tovtkm::vtkAOSArrayContainerTag&gt; &gt;(vtkm::cont::ArrayHandle&lt;unsigned int, tovtkm::vtkAOSArrayContainerTag&gt; const&amp;, vtkm::cont::RuntimeDeviceTracker)&apos;</div><div class="line">lib/libvtkAcceleratorsVTKm-9.0.so.1: undefined reference to `vtkm::cont::ArrayHandle&lt;vtkm::Range, vtkm::cont::StorageTagBasic&gt; vtkm::cont::ArrayRangeCompute&lt;vtkm::cont::ArrayHandle&lt;double, tovtkm::vtkAOSArrayContainerTag&gt; &gt;(vtkm::cont::ArrayHandle&lt;double, tovtkm::vtkAOSArrayContainerTag&gt; const&amp;, vtkm::cont::RuntimeDeviceTracker)&apos;</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>It&#x2019;s because the function you needed has not been instantiated. Including &#x201C;ArrayRangeCompute.hxx&#x201D; would solve the problem.</li>
+</ul>
+</blockquote>
+<h2 id="trying-to-modify-a-no-storage-data-type-void-error"><a href="#Trying-to-modify-a-no-storage-data-type-void-error" class="headerlink" title="Trying to modify a no storage data type (void* error)"></a>Trying to modify a no storage data type (void* error)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">/home/haochengliu/Kitware/VTK-m/vtk-m/vtkm/exec/internal/WorkletInvokeFunctorDetail.h:312:10: error: no match for call to &#x2018;(const vtkm::worklet::WarpVectorInPlace::WarpVectorInPlaceImp) (void*&amp;, vtkm::exec::arg::Fetch&lt;vtkm::exec::arg::FetchTagArrayDirectIn, vtkm::exec::arg::AspectTagDefault, vtkm::exec::arg::ThreadIndicesBasic, vtkm::cont::internal::ArrayPortalFromIterators&lt;const vtkm::Vec&lt;double, 3&gt;*, void&gt; &gt;::ValueType&amp;)&#x2019;</div><div class="line">In file included from /home/haochengliu/Kitware/VTK-m/vtk-m/vtkm/filter/WarpVectorInPlace.h:25:0,</div><div class="line">                 from /home/haochengliu/Kitware/VTK-m/vtk-m/vtkm/filter/testing/UnitTestWarpVectorInPlaceFilter.cxx:23:</div><div class="line">/home/haochengliu/Kitware/VTK-m/vtk-m/vtkm/worklet/WarpVectorInPlace.h:54:10: note: candidate: void vtkm::worklet::WarpVectorInPlace::WarpVectorInPlaceImp::operator()(vtkm::Vec&lt;float, 3&gt;&amp;, const vtkm::Vec&lt;float, 3&gt;&amp;) const</div><div class="line">     void operator()(vtkm::Vec&lt;vtkm::FloatDefault, 3&gt;&amp; point,</div></pre></td></tr></table></figure>
+<h2 id="brigand-a-metaprogramming-c-library"><a href="#Brigand-a-metaprogramming-C-library" class="headerlink" title="Brigand - a metaprogramming C++ library"></a><a href="https://github.com/edouarda/brigand/wiki/Introduction" target="_blank" rel="external">Brigand - a metaprogramming C++ library</a></h2><blockquote>
+<ul>
+<li>store types in a list and assess elements in a list in random order</li>
+</ul>
+</blockquote>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;brigand/sequences/list.hpp&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;brigand/sequences/at.hpp&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> my_list = brigand::<span class="built_in">list</span>&lt;<span class="keyword">bool</span>, <span class="keyword">int</span>, <span class="keyword">char</span> *&gt;;</div><div class="line"></div><div class="line"><span class="comment">// e1 is &apos;int&apos;</span></div><div class="line"><span class="keyword">using</span> e1 = brigand::at&lt;my_list, <span class="built_in">std</span>::integral_constant&lt;<span class="keyword">int</span>, <span class="number">1</span>&gt;&gt;;</div><div class="line"></div><div class="line"><span class="comment">// you might want to use the convenience function at_c</span></div><div class="line"><span class="keyword">using</span> e1bis = brigand::at_c&lt;my_list, <span class="number">1</span>&gt;;</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>find a specific type: <code>brigand::find</code></li>
+<li>check if a specific type exists: <code>brigand::found</code></li>
+<li>transform a list of types: <code>brigand::transform</code></li>
+<li>component type: void(int), parameterType: int, returnType: void</li>
+</ul>
+</blockquote>
+<h2 id="functioninterface-class"><a href="#FunctionInterface-class" class="headerlink" title="FunctionInterface class"></a>FunctionInterface class</h2><blockquote>
+<ul>
+<li>HOlds parameters and result of a function</li>
+<li><a href="https://en.wikipedia.org/wiki/Arity" target="_blank" rel="external">arity</a>: the number of arguments or operands that the function takes</li>
+<li>GetParameter: get a particular parameter from a function signature</li>
+</ul>
+</blockquote>
+<h2 id="copy-array"><a href="#Copy-array" class="headerlink" title="Copy array"></a>Copy array</h2><blockquote>
+<ul>
+<li><code>Algorithm::copy</code></li>
+<li><code>vtkm::cont::ArrayCopy</code></li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/c/">c++</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/05/25/MoveToSeattle/"  data-tooltip="MoveToSeattle">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/04/18/wedding/" data-tooltip="Wedding">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2018/05/11/VTK-mLearning/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2018/05/11/VTK-mLearning/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2018/05/11/VTK-mLearning/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/05/25/MoveToSeattle/"  data-tooltip="MoveToSeattle">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/04/18/wedding/" data-tooltip="Wedding">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2018/05/11/VTK-mLearning/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2018/05/11/VTK-mLearning/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2018/05/11/VTK-mLearning/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>

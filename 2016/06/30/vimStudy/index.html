@@ -24,7 +24,7 @@ var _hmt = _hmt || [];
         <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
     
     <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
     <!--STYLES END-->
     
     
@@ -162,7 +162,7 @@ var _hmt = _hmt || [];
         <h1 class="post-title" itemprop="headline">vimStudy</h1>
     
     <div class="post-meta">
-    <time  itemprop="datePublished" content="Thu Jun 30 2016 10:52:33 GMT+0800">
+    <time  itemprop="datePublished" content="Thu Jun 30 2016 10:52:33 GMT-0400">
         Jun 30, 2016
     </time>
     
@@ -176,17 +176,38 @@ var _hmt = _hmt || [];
 </div>
     
     <div class="post-content markdown main-content-wrap" itemprop="articleBody">
-        <p>Notes and reflections when learning vim.<br><img src="http://www.unixstickers.com/image/data/stickers/vim/vim.sh.png" alt="vim logo"></p>
+        <p>Notes and reflections when learning vim.<br><a href="http://vim-adventures.com/" target="_blank" rel="external">Zelda game in Vim</a><br><img src="http://www.unixstickers.com/image/data/stickers/vim/vim.sh.png" alt="vim logo"></p>
 <a id="more"></a>
 <p>#</p>
 <!-- toc -->
 <ul>
 <li><a href="#vim-tutorial">Vim Tutorial</a></li>
 <li><a href="#openvim">OpenVim</a></li>
+<li><a href="#learn-vim-progressivelyhttpyannespositocomscratchenbloglearn-vim-progressively"><a href="http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/" target="_blank" rel="external">Learn Vim Progressively</a></a><ul>
+<li><a href="#1-1st-level-survive">1. 1st Level - Survive</a></li>
+<li><a href="#2-2nd-level-feel-comfortable">2. 2nd Level - Feel comfortable</a></li>
+<li><a href="#3-3rd-level-better-stronger-faster">3. 3rd Level-Better. Stronger. Faster</a><ul>
+<li><a href="#31-better">3.1 Better</a></li>
+<li><a href="#32-stronger">3.2 Stronger</a></li>
+<li><a href="#33-faster">3.3 Faster</a></li>
+</ul>
+</li>
+<li><a href="#4-4th-level-vim-superpowers">4. 4th Level - Vim Superpowers</a><ul>
+<li><a href="#41-move-on-current-line">4.1 Move on current line</a></li>
+<li><a href="#42-zone-selection">4.2 Zone selection</a></li>
+<li><a href="#43-select-rectangular-blocks-ctrl-v">4.3 Select rectangular blocks: <ctrl-v></ctrl-v></a></li>
+<li><a href="#44-completion-c-n-and-c-p">4.4 Completion: <c-n> and <c-p></c-p></c-n></a></li>
+<li><a href="#45-macros">4.5 Macros</a></li>
+<li><a href="#46-visual-selection-vvc-v">4.6 Visual selection: v,V,<c-v></c-v></a></li>
+<li><a href="#47-splits-split-and-vsplit">4.7 Splits: split and vsplit</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#others">others</a></li>
 </ul>
 <!-- tocstop -->
-<h1 id="vim-tutorial">Vim Tutorial</h1><blockquote>
+<h1 id="vim-tutorial"><a href="#Vim-Tutorial" class="headerlink" title="Vim Tutorial"></a>Vim Tutorial</h1><blockquote>
 <ul>
 <li>a list of possible useful vim websites<ul>
 <li><a href="http://www.labnol.org/internet/learning-vim-for-beginners/28820/" target="_blank" rel="external">http://www.labnol.org/internet/learning-vim-for-beginners/28820/</a></li>
@@ -196,7 +217,11 @@ var _hmt = _hmt || [];
 <li>Interactive tutorial for leanring the basics of Vim</li>
 </ul>
 </li>
-<li><a href="http://www.viemu.com/a-why-vi-vim.html" target="_blank" rel="external">Why Vim?</a><h1 id="openvim">OpenVim</h1></li>
+<li><a href="http://www.viemu.com/a-why-vi-vim.html" target="_blank" rel="external">Why Vim?</a></li>
+</ul>
+</blockquote>
+<h1 id="openvim"><a href="#OpenVim" class="headerlink" title="OpenVim"></a>OpenVim</h1><blockquote>
+<ul>
 <li><em>Vi Improved</em></li>
 <li>Two modes, insert and normal mode:<ul>
 <li>insert:<ul>
@@ -308,12 +333,214 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="others">others</h1><blockquote>
+<h1 id="learn-vim-progressively"><a href="#Learn-Vim-Progressively" class="headerlink" title="Learn Vim Progressively"></a><a href="http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/" target="_blank" rel="external">Learn Vim Progressively</a></h1><h2 id="1-1st-level-survive"><a href="#1-1st-Level-Survive" class="headerlink" title="1. 1st Level - Survive"></a>1. 1st Level - Survive</h2><blockquote>
+<ul>
+<li><code>i</code> &#x2192; Insert mode. Type ESC to return to Normal mode.</li>
+<li><code>x</code>&#x2192; Delete the char under the cursor</li>
+<li><code>:wq</code> &#x2192; Save and Quit (:w save, :q quit)</li>
+<li><code>dd</code> &#x2192; Delete (and copy) the current line</li>
+<li><code>p</code>&#x2192; Paste</li>
+<li><code>:help &lt;command&gt;</code> -&gt; use <code>:q</code> to exit</li>
+</ul>
+</blockquote>
+<h2 id="2-2nd-level-feel-comfortable"><a href="#2-2nd-Level-Feel-comfortable" class="headerlink" title="2. 2nd Level - Feel comfortable"></a>2. 2nd Level - Feel comfortable</h2><blockquote>
+<ul>
+<li>Insert mode variations:<ul>
+<li><code>a</code> &#x2192; insert after the cursor</li>
+<li><code>o</code> &#x2192; insert a new line after the current one</li>
+<li><code>O</code> &#x2192; insert a new line before the current one</li>
+<li><code>cw</code> &#x2192; replace from the cursor to the end of the word</li>
+</ul>
+</li>
+<li>Basic moves<ul>
+<li><code>0</code> &#x2192; go to the first column</li>
+<li>`^`` &#x2192; go to the first non-blank character of the line</li>
+<li><code>$</code> &#x2192; go to the end of line<br>g`_ &#x2192; go to the last non-blank character of line</li>
+<li><code>/pattern</code> &#x2192; search for pattern</li>
+</ul>
+</li>
+<li>Copy/Paste<ul>
+<li><code>P</code> -&gt; paste before the current position  <code>p</code> is paste after current position</li>
+<li><code>yy</code> -&gt; copy the current line,</li>
+</ul>
+</li>
+<li>Undo/Redo<ul>
+<li><code>u</code> -&gt; undo</li>
+<li><code>Ctrl-r</code> -&gt; redo </li>
+</ul>
+</li>
+<li>Load/Save/Quit/Change File(Buffer)<ul>
+<li><code>:e</code> <path to="" file=""></path> &#x2192; open</li>
+<li><code>:w</code> &#x2192; save</li>
+<li><code>:saveas &lt;path/to/file&gt;</code> &#x2192; save to <path to="" file=""></path></li>
+<li><code>:x, ZZ or :wq</code> &#x2192; save and quit (:x only save if necessary)</li>
+<li><code>:q!</code> &#x2192; quit without saving, also: :qa! to quit even if there are hidden buffers.</li>
+<li><code>:bn (resp. :bp)</code> &#x2192; show next (resp. previous) file (buffer)</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="3-3rd-level-better-stronger-faster"><a href="#3-3rd-Level-Better-Stronger-Faster" class="headerlink" title="3. 3rd Level-Better. Stronger. Faster"></a>3. 3rd Level-Better. Stronger. Faster</h2><h3 id="31-better"><a href="#3-1-Better" class="headerlink" title="3.1 Better"></a>3.1 Better</h3><blockquote>
+<ul>
+<li><code>.</code>-&gt;(dot) will repeat the  last command.</li>
+<li><code>N&lt;command&gt;</code>-&gt; will repeat the commant N times </li>
+</ul>
+</blockquote>
+<h3 id="32-stronger"><a href="#3-2-Stronger" class="headerlink" title="3.2 Stronger"></a>3.2 Stronger</h3><blockquote>
+<ul>
+<li>N<code>G</code> -&gt; Go to line N</li>
+<li><code>gg</code> -&gt; shortcut gor <code>1G</code> - go to the start of the file</li>
+<li><code>G</code> -&gt; Go to the last line</li>
+<li>difference between <code>e</code>&amp;<code>E</code> and <code>w</code>&amp;<code>W</code><br>x=(name_1,name_2); # haha<pre><code>||       | |
+ew       E W
+</code></pre></li>
+<li><code>%</code>: Go to the corresponding <code>(</code>,<code>{</code>,<code>[</code></li>
+<li><code>*</code>(resp,#): go to next(resp. previous) occurrence  of the  word under the cursor)</li>
+</ul>
+</blockquote>
+<h3 id="33-faster"><a href="#3-3-Faster" class="headerlink" title="3.3 Faster"></a>3.3 Faster</h3><blockquote>
+<ul>
+<li>`<start position=""> <command> <end position=""><ul>
+<li><code>0y$</code>: go to the beggining of the line, then yank from here, up to the end of the line</li>
+</ul>
+</end></start></li>
+</ul>
+</blockquote>
+<h2 id="4-4th-level-vim-superpowers"><a href="#4-4th-Level-Vim-Superpowers" class="headerlink" title="4. 4th Level - Vim Superpowers"></a>4. 4th Level - Vim Superpowers</h2><blockquote>
+<ul>
+<li>killer features!</li>
+</ul>
+</blockquote>
+<h3 id="41-move-on-current-line"><a href="#4-1-Move-on-current-line" class="headerlink" title="4.1 Move on current line"></a>4.1 Move on current line</h3><blockquote>
+<ul>
+<li><code>0</code> -&gt; go to column 0</li>
+<li><code>^</code> -&gt; go to first character on the line</li>
+<li><code>$</code> -&gt; go to the last column</li>
+<li><code>g_</code> -&gt; go to the  last character on the line</li>
+<li><code>fa</code> -&gt; go to next occurrence of the letter <code>a</code> on the line. <code>,</code>(resp) will find the next (resp.previous) occurrence</li>
+<li><code>t,</code> -&gt; go to just before the character <code>,</code></li>
+<li><code>3fa</code> -&gt; find the 3rd occurrence of <code>a</code> on this line</li>
+<li><code>F</code> and <code>f</code> -&gt; like <code>f</code> and <code>t</code> but backward<br>x=(name_1,vision<em>3); #this is a comment<br>| |          i     |         |          |    |<br>0 ^         fi     t)       4fi        g</em>    $ </li>
+<li>useful tip: <code>dt&quot;</code></li>
+</ul>
+</blockquote>
+<h3 id="42-zone-selection"><a href="#4-2-Zone-selection" class="headerlink" title="4.2 Zone selection"></a>4.2 Zone selection</h3><blockquote>
+<ul>
+<li>Only used after an  oeprator in visual mode</li>
+<li><action>a<object> or <action>i<object><ul>
+<li>action: d, y, v</li>
+<li>object: w(word),w(WORD), s(sentence),p(paragraph) </li>
+</ul>
+</object></action></object></action></li>
+<li>Suppose the cursor is on the  first <code>o</code> of <code>(map (+) (&quot;foo&quot;)</code>) <ul>
+<li><code>vi&quot;</code> &#x2192; will select foo.</li>
+<li><code>va&quot;</code> &#x2192; will select &#x201C;foo&#x201D;.</li>
+<li><code>vi)</code> &#x2192; will select &#x201C;foo&#x201D;.</li>
+<li><code>va)</code> &#x2192; will select (&#x201C;foo&#x201D;).</li>
+<li><code>v2i</code> &#x2192; will select map (+) (&#x201C;foo&#x201D;)</li>
+<li><code>v2a)</code> &#x2192; will select (map (+) (&#x201C;foo&#x201D;))</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="43-select-rectangular-blocks"><a href="#4-3-Select-rectangular-blocks" class="headerlink" title="4.3 Select rectangular blocks: "></a>4.3 Select rectangular blocks: <ctrl-v></ctrl-v></h3><blockquote>
+<ul>
+<li>Rectangular blocks are very useful for commenting many lines of code. Typically: <code>0&lt;C-v&gt;&lt;C-d&gt;I-- [ESC]</code></li>
+</ul>
+</blockquote>
+<h3 id="44-completion-and"><a href="#4-4-Completion-and" class="headerlink" title="4.4 Completion:  and "></a>4.4 Completion: <c-n> and <c-p></c-p></c-n></h3><blockquote>
+<ul>
+<li>In Insert mode, just type the start of a word, then type &lt; C-p&gt;, maic&#x2026;</li>
+</ul>
+</blockquote>
+<h3 id="45-macros"><a href="#4-5-Macros" class="headerlink" title="4.5 Macros"></a>4.5 Macros</h3><blockquote>
+<ul>
+<li>TBD</li>
+</ul>
+</blockquote>
+<h3 id="46-visual-selection-vv"><a href="#4-6-Visual-selection-v-V" class="headerlink" title="4.6 Visual selection: v,V,"></a>4.6 Visual selection: v,V,<c-v></c-v></h3><blockquote>
+<ul>
+<li>Once the  selection has been made, you can:</li>
+<li><code>J</code> -&gt; join allthe lines together </li>
+<li><code>&lt;</code>(resp. <code>&gt;</code>) - indent to the left (resp. to the right).</li>
+<li><code>=</code> -&gt; auto indent<ul>
+<li>you can only do it in vision model</li>
+</ul>
+</li>
+<li><c-v> -&gt; go to desire line -&gt; Do the things you want to do(Uppercase command!) -&gt; Esc</c-v></li>
+</ul>
+</blockquote>
+<h3 id="47-splits-split-and-vsplit"><a href="#4-7-Splits-split-and-vsplit" class="headerlink" title="4.7 Splits: split and vsplit"></a>4.7 Splits: split and vsplit</h3><blockquote>
+<ul>
+<li><code>:split</code> &#x2192; create a split (:vsplit create a vertical split)</li>
+<li><code>&lt;C-w&gt;&lt;dir&gt;</code> : where dir is any of hjkl or &#x2190;&#x2193;&#x2191;&#x2192; to change the split.</li>
+<li><code>&lt;C-w&gt;_ (resp. &lt;C-w&gt;|)</code> : maximise the size of the split (resp. vertical split)</li>
+<li><code>&lt;C-w&gt;+ (resp. &lt;C-w&gt;-)</code> : Grow (resp. shrink) split</li>
+<li>[copy text into vim]<ul>
+<li><ol>
+<li>use <code>Ctrl + C</code> to copy text into system</li>
+</ol>
+</li>
+<li><ol>
+<li>then in vim editor insert mode, use <code>Ctrl + Shift + V</code></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="others"><a href="#others" class="headerlink" title="others"></a>others</h1><blockquote>
 <ul>
 <li><code>u</code>: undo last change</li>
 <li><code>Ctrl-R</code>: Redo changes which were undown</li>
 <li><code>.</code>:  repeat a previous change</li>
-<li><a href="http://vim.wikia.com/wiki/Copy,_cut_and_paste" target="_blank" rel="external">copy and paste</a></li>
+<li><a href="http://vim.wikia.com/wiki/Copy,_cut_and_paste" target="_blank" rel="external">copy and paste</a><ul>
+<li><code>y</code> -&gt; yank which means copy</li>
+<li><code>p</code> -&gt; paste</li>
+</ul>
+</li>
+<li>show line number in vim: <code>:set number</code></li>
+<li><a href="http://stackoverflow.com/questions/10921441/where-is-my-vimrc-file" target="_blank" rel="external">how to find your vimrc file</a><ul>
+<li><code>:scriptnames</code><ul>
+<li>list all the .vim fiels that Vim loaded for you</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>open the current path in nautilus<ul>
+<li><code>nautilus .</code></li>
+</ul>
+</li>
+<li><a href="http://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting" target="_blank" rel="external">turn off hightlighting until the next search</a><ul>
+<li><code>:noh</code></li>
+</ul>
+</li>
+<li><code>ciw</code><ul>
+<li>replace the whole word</li>
+</ul>
+</li>
+<li>how to search useful plugins<ul>
+<li><a href="vimawesome.com/plugin">link</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/Valloric/YouCompleteMe#general-usage" target="_blank" rel="external">YouCompleteMe</a></li>
+<li>`set cmdheight=height-you-want&#x2019;<ul>
+<li>change the height of the command line</li>
+</ul>
+</li>
+<li><a href="http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste" target="_blank" rel="external">correct the wrong past indentation</a><ul>
+<li><code>:set paste</code></li>
+</ul>
+</li>
+<li><a href="http://vi.stackexchange.com/questions/104/how-can-i-see-the-full-path-of-the-current-file" target="_blank" rel="external">show current file name</a><ul>
+<li><code>1</code> then <code>Ctrl + G</code></li>
+</ul>
+</li>
+<li><a href="http://vim.wikia.com/wiki/All_the_right_moves" target="_blank" rel="external">screen moves</a><ul>
+<li><code>H</code>, <code>M</code>, <code>L</code>: move screen from top, middle and bottom</li>
+<li><code>Ctrl - D</code>, <code>Ctrl - U</code>: move half-page down/up</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -335,7 +562,7 @@ var _hmt = _hmt || [];
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/UbuntuStudy/"  data-tooltip="UbuntuStudy">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -343,7 +570,7 @@ var _hmt = _hmt || [];
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/06/15/workingReflection/" data-tooltip="workingReflection">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/06/15/workingReflection/" data-tooltip="workReflection - reflection">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -379,10 +606,6 @@ var _hmt = _hmt || [];
 
 
         
-            <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-        
     </div>
 </article>
 
@@ -390,7 +613,7 @@ var _hmt = _hmt || [];
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">
-        Copyrights &copy; 2016 LBTING. All Rights Reserved.
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
     </span>
 </footer>
 
@@ -402,7 +625,7 @@ var _hmt = _hmt || [];
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/UbuntuStudy/"  data-tooltip="UbuntuStudy">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -410,7 +633,7 @@ var _hmt = _hmt || [];
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/06/15/workingReflection/" data-tooltip="workingReflection">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/06/15/workingReflection/" data-tooltip="workReflection - reflection">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -465,7 +688,7 @@ var _hmt = _hmt || [];
             <h5 id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p>Student</p>
+                <p>R&amp;D Engineer</p>
 
             </h5>
         
@@ -473,7 +696,7 @@ var _hmt = _hmt || [];
             <h5 id="about-card-location">
                 <i class="fa fa-map-marker"></i>
                 <br/>
-                Pittsburgh USA
+                Albany USA
             </h5>
         
     </div>
@@ -481,19 +704,8 @@ var _hmt = _hmt || [];
         <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
     </body>
     <!--SCRIPTS-->
-<script src="/assets/js/script.min.js" type="text/javascript"></script>
+<script src="/assets/js/script.min.js"></script>
 <!--SCRIPTS END-->
-
-    <script type="text/javascript">
-        var disqus_shortname = 'lbtinglb';
-        (function() {
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
 
 
 

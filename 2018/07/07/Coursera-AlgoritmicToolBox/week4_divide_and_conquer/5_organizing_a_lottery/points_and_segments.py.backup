@@ -1,0 +1,96 @@
+# Uses python3
+import sys
+
+# Get the cloest index of x in list a
+# useful hint: https://www.coursera.org/learn/algorithmic-toolbox/discussions/all/threads/QJ1jK9wNEeWdPBL2iFTrAw/replies/Ihiw4txhEeWK5g7mfcS2Xw/comments/oyAMaeIiEeWyqwpvChh66Q
+
+# https://codereview.stackexchange.com/questions/190145/find-the-closest-number-in-a-sorted-list-to-a-given-target-number
+def get_closest_value_floor(arr, target):
+    n = len(arr)
+    left = 0
+    right = n - 1
+    mid = 0
+
+    # edge case - last or above all
+    if target >= arr[n - 1]:
+        return n
+    # edge case - first or below all
+    if target < arr[0]:
+        return 0
+    # BSearch solution: Time & Space: Log(N)
+    while left < right:
+        mid = (left + right) // 2  # find the mid
+        if target < arr[mid]:
+            right = mid
+        elif target > arr[mid]:
+            left = mid + 1
+        else:
+            while (target == arr[mid] and mid < n):
+                mid += 1
+                return mid
+
+    if target < arr[mid]:
+        return mid # number of values not index
+    else:
+        return mid + 1
+
+def get_closest_value_ceiling(arr, target):
+    n = len(arr)
+    left = 0
+    right = n - 1
+    mid = 0
+
+    # edge case - last or above all
+    if target > arr[n - 1]:
+        return 0
+    # edge case - first or below all
+    if target <= arr[0]:
+        return n
+    # BSearch solution: Time & Space: Log(N)
+    while left < right:
+        mid = (left + right) // 2  # find the mid
+        if target < arr[mid]:
+            right = mid
+        elif target > arr[mid]:
+            left = mid + 1
+        else:
+            print(arr, mid)
+            while (target == arr[mid] and mid < n):
+                mid -= 1
+                return n - (mid + 1)
+    if target < arr[mid]:
+        return n - mid
+    else:
+        return n - mid - 1
+
+def fast_count_segments(starts, ends, points):
+    cnt = [0] * len(points)
+    starts.sort()
+    ends.sort()
+    #write your code here
+    for i in range(len(points)):
+        numL = get_closest_value_floor(starts,points[i])
+        numR = get_closest_value_ceiling(ends,points[i])
+        cnt[i] = numL + numR - len(starts)
+    return cnt
+
+def naive_count_segments(starts, ends, points):
+    cnt = [0] * len(points)
+    for i in range(len(points)):
+        for j in range(len(starts)):
+            if starts[j] <= points[i] <= ends[j]:
+                cnt[i] += 1
+    return cnt
+
+if __name__ == '__main__':
+    input = sys.stdin.read()
+    data = list(map(int, input.split()))
+    n = data[0]
+    m = data[1]
+    starts = data[2:2 * n + 2:2]
+    ends   = data[3:2 * n + 2:2]
+    points = data[2 * n + 2:]
+    #use fast_count_segments
+    cnt = fast_count_segments(starts, ends, points)
+    for x in cnt:
+        print(x, end=' ')

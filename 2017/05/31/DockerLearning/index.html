@@ -180,9 +180,26 @@ var _hmt = _hmt || [];
 <h1 id="notes-when-learning-docker"><a href="#Notes-when-learning-docker" class="headerlink" title="Notes when learning docker"></a>Notes when learning docker</h1><!-- toc -->
 <ul>
 <li><a href="#useful-information">Useful information</a></li>
-<li><a href="#whats-docker-and-how-to-use-it-with-python">What&#x2019;s Docker and how to use it with python</a></li>
+<li><a href="#whats-dockerhttpswwwdockercomwhat-container"><a href="https://www.docker.com/what-container" target="_blank" rel="external">What&#x2019;s Docker?</a></a></li>
+<li><a href="#whats-docker-and-how-to-use-it-with-python">What&#x2019;s Docker and how to use it with python</a><ul>
+<li><a href="#writing-a-dockerfile">Writing a Dockerfile</a></li>
+</ul>
+</li>
+<li><a href="#docker-curriculumhttpsdocker-curriculumcom"><a href="https://docker-curriculum.com/" target="_blank" rel="external">Docker curriculum</a></a><ul>
+<li><a href="#20-webapps-with-docker">2.0 Webapps with docker</a></li>
+</ul>
+</li>
+<li><a href="#kuberneteshttpskubernetesiodocsconceptsoverviewwhat-is-kubernetes"><a href="https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/" target="_blank" rel="external">Kubernetes</a></a><ul>
+<li><a href="#24-dockerfile">2.4 Dockerfile</a></li>
+<li><a href="#25-docker-on-aws">2.5 Docker on AWS</a></li>
+</ul>
+</li>
+<li><a href="#30-multi-container-environments">3.0 Multi-container Environments</a></li>
+<li><a href="#33-docker-compose">3.3 Docker Compose</a></li>
 <li><a href="#others">Others</a><ul>
 <li><a href="#copying-files-from-docker-container-to-hosthttpsstackoverflowcomquestionsa22049212copying-files-from-docker-container-to-host"><a href="https://stackoverflow.com/questionsa22049212/copying-files-from-docker-container-to-host" target="_blank" rel="external">Copying files from Docker container to host</a></a></li>
+<li><a href="#docker-compose-vs-docker-swarm-vs-kubernetes-vs-docker-cloudhttpsstackoverflowcomquestions47536536whats-the-difference-between-docker-compose-and-kubernetes"><a href="https://stackoverflow.com/questions/47536536/whats-the-difference-between-docker-compose-and-kubernetes" target="_blank" rel="external">Docker Compose vs Docker Swarm vs Kubernetes vs Docker Cloud</a></a></li>
+<li><a href="#some-libraries-used-in-container">Some libraries used in container</a></li>
 </ul>
 </li>
 </ul>
@@ -191,6 +208,23 @@ var _hmt = _hmt || [];
 <ul>
 <li><a href="https://www.docker.com" target="_blank" rel="external">official link</a></li>
 <li><a href="http://djangostars.com/blog/what-is-docker-and-how-to-use-it-with-python/" target="_blank" rel="external">a 15 min introduction</a></li>
+<li><a href="https://kubernetes.io/" target="_blank" rel="external">Kubernetes</a></li>
+<li><a href="https://training.play-with-docker.com/" target="_blank" rel="external">Play with docker</a></li>
+<li><a href="https://github.com/veggiemonk/awesome-docker" target="_blank" rel="external">awesome docker</a></li>
+</ul>
+</blockquote>
+<h1 id="whats-docker"><a href="#What&#x2019;s-Docker" class="headerlink" title="What&#x2019;s Docker?"></a><a href="https://www.docker.com/what-container" target="_blank" rel="external">What&#x2019;s Docker?</a></h1><blockquote>
+<ul>
+<li>It&#x2019;s a containerization plateform that allows organizations to solve multiple problems across a diverse set of requirements including security, governance, automation, support and certification over the entire application lifecycle.</li>
+<li>It packages software into a standardized units for development, shipment and deployment. It insolates the software from the environment.</li>
+<li>Docker CLI(command line interface) as the client and docker daemon as the server</li>
+<li>container(CO) vs vm(VM)<ul>
+<li>CO is an abstraction at the app layer while VM is an abstraction for physical hardware.</li>
+<li>COs share the same OS kernel and each runs as isolated processes in user space. Each VM includes a full copy of an OS.</li>
+<li>COs start almost instantly while VMs can be slow to boot.</li>
+</ul>
+</li>
+<li>Docker engine is built on runC(runtime code) and <a href="https://containerd.io/" target="_blank" rel="external">containered</a>.</li>
 </ul>
 </blockquote>
 <h1 id="whats-docker-and-how-to-use-it-with-python"><a href="#What&#x2019;s-Docker-and-how-to-use-it-with-python" class="headerlink" title="What&#x2019;s Docker and how to use it with python"></a>What&#x2019;s Docker and how to use it with python</h1><blockquote>
@@ -205,17 +239,126 @@ var _hmt = _hmt || [];
 <li>Everything required to make a piece of software run is packaged into isolated containers. Only libraries and settings required to make the software work are needed.</li>
 </ul>
 </li>
+<li><a href="https://docs.docker.com/get-started/" target="_blank" rel="external">How to intall docker</a></li>
 <li>Terminology<ul>
-<li>Container: running instance that encapsulates required software. It&#x2019;s <code>created from images</code>.</li>
+<li>Container: running instance that encapsulates required software. It&#x2019;s <code>created from images</code>. Container can expose ports and volumes to interact with other containers.</li>
 <li>Image: basic element for every container. When you create an image every step is cached and can be reused (Copy On Write model).</li>
 <li>Port:  a TCP/UDP port in its original meaning. To keep things simple let&#x2019;s assume that ports can be exposed to the outer world (accessible from host OS) or connected to other containers &#x2014; accessible only from those containers and invisible to the outer world.</li>
 <li>Volume: can be described as a shared folder. Volumes are initialized when a container is created. Volumes are designed to persist data, independent of the container&#x2019;s lifecycle.</li>
 <li>Registry &#x2014; the server that stores <code>Docker images</code>. It can be compared to Github &#x2014; you can pull an image from the registry to deploy it locally, and you can push locally built images to the registry.</li>
 </ul>
 </li>
+<li>simple commands:<ul>
+<li><code>docker run</code>: a command to run a container. It only accepts absolute path</li>
+<li><code>docker run -i -t --rm ubuntu /bin/bash</code><ul>
+<li><code>-t</code>: assigns a pseudo-tty or terminal inside the new container</li>
+<li><code>-i</code>: make an interactive connection by grabbing the standard input of the container</li>
+<li><code>-rm</code>: automatically remove the container when the process exits. Otherweise the containers are not deleted. They exist until we exit from the session</li>
+<li><code>--name &lt;given-name&gt;</code></li>
+<li><code>-d</code> runs the container in the background</li>
+</ul>
+</li>
+<li><code>docker run --name daemon -d ubuntu /bin/sh -c &quot;while true; do echo hello world; sleep 1; done&quot;</code>: To keep it running after the end of the session.</li>
+<li><code>docker stop &lt;container-name&gt;</code>: stop a running container</li>
+<li><code>docker start &lt;container-name&gt;</code>: start a stopped container</li>
+<li><code>docker ps -a</code>: list all containers</li>
+<li><code>To remove all containers we can use the following command:</code>docker rm -f $(docker ps -aq)</li>
+<li><code>-p &lt;Host port: container port&gt;</code>: ports mapping</li>
+<li><code>-v &lt;path&gt;</code>: volume mounting</li>
+</ul>
+</li>
 </ul>
 </blockquote>
-<h1 id="others"><a href="#Others" class="headerlink" title="Others"></a>Others</h1><h2 id="copying-files-from-docker-container-to-host"><a href="#Copying-files-from-Docker-container-to-host" class="headerlink" title="Copying files from Docker container to host"></a><a href="https://stackoverflow.com/questionsa22049212/copying-files-from-docker-container-to-host" target="_blank" rel="external">Copying files from Docker container to host</a></h2>
+<h3 id="writing-a-dockerfile"><a href="#Writing-a-Dockerfile" class="headerlink" title="Writing a Dockerfile"></a>Writing a Dockerfile</h3><blockquote>
+<ul>
+<li>common keywords<ul>
+<li>FROM &#x2014; set base image</li>
+<li>RUN &#x2014; execute command in container</li>
+<li>ENV &#x2014; set environment variable</li>
+<li>WORKDIR &#x2014; set working directory</li>
+<li>VOLUME &#x2014; create mount-point for a volume</li>
+<li>CMD &#x2014; set executable for container</li>
+</ul>
+</li>
+<li><code>docker build . -t test-curl</code></li>
+</ul>
+</blockquote>
+<h1 id="docker-curriculum"><a href="#Docker-curriculum" class="headerlink" title="Docker curriculum"></a><a href="https://docker-curriculum.com/" target="_blank" rel="external">Docker curriculum</a></h1><blockquote>
+<ul>
+<li><code>docker run -it &lt;image name&gt; sh</code><ul>
+<li><code>-it</code> flags attaches us to an  interactive tty in the container which means that we can run as many commands in the container as we want.</li>
+<li><code>exit</code>: literally it means exit.</li>
+</ul>
+</li>
+<li><code>docker rm $(docker ps -a -q -f status=exited)</code>: remove all exited containers<ul>
+<li><code>-q</code>: returns the numeric IDs</li>
+<li><code>-f</code>: filter output based on conditions provided</li>
+<li><code>--rm</code>: pass it to <code>docker run</code> when one off docker runs are desired</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="20-webapps-with-docker"><a href="#2-0-Webapps-with-docker" class="headerlink" title="2.0 Webapps with docker"></a>2.0 Webapps with docker</h2><h1 id="kubernetes"><a href="#Kubernetes" class="headerlink" title="Kubernetes"></a><a href="https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/" target="_blank" rel="external">Kubernetes</a></h1><blockquote>
+<ul>
+<li>A open-source system for automating deployment, scaling, and management of cntainerized applications</li>
+<li><code>docker run -d -p --name &lt;container name&gt; &lt;image name&gt;</code><ul>
+<li><code>-d</code>: detach the terminal</li>
+<li><code>-P</code>: publish all exposed ports to random ports</li>
+<li><code>-p</code>: specify a custom port. e.g. <code>-p 8888:80</code></li>
+<li><code>--net</code>: launch a container with a specific network</li>
+</ul>
+</li>
+<li><code>docker port &lt;container name&gt;</code>: Get the port name of a container</li>
+</ul>
+</blockquote>
+<h2 id="24-dockerfile"><a href="#2-4-Dockerfile" class="headerlink" title="2.4 Dockerfile"></a>2.4 Dockerfile</h2><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># our base image</span></div><div class="line"><span class="keyword">FROM</span> python:<span class="number">3</span>-<span class="keyword">onbuild</span></div><div class="line"></div><div class="line"><span class="comment"># specify the port number the container should expose</span></div><div class="line"><span class="keyword">EXPOSE</span> <span class="number">5000</span></div><div class="line"></div><div class="line"><span class="comment"># run the application</span></div><div class="line"><span class="keyword">CMD</span> <span class="bash">[<span class="string">&quot;python&quot;</span>, <span class="string">&quot;./app.py&quot;</span>]</span></div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><code>docker build -t &lt;docker hub account name&gt;/catnip .</code>: build a docker image</li>
+<li>error [<code>on-build</code>](<a href="https://github.com/docker-library/official-images/issues/2076" target="_blank" rel="external">https://github.com/docker-library/official-images/issues/2076</a> is deprecated by docker community!</li>
+</ul>
+</blockquote>
+<h2 id="25-docker-on-aws"><a href="#2-5-Docker-on-AWS" class="headerlink" title="2.5 Docker on AWS"></a>2.5 Docker on AWS</h2><blockquote>
+<ul>
+<li>Beanstalk: AWS Elastic Beanstalk is a PaaS(Platform as a Service). As a developer, you just tell EB how to run youur app and it takes care of the rest - including scaling, monitoring and even updates</li>
+</ul>
+</blockquote>
+<h1 id="30-multi-container-environments"><a href="#3-0-Multi-container-Environments" class="headerlink" title="3.0 Multi-container Environments"></a>3.0 Multi-container Environments</h1><blockquote>
+<ul>
+<li><code>docker network ls</code>: ls all networks</li>
+<li>When docker is installed, it creates three networks automatically(none + host + bridge). The <code>bridge</code> network is shared by every container. You can create your <strong>own</strong> network!</li>
+</ul>
+</blockquote>
+<h1 id="33-docker-compose"><a href="#3-3-Docker-Compose" class="headerlink" title="3.3 Docker Compose"></a>3.3 Docker Compose</h1><blockquote>
+<ul>
+<li>Docker Compose - A tool for defining and running multi-container Docker applications</li>
+</ul>
+</blockquote>
+<h1 id="others"><a href="#Others" class="headerlink" title="Others"></a>Others</h1><h2 id="copying-files-from-docker-container-to-host"><a href="#Copying-files-from-Docker-container-to-host" class="headerlink" title="Copying files from Docker container to host"></a><a href="https://stackoverflow.com/questionsa22049212/copying-files-from-docker-container-to-host" target="_blank" rel="external">Copying files from Docker container to host</a></h2><h2 id="docker-compose-vs-docker-swarm-vs-kubernetes-vs-docker-cloud"><a href="#Docker-Compose-vs-Docker-Swarm-vs-Kubernetes-vs-Docker-Cloud" class="headerlink" title="Docker Compose vs Docker Swarm vs Kubernetes vs Docker Cloud"></a><a href="https://stackoverflow.com/questions/47536536/whats-the-difference-between-docker-compose-and-kubernetes" target="_blank" rel="external">Docker Compose vs Docker Swarm vs Kubernetes vs Docker Cloud</a></h2><blockquote>
+<ul>
+<li>Docker compose: Allows configuring and starting multiple docker containers. Used as a helper when you want to start several docker containers. It&#x2019;s used to starting containers on the <strong>same</strong> host</li>
+<li>Docker Swarm: It&#x2019;s used for running and connecting containers on <strong>multiple</strong> hosts. It manages containers running on multiple hosts and does things like scaling, starting a new container when one crashes, networking containers &#x2026;</li>
+<li>Kubernetes: A container orchestration tool developed by Google. Kubernetes goal is very similar as that for Docker swarm.</li>
+<li>Docker cloud: A paid enterprise docker service that allows you to build and run containers on cloud servers or local servers. It provides a Web UI and a central control panel to run and manage containers while providing all the docker features in a user friendly Web interface.</li>
+<li>docker on mac: HyperKit windows: Hyper-v. You use <em>Docker Toolbox</em> on old Mac/Windows. Or you can use <em>docker</em>(VM not compatible, and a local host)</li>
+</ul>
+</blockquote>
+<h2 id="some-libraries-used-in-container"><a href="#Some-libraries-used-in-container" class="headerlink" title="Some libraries used in container"></a>Some libraries used in container</h2><blockquote>
+<ul>
+<li><a href="https://hub.docker.com/_/alpine/" target="_blank" rel="external">Alpine</a>: A minimal Docker image based on Alpine Linux with a complete package index and only 5MB in size</li>
+<li>[Tomcat]</li>
+<li>[TCP]</li>
+<li>[UDP]</li>
+<li><a href="https://en.wikipedia.org/wiki/Redis" target="_blank" rel="external">redis</a><ul>
+<li>an in-memory database project implementing a distributed, in-memory key-value store with option durability</li>
+</ul>
+</li>
+<li>NGINX - pronounced as Engine-X</li>
+<li>an open source, lightweight, high-performance web server or proxy server. It&#x2019;s used a a reverse proxy server for http, https and other protocols, on the other hand, it&#x2019;s also used for servers load balancing and HTTP Cache.</li>
+<li>Kitmatic: a GUI tool</li>
+</ul>
+</blockquote>
+
         
             
         

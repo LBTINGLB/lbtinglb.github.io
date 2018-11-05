@@ -221,6 +221,9 @@ var _hmt = _hmt || [];
 <li><a href="#oprofilehttpoprofilesourceforgenetabout"><a href="http://oprofile.sourceforge.net/about/" target="_blank" rel="external">oprofile</a></a></li>
 </ul>
 </li>
+<li><a href="#rpath">RPATH</a></li>
+<li><a href="#check-for-a-symbol-in-a-path">Check for a symbol in a path</a></li>
+<li><a href="#screen-commandhttpswwwrackaidcombloglinux-screen-tutorial-and-how-to"><a href="https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/" target="_blank" rel="external">screen command</a></a></li>
 </ul>
 <!-- tocstop -->
 <h1 id="ubuntu-tips"><a href="#Ubuntu-tips" class="headerlink" title="Ubuntu tips"></a>Ubuntu tips</h1><blockquote>
@@ -277,6 +280,7 @@ var _hmt = _hmt || [];
 <li>either install them via apt-get or put them at <code>usr/local/bin</code></li>
 </ul>
 </li>
+<li>backup software: carbon copy cloner</li>
 <li><a href="http://askubuntu.com/questions/195983/how-to-copy-files-via-terminal" target="_blank" rel="external">Copy paste file</a><ul>
 <li>`cp -i /home/levan/kdenlive/untitelds.mpg /media/sda3/SkyDrive/``<ul>
 <li>) By using -i for interactive you will be asked if you would like to replace the file:</li>
@@ -804,7 +808,50 @@ var _hmt = _hmt || [];
 <h2 id="oprofile"><a href="#oprofile" class="headerlink" title="oprofile"></a><a href="http://oprofile.sourceforge.net/about/" target="_blank" rel="external">oprofile</a></h2><blockquote>
 <ul>
 <li>profiling all running code at low overhead</li>
-<li><a href="http://techgravity.co/oprofile/" target="_blank" rel="external">install tutorial</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line">Step 1) Install the required libraries</div><div class="line"></div><div class="line"></div><div class="line">sudo apt-get install libpopt-dev binutils-dev</div><div class="line">sudo apt-get install libiberty-dev</div><div class="line">1</div><div class="line">2</div><div class="line">sudo apt-get install libpopt-dev binutils-dev</div><div class="line">sudo apt-get install libiberty-dev</div><div class="line">Step 2) Fetch the source code</div><div class="line"></div><div class="line"></div><div class="line">git clone git://git.code.sf.net/p/oprofile/oprofile</div><div class="line">1</div><div class="line">git clone git://git.code.sf.net/p/oprofile/oprofile</div><div class="line">Step 3) Add a profile for the software to log system calls</div><div class="line"></div><div class="line"></div><div class="line">sudo useradd oprofile</div><div class="line">1</div><div class="line">sudo useradd oprofile</div><div class="line">Step 4) Generate the configuration file</div><div class="line"></div><div class="line"></div><div class="line">cd oprofile/</div><div class="line">./autogen.sh</div><div class="line">./configure</div><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">cd oprofile/</div><div class="line">./autogen.sh</div><div class="line">./configure</div><div class="line">Step 4) Make and make install</div><div class="line"></div><div class="line"></div><div class="line">make</div><div class="line">sudo make install</div><div class="line">1</div><div class="line">2</div><div class="line">make</div><div class="line">sudo make install</div><div class="line">These above steps would complete the installation and you can run the following two commands to start logging the system call and output the report.</div><div class="line"></div><div class="line">Start logging.</div><div class="line"></div><div class="line"></div><div class="line">sudo operf --system-wide</div><div class="line">1</div><div class="line">sudo operf --system-wide</div><div class="line">See the output</div><div class="line"></div><div class="line"></div><div class="line">opreport</div><div class="line">1</div><div class="line">opreport</div></pre></td></tr></table></figure></li>
+<li><a href="http://techgravity.co/oprofile/" target="_blank" rel="external">install tutorial</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line">Step 1) Install the required libraries</div><div class="line"></div><div class="line"></div><div class="line">sudo apt-get install libpopt-dev binutils-dev</div><div class="line">sudo apt-get install libiberty-dev</div><div class="line">1</div><div class="line">2</div><div class="line">sudo apt-get install libpopt-dev binutils-dev</div><div class="line">sudo apt-get install libiberty-dev</div><div class="line">Step 2) Fetch the source code</div><div class="line"></div><div class="line"></div><div class="line">git clone git://git.code.sf.net/p/oprofile/oprofile</div><div class="line">1</div><div class="line">git clone git://git.code.sf.net/p/oprofile/oprofile</div><div class="line">Step 3) Add a profile for the software to log system calls</div><div class="line"></div><div class="line"></div><div class="line">sudo useradd oprofile</div><div class="line">1</div><div class="line">sudo useradd oprofile</div><div class="line">Step 4) Generate the configuration file</div><div class="line"></div><div class="line"></div><div class="line">cd oprofile/</div><div class="line">./autogen.sh</div><div class="line">./configure</div><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">cd oprofile/</div><div class="line">./autogen.sh</div><div class="line">./configure</div><div class="line">Step 4) Make and make install</div><div class="line"></div><div class="line"></div><div class="line">make</div><div class="line">sudo make install</div><div class="line">1</div><div class="line">2</div><div class="line">make</div><div class="line">sudo make install</div><div class="line">These above steps would complete the installation and you can run the following two commands to start logging the system call and output the report.</div><div class="line"></div><div class="line">Start logging.</div><div class="line"></div><div class="line"></div><div class="line">sudo operf --system-wide</div><div class="line">1</div><div class="line">sudo operf --system-wide</div><div class="line">See the output</div><div class="line"></div><div class="line"></div><div class="line">opreport</div><div class="line">1</div><div class="line">opreport</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h1 id="rpath"><a href="#RPATH" class="headerlink" title="RPATH"></a>RPATH</h1><blockquote>
+<ul>
+<li>run-time search path hard-coded in an executable file or library.<ul>
+<li>search order: DT_RPATH</li>
+</ul>
+</li>
+<li>CMake: <code>-DCMAKE_INSTALL_RPATH:STRING=$ORIGIN/../lib</code> where $ORIGIN is a unix keyword standing for the path of the executable</li>
+<li><code>objdump -a -x</code> or <code>ldd</code></li>
+<li>the numbers in the shared libraries are convention used in Linux to identify the API of a library<ul>
+<li>libFoo.so.MAJOR.MINOR</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="check-for-a-symbol-in-a-path"><a href="#Check-for-a-symbol-in-a-path" class="headerlink" title="Check for a symbol in a path"></a>Check for a symbol in a path</h1><blockquote>
+<ul>
+<li><code>for f in $(find . | ack &quot;so$&quot;); do ldd $f | ack &quot;libmirprotobuf&quot; &amp;&amp; echo &quot;$f&quot;; done</code></li>
+</ul>
+</blockquote>
+<h1 id="screen-command"><a href="#screen-command" class="headerlink" title="screen command"></a><a href="https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/" target="_blank" rel="external">screen command</a></h1><blockquote>
+<ul>
+<li>benefits:<ul>
+<li>Use <code>multiple shell windows</code> from a single SSH session</li>
+<li>Keep a shell active even through network disruptions</li>
+<li>Disconnect and reconnect to a shell session from multiple locations</li>
+<li>Run a long running process without maintaining an active shell session</li>
+</ul>
+</li>
+<li>Control Command: <code>Ctrl-a</code> would send a signal to the screen instead of the shell<ul>
+<li><code>?</code>: help page</li>
+<li><code>c</code>: create a new window</li>
+<li><code>n</code>: switch to the next window</li>
+<li><code>p</code>: switch to the previous window</li>
+<li><code>d</code>: detach from screen</li>
+<li><code>r</code>: reattach</li>
+<li><code>H</code>: log the screen</li>
+<li><code>M</code>: monitor a window for activity or inactivity</li>
+<li><code>k</code>: kill the screen</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -826,7 +873,7 @@ var _hmt = _hmt || [];
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/MPIStudy/"  data-tooltip="MPIStudy">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/MPIStudy/"  data-tooltip="(no title)">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -889,7 +936,7 @@ var _hmt = _hmt || [];
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/MPIStudy/"  data-tooltip="MPIStudy">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/MPIStudy/"  data-tooltip="(no title)">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>

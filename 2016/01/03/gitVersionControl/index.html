@@ -24,7 +24,7 @@ var _hmt = _hmt || [];
         <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
     
     <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
     <!--STYLES END-->
     
     
@@ -162,13 +162,13 @@ var _hmt = _hmt || [];
         <h1 class="post-title" itemprop="headline">gitVersionControl</h1>
     
     <div class="post-meta">
-    <time  itemprop="datePublished" content="Sun Jan 03 2016 21:31:04 GMT+0800">
+    <time  itemprop="datePublished" content="Sun Jan 03 2016 21:31:04 GMT-0500">
         Jan 03, 2016
     </time>
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/git/">git</a>
+    <a class="category-link" href="/categories/techinique/">techinique</a>
 
 
     
@@ -183,14 +183,20 @@ var _hmt = _hmt || [];
 <li><a href="#&#x5ED6;&#x96EA;&#x5CF0;git&#x6559;&#x7A0B;httpwwwliaoxuefengcomwiki0013739516305929606dd18361248578c67b8067c8c017b000001373962845513aefd77a99f4145f0a2c7a7ca057e7570000"><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001373962845513aefd77a99f4145f0a2c7a7ca057e7570000" target="_blank" rel="external">&#x5ED6;&#x96EA;&#x5CF0;GIT&#x6559;&#x7A0B;</a></a></li>
 <li><a href="#trygit-coursehttpstrygithubiolevels1challenges1"><a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">tryGit Course</a></a><ul>
 <li><a href="#learning-notes">Learning notes</a></li>
+<li><a href="#show-how-many-files-have-been-modified-in-a-change-or-compare-with-other-commithttpstackoverflowcomquestions6583917how-to-find-the-number-of-files-changed-from-one-commit-to-another-in-git"><a href="http://stackoverflow.com/questions/6583917/how-to-find-the-number-of-files-changed-from-one-commit-to-another-in-git" target="_blank" rel="external">show how many files have been modified in a change or compare with other commit</a></a></li>
+<li><a href="#find-out-which-commit-causes-a-failure-or-bug-git-bisecthttpsgit-scmcombookenv2git-tools-debugging-with-git"><a href="https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git" target="_blank" rel="external">find out which commit causes a failure or bug - git bisect</a></a></li>
+<li><a href="#create-several-commits-out-of-current-unstaged-changes">create several commits out of current unstaged changes</a></li>
+<li><a href="#release-and-master">release and master</a></li>
+<li><a href="#cherry-pickhttpsswsblogstanfordedublogcherry-picking-small-git-lesson"><a href="https://swsblog.stanford.edu/blog/cherry-picking-small-git-lesson" target="_blank" rel="external">Cherry-pick</a></a></li>
+<li><a href="#ignore-files-locally">ignore files locally</a></li>
+<li><a href="#how-to-use-backporthttpsgitlabkitwarecomutilsgit-workflowwikisbackport-topicsfixing-both-with-conflicts"><a href="https://gitlab.kitware.com/utils/git-workflow/wikis/Backport-topics#fixing-both-with-conflicts" target="_blank" rel="external">How to use backport</a></a></li>
+<li><a href="#do-push-with-ssh">Do push with ssh</a></li>
+<li><a href="#add-multiple-ssh-keys-to-one-computerhttpsstackoverflowcomquestions2419566best-way-to-use-multiple-ssh-private-keys-on-one-client"><a href="https://stackoverflow.com/questions/2419566/best-way-to-use-multiple-ssh-private-keys-on-one-client" target="_blank" rel="external">Add multiple ssh keys to one computer</a></a></li>
 </ul>
 </li>
-<li><a href="#ubuntu-command">Ubuntu command</a></li>
-<li><a href="#others">Others:</a></li>
-<li><a href="#introduction-to-git-with-scott-chacon-of-githubhttpswwwyoutubecomwatchvzdr433b0hjy"><a href="https://www.youtube.com/watch?v=ZDR433b0HJY" target="_blank" rel="external">Introduction to Git with Scott Chacon of GitHub</a></a></li>
 </ul>
 <!-- tocstop -->
-<h1 id="&#x5ED6;&#x96EA;&#x5CF0;git&#x6559;&#x7A0B;"><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001373962845513aefd77a99f4145f0a2c7a7ca057e7570000" target="_blank" rel="external">&#x5ED6;&#x96EA;&#x5CF0;GIT&#x6559;&#x7A0B;</a></h1><h1 id="trygit-course"><a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">tryGit Course</a></h1><h2 id="learning-notes">Learning notes</h2><blockquote>
+<h1 id="&#x5ED6;&#x96EA;&#x5CF0;git&#x6559;&#x7A0B;"><a href="#&#x5ED6;&#x96EA;&#x5CF0;GIT&#x6559;&#x7A0B;" class="headerlink" title="&#x5ED6;&#x96EA;&#x5CF0;GIT&#x6559;&#x7A0B;"></a><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001373962845513aefd77a99f4145f0a2c7a7ca057e7570000" target="_blank" rel="external">&#x5ED6;&#x96EA;&#x5CF0;GIT&#x6559;&#x7A0B;</a></h1><h1 id="trygit-course"><a href="#tryGit-Course" class="headerlink" title="tryGit Course"></a><a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">tryGit Course</a></h1><h2 id="learning-notes"><a href="#Learning-notes" class="headerlink" title="Learning notes"></a>Learning notes</h2><blockquote>
 <ul>
 <li>show the current path: pwd</li>
 <li>show the hidden files: ls -ah</li>
@@ -210,7 +216,7 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 <li>[ ] check status and see difference<ul>
-<li><code>git status</code> # tell you about the current status of the repository     </li>
+<li><code>git status</code> # tell you about the current status of the repository</li>
 <li><code>git diff</code>   # find out what has changed</li>
 <li><code>git diff HEAD -- &lt;file name&gt;</code></li>
 <li><code>git diff HEAD</code><ul>
@@ -227,199 +233,12 @@ var _hmt = _hmt || [];
 <li><code>git log</code></li>
 <li><code>git log --pretty=oneline</code> # show files in one linegit</li>
 <li><code>git reset -- hard HEAD^</code><ul>
+<li><code>git reset --hard branchName</code></li>
 <li>HEAD^ is the last version, HEAD^ is last and last version,  you can use HEAD~100 to go to 100 versions back</li>
 </ul>
 </li>
 <li><code>git reflog</code><ul>
-<li>a writeup for all your records</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] learning directory &amp; repository &amp; stage<ul>
-<li>learning directory -&gt; learnGit folder</li>
-<li>repository -&gt; .git ban</li>
-<li>stage</li>
-</ul>
-</li>
-<li>[ ] How to cancel the changes <ul>
-<li>[] resetting the Stage<ul>
-<li><code>git reset &lt;file&gt;</code><ul>
-<li>we unstage the files (but the file is still there.)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] discard changes in the working directory(You want to discard changes, and they have not already been added.)<ul>
-<li><code>git checkout -- &lt;file&gt;</code><ul>
-<li>&#x2013; is important because without &#x2013;, checkout would become switch to another branch</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] discard changes in the repository (You want to discard changes, and they have already been added.)<ul>
-<li><code>git reset HEAD &lt;file&gt;</code><ul>
-<li>by using <strong>git reset</strong>, you can retreat the change from reprository to working area</li>
-</ul>
-</li>
-<li>then use <code>git checkout -- &lt;file&gt;</code></li>
-</ul>
-</li>
-<li>[ ] already been added and commited<ul>
-<li>use git reset &#x2013; hard HEAD</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] delete files<ul>
-<li>two options<ul>
-<li>you really want to delete the file from git repository<ul>
-<li><code>git rm &lt;filename&gt;</code><ul>
-<li>it would remove the actual files from the disk and stage the removal of the files </li>
-</ul>
-</li>
-<li>git commit -m &#x201C;Add the comment you want&#x201D;</li>
-</ul>
-</li>
-<li>you want to retrive the file back<ul>
-<li>git checkout &#x2013; <filename></filename></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] delete a branch<ul>
-<li><code>git branch -d &lt;branch name&gt;</code></li>
-</ul>
-</li>
-<li>[ ] push the local files to the remote repository (such as github)<ul>
-<li>connect a remote repository<ul>
-<li><code>git remote add origin git@server-name:path/repo-name.git</code></li>
-</ul>
-</li>
-<li>Pushing Remotely<ul>
-<li><code>git push -u origin master</code><ul>
-<li><strong>origin</strong>: the name of our remote</li>
-<li><em>master*</em>: the name of the default local branch</li>
-<li><strong>-u</strong>: it tells Git to remember the parameters, so that next time we can simply run <strong>git push</strong> and git will know what to do</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>git push origin master</code><ul>
-<li>if you want to push the newest update, just use <code>git push origin master</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] check for changes on our Github repository sand pull down any new changes<ul>
-<li><code>git pull origin master</code></li>
-</ul>
-</li>
-<li>[ ] <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375233990231ac8cf32ef1b24887a5209f83e01cb94b000" target="_blank" rel="external">how to clone repository from remote</a></li>
-<li>[ ] <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000" target="_blank" rel="external">build and combine branch</a><ul>
-<li>why create a new branch? - you can keep your own work in your own respository while not interfering other people</li>
-<li><code>git checkout -b &lt;new branch name&gt;</code><ul>
-<li>create a new branch</li>
-<li>it works as two commands 1. git barnch dev 2. git checkout dev</li>
-</ul>
-</li>
-<li><code>git branch</code><ul>
-<li>check current branch</li>
-</ul>
-</li>
-<li><code>git merge &lt;the name of the branch you want to merge&gt;</code><ul>
-<li>first, checkout to the branch that you want as the final one.</li>
-<li>type <code>git merge &lt;branch with changes&gt;</code></li>
-</ul>
-</li>
-<li><code>git branch -d &lt;branch name&gt;</code><ul>
-<li>delete the branch</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] merge confliction<ul>
-<li><code>git log --graph --pretty=oneline --abbrev-commit</code></li>
-<li><code>git log --oneline --graph --all --decorate</code><ul>
-<li>show the git log in a beautiful graph</li>
-</ul>
-</li>
-<li>when there is an conflict in git so that it could not merge by itself, you need to solve the conflict first.</li>
-</ul>
-</li>
-<li>[ ] how to manage confliction and management strategy<ul>
-<li>`git merge &#x2013;no-ff -m &#x201C;<comment>&#x201C; dev<ul>
-<li>do not merge with <em>Fast forward</em> model</li>
-<li>Using FF model cannot let you view the merge history, but normal forward model can.</li>
-</ul>
-</comment></li>
-<li>keep master stable, work on other repository</li>
-</ul>
-</li>
-<li>[ ] bug branch<ul>
-<li>if you have a bug, you can use a temporary branch to fix it. After the repairment, you can merge them and delete the temporary branch.</li>
-<li><a href="https://git-scm.com/docs/git-stash" target="_blank" rel="external"><code>git stash</code></a><ul>
-<li>Stash the changes in a dirty working directory away<br>git</li>
-</ul>
-</li>
-<li><code>git stash apply</code><ul>
-<li>restore the working directory but keep the stash content(you need to insert <code>git stash drop</code> to delete the stash)</li>
-</ul>
-</li>
-<li><code>git stash pop</code><ul>
-<li>restor the working directory and delete the stash content</li>
-</ul>
-</li>
-<li>summary: dev&#x4E0A;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x4FEE;&#x590D;master&#x4E0A;&#x7684;bug&#xFF0C;&#x4F7F;&#x7528;git stash &#x4FDD;&#x5B58;dev&#x73B0;&#x573A;&#x540E;&#x5207;&#x6362;&#x81F3;master&#x4FEE;&#x590D;bug&#xFF0C;&#x4FEE;&#x590D;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;dev&#x4E0A;&#x7684;&#x76F8;&#x540C;bug&#x88AB;&#x4FEE;&#x590D;&#xFF0C;&#x9700;&#x8981;&#x5C06;master&#x5408;&#x5E76;&#x81F3;dev&#x4E0A;&#xFF1A;checkout dev&#x5207;&#x6362;&#x56DE;dev&#x5206;&#x652F;&#xFF0C;git merge master&#x5408;&#x5E76;master&#x81F3;dev&#x4E0A;&#xFF0C;&#x5219;dev&#x4E0A;&#x5DF2;&#x7ECF;&#x4FEE;&#x590D;&#x7684;bug&#x4F1A;&#x88AB;&#x540C;&#x6B65;&#x81F3;dev&#x4E0A;&#x3002;</li>
-</ul>
-</li>
-<li>[ ] feature branch<ul>
-<li>when adding some new functionality, never did you want to distrub the main branch. So when adding a new feature, you&#x2019;d better add a new feature branch. Work on it, after the whole development the merge and delete i.t</li>
-<li>&#x2018;git branch -D feature-vulcan&#x2019;<ul>
-<li>delete a branch that is not fully merged</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] multiple people work on the same project<ul>
-<li><code>git push origin &lt;branch name&gt;</code><ul>
-<li>push local files to the github<ul>
-<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013760174128707b935b0be6fc4fc6ace66c4f15618f8d000" target="_blank" rel="external">multiple people working together guidance</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] build a tag for your repository<ul>
-<li>Sometimes you want to find a specific version. Instead of trying to find the commit id as &#x201C;892b892a3f7&#x201D;, you can find it via label. (git show v1.1)</li>
-<li><code>git tag &lt;tag name&gt;</code><ul>
-<li>tag the current branch</li>
-<li><code>git tag -a &lt;tag name&gt; -m &lt;comment for the tag&gt; &lt;commit id&gt;</code><ul>
-<li>tag a history version</li>
-</ul>
-</li>
-<li><code>git tag -d &lt;tag name&gt;</code><ul>
-<li>delete a tag</li>
-</ul>
-</li>
-<li><code>git tag</code><ul>
-<li>show the tag for the current branch</li>
-</ul>
-</li>
-<li><code>git push origin &lt;tag name&gt;</code><ul>
-<li>push tag to the remote repository</li>
-</ul>
-</li>
-<li><code>git push origin tags</code><ul>
-<li>push tags to the remote repository</li>
-</ul>
-</li>
-<li><code>git push origin :refs/tags/&lt;tagname&gt;</code><ul>
-<li>delete a tag on a remote repository</li>
-</ul>
+<li>a writeup for all your records<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div></pre></td><td class="code"><pre><div class="line">0a2e358 HEAD@{0}: reset: moving to HEAD~2</div><div class="line">0254ea7 HEAD@{1}: checkout: moving from 2.2 to master</div><div class="line">c10f740 HEAD@{2}: checkout: moving from master to 2.2</div><div class="line">git reset --hard 0254ea7 // reset moving to HEAD~2</div><div class="line">&gt;         * </div><div class="line">&gt; - [ ] learning directory &amp; repository &amp; stage</div><div class="line">&gt;     + learning directory -&gt; learnGit folder</div><div class="line">&gt;     + repository -&gt; .git ban</div><div class="line">&gt;     + stage</div><div class="line">&gt; - [ ] How to cancel the changes </div><div class="line">&gt;     + [] resetting the Stage</div><div class="line">&gt;         * `git reset &lt;file&gt;`</div><div class="line">&gt;             - we unstage the files (but the file is still there.)</div><div class="line">&gt;     + [ ] discard changes <span class="keyword">in</span> the working directory(You want to discard changes, and they have not already been added.)</div><div class="line">&gt;         * `git checkout -- &lt;file&gt;`</div><div class="line">&gt;             - -- is important because without --, checkout would become switch to another branch</div><div class="line">&gt;             - `git checkout master~2 Makefile`: revert the `Makefile` to two revisions back</div><div class="line">&gt;             - `git checkout -- <span class="string">&apos;*.c&apos;</span>`: you can even use regular expression </div><div class="line">&gt;     + [ ] discard changes <span class="keyword">in</span> the repository (You want to discard changes, and they have already been added.)</div><div class="line">&gt;         * `git reset HEAD &lt;file&gt;`</div><div class="line">&gt;             - by using **git reset**, you can retreat the change from reprository to working area</div><div class="line">&gt;         * <span class="keyword">then</span> use `git checkout -- &lt;file&gt;`</div><div class="line">&gt;     + [ ] already been added and commited</div><div class="line">&gt;         * use git reset -- hard HEAD</div><div class="line">&gt; - [ ] delete files</div><div class="line">&gt;     + two options</div><div class="line">&gt;         * you really want to delete the file from git repository</div><div class="line">&gt;             - `git rm &lt;filename&gt;`</div><div class="line">&gt;                 + it would remove the actual files from the disk and stage the removal of the files </div><div class="line">&gt;             - git commit -m <span class="string">&quot;Add the comment you want&quot;</span></div><div class="line">&gt;         * you want to retrive the file back</div><div class="line">&gt;             - git checkout -- &lt;filename&gt;</div><div class="line">&gt; - [ ] delete a branch</div><div class="line">&gt;     + `git branch <span class="_">-d</span> &lt;branch name&gt;`</div><div class="line">&gt; - [ ] push the <span class="built_in">local</span> files to the remote repository (such as github)</div><div class="line">&gt;     + connect a remote repository</div><div class="line">&gt;         * `git remote add origin git@server-name:path/repo-name.git`</div><div class="line">&gt;     + Pushing Remotely</div><div class="line">&gt;         * `git push -u origin master`</div><div class="line">&gt;             - **origin**: the name of our remote</div><div class="line">&gt;             - *master**: the name of the default <span class="built_in">local</span> branch</div><div class="line">&gt;             - **-u**: it tells Git to remember the parameters, so that next time we can simply run **git push** and git will know what to <span class="keyword">do</span></div><div class="line">&gt;     + `git push origin master`</div><div class="line">&gt;         * <span class="keyword">if</span> you want to push the newest update, just use `git push origin master`</div><div class="line">&gt; - [ ] check <span class="keyword">for</span> changes on our Github repository and pull down any new changes</div><div class="line">&gt;     + `git pull origin master`</div><div class="line">&gt; - [ ] [how to <span class="built_in">clone</span> repository from remote](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375233990231ac8cf32ef1b24887a5209f83e01cb94b000)</div><div class="line">&gt; - [ ] [build and combine branch](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000)</div><div class="line">&gt;     + why create a new branch? - you can keep your own work <span class="keyword">in</span> your own respository <span class="keyword">while</span> not interfering other people</div><div class="line">&gt;     + `git checkout -b &lt;new branch name&gt;`</div><div class="line">&gt;         * create a new branch</div><div class="line">&gt;         * it works as two commands 1. git barnch dev 2. git checkout dev</div><div class="line">&gt;     + `git branch`</div><div class="line">&gt;         * check current branch</div><div class="line">&gt;     + `git merge &lt;the name of the branch you want to merge&gt;`</div><div class="line">&gt;         * first, checkout to the branch that you want as the final one.</div><div class="line">&gt;         * <span class="built_in">type</span> `git merge &lt;branch with changes&gt;`</div><div class="line">&gt;     + `git branch <span class="_">-d</span> &lt;branch name&gt;`</div><div class="line">&gt;         * delete the branch</div><div class="line">&gt; - [ ] merge confliction</div><div class="line">&gt;     + `git <span class="built_in">log</span> --graph --pretty=oneline --abbrev-commit`</div><div class="line">&gt;     + `git <span class="built_in">log</span> --oneline --graph --all --decorate`</div><div class="line">&gt;         * show the git <span class="built_in">log</span> <span class="keyword">in</span> a beautiful graph</div><div class="line">&gt;     + when there is an conflict <span class="keyword">in</span> git so that it could not merge by itself, you need to solve the conflict first.</div><div class="line">&gt; - [ ] how to manage confliction and management strategy</div><div class="line">&gt;     + `git merge --no-ff -m <span class="string">&quot;&lt;comment&gt;&quot;</span> dev</div><div class="line">&gt;         * <span class="keyword">do</span> not merge with *Fast forward* model</div><div class="line">&gt;         * Using FF model cannot <span class="built_in">let</span> you view the merge <span class="built_in">history</span>, but normal forward model can.</div><div class="line">&gt;     + keep master stable, work on other repository</div><div class="line">&gt; - [ ] bug branch</div><div class="line">&gt;     + <span class="keyword">if</span> you have a bug, you can use a temporary branch to fix it. After the repairment, you can merge them and delete the temporary branch.</div><div class="line">&gt;     + [`git stash`](https://git-scm.com/docs/git-stash)</div><div class="line">&gt;         *  Stash the changes <span class="keyword">in</span> a dirty working directory away</div><div class="line">git</div><div class="line">&gt;     + `git stash apply`</div><div class="line">&gt;         * restore the working directory but keep the stash content(you need to insert `git stash drop` to delete the stash)</div><div class="line">&gt;     + `git stash pop`</div><div class="line">&gt;         * restor the working directory and delete the stash content</div><div class="line">&gt;     + summary: dev&#x4E0A;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x4FEE;&#x590D;master&#x4E0A;&#x7684;bug&#xFF0C;&#x4F7F;&#x7528;git stash &#x4FDD;&#x5B58;dev&#x73B0;&#x573A;&#x540E;&#x5207;&#x6362;&#x81F3;master&#x4FEE;&#x590D;bug&#xFF0C;&#x4FEE;&#x590D;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;dev&#x4E0A;&#x7684;&#x76F8;&#x540C;bug&#x88AB;&#x4FEE;&#x590D;&#xFF0C;&#x9700;&#x8981;&#x5C06;master&#x5408;&#x5E76;&#x81F3;dev&#x4E0A;&#xFF1A;checkout dev&#x5207;&#x6362;&#x56DE;dev&#x5206;&#x652F;&#xFF0C;git merge master&#x5408;&#x5E76;master&#x81F3;dev&#x4E0A;&#xFF0C;&#x5219;dev&#x4E0A;&#x5DF2;&#x7ECF;&#x4FEE;&#x590D;&#x7684;bug&#x4F1A;&#x88AB;&#x540C;&#x6B65;&#x81F3;dev&#x4E0A;&#x3002;</div><div class="line">&gt; - [ ] feature branch</div><div class="line">&gt;     + when adding some new functionality, never did you want to distrub the main branch. So when adding a new feature, you<span class="string">&apos;d better add a new feature branch. Work on it, after the whole development the merge and delete i.t</span></div><div class="line">&gt;     + &apos;git branch -D feature-vulcan<span class="string">&apos;</span></div><div class="line">&gt;         * delete a branch that is not fully merged</div><div class="line">&gt; - [ ] multiple people work on the same project</div><div class="line">&gt;     + `git push origin &lt;branch name&gt;`</div><div class="line">&gt;         * push local files to the github</div><div class="line">      + [multiple people working together guidance](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013760174128707b935b0be6fc4fc6ace66c4f15618f8d000)</div><div class="line">&gt; - [ ] build a tag for your repository</div><div class="line">&gt;     + Sometimes you want to find a specific version. Instead of trying to find the commit id as &quot;892b892a3f7&quot;, you can find it via label. (git show v1.1)</div><div class="line">&gt;     + `git tag &lt;tag name&gt;`</div><div class="line">&gt;         * tag the current branch</div><div class="line">&gt;         * `git tag -a &lt;tag name&gt; -m &lt;comment for the tag&gt; &lt;commit id&gt;`</div><div class="line">&gt;             - tag a history version</div><div class="line">&gt;         * `git tag -d &lt;tag name&gt;`</div><div class="line">&gt;             - delete a tag</div><div class="line">&gt;         * `git tag`</div><div class="line">&gt;             - show the tag for the current branch</div><div class="line">&gt;         * `git push origin &lt;tag name&gt;`</div><div class="line">&gt;             - push tag to the remote repository</div><div class="line">&gt;         * `git push origin tags`</div><div class="line">&gt;             - push tags to the remote repository</div><div class="line">&gt;         * `git push origin :refs/tags/&lt;tagname&gt;`</div><div class="line">&gt;             - delete a tag on a remote repository</div><div class="line"></div><div class="line">&gt; - Book: `Pro Git`</div><div class="line">&gt; - git-scm</div><div class="line">&gt; - git reference   </div><div class="line">&gt; - [git push VS git pull](http://stackoverflow.com/questions/292357/what-are-the-differences-between-git-pull-and-git-fetch)</div><div class="line"></div><div class="line"># Others:</div><div class="line">&gt; - Staged files:</div><div class="line">&gt;     + it means the files we have told git that are ready to be committed.</div><div class="line">&gt; - `git stash`</div><div class="line">&gt;     + want to record the current state of the working directory and the index, but want to go back to a clean working directory.</div><div class="line">&gt;     + `git stash pop`, retrive the change and apply it to the branch</div><div class="line">&gt;     + The modifications stashed away by this command can be listed with `git stash list`, inspected with `git stash show`, and restored (potentially on top of a different commit) with `git stash apply @{number}`. Calling git stash without any arguments is equivalent to git stash save. A stash is by default listed as &quot;WIP on branchname &#x2026;&#x200B;&quot;, but you can give a more descriptive message on the command line when you create one. `git stash clear` to delete all the stash.</div><div class="line">&gt; - if you are working on a bug branch, and the origin/master changed:</div><div class="line">&gt;     + do `git merge origin/master` with the bug branch</div><div class="line">&gt;     + solve the conflicts. Then your bug branch would be in update with the orgin/master branch</div><div class="line">&gt; - get all the updates from the remote branch:</div><div class="line">&gt;     + [get fetch --all](https://git-scm.com/docs/git-fetch)</div><div class="line">&gt; - you create a local bug-branch -&gt; `git push -u gitlab bug-branch`</div><div class="line">&gt;     + the mean of this command is that now you push your local new branch to your gitlab account. In the future, you can just safely type `git push` to push all the changes.</div><div class="line">&gt; - restore your branch back to some time /or new branch</div><div class="line">&gt;     + restore your master branch to origin/master branch</div><div class="line">&gt;         * `git reset --hard origin/master`</div><div class="line">&gt; - visualize the gitlab tree</div><div class="line">&gt;     + `gitk --all&amp;`</div><div class="line">&gt; - pre-hook failure</div><div class="line">&gt;     + `vim .git/config`</div><div class="line">&gt;     + use `git config` to replace and change your name or email!</div><div class="line">&gt; - [How to Squash Two Commits](https://ariejan.net/2011/07/05/git-squash-your-latests-commits-into-one/)</div><div class="line">&gt; - [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)</div><div class="line">&gt;     + 1. Separate subject from body with a blank line</div><div class="line">&gt;         * Example: &quot;Fix typo in introduction to user guide&quot;</div><div class="line">&gt; - [change track branch](http://stackoverflow.com/questions/4878249/how-do-i-change-the-remote-a-git-branch-is-tracking)</div><div class="line">&gt;     + `git branch branch_name --set-upstream-to your_new_remote/branch_name`</div></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -427,130 +246,63 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </blockquote>
-<h1 id="ubuntu-command">Ubuntu command</h1><blockquote>
+<p>Derezz the master control program<br>MCP turned out to be evil and had become intent on world domination.<br>This commit throws Tron&#x2019;s disc into MCP (causing its deresolution)<br>and turns it back into a chess game.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&gt;     + 2. Limit the subject line to 50 characters</div><div class="line">&gt;     + 3. Capitalize the subject line</div><div class="line">&gt;     + 4. Don not end the subject wline with a period</div><div class="line">&gt;     + 5. Use the imperative mood in the subject line</div><div class="line">&gt;         * spoken or written as if giving a command or instruction</div><div class="line">&gt;     + 6. Wrap the body at 72 characters</div><div class="line">&gt;     + 7. Use the body to explain what and why vs. how</div><div class="line">&gt; - amend the commit log:</div><div class="line">&gt;     + git commit -amend</div><div class="line">&gt;     + it would combine the staged changes with the previous commit and replace the previous commit with the resulting snapshot</div><div class="line">&gt; - git grep + `things you want to search for`</div><div class="line">&gt;     + Print lines matching a pattern</div><div class="line">&gt; - git blame(find when each line in a file was changed)</div><div class="line">&gt; - git bisect(version switch)</div><div class="line">&gt; - [shorthand to view diff of previous version of file](http://stackoverflow.com/questions/14467953/shorthand-to-view-diff-of-previous-version-of-file/14468031#14468031)</div><div class="line">&gt; - choose too `many commits` when you use git rebase </div><div class="line">&gt;     + git rebase -i HEAD~Num</div><div class="line">&gt;     + `drop` the one that you dont want</div><div class="line">&gt; - [git rebase](https://git-scm.com/docs/git-rebase)</div><div class="line">&gt;     + reapply commits on top of another base tip</div><div class="line">&gt;     + `git rebase master` -  you would transplant to master now, which means master is behind you. </div><div class="line">&gt;         * Ex: master -- A -- B -- topic</div><div class="line">&gt;     + `--onto` </div><div class="line">&gt; - [restore a deleted branch]()</div><div class="line">&gt;     + `git checout - b &lt;branch&gt; &lt;sha&gt;`</div><div class="line">&gt; - [set remote branch](https://help.github.com/articles/changing-a-remote-s-url/)</div><div class="line">&gt; - git grep double quotes</div><div class="line">&gt;     + `git grep &apos; content-you-want&quot; &apos; `</div><div class="line">&gt;     + use single quote  outside of double  quote</div><div class="line">&gt; - regular expression</div><div class="line">&gt;     + `git grep &apos;\s\+DEPENDS&apos; `</div><div class="line">&gt;         * you need the slash for + in git grep</div><div class="line">&gt; - [compare file in different branch](http://stackoverflow.com/questions/3338126/how-to-diff-the-same-file-between-two-different-commits-on-the-same-branch)</div><div class="line">&gt;     + `git diff &lt;commit&gt; &lt;commit&gt; [path]`</div><div class="line">&gt;     + Ex.git diff HEAD^^ HEAD main.c, see the difference for a file &quot;main.c&quot; between now and two commits back</div><div class="line">&gt;     + `git diff branch1:path_to_file branch2:path_to_file`</div><div class="line">&gt;         * then you can compare file from different branch</div><div class="line"># [Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?v=ZDR433b0HJY)</div><div class="line">&gt; - [origin VS remote](https://www.quora.com/What-does-git-remote-and-origin-mean)</div><div class="line">&gt;     + origin: origin/master always tries to stay up to date with the remote repository branch. </div><div class="line">&gt;         * Origin is the default name for a remote repository, but you may change that</div><div class="line">&gt;     + remote: Remotes allow project collaboration. Remote repository is the `one hosted on to some remote server within your organization or github`</div><div class="line">&gt;         * remote is a repository that is not on your local machine </div><div class="line">&gt; - [`git pull` VS `git pull origin master` VS `git pull origin/master`](https://www.quora.com/What-are-the-differences-between-git-pull-git-pull-origin-master-and-git-pull-origin-master#)</div><div class="line">&gt;     + git pull:</div><div class="line">&gt;     + git pull origin master: &apos;git pull origin master&apos; fetches a copy of the master branch from the original repository, and merges it with the current branch you have checked out.</div><div class="line">&gt;     + git pull origin/master:  will pull changes from the locally stored branch origin/master and merge that to the local checked-out branch. The origin/master branch is essentially a &quot;cached copy&quot; of what was last pulled from origin, which is why it&apos;s called a remote branch in git parlance. This might be somewhat confusing.</div><div class="line">&gt; - [git remote](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)</div><div class="line">&gt;     + show your remotes</div><div class="line">&gt;         * `git remote`</div><div class="line">&gt;     + show the url with remotes </div><div class="line">&gt;         * `git remote -v`</div><div class="line">&gt;     + add remote repositories</div><div class="line">&gt;         * `git remote add &lt;shortname&gt; &lt;url&gt;` </div><div class="line">&gt;     + inspect a remote </div><div class="line">&gt;         * `git remote show &lt;remote name&gt;`</div><div class="line">&gt;     + removing and renaming remotes  </div><div class="line">&gt;         * `git remote rename &lt;old name&gt; &lt;newname&gt;`</div><div class="line">&gt;         * `git remote rm &lt;remote name&gt;`</div><div class="line">&gt;     + check out a remote branch </div><div class="line">&gt;         * `git fetch &lt;remote name&gt;` then `git checkout &lt;target branch&gt;`</div><div class="line">&gt; - [git diff](http://www.gitguys.com/topics/git-diff/)</div><div class="line">&gt;     + `git diff mybranch master -- filename`: compare in different branchs</div><div class="line">&gt;     + `git diff [--options] [--] [&lt;path&gt;...]`</div><div class="line">&gt;     + `git diff [filename]`</div><div class="line">&gt;     + `git diff --cached [fielname]`: compare the index with local repository</div><div class="line">&gt;     + index(using `git add`) VS commit(using `git commit`) VS working directory</div><div class="line">&gt;     + `git diff &gt; fielnam.rtf`: save the diff into a file. If you want to preserve color, use `--color`</div><div class="line">&gt; - [git grep](https://git-scm.com/docs/git-grep)</div><div class="line">&gt;     + Look for specified patterns in the tracked files in the work tree, blobs registered in the index file, or blobs in given tree objects. Patterns are lists of one or more search expressions separated by newline characters. An empty string as search expression matches all lines.</div><div class="line">&gt;     + `git grep --max--depth &lt;depth&gt;`: For each &lt;pathspec&gt; given on command line, descend at most &lt;depth&gt; levels of directories. A negative value means no limit.</div><div class="line">&gt;     + `git grep -w`: Match the pattern only at word boundary (either begin at the beginning of a line, or preceded by a non-word character; end at the end of a line or followed by a non-word character).</div><div class="line">&gt; - `git blob`</div><div class="line">&gt;     + a basic data storage unit, a bunch of bytes that could be anything(Ex a text file, source code , executale binary file, or picture, etc...)</div><div class="line">&gt; - [resolve a merge  conflict from terminal](://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/)</div><div class="line">&gt;     + `git pull` from the remote branch then use your text editor to resolve the conflict, then add the file and commit it to complete the merge</div><div class="line">&gt;     + A conflict-marked area begins with `&lt;&lt;&lt;&lt;&lt;&lt;&lt;` and ends with `&gt;&gt;&gt;&gt;&gt;&gt;&gt;`. These are also known as the conflict markers. The two conflicting blocks themselves are divided by a `=======`.</div><div class="line">&gt;     + resolving a removed file conflict:</div><div class="line">&gt;         * Removed file conflicts occur when one person edits a file, and another person deletes that file in their branch.</div><div class="line">&gt;         * use `git add` or `git remove` to solve the problem</div><div class="line">&gt; - how to add a remote and checkout some branch</div><div class="line">&gt;     + `git remote add &lt;remote branch name&gt; ssh@xxxxxx`</div><div class="line">&gt;     + `git fetch &lt;remote branch&gt;` </div><div class="line">&gt; - show graph in git:</div><div class="line">&gt;     + type in `vim ~/.gitconfig` then add</div><div class="line"></div><div class="line">```text</div><div class="line">[alias]</div><div class="line">   graph = log --graph --full-history --all --color --pretty=format:&quot;%x1b[31m%h%x09%x1b[32m    %d%x1b[0m%x20%s&quot;</div><div class="line">&quot;]]]&quot;</div></pre></td></tr></table></figure></p>
+<blockquote>
 <ul>
-<li>see the hidden file:<ul>
-<li>ctrl + H</li>
+<li>have conflict after git rebase<ul>
+<li>Ex. you branch is x -&gt; y, and remote is x -&gt; z. you need to tell git which direction you want to go. So, type <code>git add y</code> then git would use your change rather than the change on the remote.</li>
 </ul>
 </li>
-<li><code>cat</code> command<ul>
-<li>cat file1 file2 &#x2026; will show the contents of file, file2 and the others one after the other, as if the contents were in a single file. See thecatgit </li>
+<li>merge check fails on gitlab<ul>
+<li>After fix the problem, use <code>Do: check</code> to check merge availability again.</li>
 </ul>
 </li>
-<li>create a new txt file<ul>
-<li><code>touch</code> <filename></filename></li>
-</ul>
-</li>
-<li>delete a file<ul>
-<li><code>rm</code> remove a file</li>
-<li><code>rm -rf &lt;filename&gt;</code> remove a folderpmd</li>
+<li><code>git reset --hard &lt;commit&gt;</code>:<ul>
+<li>it&#x2019;s easy for you to have some files that have conflict(or just exist as the master). SO you would see Please move or remove them before you can switch branches. Use <code>git clean -dfn</code> first to check the files you want to clean, then use <code>git clean -df</code> to actually clean the folder.</li>
 </ul>
 </li>
 </ul>
 </blockquote>
-<h1 id="others">Others:</h1><blockquote>
+<h2 id="show-how-many-files-have-been-modified-in-a-change-or-compare-with-other-commit"><a href="#show-how-many-files-have-been-modified-in-a-change-or-compare-with-other-commit" class="headerlink" title="show how many files have been modified in a change or compare with other commit"></a><a href="http://stackoverflow.com/questions/6583917/how-to-find-the-number-of-files-changed-from-one-commit-to-another-in-git" target="_blank" rel="external">show how many files have been modified in a change or compare with other commit</a></h2><blockquote>
 <ul>
-<li>Staged files:<ul>
-<li>it means the files we have told git that are ready to be committed.</li>
-<li></li>
-</ul>
-</li>
-<li>if you are working on a bug branch, and the origin/master changed:<ul>
-<li>do <code>git merge origin/master</code> with the bug branch</li>
-<li>solve the conflicts. Then your bug branch would be in update with the orgin/master branch</li>
-</ul>
-</li>
-<li>get all the updates from the remote branch:<ul>
-<li><a href="https://git-scm.com/docs/git-fetch" target="_blank" rel="external">get fetch &#x2013;all</a></li>
-</ul>
-</li>
-<li>you create a local bug-branch -&gt; <code>git push -u gitlab bug-branch</code><ul>
-<li>the mean of this command is that now you push your local new branch to your gitlab account. In the future, you can just safely type <code>git push</code> to push all the changes.</li>
-</ul>
-</li>
-<li>restore your branch back to some time /or new branch<ul>
-<li>restore your master branch to origin/master branch<ul>
-<li><code>git reset --hard origin/master</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>visualize the gitlab tree<ul>
-<li><code>gitk --all&amp;</code></li>
-</ul>
-</li>
-<li>pre-hook failure<ul>
-<li><code>vim .git/config</code></li>
-<li>use <code>git config</code> to replace and change your name or email!</li>
-</ul>
-</li>
-<li><a href="https://ariejan.net/2011/07/05/git-squash-your-latests-commits-into-one/" target="_blank" rel="external">How to Squash Two Commits</a></li>
-<li><a href="http://chris.beams.io/posts/git-commit/" target="_blank" rel="external">How to Write a Git Commit Message</a><ul>
-<li><ol>
-<li>Separate subject from body with a blank line<ul>
-<li>Example: &#x201C;Fix typo in introduction to user guide&#x201D;</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Derezz <span class="keyword">the</span> master control program</span><br><span class="line">MCP turned out <span class="keyword">to</span> be evil <span class="keyword">and</span> had become intent <span class="function_start"><span class="keyword">on</span></span> world domination.</span><br><span class="line">This commit throws Tron&apos;s disc <span class="keyword">into</span> MCP (causing <span class="keyword">its</span> deresolution)</span><br><span class="line"><span class="keyword">and</span> turns <span class="keyword">it</span> <span class="keyword">back</span> <span class="keyword">into</span> a chess game.</span><br></pre></td></tr></table></figure>
-<ul>
-<li><ol>
-<li>Limit the subject line to 50 characters</li>
-</ol>
-</li>
-<li><ol>
-<li>Capitalize the subject line</li>
-</ol>
-</li>
-<li><ol>
-<li>Don not end the subject wline with a period</li>
-</ol>
-</li>
-<li><ol>
-<li>Use the imperative mood in the subject line<ul>
-<li>spoken or written as if giving a command or instruction</li>
-</ul>
-</li>
-</ol>
-</li>
-<li><ol>
-<li>Wrap the body at 72 characters</li>
-</ol>
-</li>
-<li><ol>
-<li>Use the body to explain what and why vs. how</li>
-</ol>
-<ul>
-<li>amend the commit log:</li>
-</ul>
-</li>
-<li>git commit -amend<ul>
-<li>git grep + <code>things you want to search for</code></li>
-</ul>
-<ul>
-<li>Print lines matching a pattern</li>
-</ul>
-<ul>
-<li>git blame(find when each line in a file was changed)</li>
-<li>git bisect(version switch)</li>
-<li><a href="http://stackoverflow.com/questions/14467953/shorthand-to-view-diff-of-previous-version-of-file/14468031#14468031" target="_blank" rel="external">shorthand to view diff of previous version of file</a></li>
-</ul>
-</li>
+<li><code>git show  --stat</code></li>
+<li><code>git whatchanged -n</code>, n is the  number of commits</li>
+<li><code>git diff &lt;SHA1-of-from-commit&gt;..&lt;SHA1-of-to-commit&gt; --name-only</code></li>
 </ul>
 </blockquote>
-<h1 id="introduction-to-git-with-scott-chacon-of-github"><a href="https://www.youtube.com/watch?v=ZDR433b0HJY" target="_blank" rel="external">Introduction to Git with Scott Chacon of GitHub</a></h1><blockquote>
+<h2 id="find-out-which-commit-causes-a-failure-or-bug-git-bisect"><a href="#find-out-which-commit-causes-a-failure-or-bug-git-bisect" class="headerlink" title="find out which commit causes a failure or bug - git bisect"></a><a href="https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git" target="_blank" rel="external">find out which commit causes a failure or bug - git bisect</a></h2><blockquote>
 <ul>
-<li>Book: <code>Pro Git</code></li>
-<li>git-scm</li>
-<li>git reference   </li>
-<li><a href="http://stackoverflow.com/questions/292357/what-are-the-differences-between-git-pull-and-git-fetch" target="_blank" rel="external">git push VS git pull</a></li>
+<li><code>git bisect start/good/bad</code>, you would love it!</li>
+<li><code>git bisect run make/ninja tests/your-batch.sh</code></li>
 </ul>
 </blockquote>
-
+<h2 id="create-several-commits-out-of-current-unstaged-changes"><a href="#create-several-commits-out-of-current-unstaged-changes" class="headerlink" title="create several commits out of current unstaged changes"></a>create several commits out of current unstaged changes</h2><blockquote>
+<ul>
+<li><code>git add -p</code></li>
+</ul>
+</blockquote>
+<h2 id="release-and-master"><a href="#release-and-master" class="headerlink" title="release and master"></a>release and master</h2><blockquote>
+<ul>
+<li>In order to merge a patch to release and master:<ul>
+<li>Checkout release branch, apply your patch -&gt; releaseWithPatch</li>
+<li>Checkout master, rebase on releaseWithPatch</li>
+<li>Create a MR</li>
+</ul>
+</li>
+<li>Do this to SMTK, then same to CMB. But: 1. cmb release branch + patch -&gt; bump SMTK SHA -&gt; rebase on master</li>
+</ul>
+</blockquote>
+<h2 id="cherry-pick"><a href="#Cherry-pick" class="headerlink" title="Cherry-pick"></a><a href="https://swsblog.stanford.edu/blog/cherry-picking-small-git-lesson" target="_blank" rel="external">Cherry-pick</a></h2><h2 id="ignore-files-locally"><a href="#ignore-files-locally" class="headerlink" title="ignore files locally"></a>ignore files locally</h2><blockquote>
+<ul>
+<li>.git/info/exclude</li>
+</ul>
+</blockquote>
+<h2 id="how-to-use-backport"><a href="#How-to-use-backport" class="headerlink" title="How to use backport"></a><a href="https://gitlab.kitware.com/utils/git-workflow/wikis/Backport-topics#fixing-both-with-conflicts" target="_blank" rel="external">How to use backport</a></h2><h2 id="do-push-with-ssh"><a href="#Do-push-with-ssh" class="headerlink" title="Do push with ssh"></a>Do push with ssh</h2><blockquote>
+<ul>
+<li>modify <code>.git/config</code> and use: <code>pushurl = ssh://git@gitlab.kitware.com/haocheng.liu/rgg.git</code></li>
+</ul>
+</blockquote>
+<h2 id="add-multiple-ssh-keys-to-one-computer"><a href="#Add-multiple-ssh-keys-to-one-computer" class="headerlink" title="Add multiple ssh keys to one computer"></a><a href="https://stackoverflow.com/questions/2419566/best-way-to-use-multiple-ssh-private-keys-on-one-client" target="_blank" rel="external">Add multiple ssh keys to one computer</a></h2>
         
             
         
@@ -613,10 +365,6 @@ var _hmt = _hmt || [];
 
 
         
-            <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-        
     </div>
 </article>
 
@@ -624,7 +372,7 @@ var _hmt = _hmt || [];
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">
-        Copyrights &copy; 2016 LBTING. All Rights Reserved.
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
     </span>
 </footer>
 
@@ -699,7 +447,7 @@ var _hmt = _hmt || [];
             <h5 id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p>Student</p>
+                <p>R&amp;D Engineer</p>
 
             </h5>
         
@@ -707,7 +455,7 @@ var _hmt = _hmt || [];
             <h5 id="about-card-location">
                 <i class="fa fa-map-marker"></i>
                 <br/>
-                Pittsburgh USA
+                Albany USA
             </h5>
         
     </div>
@@ -715,19 +463,8 @@ var _hmt = _hmt || [];
         <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
     </body>
     <!--SCRIPTS-->
-<script src="/assets/js/script.min.js" type="text/javascript"></script>
+<script src="/assets/js/script.min.js"></script>
 <!--SCRIPTS END-->
-
-    <script type="text/javascript">
-        var disqus_shortname = 'lbtinglb';
-        (function() {
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
 
 
 
