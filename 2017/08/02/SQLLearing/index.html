@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>SQL learning - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">SQL learning</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Wed Aug 02 2017 15:53:36 GMT-0400">
+        Aug 02, 2017
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/research/">research</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>The notes when I&#x2019;m studying SQL<br><img src="" alt="image"></p>
+<a id="more"></a>
+<h1 id="sql-learning"><a href="#SQL-learning" class="headerlink" title="SQL learning"></a><strong>SQL learning</strong></h1><!-- toc -->
+<ul>
+<li><a href="#useful-link">Useful link</a></li>
+<li><a href="#sql-structured-query-language">SQL - Structured Query language</a><ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#rdbms">RDBMS</a></li>
+<li><a href="#sql-rdbms-databases">SQL - RDBMS Databases</a></li>
+</ul>
+</li>
+<li><a href="#others">Others</a></li>
+</ul>
+<!-- tocstop -->
+<h1 id="useful-link"><a href="#Useful-link" class="headerlink" title="Useful link"></a>Useful link</h1><blockquote>
+<ul>
+<li><a href="www.tutorialspoint.com/sql">tutorial</a></li>
+</ul>
+</blockquote>
+<h1 id="sql-structured-query-language"><a href="#SQL-Structured-Query-language" class="headerlink" title="SQL - Structured Query language"></a>SQL - Structured Query language</h1><blockquote>
+<ul>
+<li>SQL is a database computer language designed for the retrieval and management of data in a relation database.</li>
+<li>RDMS(Relational Database Management Systems)</li>
+</ul>
+</blockquote>
+<h2 id="overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><blockquote>
+<ul>
+<li>It&#x2019;s a standard language for RDMS.</li>
+<li>advantage:<ul>
+<li>Allow users to access data in the RDMS</li>
+<li>Allow users to describe the data</li>
+<li>Allow users to define the data in database and manipulate that data</li>
+<li>Allow to embed within other language using SQL modules, libraries &amp; precompilers</li>
+<li>Allow users to create and drop database</li>
+<li>Allow users to create view, stored procedure, functions in a database</li>
+<li>Allow users to set permissions on tables, prcedures and views</li>
+</ul>
+</li>
+<li>SQL Process<ul>
+<li>Query Dispatcher</li>
+<li>Optmization Engines</li>
+<li>Classic Query Engine</li>
+<li>SQL Query Engine</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="rdbms"><a href="#RDBMS" class="headerlink" title="RDBMS"></a>RDBMS</h2><blockquote>
+<ul>
+<li>table: data stored in databsase objects</li>
+<li>field/column: every table is broken up into smaller entities called fields</li>
+<li>record/row: each individual entry that exists in a table</li>
+<li>NULL</li>
+<li><p>SQL Constraints: rules enforced on data columns</p>
+</li>
+<li><p>Data integrity</p>
+<ul>
+<li>entity integrity: no duplicated rows</li>
+<li>domain integrity: enforce valid entries for a given column(type, format or range of values)</li>
+<li>referential integrity: rows can not be deleted which are used by other records</li>
+<li>user-defined integrity: enforces some specifice business rules</li>
+</ul>
+</li>
+<li>Normalization<ul>
+<li>eleminate redundant data(same data in more than one table)</li>
+<li>data dependencies make sense</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="sql-rdbms-databases"><a href="#SQL-RDBMS-Databases" class="headerlink" title="SQL - RDBMS Databases"></a>SQL - RDBMS Databases</h2><blockquote>
+<ul>
+<li>MySQL vs MS SQL Server vs ORACLE vs MS ACCESS</li>
+</ul>
+</blockquote>
+<h1 id="others"><a href="#Others" class="headerlink" title="Others"></a>Others</h1><blockquote>
+<ul>
+<li><a href="https://www.essentialsql.com/what-is-the-difference-between-a-primary-key-and-a-foreign-key/" target="_blank" rel="external">foreign key vs primary key</a><ul>
+<li><code>Primary Key</code>: consists of one or more columns whose data contained within is used to uniquely identify each row in the table.  You can think of the primary key as an address.  If the rows in a table were mailboxes, then the primary key would be the listing of street addresses.<ul>
+<li>When defining a table you specify the primary key. A table has just one primary key, and its definition is mandatory.</li>
+</ul>
+</li>
+<li><code>Foreign Key</code>: a set of one or more columns in a table that refers to the primary key in another table.  There isn&#x2019;t any special code, configurations, or table definitions you need to place to officially &#x201C;designate&#x201D; a foreign key.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/SQL/">SQL</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/01/DesignPattern/"  data-tooltip="DesignPattern">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/08/02/ADIOS2learning/" data-tooltip="ADIOS2learning">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2017/08/02/SQLLearing/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2017/08/02/SQLLearing/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2017/08/02/SQLLearing/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/01/DesignPattern/"  data-tooltip="DesignPattern">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/08/02/ADIOS2learning/" data-tooltip="ADIOS2learning">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2017/08/02/SQLLearing/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2017/08/02/SQLLearing/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2017/08/02/SQLLearing/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>

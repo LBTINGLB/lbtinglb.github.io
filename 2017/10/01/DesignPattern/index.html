@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>DesignPattern - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">DesignPattern</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Sun Oct 01 2017 21:47:15 GMT-0400">
+        Oct 01, 2017
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/study/">study</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Notes when learning Modern C++ Design by Andrei Alexandrescu.<br><a id="more"></a></p>
+<h1 id="modern-c-design"><a href="#Modern-C-Design" class="headerlink" title="Modern C++ Design"></a>Modern C++ Design</h1><!-- toc -->
+<ul>
+<li><a href="#preface">Preface</a></li>
+<li><a href="#part-i-techniques">Part I: Techniques</a><ul>
+<li><a href="#chapter-1-policy-based-class-design">Chapter 1. Policy-Based Class Design</a><ul>
+<li><a href="#11-the-multiplicity-of-software-design">1.1 The Multiplicity of Software Design</a></li>
+<li><a href="#12-the-failure-of-the-do-it-all-interface">1.2 The Failure of the Do-It-All Interface</a></li>
+<li><a href="#13-multiple-inheritance-to-the-rescue">1.3 Multiple inheritance to the rescue?</a></li>
+<li><a href="#14-the-benefit-of-templates">1.4 The Benefit of Templates</a></li>
+<li><a href="#15-policies-and-policy-classes">1.5 Policies and Policy Classes</a></li>
+<li><a href="#16-eneriched-policies">1.6 Eneriched Policies</a></li>
+<li><a href="#17-destructors-of-poliyc-classes">1.7 Destructors of Poliyc Classes</a></li>
+<li><a href="#18-optional-functionality-through-incomplete-instantiation">1.8 Optional Functionality Through Incomplete Instantiation</a></li>
+<li><a href="#19-combining-policy-classes">1.9 Combining Policy Classes</a></li>
+<li><a href="#110-customizing-structure-with-policy-classes">1.10 Customizing Structure with Policy Classes</a></li>
+<li><a href="#111-compatible-and-incompatible-policies">1.11 Compatible and Incompatible Policies</a></li>
+<li><a href="#112-decomposing-a-class-into-policies">1.12 Decomposing a Class into Policies</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+</li>
+<li><a href="#chapter-2-techniques">Chapter 2. Techniques</a><ul>
+<li><a href="#21-compile-time-assertions">2.1 Compile-Time Assertions</a></li>
+</ul>
+</li>
+<li><a href="#chapter-3-typelists">Chapter 3. Typelists</a></li>
+<li><a href="#chapter-4-small-object-allocation">Chapter 4. Small-Object Allocation</a></li>
+</ul>
+</li>
+<li><a href="#others">Others</a><ul>
+<li><a href="#jargons">Jargons</a></li>
+<li><a href="#visitor-design-pattern">Visitor design pattern</a></li>
+<li><a href="#decorator-design-patternhttpsenwikipediaorgwikidecorator_pattern"><a href="https://en.wikipedia.org/wiki/Decorator_pattern" target="_blank" rel="external">Decorator Design pattern</a></a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1 id="preface"><a href="#Preface" class="headerlink" title="Preface"></a>Preface</h1><blockquote>
+<ul>
+<li>design patterns + generic programming + C++</li>
+<li>horizontal: a small amount of library code implements a  combinatorial- and essentially openeded-number of structures and behaviors</li>
+<li>vertical: applicable to a vast range of programs</li>
+<li>Generic programming: a paradigm that focuses on abstracting types to a narrow collection of functional requirements and on implementing algorithms in terms of these requirements.</li>
+</ul>
+</blockquote>
+<h1 id="part-i-techniques"><a href="#Part-I-Techniques" class="headerlink" title="Part I: Techniques"></a>Part I: Techniques</h1><h2 id="chapter-1-policy-based-class-design"><a href="#Chapter-1-Policy-Based-Class-Design" class="headerlink" title="Chapter 1. Policy-Based Class Design"></a>Chapter 1. Policy-Based Class Design</h2><h3 id="11-the-multiplicity-of-software-design"><a href="#1-1-The-Multiplicity-of-Software-Design" class="headerlink" title="1.1 The Multiplicity of Software Design"></a>1.1 The Multiplicity of Software Design</h3><blockquote>
+<ul>
+<li>Experienced designer: can see more moves ahead<h3 id="12-the-failure-of-the-do-it-all-interface"><a href="#1-2-The-Failure-of-the-Do-It-All-Interface" class="headerlink" title="1.2 The Failure of the Do-It-All Interface"></a>1.2 The Failure of the Do-It-All Interface</h3></li>
+<li>Mammoth class: bad since it lacks static type safety and  has intellectual overhead, sheer size and inefficiency.<h3 id="13-multiple-inheritance-to-the-rescue"><a href="#1-3-Multiple-inheritance-to-the-rescue" class="headerlink" title="1.3 Multiple inheritance to the rescue?"></a>1.3 Multiple inheritance to the rescue?</h3></li>
+<li>No boilerplate code to assemble the inheried components in a controlled manner.<h3 id="14-the-benefit-of-templates"><a href="#1-4-The-Benefit-of-Templates" class="headerlink" title="1.4 The Benefit of Templates"></a>1.4 The Benefit of Templates</h3></li>
+<li>Rich mechanics and does not scale when more things are involved<h3 id="15-policies-and-policy-classes"><a href="#1-5-Policies-and-Policy-Classes" class="headerlink" title="1.5 Policies and Policy Classes"></a>1.5 Policies and Policy Classes</h3></li>
+<li>policy class is not intended for stand-alone use; instead, they are inherited by, or contained within, other classes</li>
+<li>The classes that use one or more policies are called <em>hosts</em> or <em>host classes</em>.</li>
+<li><strong>policy-based class design</strong><h3 id="16-eneriched-policies"><a href="#1-6-Eneriched-Policies" class="headerlink" title="1.6 Eneriched Policies"></a>1.6 Eneriched Policies</h3></li>
+<li>The resulting context is very favorable. Clients who need enriched policies can benefit from that rich<br>functionality, without affecting the basic functionality of the host class. Don&#x2019;t forget that users&#x2014;and not<br>the library&#x2014;decide which policy class to use. Unlike regular multiple interfaces, policies give the user the<br>ability to add functionality to a host class, in a typesafe manner.<h3 id="17-destructors-of-poliyc-classes"><a href="#1-7-Destructors-of-Poliyc-Classes" class="headerlink" title="1.7 Destructors of Poliyc Classes"></a>1.7 Destructors of Poliyc Classes</h3></li>
+<li>Virtual destructor should be avoided since it incurs some size overhead for the objects of that class and the calss don&#x2019;t have any data members.</li>
+<li>A nonvirtual protected destructor should be used.<h3 id="18-optional-functionality-through-incomplete-instantiation"><a href="#1-8-Optional-Functionality-Through-Incomplete-Instantiation" class="headerlink" title="1.8 Optional Functionality Through Incomplete Instantiation"></a>1.8 Optional Functionality Through Incomplete Instantiation</h3></li>
+<li>If a member function of a class template is never used, it&#x2019;s not even instantiated</li>
+<li>So the manager would benefit from optional enriched interfaces and work correctly with poorer inferface<h3 id="19-combining-policy-classes"><a href="#1-9-Combining-Policy-Classes" class="headerlink" title="1.9 Combining Policy Classes"></a>1.9 Combining Policy Classes</h3><h3 id="110-customizing-structure-with-policy-classes"><a href="#1-10-Customizing-Structure-with-Policy-Classes" class="headerlink" title="1.10 Customizing Structure with Policy Classes"></a>1.10 Customizing Structure with Policy Classes</h3><h3 id="111-compatible-and-incompatible-policies"><a href="#1-11-Compatible-and-Incompatible-Policies" class="headerlink" title="1.11 Compatible and Incompatible Policies"></a>1.11 Compatible and Incompatible Policies</h3><h3 id="112-decomposing-a-class-into-policies"><a href="#1-12-Decomposing-a-Class-into-Policies" class="headerlink" title="1.12 Decomposing a Class into Policies"></a>1.12 Decomposing a Class into Policies</h3></li>
+<li><code>orthogonal decomposition</code>:  policies are completely independent of each other<h3 id="summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3></li>
+<li>The mechanics of policies consist of a combination of templates with multiple inheritance. A class that uses policies&#x2014;a host class&#x2014;is a template with many template parameters</li>
+<li>Classes designed around policies support enriched behavior and graceful degradation of functionality.</li>
+</ul>
+</blockquote>
+<h2 id="chapter-2-techniques"><a href="#Chapter-2-Techniques" class="headerlink" title="Chapter 2. Techniques"></a>Chapter 2. Techniques</h2><h3 id="21-compile-time-assertions"><a href="#2-1-Compile-Time-Assertions" class="headerlink" title="2.1 Compile-Time Assertions"></a>2.1 Compile-Time Assertions</h3><blockquote>
+<ul>
+<li>You can not create an array of length zero<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// runtime check</span></div><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> To, <span class="keyword">class</span> From&gt;</div><div class="line"><span class="function">To <span class="title">safe_reinterpret_cast</span><span class="params">(From from)</span></span></div><div class="line">{</div><div class="line">assert(<span class="keyword">sizeof</span>(From) &lt;= <span class="keyword">sizeof</span>(To));</div><div class="line"><span class="keyword">return</span> <span class="keyword">reinterpret_cast</span>&lt;To&gt;(from);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// compile time check</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> STATIC_CHECK(expr) { char unnamed[(expr) ? 1 : 0]; }</span></div><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> To, <span class="keyword">class</span> From&gt;</div><div class="line"><span class="function">To <span class="title">safe_reinterpret_cast</span><span class="params">(From from)</span></span></div><div class="line">{</div><div class="line">STATIC_CHECK(<span class="keyword">sizeof</span>(From) &lt;= <span class="keyword">sizeof</span>(To));</div><div class="line"><span class="keyword">return</span> <span class="keyword">reinterpret_cast</span>&lt;To&gt;(from);</div><div class="line">}</div><div class="line">...</div><div class="line"><span class="keyword">void</span>* somePointer = ...;</div><div class="line"><span class="keyword">char</span> c = safe_reinterpret_cast&lt;<span class="keyword">char</span>&gt;(somePointer);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h2 id="chapter-3-typelists"><a href="#Chapter-3-Typelists" class="headerlink" title="Chapter 3. Typelists"></a>Chapter 3. Typelists</h2><h2 id="chapter-4-small-object-allocation"><a href="#Chapter-4-Small-Object-Allocation" class="headerlink" title="Chapter 4. Small-Object Allocation"></a>Chapter 4. Small-Object Allocation</h2><blockquote>
+<ul>
+<li>allocate memory for small objects efficiently</li>
+</ul>
+</blockquote>
+<h1 id="others"><a href="#Others" class="headerlink" title="Others"></a>Others</h1><h2 id="jargons"><a href="#Jargons" class="headerlink" title="Jargons"></a>Jargons</h2><blockquote>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Boilerplate_code" target="_blank" rel="external">boilerplate code</a><ul>
+<li>boilerplate code or boilerplate refers to sections of code that have to be included in many places with little or no alteration.<h2 id="visitor-design-pattern"><a href="#Visitor-design-pattern" class="headerlink" title="Visitor design pattern"></a>Visitor design pattern</h2></li>
+</ul>
+</li>
+<li><a href="https://sourcemaking.com/design_patterns/visitor" target="_blank" rel="external">SOURCE MAKEING example</a></li>
+<li>Benefit:<ul>
+<li>In essence, the visitor allows adding new virtual functions to a family of classes, without modifying the classes.</li>
+<li>Visitor&#x2019;s primary purpose is to abstract functionality that can be applied to an aggregate hierarchy of &#x201C;element&#x201D; objects. The approach encourages designing lightweight Element classes - because processing functionality is removed from their list of responsibilities. New functionality can easily be added to the original inheritance hierarchy by creating a new Visitor subclass.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="decorator-design-pattern"><a href="#Decorator-Design-pattern" class="headerlink" title="Decorator Design pattern"></a><a href="https://en.wikipedia.org/wiki/Decorator_pattern" target="_blank" rel="external">Decorator Design pattern</a></h2><blockquote>
+<ul>
+<li>Behaviors are allowed to be added to an individual object, either statically or dynamically without affecting the behavior of other objects from the same class</li>
+<li>Objective: responsibilities should be added to(and remove from) an object dynamically at run-time</li>
+<li>vs subclassing: <code>Subclassing</code> adds behaviors at compile time, and the change affects all instances of the original classes. <code>Decorating</code> can provide new behavior at run-time for selected objects</li>
+<li>when to use: If we cannot predict, at design time, what combinations of extensions will be needed. Which means that a new classes would be made for every possible combination</li>
+<li><a href="https://sourcemaking.com/design_patterns/decorator/cpp/1" target="_blank" rel="external">c++ implementation</a></li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/C/">C++</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/16/English/"  data-tooltip="English slangs and nice paragraphs">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/08/02/SQLLearing/" data-tooltip="SQL learning">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2017/10/01/DesignPattern/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2017/10/01/DesignPattern/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2017/10/01/DesignPattern/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/16/English/"  data-tooltip="English slangs and nice paragraphs">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/08/02/SQLLearing/" data-tooltip="SQL learning">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2017/10/01/DesignPattern/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2017/10/01/DesignPattern/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2017/10/01/DesignPattern/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>

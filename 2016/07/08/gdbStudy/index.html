@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>15213-gdbStudy - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">15213-gdbStudy</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Fri Jul 08 2016 16:09:03 GMT-0400">
+        Jul 08, 2016
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/technique/">technique</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Notes and reflection when studying gdb<br><img src="data:image/png;base64,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" alt="teaser"><br><a id="more"></a></p>
+<h1 id="gdb"><a href="#gdb" class="headerlink" title="gdb"></a>gdb</h1><!-- toc -->
+<ul>
+<li><a href="#useful-links">Useful links</a></li>
+<li><a href="#15213httpwwwcscmuedu~213schedulehtml"><a href="http://www.cs.cmu.edu/~213/schedule.html" target="_blank" rel="external">15213</a></a><ul>
+<li><a href="#lecture-01-course-review">Lecture 01 Course Review</a></li>
+<li><a href="#lecture-02-bits-bytes-and-integers">Lecture 02 Bits, Bytes, and Integers</a></li>
+</ul>
+</li>
+<li><a href="#lecture-03-bits-bytes-and-integers">Lecture 03 Bits, Bytes, and Integers</a></li>
+<li><a href="#lecture-04-floating-point">Lecture 04 Floating Point</a></li>
+<li><a href="#debugging-under-unix-gdb-tutorial">Debugging Under Unix: gdb Tutorial</a><ul>
+<li><a href="#others">others</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h2 id="useful-links"><a href="#Useful-links" class="headerlink" title="Useful links"></a>Useful links</h2><blockquote>
+<ul>
+<li><a href="https://www.cs.cmu.edu/~213/" target="_blank" rel="external">CMU15213</a><ul>
+<li>take recitation</li>
+<li><a href="http://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/" target="_blank" rel="external">video link</a></li>
+</ul>
+</li>
+<li><a href="https://www.cs.cmu.edu/~gilpin/tutorial/" target="_blank" rel="external">Debugging Under Unix: gdb Tutorial</a></li>
+<li><a href="http://www.cs.cmu.edu/afs/cs/academic/class/15213-s00/handouts/gdb.ps" target="_blank" rel="external">gdb in a nutshell</a></li>
+<li><a href="https://beej.us/guide/bggdb/" target="_blank" rel="external">Beej&#x2019;s Quick Quidde to GDB</a></li>
+</ul>
+</blockquote>
+<h2 id="15213"><a href="#15213" class="headerlink" title="15213"></a><a href="http://www.cs.cmu.edu/~213/schedule.html" target="_blank" rel="external">15213</a></h2><blockquote>
+<ul>
+<li>Objective: Learn the basic concepts  underlying all computer systems<ul>
+<li><code>Int&apos;s are not integers</code></li>
+<li><code>Know assembly language</code></li>
+<li><code>Memory matters</code></li>
+<li><code>There is more to performance than asymptotic complexity</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="lecture-01-course-review"><a href="#Lecture-01-Course-Review" class="headerlink" title="Lecture 01 Course Review"></a>Lecture 01 Course Review</h1><blockquote>
+<ul>
+<li>a[i][j]: go by row is much faster than go by col </li>
+</ul>
+</blockquote>
+<h1 id="lecture-02-bits-bytes-and-integers"><a href="#Lecture-02-Bits-Bytes-and-Integers" class="headerlink" title="Lecture 02 Bits, Bytes, and Integers"></a>Lecture 02 Bits, Bytes, and Integers</h1><blockquote>
+<ul>
+<li>why bits?<ul>
+<li>easy to store with b istable elements</li>
+<li>realably transmitted on noisy and incaccurate wires </li>
+</ul>
+</li>
+<li>Byte = 8 bits </li>
+<li>bit operator<ul>
+<li><code>and - &amp;</code>,<code>or - |</code>, <code>xor - ^</code>, <code>not - ~</code></li>
+</ul>
+</li>
+<li>!0x41 -&gt; 0x00  !0x00 -&gt; 0x01  !!0x41 -&gt; 0x0!</li>
+<li>Stop at 17:31 </li>
+<li><p>Shift Operations</p>
+<ul>
+<li>Left Shift: <code>x&lt;&lt;y</code><ul>
+<li>Shift bit-vector x left y positions</li>
+</ul>
+</li>
+<li>Right Shift: <code>x&gt;&gt;y</code><ul>
+<li>shift bit-vector x right by y positions <ul>
+<li><em>Logical  shift</em>: Fill with 0&#x2019;s on left(unsigned int)</li>
+<li><em>Arithmetric shift</em>: Replicate most significant bit on left(int)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Undefined Behavior:<ul>
+<li>Shift amout &lt; 0 or &gt;= word size<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">signed integer (an int for example):</div><div class="line">0x80 or 10000000</div><div class="line">0x80 &gt;&gt; 7 = 11111111</div><div class="line">0x10 or 00010000</div><div class="line">0x10 &gt;&gt; 4 = 00000001</div><div class="line">if its unsigned (a uint):</div><div class="line">0x80 or 10000000</div><div class="line">0x80 &gt;&gt; 7 = 00000001</div><div class="line">0x10 or 00010000</div><div class="line">0x10 &gt;&gt; 4 = 00000001</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Umax = 2Tmax + 1  </p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//bug code</span></div><div class="line"><span class="keyword">unsigned</span> <span class="keyword">int</span> i;</div><div class="line"><span class="keyword">for</span>( i = n<span class="number">-1</span>,i&gt;=n,i--){...} <span class="comment">// loop goes forever.</span></div><div class="line">in i;</div><div class="line"><span class="keyword">for</span>(i = n<span class="number">-1</span>, i - si   zeof(<span class="keyword">char</span>)&gt;=<span class="number">0</span>,i--) <span class="comment">// loop goes forever. cast from int to unsigned int</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>sign extension</p>
+<ul>
+<li>ffff0123: the f tells you that the number is negative @ 1:04:55</li>
+</ul>
+</li>
+<li>truncating<ul>
+<li>signed: similar to mod (-13mod16=3 )</li>
+<li>Unsigned: mode oepration</li>
+</ul>
+</li>
+<li>when to use unsigned<ul>
+<li>multiprecison arithmetic</li>
+<li>represent sets</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="lecture-03-bits-bytes-and-integers"><a href="#Lecture-03-Bits-Bytes-and-Integers" class="headerlink" title="Lecture 03 Bits, Bytes, and Integers"></a>Lecture 03 Bits, Bytes, and Integers</h2><blockquote>
+<ul>
+<li>Unsigned addition(min 5)</li>
+<li>Two&#x2019;s Complement Addition<ul>
+<li>undefined behavoir.</li>
+<li>negative over flow: add two negative number and get a positive number</li>
+<li>positive over flow: add two positive number and get a negative number</li>
+</ul>
+</li>
+<li>Multiplication</li>
+<li>Unsigned &amp; signed pwoer-of-2 shift</li>
+<li>shift: 1 clock cycle-&gt; multiplication 2~3 clock cycle -&gt; division 30 clock cycle.</li>
+<li>a trick to negate a number:<ul>
+<li>x-&gt; ~x + 1 in bits -&gt; you get -x </li>
+</ul>
+</li>
+<li>Big Endian VS Little Endian<ul>
+<li>01234567 </li>
+<li>B: 01234567 L: 67452301</li>
+</ul>
+</li>
+<li>represent strings <ul>
+<li>character &#x201C;0&#x201D; has code 0x30</li>
+</ul>
+</li>
+<li>x&amp; 7 == 7 =&gt; (x&lt;<30)> 0 True! </30)></li>
+<li>x&gt; y      =&gt;  -x &lt; -y  False.  if y = Tmin<ul>
+<li>Tmin and ~Tmin would always be Tmin</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="lecture-04-floating-point"><a href="#Lecture-04-Floating-Point" class="headerlink" title="Lecture 04 Floating Point"></a>Lecture 04 Floating Point</h2><blockquote>
+<ul>
+<li>fractional binary numbers<ul>
+<li>5 3/4 = 101.11</li>
+<li>2 7/16 = 10.0111</li>
+<li>limitation: <ul>
+<li>we can only represent <em>rational numbers</em></li>
+<li>limit range of numbers(very small values? very large?)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Floating point representation<ul>
+<li>(-1)^s M 2^E (MSB)</li>
+<li>sign bit s determins whether number is positive or negative </li>
+<li>significand M normally a fractional value in range (1.0, 2.0)</li>
+<li>Exponment E weights value by power of two</li>
+</ul>
+</li>
+<li>precision options:<ul>
+<li>sign - exp - frac</li>
+<li>single precision: 1 - 8 - 23</li>
+<li>double precision: 1 - 11 - 52</li>
+</ul>
+</li>
+<li>Exponent coded as a biased value: E = Exp - Bias<ul>
+<li>bias = 2^(k-1) - 1 </li>
+</ul>
+</li>
+<li>significand coded with implied leading 1: M = 1.xxxx<ul>
+<li>frac = 00000&#x2026;000 -&gt; 1</li>
+<li>frac = 11111&#x2026;111 -&gt; 2-e<ul>
+<li>slide 19:00 a perfect example</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>normalized number (when exp is not 0)<ul>
+<li>E = 1 - bias</li>
+</ul>
+</li>
+<li>Denominalized number( when exp is all 0)<ul>
+<li>E = Exp - Bias</li>
+<li>infinity: exp = 111&#x2026;1, frac = 000&#x2026;0<ul>
+<li>1.0/0.0</li>
+</ul>
+</li>
+<li>NaN: exp = 111&#x2026;1, frac != 000&#x2026;0<ul>
+<li>sqrt(-1), infinity - infinity</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>floating point: <ul>
+<li>rounding to nearest Even(default) 4 she 5 ru </li>
+<li>rounding binary number<ul>
+<li>Even when least significant bit is 0</li>
+<li>Half way when bits to right of rounding position = 100&#x2026;2(comare the rounding bits with 100..)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>FP Multiplication</li>
+<li>Mathematical Properties of FP Add<ul>
+<li>commutative but not associative!<ul>
+<li>OverFlow and inexactness of rounding </li>
+<li>(3.14 +1e10) - 1e10 =0, 3.14 + (1e10 - 1e10) = 3.14</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Floating in C<ul>
+<li>double/floate -&gt; int <ul>
+<li>truncates fractional part, like rounding toward zero   </li>
+<li>not defined</li>
+</ul>
+</li>
+<li>int -&gt; double <ul>
+<li>exact conversion, as llong as int has &lt;= 54 bit word size</li>
+</ul>
+</li>
+<li>int -&gt; float<ul>
+<li>round according to rounding rule</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="debugging-under-unix-gdb-tutorial"><a href="#Debugging-Under-Unix-gdb-Tutorial" class="headerlink" title="Debugging Under Unix: gdb Tutorial"></a>Debugging Under Unix: gdb Tutorial</h2><blockquote>
+<p>quick and dirty guidance</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">gdb executable-file-name</div><div class="line">run commandline-arguments</div><div class="line"><span class="built_in">break</span> main // stop at the beginning of the main</div><div class="line">r // call run again</div><div class="line">next or n // execute next line</div><div class="line">list or l // pull over the <span class="built_in">source</span> code</div><div class="line"><span class="built_in">print</span> p // <span class="built_in">print</span> a value you want to see</div><div class="line"><span class="built_in">break</span> main.cpp:14 // stop the line 14 at main.cpp</div><div class="line"><span class="built_in">continue</span> or c // move ahead of this <span class="built_in">break</span> point</div><div class="line">info locals // <span class="built_in">print</span> out all <span class="built_in">local</span> variables</div><div class="line"><span class="built_in">disable</span> // <span class="built_in">disable</span> all <span class="built_in">break</span> points</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><code>gdb executable-file-name</code><ul>
+<li>init gdb </li>
+</ul>
+</li>
+<li><code>run</code> alias <code>r</code><ul>
+<li>run the executable </li>
+</ul>
+</li>
+<li><code>start</code> <ul>
+<li>start the file</li>
+</ul>
+</li>
+<li><code>backtrace</code><ul>
+<li>find out calling tree</li>
+<li>use <code>frame + *number*</code> to swich between different tree</li>
+</ul>
+</li>
+<li><code>x + *memory-address*</code><ul>
+<li>examine the memory-address&#x2019;s value</li>
+<li><code>x/*number*b</code>: how many bits you want to see </li>
+</ul>
+</li>
+<li>set conditional breaking points<ul>
+<li><code>break *function-name*</code> alias <code>b</code></li>
+<li><code>condition 1 *variable-name == value*</code></li>
+<li><code>break *filename:line-number*</code></li>
+<li><code>delete + *line number*</code>: delete breakpoint</li>
+</ul>
+</li>
+<li><code>disable</code><ul>
+<li>disable all the break point </li>
+</ul>
+</li>
+<li><code>continue</code> alis <code>c</code><ul>
+<li>move ahead of the break point </li>
+</ul>
+</li>
+<li><code>step</code><ul>
+<li>go through the method one line at a time and see if we can locate the source of the error</li>
+<li><strong>tips</strong>: when enter is pressed without typing a command, the last command is automatically used</li>
+</ul>
+</li>
+<li><code>next</code> alias for <code>n</code><ul>
+<li>continue without stepping into the function</li>
+</ul>
+</li>
+<li><code>list</code> alias <code>l</code><ul>
+<li>print out  the source code around the  current line</li>
+<li>go to specific line: `l + line-number</li>
+</ul>
+</li>
+<li><code>print + *variable-name*</code><ul>
+<li><code>print + *variable-name = value*</code><br><code>set + *variable-name = value*</code><ul>
+<li>change the variable value</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>info locals</code><ul>
+<li>print out all the local variable   </li>
+<li><code>info + *anything-you-want-to-check*</code> ex: break, watch </li>
+</ul>
+</li>
+<li>compile with <code>-g</code> in gcc, which would include debug infomation</li>
+<li><code>watch + *variable*</code><ul>
+<li>print the variable if it changes</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="others"><a href="#others" class="headerlink" title="others"></a>others</h1><blockquote>
+<ul>
+<li>how to use gdb debug MPI</li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/c/">c++</a> <a class="tag tag--primary tag--small t-link" href="/tags/gdb/">gdb</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/19/JapaneseLearning/"  data-tooltip="JapaneseLearning">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/QtStudy/" data-tooltip="QtStudy">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/07/08/gdbStudy/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/07/08/gdbStudy/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/07/08/gdbStudy/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/19/JapaneseLearning/"  data-tooltip="JapaneseLearning">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/QtStudy/" data-tooltip="QtStudy">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/07/08/gdbStudy/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/07/08/gdbStudy/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/07/08/gdbStudy/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>MPIStudy - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">MPIStudy</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Fri Jul 08 2016 10:11:36 GMT-0400">
+        Jul 08, 2016
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/technique/">technique</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Notes and reflections when using and studying  MPI.<br><img src="http://www.netlib.org/mpi/mpi.gif" alt="MPI teaser"><br><a id="more"></a></p>
+<p>#</p>
+<!-- toc -->
+<ul>
+<li><a href="#useful-materials">Useful materials</a></li>
+<li><a href="#mpi-tutorialhttpmpitutorialcomtutorials"><a href="http://mpitutorial.com/tutorials/" target="_blank" rel="external">MPI Tutorial</a></a><ul>
+<li><a href="#mpi-tutorial-introduction">MPI Tutorial Introduction</a></li>
+<li><a href="#installing-mpich2-on-a-single-machine">Installing MPICH2 on a Single Machine</a></li>
+<li><a href="#launching-an-amazon-ec2-mpi-cluster">Launching an Amazon EC2 MPI Cluster</a></li>
+<li><a href="#mpi-hello-world">MPI Hello World</a></li>
+<li><a href="#mpi-send-and-receivehttpmpitutorialcomtutorialsmpi-send-and-receive"><a href="http://mpitutorial.com/tutorials/mpi-send-and-receive/" target="_blank" rel="external">MPI Send and Receive</a></a></li>
+<li><a href="#dynamic-receiving-with-mpi-probe">Dynamic Receiving with MPI Probe</a></li>
+<li><a href="#the-application-example-using-mpi_send-mpi_recv-and-mpi_probe">the application example using MPI_Send, MPI_Recv, and MPI_Probe</a></li>
+<li><a href="#reflections">reflections</a></li>
+<li><a href="#others">Others</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1 id="useful-materials"><a href="#Useful-materials" class="headerlink" title="Useful materials"></a>Useful materials</h1><blockquote>
+<ul>
+<li><a href="http://www.cs.cmu.edu/~srini/15-440/syllabus.html" target="_blank" rel="external">CMU 15440</a><ul>
+<li>echo + server</li>
+<li>thread + lock</li>
+<li>thread + tcp communication</li>
+</ul>
+</li>
+<li><a href="http://mpitutorial.com/" target="_blank" rel="external">MPI Tutorial</a></li>
+</ul>
+</blockquote>
+<h1 id="mpi-tutorial"><a href="#MPI-Tutorial" class="headerlink" title="MPI Tutorial"></a><a href="http://mpitutorial.com/tutorials/" target="_blank" rel="external">MPI Tutorial</a></h1><h2 id="mpi-tutorial-introduction"><a href="#MPI-Tutorial-Introduction" class="headerlink" title="MPI Tutorial Introduction"></a>MPI Tutorial Introduction</h2><blockquote>
+<ul>
+<li>MPI:<ul>
+<li>definition: Message Passing Interface</li>
+</ul>
+</li>
+<li>communicator<ul>
+<li>definition: a group of processes that have the ability to communicate with one another</li>
+<li>point-to-point communication: one sender + one receiver</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="installing-mpich2-on-a-single-machine"><a href="#Installing-MPICH2-on-a-Single-Machine" class="headerlink" title="Installing MPICH2 on a Single Machine"></a>Installing MPICH2 on a Single Machine</h2><h2 id="launching-an-amazon-ec2-mpi-cluster"><a href="#Launching-an-Amazon-EC2-MPI-Cluster" class="headerlink" title="Launching an Amazon EC2 MPI Cluster"></a>Launching an Amazon EC2 MPI Cluster</h2><blockquote>
+<ul>
+<li>Do this in your own time</li>
+</ul>
+</blockquote>
+<h2 id="mpi-hello-world"><a href="#MPI-Hello-World" class="headerlink" title="MPI Hello World"></a>MPI Hello World</h2><blockquote>
+<ul>
+<li>1st step:<ul>
+<li>include the MPI headers<ul>
+<li><code>#include &lt;MPI.h&gt;</code></li>
+<li><code>MPI_Init(int* argc, char*** argv)</code><ul>
+<li>During <code>MPI_Init</code>, all of MPI&#x2019;s global and internal variables are constructed.</li>
+<li>Unique ranks are assigned to each process</li>
+</ul>
+</li>
+<li><code>MPI_Comm_size(MPI_Comm communicator, int* size)</code><ul>
+<li>get the size of communicator</li>
+</ul>
+</li>
+<li><code>MPI_Comm_rank(MPI_Comm communicator, int* rank)</code>\<ul>
+<li>get the rank of a process in a communicator</li>
+</ul>
+</li>
+<li><code>MPI_Finalize()</code><ul>
+<li>clean up the MPI environment.<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;mpi.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>** argv)</span> </span>{</div><div class="line">    <span class="comment">// Initialize the MPI environment</span></div><div class="line">    MPI_Init(<span class="literal">NULL</span>, <span class="literal">NULL</span>);</div><div class="line"></div><div class="line">    <span class="comment">// Get the number of processes</span></div><div class="line">    <span class="keyword">int</span> world_size;</div><div class="line">    MPI_Comm_size(MPI_COMM_WORLD, &amp;world_size);</div><div class="line"></div><div class="line">    <span class="comment">// Get the rank of the process</span></div><div class="line">    <span class="keyword">int</span> world_rank;</div><div class="line">    MPI_Comm_rank(MPI_COMM_WORLD, &amp;world_rank);</div><div class="line"></div><div class="line">    <span class="comment">// Get the name of the processor</span></div><div class="line">    <span class="keyword">char</span> processor_name[MPI_MAX_PROCESSOR_NAME];</div><div class="line">    <span class="keyword">int</span> name_len;</div><div class="line">    MPI_Get_processor_name(processor_name, &amp;name_len);</div><div class="line"></div><div class="line">    <span class="comment">// Print off a hello world message</span></div><div class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world from processor %s, rank %d&quot;</span></div><div class="line">           <span class="string">&quot; out of %d processors\n&quot;</span>,</div><div class="line">           processor_name, world_rank, world_size);</div><div class="line"></div><div class="line">    <span class="comment">// Finalize the MPI environment.</span></div><div class="line">    MPI_Finalize();</div><div class="line">}</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="mpi-send-and-receive"><a href="#MPI-Send-and-Receive" class="headerlink" title="MPI Send and Receive"></a><a href="http://mpitutorial.com/tutorials/mpi-send-and-receive/" target="_blank" rel="external">MPI Send and Receive</a></h2><blockquote>
+<ul>
+<li>envelops(data + buffer)</li>
+<li><p>tags(used when sending many different typles of messages)</p>
+<ul>
+<li>process B only requests a message with a certain tag number, messages with different tags will be buffered by the network until B is ready for them.<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Find out rank, size</span></div><div class="line"><span class="keyword">int</span> world_rank;</div><div class="line">MPI_Comm_rank(MPI_COMM_WORLD, &amp;world_rank);</div><div class="line"><span class="keyword">int</span> world_size;</div><div class="line">MPI_Comm_size(MPI_COMM_WORLD, &amp;world_size);</div><div class="line"></div><div class="line"><span class="keyword">int</span> number;</div><div class="line"><span class="keyword">if</span> (world_rank == <span class="number">0</span>) {</div><div class="line">    number = <span class="number">-1</span>;</div><div class="line">    MPI_Send(&amp;number, <span class="number">1</span>, MPI_INT, <span class="number">1</span>, <span class="number">0</span>, MPI_COMM_WORLD);</div><div class="line">} <span class="keyword">else</span> <span class="keyword">if</span> (world_rank == <span class="number">1</span>) {</div><div class="line">    MPI_Recv(&amp;number, <span class="number">1</span>, MPI_INT, <span class="number">0</span>, <span class="number">0</span>, MPI_COMM_WORLD,</div><div class="line">             MPI_STATUS_IGNORE);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Process 1 received number %d from process 0\n&quot;</span>,</div><div class="line">           number);</div><div class="line">}</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>ring program</p>
+<ul>
+<li>send and receive message in a ring and avoid dead lock<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> token;</div><div class="line"><span class="keyword">if</span> (world_rank != <span class="number">0</span>) {</div><div class="line">    MPI_Recv(&amp;token, <span class="number">1</span>, MPI_INT, world_rank - <span class="number">1</span>, <span class="number">0</span>,</div><div class="line">             MPI_COMM_WORLD, MPI_STATUS_IGNORE);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Process %d received token %d from process %d\n&quot;</span>,</div><div class="line">           world_rank, token, world_rank - <span class="number">1</span>);</div><div class="line">} <span class="keyword">else</span> {</div><div class="line">    <span class="comment">// Set the token&apos;s value if you are process 0</span></div><div class="line">    token = <span class="number">-1</span>;</div><div class="line">}</div><div class="line">MPI_Send(&amp;token, <span class="number">1</span>, MPI_INT, (world_rank + <span class="number">1</span>) % world_size,</div><div class="line">         <span class="number">0</span>, MPI_COMM_WORLD);</div><div class="line"></div><div class="line"><span class="comment">// Now process 0 can receive from the last process.</span></div><div class="line"><span class="keyword">if</span> (world_rank == <span class="number">0</span>) {</div><div class="line">    MPI_Recv(&amp;token, <span class="number">1</span>, MPI_INT, world_size - <span class="number">1</span>, <span class="number">0</span>,</div><div class="line">             MPI_COMM_WORLD, MPI_STATUS_IGNORE);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Process %d received token %d from process %d\n&quot;</span>,</div><div class="line">           world_rank, token, world_size - <span class="number">1</span>);</div><div class="line">}</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><a href="http://mpitutorial.com/tutorials/mpi-send-and-receive/" target="_blank" rel="external">MPI data types and their equivalent C datatypes</a></p>
+</li>
+</ul>
+</blockquote>
+<h2 id="dynamic-receiving-with-mpi-probe"><a href="#Dynamic-Receiving-with-MPI-Probe" class="headerlink" title="Dynamic Receiving with MPI Probe"></a>Dynamic Receiving with MPI Probe</h2><blockquote>
+<ul>
+<li>send message without knowing the size<ul>
+<li>pass <code>MPI_Status</code> to <code>MPI_Recv</code></li>
+</ul>
+</li>
+<li><p><a href="https://www.mpich.org/static/docs/v3.1/www3/MPI_Get_count.html" target="_blank" rel="external">MPI_Get_count</a></p>
+<ul>
+<li>Gets the number of &#x201C;top level&#x201D; elements</li>
+<li>When <code>MPI_ANY_SOURCE</code> and <code>MPI_ANY_TAG</code> is used, you need MPI_Status to figure out the actual sender and tag of the message</li>
+<li>Furthermore, <code>MPI_Recv</code> is not guaranteed to receive the entire amount of elements passed as the argument to the function call. Instead, it receives the <strong>amount of elements that were sent to it</strong> (and returns an error if more elements were sent than the desired receive amount). The MPI_Get_count function is used to determine the actual receive amount.</li>
+<li>the return value from <code>MPI_Get_cout</code> is relative to the data type which is passed. So <code>MPI_CHAR</code> would be four times as large</li>
+<li>example<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAX_NUMBERS = <span class="number">100</span>;</div><div class="line"><span class="keyword">int</span> numbers[MAX_NUMBERS];</div><div class="line"><span class="keyword">int</span> number_amount;</div><div class="line"><span class="keyword">if</span> (world_rank == <span class="number">0</span>) {</div><div class="line">    <span class="comment">// Pick a random amount of integers to send to process one</span></div><div class="line">    srand(time(<span class="literal">NULL</span>));</div><div class="line">    number_amount = (rand() / (<span class="keyword">float</span>)RAND_MAX) * MAX_NUMBERS;</div><div class="line"></div><div class="line">    <span class="comment">// Send the amount of integers to process one</span></div><div class="line">    MPI_Send(numbers, number_amount, MPI_INT, <span class="number">1</span>, <span class="number">0</span>, MPI_COMM_WORLD);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">&quot;0 sent %d numbers to 1\n&quot;</span>, number_amount);</div><div class="line">} <span class="keyword">else</span> <span class="keyword">if</span> (world_rank == <span class="number">1</span>) {</div><div class="line">    MPI_Status status;</div><div class="line">    <span class="comment">// Receive at most MAX_NUMBERS from process zero</span></div><div class="line">    MPI_Recv(numbers, MAX_NUMBERS, MPI_INT, <span class="number">0</span>, <span class="number">0</span>, MPI_COMM_WORLD,</div><div class="line">             &amp;status);</div><div class="line"></div><div class="line">    <span class="comment">// After receiving the message, check the status to determine</span></div><div class="line">    <span class="comment">// how many numbers were actually received</span></div><div class="line">    MPI_Get_count(&amp;status, MPI_INT, &amp;number_amount);</div><div class="line"></div><div class="line">    <span class="comment">// Print off the amount of numbers, and also print additional</span></div><div class="line">    <span class="comment">// information in the status object</span></div><div class="line">    <span class="built_in">printf</span>(<span class="string">&quot;1 received %d numbers from 0. Message source = %d, &quot;</span></div><div class="line">           <span class="string">&quot;tag = %d\n&quot;</span>,</div><div class="line">           number_amount, status.MPI_SOURCE, status.MPI_TAG);</div><div class="line">}</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><a href="https://www.mpich.org/static/docs/v3.1/www3/MPI_Probe.html" target="_blank" rel="external"><code>MPI_Probe</code></a>: query the message size before actually receiving it</p>
+<ul>
+<li>standard usage: MPI_Probe  + MPI_Get_Count + MPI_Recv</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="the-application-example-using-mpi_send-mpi_recv-and-mpi_probe"><a href="#the-application-example-using-MPI-Send-MPI-Recv-and-MPI-Probe" class="headerlink" title="the application example using MPI_Send, MPI_Recv, and MPI_Probe"></a>the application example using MPI_Send, MPI_Recv, and MPI_Probe</h2><blockquote>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Random_walk" target="_blank" rel="external">random work problem</a></li>
+<li>Avoid <a href="https://en.wikipedia.org/wiki/Deadlock" target="_blank" rel="external">Deadlock</a>(refers to a specific condition when two or more processes are each waiting for the other to release a resource, or more than two processes are waiting for resources in a circular chain). The graph in the example is illustrative.</li>
+</ul>
+</blockquote>
+<h2 id="reflections"><a href="#reflections" class="headerlink" title="reflections"></a>reflections</h2><blockquote>
+<ul>
+<li>each parallel works independingly. The usage of <code>MPI_rank</code> is to sepearate different code blocks for different process</li>
+<li><code>MPI_Recv</code> and <code>MPI_Send</code> would stop the process until the message comes/sends.</li>
+<li>use gdb in ctest mpi run:<ul>
+<li>append <code>xterm -e gdb</code> after <code>&quot;-np&quot; &quot;2&quot;</code> in terminal:</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//sample code</div><div class="line">/usr/bin/mpiexec <span class="string">&quot;-np&quot;</span> <span class="string">&quot;2&quot;</span> xterm <span class="_">-e</span> gdb <span class="string">&quot;/home/haochengliu/Kitware/VTK/buildQtCreator/bin/vtkIOMPIImageCxxTests-MPI&quot;</span></div></pre></td></tr></table></figure>
+<h2 id="others"><a href="#Others" class="headerlink" title="Others"></a>Others</h2><blockquote>
+<ul>
+<li><p>How to write your first CMake+MPI cmakelists</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">cmake_minimum_required</span>(VERSION <span class="number">3.0</span>)</div><div class="line"></div><div class="line"><span class="keyword">set</span> (CMAKE_CXX_STANDARD <span class="number">11</span>)</div><div class="line"><span class="keyword">set</span>(CMAKE_CXX_STARARD REQUIRED)</div><div class="line"></div><div class="line"><span class="keyword">project</span>(main)</div><div class="line"></div><div class="line"><span class="keyword">find_package</span>(MPI REQUIRED)</div><div class="line"><span class="keyword">add_definitions</span>(-DOMPI_SKIP_MPICXX)</div><div class="line"></div><div class="line"><span class="keyword">add_executable</span>(main main.cpp)</div><div class="line"></div><div class="line"><span class="keyword">message</span>(<span class="string">&quot;MPI_LIBRARIES: &quot;</span> <span class="variable">${MPI_LIBRARIES}</span>)</div><div class="line"><span class="keyword">target_link_libraries</span>(main</div><div class="line">  PRIVATE</div><div class="line">  <span class="variable">${MPI_C_LIBRARIES}</span>)</div><div class="line"></div><div class="line">target_include_directories(main</div><div class="line">  PRIVATE</div><div class="line">  <span class="variable">${MPI_C_INCLUDE_PATH}</span>)</div></pre></td></tr></table></figure>
+</li>
+<li><p><code>add_definitions</code>: Adds definitions to the compiler command line for targets in the current directory and below (whether added before or after this command is invoked)</p>
+</li>
+<li><p><code>find_package(MPI)</code>: check the FindMPI.cmake file in CMake source for further reference</p>
+</li>
+<li><p>How to debug in parallel</p>
+<ul>
+<li>mpirun -n -2 xterm -e gdb -ex run &#x2013;arg &#x2026;.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/C/">C++</a> <a class="tag tag--primary tag--small t-link" href="/tags/MPI/">MPI</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/QtStudy/"  data-tooltip="QtStudy">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/UbuntuStudy/" data-tooltip="UbuntuStudy">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/07/08/MPIStudy/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/07/08/MPIStudy/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/07/08/MPIStudy/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/QtStudy/"  data-tooltip="QtStudy">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/UbuntuStudy/" data-tooltip="UbuntuStudy">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/07/08/MPIStudy/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/07/08/MPIStudy/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/07/08/MPIStudy/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>

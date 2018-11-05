@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>Development and Deployment of Multiplayer Online Games - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">Development and Deployment of Multiplayer Online Games</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Mon Feb 20 2017 21:09:02 GMT-0500">
+        Feb 20, 2017
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/game/">game</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p><img src="http://ithare.com/wp-content/uploads/part59_v09_vol1-640x853.jpg" alt="teaser"></p>
+<a id="more"></a>
+<h1 id="server-side-mmo-architecture-na&#xEF;ve-web-based-and-classical-deployment-architectures"><a href="#Server-Side-MMO-Architecture-Naive-Web-Based-and-Classical-Deployment-Architectures" class="headerlink" title="Server-Side MMO Architecture. Na&#xEF;ve, Web-Based, and Classical Deployment Architectures"></a>Server-Side MMO Architecture. Na&#xEF;ve, Web-Based, and Classical Deployment Architectures</h1><!-- toc -->
+<ul>
+<li><a href="#server-side-mmo-architecture-na&#xEF;ve-web-based-and-classical-deployment-architectures">Server-Side MMO Architecture. Na&#xEF;ve, Web-Based, and Classical Deployment Architectures</a><ul>
+<li><a href="#chapter-via-server-side-mmo-architecture-na&#xEF;ve-web-based-and-classical-deployment-architectures">Chapter VI(a). Server-Side MMO Architecture. Na&#xEF;ve, Web-Based, and Classical Deployment Architectures</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1 id="server-side-mmo-architecture-na&#xEF;ve-web-based-and-classical-deployment-architectures"><a href="#Server-Side-MMO-Architecture-Naive-Web-Based-and-Classical-Deployment-Architectures-1" class="headerlink" title="Server-Side MMO Architecture. Na&#xEF;ve, Web-Based, and Classical Deployment Architectures"></a>Server-Side MMO Architecture. Na&#xEF;ve, Web-Based, and Classical Deployment Architectures</h1><h2 id="chapter-via-server-side-mmo-architecture-na&#xEF;ve-web-based-and-classical-deployment-architectures"><a href="#Chapter-VI-a-Server-Side-MMO-Architecture-Naive-Web-Based-and-Classical-Deployment-Architectures" class="headerlink" title="Chapter VI(a). Server-Side MMO Architecture. Na&#xEF;ve, Web-Based, and Classical Deployment Architectures"></a>Chapter VI(a). Server-Side MMO Architecture. Na&#xEF;ve, Web-Based, and Classical Deployment Architectures</h2><blockquote>
+<ul>
+<li>naive architecture single flow design:<ul>
+<li>separate players coming from separate databases cannot interact with each other</li>
+<li>hard to merge DB. two user with same ID on different server</li>
+</ul>
+</li>
+<li>Web-Based game Development Architecture<ul>
+<li>slow paced game, low interaction</li>
+<li>front end + back end cache:<ul>
+<li>Front-end caching is your usual page caching (like nginx in reverse-proxy mode, or even a CDN)</li>
+<li>back-end cache as a cache to reduce number of DB reads, but also will want to make it a <strong>write-back cache</strong> to reduce the number of DB writes</li>
+<li>write-back cache<ul>
+<li>For example, if we&#x2019;d need to save each and every click on the simulated farm with 25M daily users (each coming twice a day and doing 50 modifying-farm-state clicks each time in a 5-minute session), we could easily end up with 2.5 billion DB transactions/day (which is infeasible, or at least non-affordable). On the other hand, if we&#x2019;re keeping write-back cache, we can write the cache into DB only once per 10 minutes, we&#x2019;d reduce the number of DB transactions 50-fold, bringing it to much more manageable 50 million/day.<ul>
+<li>optimistic locking(ignoring possibility that some other Web Server also got the same &#x201C;game world&#x201D; and is working on it + Web Server is NOT allowed to send any kind of reply back to user yet + it works fine as long as collision probability ), pessimistic locking(multi-threaded mutex-based locking),  transsactions(Redis transaction is merely a sequence of operations which are executed atomically. It means no locking, and an ability to split your &#x201C;game world&#x201D; state into several parts to deal with traffic)</li>
+</ul>
+<ul>
+<li>merit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>easy-to-find developers</li>
+<li>simplicity and being relatively obvious (that is, until you need to deal with locks, see above)</li>
+<li>web servers are stateless (except for caching, see below), so failure analysis is trivial: if one of your web servers goes down, it can be simply replaced</li>
+<li>can be easily used both for the games with downloadable client and for browser-based ones<ul>
+<li>downsides</li>
+</ul>
+<ul>
+<li>no way out of web-based architecture</li>
+<li>it is pretty much HTTP-only (with an option to use Websockets); migration to plain TCP/UDP is generally not feasible.</li>
+<li>as the number of interactions between players and game world grows, Web-Based Architecture becomes less and less efficient</li>
+<li>you&#x2019;ll need to spend A LOT of time meditating over your caching strategy. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Classical Game Deployment Architecture<ul>
+<li>Game Servers are traditionally divided according to their functionality<br>`     + Game World Server + Matchmaking Server +  Tournament Sever + Payment Server + Social Gat way Server</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/MMOFPS/">MMOFPS</a> <a class="tag tag--primary tag--small t-link" href="/tags/game-development/">game development</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/27/HomePurchaseGuide/"  data-tooltip="HomePurchaseGuide">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/02/19/investment/" data-tooltip="investment">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2017/02/20/Development and Deployment of MOG/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2017/02/20/Development and Deployment of MOG/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2017/02/20/Development and Deployment of MOG/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/27/HomePurchaseGuide/"  data-tooltip="HomePurchaseGuide">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/02/19/investment/" data-tooltip="investment">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2017/02/20/Development and Deployment of MOG/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2017/02/20/Development and Deployment of MOG/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2017/02/20/Development and Deployment of MOG/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>

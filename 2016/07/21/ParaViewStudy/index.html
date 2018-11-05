@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>ParaViewStudy - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">ParaViewStudy</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Thu Jul 21 2016 15:42:42 GMT-0400">
+        Jul 21, 2016
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Kitware/">Kitware</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Notes and reflections when learning ParaView.<br><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7WfqYsQyQoucdTMgB3JHv6128NMb-QPBt1oCyZh7oDiOk6QQbEw" alt="teaser"><br><a id="more"></a></p>
+<h1 id="paraview"><a href="#ParaView" class="headerlink" title="ParaView"></a>ParaView</h1><!-- toc -->
+<ul>
+<li><a href="#useful-links">Useful links</a></li>
+<li><a href="#building-issue">building issue</a></li>
+<li><a href="#paraview-tutorial">ParaView Tutorial</a><ul>
+<li><a href="#chapter-1-introduction">Chapter 1. Introduction</a></li>
+<li><a href="#chapter-2-basic-usage">Chapter 2. Basic Usage</a><ul>
+<li><a href="#21-user-interface">2.1 User Interface</a></li>
+<li><a href="#22-source">2.2 Source</a></li>
+<li><a href="#23-loading-data">2.3 Loading Data</a></li>
+<li><a href="#24-filters">2.4 Filters</a></li>
+<li><a href="#25-multiview">2.5 Multiview</a></li>
+<li><a href="#26-vector-visualization">2.6 Vector Visualization</a></li>
+<li><a href="#27-plotting">2.7 Plotting</a></li>
+<li><a href="#28-volume-rendering">2.8 Volume Rendering</a></li>
+<li><a href="#28-time">2.8 Time</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#others">others</a></li>
+<li><a href="#paraview-catalysthttpwwwparavieworgwikiparaviewcatalystoverview"><a href="http://www.paraview.org/Wiki/ParaView/Catalyst/Overview" target="_blank" rel="external">ParaView Catalyst</a></a></li>
+<li><a href="#paraviewplugin-how-tohttpwwwparavieworgwikiparaviewplugin_howto"><a href="http://www.paraview.org/Wiki/ParaView/Plugin_HowTo" target="_blank" rel="external">ParaView/Plugin How To</a></a><ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#using-plugins">Using Plugins</a></li>
+<li><a href="#writing-plugins">Writing Plugins</a></li>
+</ul>
+</li>
+<li><a href="#others">Others</a><ul>
+<li><a href="#proxy-vs-widget">proxy  VS widget</a></li>
+<li><a href="#pqreaction">pqReaction</a></li>
+<li><a href="#pqproxywidgetdialoghttpwwwparavieworgparaviewdocnightlywwwcxx-docclasspqproxywidgetdialoghtmldetails"><a href="http://www.paraview.org/ParaView/Doc/Nightly/www/cxx-doc/classpqProxyWidgetDialog.html#details" target="_blank" rel="external">pqProxyWidgetDialog</a></a></li>
+<li><a href="#how-to-find-the-definition-and-corresponding-proxy-of-a-feature-in-pv">how to find the definition and corresponding proxy of a feature in PV</a></li>
+<li><a href="#idea-clarification">Idea clarification</a></li>
+</ul>
+</li>
+<li><a href="#environment-settings">Environment settings</a></li>
+<li><a href="#change-visibility-of-scalar-bar">Change visibility of scalar bar</a></li>
+<li><a href="#foo-and-fooinfo">foo and fooInfo</a></li>
+</ul>
+<!-- tocstop -->
+<h1 id="useful-links"><a href="#Useful-links" class="headerlink" title="Useful links"></a>Useful links</h1><blockquote>
+<ul>
+<li><a href="http://www.paraview.org/Wiki/The_ParaView_Tutorial" target="_blank" rel="external">official paraview tutorial</a></li>
+<li><a href="http://www.paraview.org/Wiki/ParaView/Plugin_HowTo" target="_blank" rel="external">paraview plugin development</a></li>
+</ul>
+</blockquote>
+<h1 id="building-issue"><a href="#building-issue" class="headerlink" title="building issue"></a>building issue</h1><blockquote>
+<ul>
+<li>when build, using <code>qt4</code> and turn on <code>VTK_DEBUG_LEAKS</code></li>
+<li>how to make <code>import vtk</code> work in <strong>python</strong> rather than <strong>vtkpython</strong><ul>
+<li><a href="http://www.vtk.org/Wiki/VTK/Tutorials/PythonEnvironmentSetup" target="_blank" rel="external">solution</a></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="paraview-tutorial"><a href="#ParaView-Tutorial" class="headerlink" title="ParaView Tutorial"></a>ParaView Tutorial</h1><h2 id="chapter-1-introduction"><a href="#Chapter-1-Introduction" class="headerlink" title="Chapter 1. Introduction"></a>Chapter 1. Introduction</h2><blockquote>
+<ul>
+<li>situ: abbreviation for situation</li>
+<li>Data types in ParaView:<ul>
+<li>Uniform Rectilinear(Image Data)</li>
+<li>Non-uniform Rectilinear( Rectilinear Grid)</li>
+<li>Curvilinear(Structured Grid)</li>
+<li>Polygonal(Poly Data)</li>
+<li>Unstructured Grid</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="chapter-2-basic-usage"><a href="#Chapter-2-Basic-Usage" class="headerlink" title="Chapter 2. Basic Usage"></a>Chapter 2. Basic Usage</h2><h3 id="21-user-interface"><a href="#2-1-User-Interface" class="headerlink" title="2.1 User Interface"></a>2.1 User Interface</h3><blockquote>
+<ul>
+<li>introduction to different tool bars</li>
+</ul>
+</blockquote>
+<h3 id="22-source"><a href="#2-2-Source" class="headerlink" title="2.2 Source"></a>2.2 Source</h3><blockquote>
+<ul>
+<li><em>read</em> or <em>generate</em> data</li>
+<li>click <code>wheel</code> to open advanced functionality</li>
+<li>useful option in Property Bar:<ul>
+<li><code>Axes Grid</code></li>
+<li><code>Opacity</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="23-loading-data"><a href="#2-3-Loading-Data" class="headerlink" title="2.3 Loading Data"></a>2.3 Loading Data</h3><h3 id="24-filters"><a href="#2-4-Filters" class="headerlink" title="2.4 Filters"></a>2.4 Filters</h3><blockquote>
+<ul>
+<li>useful filters<ul>
+<li>third line in the GUI</li>
+</ul>
+</li>
+<li>More in the <code>Filter</code> options P 21<ul>
+<li>AMR: adaptive mesh refinement</li>
+</ul>
+</li>
+<li>shortcut to search for filter:<ul>
+<li><code>Ctrl + Space</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="25-multiview"><a href="#2-5-Multiview" class="headerlink" title="2.5 Multiview"></a>2.5 Multiview</h3><blockquote>
+<ul>
+<li>use the buttons on the top-right of the child window</li>
+<li><strong>camera link</strong>!!!<ul>
+<li>right click the window and choose link camera</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="26-vector-visualization"><a href="#2-6-Vector-Visualization" class="headerlink" title="2.6 Vector Visualization"></a>2.6 Vector Visualization</h3><blockquote>
+<ul>
+<li>clean all the stuff:<ul>
+<li><code>Edit</code> -&gt; <code>Reset Session</code></li>
+</ul>
+</li>
+<li>make Streamlines fancy<ul>
+<li>lines are difficult to distinguish because there are many close together and they have no shading. Lines are a 1D structure and shading requires a 2D surface. Another issue with the streamlines is that we cannot be sure in which direction the flow is.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="27-plotting"><a href="#2-7-Plotting" class="headerlink" title="2.7 Plotting"></a>2.7 Plotting</h3><blockquote>
+<ul>
+<li><code>Data Analysis</code> -&gt; <code>Filters</code></li>
+</ul>
+</blockquote>
+<h3 id="28-volume-rendering"><a href="#2-8-Volume-Rendering" class="headerlink" title="2.8 Volume Rendering"></a>2.8 Volume Rendering</h3><blockquote>
+<ul>
+<li>volume rendering, a solid mesh<br>s rendered as a translucent cloud with the scalar field determining the color<br>nd density at every point in the cloud. Unlike with surface rendering, volume<br>endering allows you to see features all the way through a volume.</li>
+<li>color map: <ul>
+<li>change the color representation</li>
+<li>first box: transparency</li>
+<li>long box: colors</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="28-time"><a href="#2-8-Time" class="headerlink" title="2.8 Time"></a>2.8 Time</h3><blockquote>
+<ul>
+<li></li>
+</ul>
+</blockquote>
+<h1 id="others"><a href="#others" class="headerlink" title="others"></a>others</h1><blockquote>
+<ul>
+<li>how to run a local server and connect to it<ul>
+<li>go to build path -&gt; <code>mpirun -np 4 bin/pvserver</code> -&gt; open praview -&gt; connect to the server</li>
+</ul>
+</li>
+<li>how to change the vtk branch in paraview</li>
+</ul>
+</blockquote>
+<h1 id="paraview-catalyst"><a href="#ParaView-Catalyst" class="headerlink" title="ParaView Catalyst"></a><a href="http://www.paraview.org/Wiki/ParaView/Catalyst/Overview" target="_blank" rel="external">ParaView Catalyst</a></h1><blockquote>
+<ul>
+<li>ParaView Catalyst is a library that adds ParaView Analysis</li>
+<li>Simulations often save their states infrequently to minimize storage requirements due to the limitation of IO capabilities</li>
+<li>For example, simulations often save their states infrequently to minimize storage requirements. </li>
+<li>Catalyst is a light-weight version of the ParaView server library that is designed to be directly embedded into parallel simulation codes to perform in situ analysis at run time<br>The Catalyst User&#x2019;s Guilde v2.0<br>Currently only care about the building process</li>
+<li>Catalyst is a subset of the ParaView code base. The difference is that paraView iwll by default have many more dependencies and thus will have a larger executable size. Catalyst is the flexible and specialized configuration of ParaView that is used to reduce the executable size by  reducing dependencies.</li>
+<li>steps: (1)set up an edition-&gt; (2)extract the desired code from PV source tree into a Catalyst source tree -&gt; (3)build Catalyst </li>
+<li>(1) (2)<code>python catalyze.py -i &lt;edition_dir&gt; -o &lt;Catalyst_source_dir&gt;</code> <ul>
+<li>if you want to include multiple edition_dir: <code>-i edition_dir1 -i edition_dir2</code></li>
+<li><code>python catalyze.py -i Editions/Base/ -i Editions/Essentials/ -i Editions/Extras/ -i Editions/Rendering-Base -o ./src</code></li>
+<li><code>Catalyst/test-catalyst.sh ~/Kitware/ParaView/catalyst/{src,build} --no-build --no-test --remove-dirs --input Base --input Essentials --input Extras --input Rendering-Base</code></li>
+</ul>
+</li>
+<li>(3) For configuring Catalyst from the desired build directory    </li>
+<li><a href="http://www.paraview.org/ParaView/Doc/Nightly/www/cxx-doc/classvtkSMProxy.html#details" target="_blank" rel="external">proxy</a> <ul>
+<li><strong>vtkSMProxy</strong> manages VTK objects that are created on a server using the proxy pattern. The managed object is manipulated through properties. The type of object created and managed by vtkSMProxy is determined by the VTKClassName variable. The object is managed by getting the desired property from the proxy, changing it&#x2019;s value and updating the server with UpdateVTKObjects().</li>
+<li><code>vtkSMProxyObserver</code> is defined here.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="paraviewplugin-how-to"><a href="#ParaView-Plugin-How-To" class="headerlink" title="ParaView/Plugin How To"></a><a href="http://www.paraview.org/Wiki/ParaView/Plugin_HowTo" target="_blank" rel="external">ParaView/Plugin How To</a></h1><h2 id="introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h2 id="using-plugins"><a href="#Using-Plugins" class="headerlink" title="Using Plugins"></a>Using Plugins</h2><blockquote>
+<ul>
+<li>Server-side VS Client side </li>
+<li>Four ways to load plugin <h2 id="writing-plugins"><a href="#Writing-Plugins" class="headerlink" title="Writing Plugins"></a>Writing Plugins</h2></li>
+<li>Server Manager Configuration XML: describe the <em>Proxy interface</em> for the new VTK class Server Manager Configuration XML: describe the <em>Proxy interface</em> for the new VTK class Server Manager Configuration XML: describe the <em>Proxy interface</em> for the new VTK class </li>
+</ul>
+</blockquote>
+<h1 id="others"><a href="#Others" class="headerlink" title="Others"></a>Others</h1><blockquote>
+<ul>
+<li>you can get the trace log via <code>Tools</code> -&gt; <code>Start Trace</code></li>
+<li><a href="http://www.makeuseof.com/tag/xml-file-case-wondering/" target="_blank" rel="external"><code>XML</code></a><ul>
+<li>Extensible Markup Language</li>
+<li>XML is a more recent language similar to HTML, but it allows for more flexibility. Like HTML it is a simplified subset of SGML (Standard Generalized Markup Language), the mother of all markup languages. Per definition, XML is a universal format for structured documents and data on the web. In other words, it is used to markup or describe data.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="proxy-vs-widget"><a href="#proxy-VS-widget" class="headerlink" title="proxy  VS widget"></a>proxy  VS widget</h2><blockquote>
+<ul>
+<li>proxy<ul>
+<li>pqProxy: registered sever manager proxy(a base proxy)</li>
+<li><a href="http://www.paraview.org/ParaView/Doc/Nightly/www/cxx-doc/classvtkSMProxy.html#details" target="_blank" rel="external">vtkSMProxy</a>: proxy for a VTK object(s) on a server</li>
+</ul>
+</li>
+<li>pqProxyWidget<ul>
+<li><code>pqProxyWidget</code> represents a panel for a <code>vtkSMProxy</code></li>
+<li>it creates widgets for each of the properties </li>
+<li>pqProxyWidget doesn&#x2019;t show any widgets in the panel by default (after contructor). Use <code>filterWidgets()</code> or <code>updatePanel()</code> to show widgets matching criteria.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="pqreaction"><a href="#pqReaction" class="headerlink" title="pqReaction"></a>pqReaction</h2><blockquote>
+<ul>
+<li>used to collect reactions that are autonomous entities  </li>
+<li>with this class, no need to call <code>QObject::connect</code></li>
+</ul>
+</blockquote>
+<h2 id="pqproxywidgetdialog"><a href="#pqProxyWidgetDialog" class="headerlink" title="pqProxyWidgetDialog"></a><a href="http://www.paraview.org/ParaView/Doc/Nightly/www/cxx-doc/classpqProxyWidgetDialog.html#details" target="_blank" rel="external">pqProxyWidgetDialog</a></h2><h2 id="how-to-find-the-definition-and-corresponding-proxy-of-a-feature-in-pv"><a href="#how-to-find-the-definition-and-corresponding-proxy-of-a-feature-in-PV" class="headerlink" title="how to find the definition and corresponding proxy of a feature in PV"></a>how to find the definition and corresponding proxy of a feature in PV</h2><blockquote>
+<ul>
+<li><ol>
+<li>search the &#x201C;&#x201D;ParaViewCore/ServerManager/SMApplication/Resources/views_and_representations.xml&#x201D; file for the feature</li>
+</ol>
+</li>
+<li><ol>
+<li>search the &#x201C;/ParaViewCore/ServerManager/SMApplication/Resources/utilities.xml<br>&#x201C; for corresponding proxy </li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<h2 id="idea-clarification"><a href="#Idea-clarification" class="headerlink" title="Idea clarification"></a>Idea clarification</h2><blockquote>
+<p>-Server and Client </p>
+<pre><code>+ Server side: we use XML file to generate proxy then let the Client know about these proxys and generate widget there. Calling `updateVTKObjects` to let server generate corresponding vtk stuff. If we do not have XML, we can generate pqRepresentation(use vtkSMProxyManager) or pqPipelineSources(use pqObjectBuilder), and feed their  proxy to 
++ Client side: generate the GUI or do the rendering stuff.
+</code></pre><ul>
+<li><a href="http://www.paraview.org/ParaView/Doc/Nightly/www/cxx-doc/classvtkSMProxy.html" target="_blank" rel="external">vtkSMProxy</a> VS <a href="http://www.paraview.org/ParaView/Doc/Nightly/www/cxx-doc/classpqProxy.html#details" target="_blank" rel="external">pqProxy</a><pre><code>+ pqProxy is a wrapper around vtkSMProxy. It&apos;s designed to facilitate the usage of Qt.
+</code></pre></li>
+</ul>
+</blockquote>
+<h1 id="environment-settings"><a href="#Environment-settings" class="headerlink" title="Environment settings"></a>Environment settings</h1><blockquote>
+<ul>
+<li><code>bin/paraview -dr</code> would use default settings</li>
+<li><a href="http://www.paraview.org/Wiki/ParaView_Settings_Files" target="_blank" rel="external">paraview setting files</a></li>
+<li><a href="http://www.paraview.org/ParaView/Doc/Nightly/www/cxx-doc/EnvironmentVariables.html" target="_blank" rel="external">paraview environment variables</a></li>
+<li><code>PV_SETTINGS_DEBUG</code></li>
+</ul>
+</blockquote>
+<h1 id="change-visibility-of-scalar-bar"><a href="#Change-visibility-of-scalar-bar" class="headerlink" title="Change visibility of scalar bar"></a>Change visibility of scalar bar</h1><blockquote>
+<ul>
+<li>vtkSMPVRepresentationProxy::SetScalarBarVisibility(<br>//      repr-&gt;getProxy(), repr-&gt;getView()-&gt;getProxy(), false);</li>
+<li>vtkSMPVRepresentationProxy::HideScalarBarIfNotNeeded(repr-&gt;getProxy(), repr-&gt;getView()-&gt;getProxy());<br>-vtkNew<vtksmtransferfunctionmanager> tmgr;<br>  tmgr-&gt;UpdateScalarBars(pqActiveObjects::instance().activeView()-&gt;getProxy(), vtkSMTransferFunctionManager::HIDE_UNUSED_SCALAR_BARS);</vtksmtransferfunctionmanager></li>
+</ul>
+</blockquote>
+<h1 id="foo-and-fooinfo"><a href="#foo-and-fooInfo" class="headerlink" title="foo and fooInfo"></a>foo and fooInfo</h1><blockquote>
+<ul>
+<li>PV use foo to send data from client to server side.</li>
+<li>PV use fooInfo to get data from server side.</li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/ParaView/">ParaView</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/21/makefile/"  data-tooltip="makefile">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/19/JapaneseLearning/" data-tooltip="JapaneseLearning">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/07/21/ParaViewStudy/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/07/21/ParaViewStudy/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/07/21/ParaViewStudy/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/21/makefile/"  data-tooltip="makefile">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/19/JapaneseLearning/" data-tooltip="JapaneseLearning">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/07/21/ParaViewStudy/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/07/21/ParaViewStudy/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/07/21/ParaViewStudy/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>

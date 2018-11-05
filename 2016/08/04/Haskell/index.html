@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>Haskell - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">Haskell</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Thu Aug 04 2016 17:30:54 GMT-0400">
+        Aug 04, 2016
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/coding/">coding</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Let&#x2019;s enjoy purely-functional programming language<br><img src="data:image/jpeg;base64,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" alt="teaser"><br><a id="more"></a></p>
+<p>#</p>
+<!-- toc -->
+<ul>
+<li><a href="#useful-material">Useful material</a></li>
+<li><a href="#learn-you-a-haskell-for-great-good">Learn You a Haskell for Great Good</a><ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#starting-out">Starting Out</a></li>
+<li><a href="#types-and-typeclasses">Types and Typeclasses</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1 id="useful-material"><a href="#Useful-material" class="headerlink" title="Useful material"></a>Useful material</h1><blockquote>
+<ul>
+<li><a href="https://www.haskell.org" target="_blank" rel="external">official website</a></li>
+<li><a href="http://learnyouahaskell.com/chapters" target="_blank" rel="external">learn you haskell</a></li>
+</ul>
+</blockquote>
+<h1 id="learn-you-a-haskell-for-great-good"><a href="#Learn-You-a-Haskell-for-Great-Good" class="headerlink" title="Learn You a Haskell for Great Good"></a>Learn You a Haskell for Great Good</h1><h2 id="introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><blockquote>
+<ul>
+<li>imperative programming language VS fuctional language<ul>
+<li>(C,C++,Java,Python,..) VS (Haskell, ML, OCaml)</li>
+</ul>
+</li>
+<li><code>referential transparency</code>: <ul>
+<li>if a function is called twice with the same parameters, it&#x2019;s guaranteed to return the same result.</li>
+</ul>
+</li>
+<li><code>statically typed</code><ul>
+<li>know the type at compile time</li>
+</ul>
+</li>
+<li>run Haskell from terminal<ul>
+<li><code>ghci</code></li>
+<li><code>:set prompt &quot;ghci&gt; &quot;</code> </li>
+</ul>
+</li>
+<li>stop Haskell from terminal<ul>
+<li>just use <code>Ctrl + Z</code></li>
+</ul>
+</li>
+<li>load functions in a haskell file<ul>
+<li><code>:l myfunctions</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="starting-out"><a href="#Starting-Out" class="headerlink" title="Starting Out"></a>Starting Out</h2><blockquote>
+<ul>
+<li><code>5 * -3</code> would fail in Haskell</li>
+<li>Boolean algebra<ul>
+<li>True, False, &amp;&amp;, ||, ==, /=(means not equal) </li>
+</ul>
+</li>
+<li><strong>infix function</strong><ul>
+<li><code>+</code>, <code>*</code> are all this type</li>
+</ul>
+</li>
+<li><strong>prefix funciton</strong>( put before the values)<ul>
+<li><code>succ</code><ul>
+<li>return the successor</li>
+</ul>
+</li>
+<li><code>div</code><ul>
+<li><code>div 92 10</code> or <code>92</code>div<code>10</code> </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>function application:<ul>
+<li>definition</li>
+</ul>
+</li>
+<li><strong>condition statement</strong><ul>
+<li><code>else</code> is mandatory in Haskell</li>
+<li><code>if</code> is an <em>expression</em>: a piece of code that returns a value</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight haskell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">doubleSmallNumber</span> x = <span class="keyword">if</span> x &gt; <span class="number">100</span> <span class="keyword">then</span> x <span class="keyword">else</span> x*<span class="number">2</span></div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>Baby&#x2019;s first functions <ul>
+<li>create a function and store it in file <em>name.hs</em>.</li>
+<li>open terminal, and type in <code>:l name</code> to import the function</li>
+</ul>
+</li>
+<li>function orders in Haskell do not matter. (like python)</li>
+<li><code>if</code> statement:<ul>
+<li><code>else</code> is mandatory</li>
+<li>```has no special meaning in Haskell&#x2019;s syntax. It&#x2019;s used either to denote a strict version fo  a function  or a slightly modified version of a function or a variable</li>
+</ul>
+</li>
+<li>functions:<ul>
+<li>function name can&#x2019;t begin with uppercase letters</li>
+<li>function doesn&#x2019;t take any parameters becomes <em>definition</em></li>
+</ul>
+</li>
+<li>list:<ul>
+<li>homogeneous data structure, which means that it stores several elements of the same type</li>
+<li>we use the keyword <code>let</code> to define a name right in GHCI. <code>let a = 1</code> equals <code>a = 1</code></li>
+<li>list concatenation: <code>[] ++ []</code>, &#x201C;hello&#x201D; ++ &#x201C;world&#x201D;</li>
+<li><strong>watch out</strong>: Hasekll has to walk through the whole list on  the lift side of <code>++</code>. So if there is 5 million elements on the left&#x2026;..<ul>
+<li>use <code>:</code> efficiently cancatenate two lists. <ul>
+<li>Ex: ` &#x2018;A&#x2019;: &#x201C;SMALL CAT&#x201D; -&gt; &#x201C;A SMALL CAT&#x201D;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>!!</code>: get an element out of the list by index<ul>
+<li>Ex <code>&quot;Steve Buscemi&quot; !! 6</code> -&gt; &#x2018;B&#x2019;</li>
+</ul>
+</li>
+<li>basic operation on list<ul>
+<li><code>head</code>: first element in a list, <code>tail</code>: result after chops off a list&#x2019;s head, <code>last</code>: last element, <code>init</code>: everything except its last element<ul>
+<li>these operation cannot operate on empty list</li>
+</ul>
+</li>
+<li><code>null</code>, <code>length</code>, <code>reverse</code>, <code>take</code>, <code>drop</code>, <code>maximum</code>, <code>minimum</code>, <code>sum</code>, <code>product</code>, <code>elem</code>(works as <code>in</code> in Python)<pre><code>- `drop 3 [1,2,3,4]` -&gt; [4]
+- `5 `elem` [1,2,3]` -&gt; False
+</code></pre></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Texas ranges<ul>
+<li><code>[1..20]</code>: a list containing elements from 1 to 20</li>
+<li><code>[1,2..20]</code>: [1,2,4,&#x2026;,20]</li>
+<li>be careful with floating points in ranges.</li>
+<li><code>take 24 [13,26..]</code> will give you the first 24 multiples of 13( or you can use <code>[13,26..24*13]</code>)</li>
+<li><code>cycle</code>: takes a list and cycles it into an infinite list Ex <code>take 10 (cycle [1,2,3])</code></li>
+<li><code>repeat</code>: takes an element and produces an infinite list of just that element</li>
+</ul>
+</li>
+<li>list comprehensionG<ul>
+<li><code>[x*2 | x&lt;- [1..10]]</code>: [2,4,6,8&#x2026;20]</li>
+<li><code>[x*2 | x &lt;- [1..10], x*2 &gt;= 12]</code>: [12,14,16,18,20]</li>
+<li><code>boomBangs xs = [ if x &lt; 10 then &quot;BOOM!&quot; else &quot;BANG!&quot; | x &lt;- xs, odd x]</code><br>omBangs [7..13] : [&#x201C;BOOM!&#x201D;,&#x201D;BOOM!&#x201D;,&#x201D;BANG!&#x201D;,&#x201D;BANG!&#x201D;]   </li>
+<li><code>length&apos; xs = sum[1 | _ &lt;- xs]</code>: our own  length calculation function<ul>
+<li><code>_</code> means that we don&#x2019;t care what we&#x2019;ll draw from the list anyway so instead of writing a variable name that we&#x2019;ll never use, we just write <code>_</code>.</li>
+</ul>
+</li>
+<li>listed comprehension<ul>
+<li>[ [ x | x &lt;- xs, even x ] | xs &lt;- xxs]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Tuples<ul>
+<li>a tuple can hold elements of different types, like python, we use parenthesis. Use tuples when you know in advance how many components some piece of data should have. </li>
+<li><code>zip</code>: <code>zip [1,2,3,4,5] [5,5,5,5,5]</code>: [(1,5),(2,5),(3,5),(4,5),(5,5)] </li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="types-and-typeclasses"><a href="#Types-and-Typeclasses" class="headerlink" title="Types and Typeclasses"></a>Types and Typeclasses</h2><blockquote>
+<ul>
+<li>Static type system + type inference</li>
+<li><code>:t input-data</code>: you can get type</li>
+<li><code>a</code>: type variable, which means that it can be an type. Functions that has type variables are called <code>polymorphic functions</code></li>
+<li><code>typeclasses</code>: <ul>
+<li>Everything before the <code>=&gt;</code> symbol is called a class constraint</li>
+<li><code>:t (==)</code>: the equality function takes any two values that are of the same type and returns a Bool. The type of those two values must be a member of the Eq class (this was the class <strong>constraint</strong>).</li>
+<li><code>type annotation</code>: explicitly saying that the type of an expression should be</li>
+<li><code>read &quot;5&quot; :: Int</code></li>
+<li>Types: (), Bool, Char, Ordering, Int, Integer(unlimited number), Float, Double and Bounded     </li>
+<li><code>fromIntegral</code>: useful to do type conversion. Ex: <code>fromIntegral (length[1,2,3,4]) + 3.2</code>. type of length is int, but you can not add an int with double. with <code>fromIntegral</code> at hand, you can do this.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/technique/">technique</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/08/15/ChicagoTravellPlan/"  data-tooltip="Chicago Travell Plan">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/27/pythonUsefulCodes/" data-tooltip="pythonUsefulCodes">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/08/04/Haskell/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/08/04/Haskell/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/08/04/Haskell/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/08/15/ChicagoTravellPlan/"  data-tooltip="Chicago Travell Plan">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/27/pythonUsefulCodes/" data-tooltip="pythonUsefulCodes">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/08/04/Haskell/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/08/04/Haskell/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/08/04/Haskell/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>

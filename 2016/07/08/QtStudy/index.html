@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>QtStudy - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">QtStudy</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Fri Jul 08 2016 12:26:03 GMT-0400">
+        Jul 08, 2016
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/technique/">technique</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Notes and reflection when studying Qt and QtCreator.<br><img src="data:image/png;base64,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" alt="Qt teaser"><br><a id="more"></a></p>
+<!-- toc -->
+<ul>
+<li><a href="#qt-study">Qt Study</a></li>
+<li><a href="#qt-creator-manual">Qt Creator Manual</a></li>
+<li><a href="#qt-creator-shortcuthttpdocqtioqtcreatorcreator-keyboard-shortcutshtml"><a href="http://doc.qt.io/qtcreator/creator-keyboard-shortcuts.html" target="_blank" rel="external">Qt Creator shortCut</a></a><ul>
+<li><a href="#qt-creator-debugger">Qt Creator debugger</a></li>
+</ul>
+</li>
+<li><a href="#topics">Topics</a></li>
+<li><a href="#qt-for-beginnershttpswikiqtioqt_for_beginners"><a href="https://wiki.qt.io/Qt_for_Beginners" target="_blank" rel="external">Qt for Beginners</a></a><ul>
+<li><a href="#c-reminder">C++ reminder</a></li>
+<li><a href="#introduction-to-qt">Introduction to Qt</a></li>
+<li><a href="#hello-world">Hello world</a></li>
+<li><a href="#a-pretty-button">A pretty button</a></li>
+<li><a href="#parenting-system">Parenting system</a></li>
+<li><a href="#subclassing-qwidget">Subclassing QWidget</a></li>
+<li><a href="#transmitting-information">Transmitting information</a></li>
+<li><a href="#creating-custom-signals-and-slots">Creating custom signals and slots</a></li>
+<li><a href="#qdialogexec-vs-qdialogshow"><a href="">QDialog::exec VS QDialog::show</a></a></li>
+<li><a href="#qcheckboxhttpdocqtioqt-48qcheckboxhtmldetails"><a href="http://doc.qt.io/qt-4.8/qcheckbox.html#details" target="_blank" rel="external">QCheckBox</a></a></li>
+<li><a href="#qpointerhttpstackoverflowcomquestions22304118what-is-the-difference-between-qpointer-qsharedpointer-and-qweakpointer-classes"><a href="http://stackoverflow.com/questions/22304118/what-is-the-difference-between-qpointer-qsharedpointer-and-qweakpointer-classes" target="_blank" rel="external">QPointer</a></a></li>
+</ul>
+</li>
+<li><a href="#others">Others</a></li>
+<li><a href="#widgets-tutorialhttpdocqtioqt-5widgets-tutorialhtml"><a href="http://doc.qt.io/qt-5/widgets-tutorial.html" target="_blank" rel="external">Widgets Tutorial</a></a></li>
+<li><a href="#modelview-frameworkhttpdocqtioqt-59model-view-programminghtml"><a href="http://doc.qt.io/qt-5.9/model-view-programming.html" target="_blank" rel="external">model/view framework</a></a></li>
+<li><a href="#simple-tree-model-examplehttpdocqtioqt-5qtwidgets-itemviews-simpletreemodel-examplehtml"><a href="http://doc.qt.io/qt-5/qtwidgets-itemviews-simpletreemodel-example.html" target="_blank" rel="external">Simple Tree Model Example</a></a></li>
+<li><a href="#qmenuhttpdocqtioqt-48qmenuhtmldetails"><a href="http://doc.qt.io/qt-4.8/qmenu.html#details" target="_blank" rel="external">QMenu</a></a></li>
+<li><a href="#create-qstring-interactivelyhttpsstackoverflowcomquestions4784155how-to-format-a-qstring"><a href="https://stackoverflow.com/questions/4784155/how-to-format-a-qstring" target="_blank" rel="external">Create QString interactively</a></a></li>
+<li><a href="#qt-resource-systemhttpdocqtioqt-48resourceshtml"><a href="http://doc.qt.io/qt-4.8/resources.html" target="_blank" rel="external">Qt Resource System</a></a></li>
+<li><a href="#qframe-vs-qlayout">QFrame vs QLayout</a></li>
+<li><a href="#control-the-row-and-column-display-of-qtableviewqtreeview">Control the row and column display of QTableView/QTreeView</a></li>
+<li><a href="#qabstractproxymodelhttpdocqtioqt-48qabstractproxymodelhtmldetails"><a href="http://doc.qt.io/qt-4.8/qabstractproxymodel.html#details" target="_blank" rel="external">QAbstractProxyModel</a></a></li>
+<li><a href="#qwidget-and-qlayout">QWidget and QLayout</a></li>
+<li><a href="#qnetworkaccessmanagerhttpdocqtioqt-5qnetworkaccessmanagerhtmldetails"><a href="http://doc.qt.io/qt-5/qnetworkaccessmanager.html#details" target="_blank" rel="external">QNetworkAccessManager</a></a></li>
+<li><a href="#json-in-qthttpdocqtioqt-5jsonhtml"><a href="http://doc.qt.io/qt-5/json.html" target="_blank" rel="external">Json in qt</a></a></li>
+<li><a href="#qsettingshttpdocqtioqt-5qsettingshtmldetails"><a href="http://doc.qt.io/qt-5/qsettings.html#details" target="_blank" rel="external">QSettings</a></a></li>
+<li><a href="#delete-entity">Delete Entity</a></li>
+</ul>
+<!-- tocstop -->
+<h1 id="qt-study"><a href="#Qt-Study" class="headerlink" title="Qt Study"></a>Qt Study</h1><h1 id="qt-creator-manual"><a href="#Qt-Creator-Manual" class="headerlink" title="Qt Creator Manual"></a>Qt Creator Manual</h1><blockquote>
+<ul>
+<li><a href="http://doc.qt.io/qtcreator/index.html" target="_blank" rel="external">official documentation link</a></li>
+<li>Diffrence modes in Qt Creator<ul>
+<li>Edit mode</li>
+<li>Design mode<ul>
+<li>If you have created a Qt Designer form</li>
+</ul>
+</li>
+<li>Debug mode</li>
+<li>Build mode</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="qt-creator-shortcut"><a href="#Qt-Creator-shortCut" class="headerlink" title="Qt Creator shortCut"></a><a href="http://doc.qt.io/qtcreator/creator-keyboard-shortcuts.html" target="_blank" rel="external">Qt Creator shortCut</a></h1><blockquote>
+<ul>
+<li><code>Ctrl</code> + <code>Shift</code> + <code>T</code><ul>
+<li>view the base calsses of a class</li>
+</ul>
+</li>
+<li><code>Ctrl</code> + <code>Shift</code> + <code>I</code><ul>
+<li>Viewing Include Hierarchy</li>
+</ul>
+</li>
+<li><code>Ctrl</code> + <code>K</code><ul>
+<li>activate the <strong>locator</strong></li>
+</ul>
+</li>
+<li><code>Ctrl</code> + <code>NUM</code><ul>
+<li>switch between left toolbar</li>
+<li>Welcome-Edit+&#x2026;.</li>
+</ul>
+</li>
+<li><code>Ctrl</code> + <code>NUM</code><ul>
+<li>switch between down toolbar</li>
+<li>Issus-Search Results</li>
+</ul>
+</li>
+<li><code>Ctrl</code> + <code>O</code><ul>
+<li>Open file or project</li>
+</ul>
+</li>
+<li><code>F5</code><ul>
+<li>start or continue debugging</li>
+</ul>
+</li>
+<li><code>Shift</code> + <code>F5</code><ul>
+<li>Exit debugger</li>
+</ul>
+</li>
+<li><code>F10</code><ul>
+<li>Step over</li>
+</ul>
+</li>
+<li><code>F11</code><ul>
+<li>Step into (check the current function definition)</li>
+</ul>
+</li>
+<li><code>Shift</code> + <code>F11</code><ul>
+<li>Step out (leave the current function definition)<h2 id="qt-creator-debugger"><a href="#Qt-Creator-debugger" class="headerlink" title="Qt Creator debugger"></a>Qt Creator debugger</h2></li>
+</ul>
+</li>
+<li>start internal mode:<ul>
+<li>If you need a console window to operate your application, for example because it accepts console input from the user, go to <strong>Projects &gt; Run Settings</strong> and select the <strong>Run in terminal</strong> check box.</li>
+</ul>
+</li>
+<li>start External Mode<ul>
+<li>executable already present on your local or a remote machine without using a project</li>
+<li><strong>Debug &gt; Start Debugging &gt; Start and Debug External Application.</strong></li>
+</ul>
+</li>
+<li>Launching in Attach Mode<ul>
+<li>attach the debugger to an application already running on your local or a remote machine</li>
+<li><strong>Debug &gt; Start Debugging &gt; Attach to Running Application</strong> </li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="topics"><a href="#Topics" class="headerlink" title="Topics"></a>Topics</h1><blockquote>
+<ul>
+<li><a href="http://doc.qt.io/qt-4.8/signalsandslots.html" target="_blank" rel="external">Signals &amp; Slots</a><ul>
+<li>used for communication between objects</li>
+<li>normally people use callback functions. But they are not type-safe, and they are strongly coupled to the processing function</li>
+</ul>
+</li>
+<li>signal: A signal is emitted when a particular event occurs</li>
+<li>slot: A slot is a function that is called in response to a particular signal.</li>
+<li>All class that c ontain signals or slot must mention <code>Q_OBJECT</code> at the top of their declaration. They must also derive(directly or indirectly) from <code>QOBject</code>.</li>
+<li>signal can take parameter as pointer and reference. passsing sets on the fly is dangerous</li>
+<li>emit foo(&amp;model); signal: fool(smtk::model::Model*);</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// A small QObject-based class might read:</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QObject&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">class</span> Counter : <span class="keyword">public</span> QObject</div><div class="line">{</div><div class="line">    Q_OBJECT</div><div class="line"></div><div class="line"><span class="keyword">public</span>:</div><div class="line">    Counter() { m_value = <span class="number">0</span>; }</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">int</span> <span class="title">value</span><span class="params">()</span> <span class="keyword">const</span> </span>{ <span class="keyword">return</span> m_value; }</div><div class="line"></div><div class="line"><span class="keyword">public</span> slots:</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setValue</span><span class="params">(<span class="keyword">int</span> value)</span></span>;</div><div class="line"></div><div class="line">signals:</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">valueChanged</span><span class="params">(<span class="keyword">int</span> newValue)</span></span>;</div><div class="line"></div><div class="line"><span class="keyword">private</span>:</div><div class="line">    <span class="keyword">int</span> m_value;</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">void</span> Counter::setValue(<span class="keyword">int</span> value)</div><div class="line">{</div><div class="line">    <span class="keyword">if</span> (value != m_value) {</div><div class="line">        m_value = value;</div><div class="line">        <span class="function">emit <span class="title">valueChanged</span><span class="params">(value)</span></span>;</div><div class="line">    }</div><div class="line">}</div><div class="line"></div><div class="line">Counter a, b;</div><div class="line">    QObject::connect(&amp;a, SIGNAL(valueChanged(<span class="keyword">int</span>)),</div><div class="line">                     &amp;b, SLOT(setValue(<span class="keyword">int</span>)));</div><div class="line"></div><div class="line">    a.setValue(<span class="number">12</span>);     <span class="comment">// a.value() == 12, b.value() == 12</span></div><div class="line">    b.setValue(<span class="number">48</span>);     <span class="comment">// a.value() == 12, b.value() == 48</span></div></pre></td></tr></table></figure>
+<h1 id="qt-for-beginners"><a href="#Qt-for-Beginners" class="headerlink" title="Qt for Beginners"></a><a href="https://wiki.qt.io/Qt_for_Beginners" target="_blank" rel="external">Qt for Beginners</a></h1><h2 id="c-reminder"><a href="#C-reminder" class="headerlink" title="C++ reminder"></a>C++ reminder</h2><blockquote>
+<ul>
+<li><strong>signature</strong>: the prototype of a method or a function.</li>
+</ul>
+</blockquote>
+<h2 id="introduction-to-qt"><a href="#Introduction-to-Qt" class="headerlink" title="Introduction to Qt"></a>Introduction to Qt</h2><blockquote>
+<ul>
+<li>Qt(cute)</li>
+</ul>
+</blockquote>
+<h2 id="hello-world"><a href="#Hello-world" class="headerlink" title="Hello world"></a>Hello world</h2><blockquote>
+<ul>
+<li><code>.pro</code>: setting files for  QtCreator</li>
+<li>Qt commpilation:<ul>
+<li>A .pro file is written to describe the project to compile</li>
+<li>A makefile is generated using qmake</li>
+<li>The program is build using make (or nmake or jom on windows)</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="a-pretty-button"><a href="#A-pretty-button" class="headerlink" title="A pretty button"></a>A pretty button</h2><blockquote>
+<ul>
+<li>getter and setter signatures</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function">T <span class="title">foo</span><span class="params">()</span> <span class="keyword">const</span></span>;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">setFoo</span> <span class="params">(<span class="keyword">const</span> T)</span></span>;</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><a href="https://wiki.qt.io/File:Beginner-Class-Hierarchy.jpg" target="_blank" rel="external">Qt Classs herarchy</a></li>
+<li>QObjects:<ul>
+<li>object name - parenting system + signals and slots + event management</li>
+<li><code>blockSignals</code>: avoid never ending notification loops</li>
+<li>The <code>Q_OBJECT</code> macro must appear in the private section of a class definition that declares its own signals and slots or that uses other services provided by Qt&#x2019;s meta-object system.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>QWidget(inherit from <strong>QObject</strong>)<ul>
+<li>in Qt, <strong>a widget can also be a window</strong>. There is no need for a &#x201C;Qwindow&#x201D; class.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="parenting-system"><a href="#Parenting-system" class="headerlink" title="Parenting system"></a>Parenting system</h2><blockquote>
+<ul>
+<li>When an object is destroyed, all of its children are destroyed as well. So, calling <em>delete</em> becomes optional in certain cases.</li>
+<li>All QObjects have <code>findChild</code> and <code>findChildren</code> methods that can be used to search for children of a given object.</li>
+<li>Child widgets in a QWidget automatically appear inside the parent widget.</li>
+</ul>
+</blockquote>
+<h2 id="subclassing-qwidget"><a href="#Subclassing-QWidget" class="headerlink" title="Subclassing QWidget"></a>Subclassing QWidget</h2><blockquote>
+<ul>
+<li>a class: display a window</li>
+<li>widgets: implement all the widgets that are contained in this window as attributes of this class.</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//header</span></div><div class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> WINDOW_H</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> WINDOW_H</span></div><div class="line"> </div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QWidget&gt;</span></span></div><div class="line"> </div><div class="line"><span class="keyword">class</span> Window : <span class="keyword">public</span> QWidget</div><div class="line">{</div><div class="line"> Q_OBJECT</div><div class="line"> <span class="keyword">public</span>:</div><div class="line">  <span class="function"><span class="keyword">explicit</span> <span class="title">Window</span><span class="params">(QWidget *parent = <span class="number">0</span>)</span></span>;</div><div class="line"> </div><div class="line"> signals:</div><div class="line"> <span class="keyword">public</span> slots:</div><div class="line">};</div><div class="line"> </div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">// WINDOW_H</span></span></div><div class="line"></div><div class="line"><span class="comment">//source#* aa</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;window.h&quot;</span></span></div><div class="line"> </div><div class="line">Window::Window(QWidget *parent) :</div><div class="line"> QWidget(parent) {}</div><div class="line"></div><div class="line">```*</div><div class="line"></div><div class="line">## The observer pattern</div><div class="line">&gt; - Observer pattern is used when an observable object wants to notify other observers objects about a state change.</div><div class="line">&gt; - This results in boilerplate code, which refers to sections of code that have to be included in many places with little or no alteration.</div><div class="line"></div><div class="line">## Signals and slots</div><div class="line">&gt; - `signal`: a message that an object can send, most of the time to inform of a status change</div><div class="line">&gt; - `slot`: a function that is used to accept and respond to a signal </div><div class="line">&gt;     + Examples: `QApplication::quit`, `QWidget::setEnabled`, QPushButton::setText`</div><div class="line">&gt; - These macros are actually used to convert the provided method signature into a `<span class="built_in">string</span>` that matches the one stored in the meta-object.</div><div class="line"></div><div class="line">```C++</div><div class="line"><span class="comment">//connection between slot and signal</span></div><div class="line">FooObjectA *fooA = <span class="keyword">new</span> FooObjectA();</div><div class="line">FooObjectB *fooB = <span class="keyword">new</span> FooObjectB();</div><div class="line"> </div><div class="line">QObject::connect(fooA, SIGNAL (bared()), fooB, SLOT (baz()));</div><div class="line"><span class="comment">// write the signature of the signal and the slot</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>-Basically, signals and slots are methods, that might or might not have arguments, but that never return anything. While the notion of a signal as a method is unusual, a slot is actually a real method, and can be called as usual in other methods, or whilst responding to a signal.  </p>
+</blockquote>
+<h2 id="transmitting-information"><a href="#Transmitting-information" class="headerlink" title="Transmitting information"></a>Transmitting information</h2><blockquote>
+<ul>
+<li>The signals and slots mechanism can be used to communicate information.</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">MediaProgressManager *manager = <span class="keyword">new</span> MediaProgressManager();</div><div class="line">QProgressBar *progress = <span class="keyword">new</span> QProgressBar(window);</div><div class="line"> </div><div class="line">QObject::connect(manager, SIGNAL (tick(<span class="keyword">int</span>)), progress, SLOT (setValue(<span class="keyword">int</span>)));</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>How to access to the QApplication instance while you are in another class?<ul>
+<li>use the static function in QApplication as: <code>QApplication *QApplication::instance()</code></li>
+</ul>
+</li>
+<li><a href="http://doc.qt.io/qt-5/why-moc.html" target="_blank" rel="external">Technical aspect</a><ul>
+<li><code>The Meta Object</code>: enable introspection(examine a type at run time) and Asynchronous function calls which would  be compiled by moc(meta-object compiler) </li>
+<li><code>Q_OBJECT</code> macro: let the moc to translate the QT syntax like &#x201C;connect&#x201D;, &#x201C;signals&#x201D;, &#x201C;slots&#x201D;</li>
+<li><code>UIC</code>(User Interface Compiler): takes a user in terfac e description in XML and creates C++ code that sets up the form.</li>
+<li>scoped translation + property system(introspection and extended runtime type information)</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="creating-custom-signals-and-slots"><a href="#Creating-custom-signals-and-slots" class="headerlink" title="Creating custom signals and slots"></a>Creating custom signals and slots</h2><blockquote>
+<ul>
+<li>Steps:<ul>
+<li><ol>
+<li>add <code>Q_OBJECT</code> macro</li>
+</ol>
+</li>
+<li><ol>
+<li>add <code>signals</code> section, and write signals prototypes</li>
+</ol>
+</li>
+<li><ol>
+<li>add <code>public slots</code> or <code>protected slots</code> or <code>private slots</code> sections, and write slots prototypes</li>
+</ol>
+</li>
+<li><ol>
+<li>iamplement slots as normal methods</li>
+</ol>
+</li>
+<li><ol>
+<li>establish connections</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>custom signals: emit your-signal-function-name()</li>
+</ul>
+</blockquote>
+<h2 id="qdialogexec-vs-qdialogshow"><a href="#QDialog-exec-VS-QDialog-show" class="headerlink" title="QDialog::exec VS QDialog::show"></a><a href="">QDialog::exec VS QDialog::show</a></h2><blockquote>
+<ul>
+<li>What&#x2019;s Modal Dialogs: a modal dialog is a window that forces the user to interact with it befor they can go back to using the parent application</li>
+<li><code>exec()</code>: create a modal dialog, return a value when the user close the dialog</li>
+<li><code>show()</code>: returns control to the caller immediately (you still can use <code>setModal(true)</code> setWIndowModality()` which would block a window rather than the whole application)</li>
+</ul>
+</blockquote>
+<h2 id="qcheckbox"><a href="#QCheckBox" class="headerlink" title="QCheckBox"></a><a href="http://doc.qt.io/qt-4.8/qcheckbox.html#details" target="_blank" rel="external">QCheckBox</a></h2><blockquote>
+<ul>
+<li>*exclusive and non-exclusive checkboxes </li>
+<li></li>
+</ul>
+</blockquote>
+<h2 id="qpointer"><a href="#QPointer" class="headerlink" title="QPointer"></a><a href="http://stackoverflow.com/questions/22304118/what-is-the-difference-between-qpointer-qsharedpointer-and-qweakpointer-classes" target="_blank" rel="external">QPointer</a></h2><blockquote>
+<ul>
+<li>QPointer is a template class that provides guarded pointers to Qt objects and behaves like a normal C++ pointer except that it is automatically set to 0 when the referenced object is destroyed and no &#x201C;dangling pointers&#x201D; are produced. QSharedPointer class holds a strong reference to a shared pointer.</li>
+<li><code>QPointer</code> can only point to <code>QObject</code> intances</li>
+</ul>
+</blockquote>
+<h1 id="others"><a href="#Others" class="headerlink" title="Others"></a>Others</h1><blockquote>
+<ul>
+<li>thought and reflection after adding Ruler feature to CMB<ul>
+<li>constructor and destructor in Qt </li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// If you construct dialog&apos;s widgets and set the dialog as a parent, you don&apos;t need to delete them in the dialog&apos;s destructor: Qt will take care about their deletion</span></div><div class="line">pqCMBRulerDialog* rulerDialog = <span class="keyword">new</span> pqCMBRulerDialog(<span class="keyword">this</span>);</div><div class="line"></div><div class="line"><span class="comment">// WA_DeleteOnClose</span></div><div class="line">rulerDialog-&gt;setAttribute(Qt::WA_DeleteOnClose);</div><div class="line">rulerDialog-&gt;show();</div><div class="line"></div><div class="line"><span class="comment">//</span></div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>when you inherit from QDialog, yourself is already a Diaglog. no need to create a Qdialog type member.</li>
+<li><p>why we have inheritanc of widget</p>
+<ul>
+<li>when you delete the parent, the children are also deleted.</li>
+<li>for setting the layout</li>
+</ul>
+</li>
+<li><p><code>QOjbect::connect</code></p>
+<ul>
+<li><a href="https://samdutton.wordpress.com/2008/10/03/debugging-signals-and-slots-in-qt/" target="_blank" rel="external">20 suggestions to debug signal slot</a></li>
+<li><a href="https://forum.qt.io/topic/14930/cannot-subclass-qobject" target="_blank" rel="external">no known conversion for argument X to const QObject*</a><ul>
+<li>the compiler does not know argument X is a QObject. Either you should subclass it from a QObject or include the corresponding headers.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="widgets-tutorial"><a href="#Widgets-Tutorial" class="headerlink" title="Widgets Tutorial"></a><a href="http://doc.qt.io/qt-5/widgets-tutorial.html" target="_blank" rel="external">Widgets Tutorial</a></h1><blockquote>
+<ul>
+<li><a href="http://doc.qt.io/qt-5/examples-widgets.html" target="_blank" rel="external">good example</a></li>
+</ul>
+</blockquote>
+<h1 id="modelview-framework"><a href="#model-view-framework" class="headerlink" title="model/view framework"></a><a href="http://doc.qt.io/qt-5.9/model-view-programming.html" target="_blank" rel="external">model/view framework</a></h1><blockquote>
+<ul>
+<li><a href="http://doc.qt.io/qt-5.9/modelview.html" target="_blank" rel="external">Model/View Tutorial</a><ul>
+<li>Selection + different views</li>
+</ul>
+</li>
+<li>model/view architecture and delegate</li>
+<li>Models<ul>
+<li>All item models are based on the <strong>QAbstractItemModel</strong> class.</li>
+</ul>
+</li>
+<li>Views<ul>
+<li>All views are based on the <strong>QAbstractItemVIew</strong> class</li>
+<li>how to set up a view to display the items in the model: calling its <strong>setModel()</strong> function</li>
+</ul>
+</li>
+<li>Delegates<ul>
+<li>All delegates are based on the <strong>QAbstractItemDelegate</strong> class</li>
+</ul>
+</li>
+<li>Sorting<ul>
+<li>If the model is sortable, just reimplement <code>QAbstractItemModel::sort()</code> function</li>
+<li>Or you can enable interactive sorting. Check the link in title</li>
+</ul>
+</li>
+<li>Model classes<ul>
+<li>model index: each piece of information that can be obtained via a model is represented by a model index(If a long-term reference is needed, use <strong>QPersistentModelIndex</strong>)</li>
+<li>If an invalid model index is specified for the parent item when an index is requested using index(), the index returned refers to a top-level item in the model.</li>
+</ul>
+</li>
+<li>View classes<ul>
+<li>view can be constructed without a model, but a model must be provided before it can display useful information.</li>
+<li>item roles: stored on model. <code>Qvariant value = model-&gt;data(index, role);</code></li>
+<li>existing view: QListView, QTreeView and QTableView(aka spreadsheet)</li>
+<li>Handling selections of items: <strong>QItemSelectionModel</strong></li>
+<li>sharing selections among views: <code>secondTableView-&gt;setSelectionModel(firstTableView-&gt;selectionModel());</code></li>
+</ul>
+</li>
+<li>Delegate classes<ul>
+<li>Unlike the Model-View-Controller pattern, the model/view design does not include a completely separate component for managing interaction with the user. So delegates are expected to be able to render their contents themselves by implementing the <strong>paint()</strong> and <strong>sizeHint()</strong> functions.</li>
+<li>provide an editor, and the delegate must provide a function to copy model data into the editor.</li>
+<li>functions must be implemented: <strong>createEditor()</strong>, <strong>updateEditorGeometry</strong>,<strong>set EditorData()</strong> and <strong>setModelData()</strong></li>
+</ul>
+</li>
+<li>Handling selections in item views<ul>
+<li>QItemSelectionModel: mainntains model indexes for items in a single model, and is independent of any views.</li>
+<li>Selections are applied to a collection of model indexes held by a selection model</li>
+<li>two important signals - <strong>selectionChanged</strong> and <strong>currentChanged</strong></li>
+<li>updating a selection:<ul>
+<li>&#x201C;QItemSelectionModel::Toggle&#x201D; flag: The Toggle flag causes the selection model to invert the state of the specified items, selecting any deselected items given, and deselecting any currently selected items.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Creating new models<ul>
+<li>Designing a model<ul>
+<li>Make the model editable: implement <strong>flags()</strong>(make the delegate knows that items are editable) and <strong>setData()</strong>(provide a way for the delegate to set the data in the model) functions</li>
+<li>When the data has been set, the model must let the views know that some data has changed. This is done by emitting the dataChanged() signal</li>
+<li>In order to customize the headerData, you should overwrite <code>headerData</code> function in model</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>List widgets<ul>
+<li>a listWidget has several listWidgetItems</li>
+</ul>
+</li>
+<li>Tree widgets</li>
+<li>Table widgets</li>
+<li>Common features<ul>
+<li>hidden items</li>
+<li>Selections</li>
+<li>searching</li>
+</ul>
+</li>
+<li><a href="http://doc.qt.io/qt-4.8/model-view-programming.html#model-subclassing-reference" target="_blank" rel="external">Using Drag and Drop with Item Views</a></li>
+<li>Navigation and model index creation</li>
+</ul>
+</blockquote>
+<h1 id="simple-tree-model-example"><a href="#Simple-Tree-Model-Example" class="headerlink" title="Simple Tree Model Example"></a><a href="http://doc.qt.io/qt-5/qtwidgets-itemviews-simpletreemodel-example.html" target="_blank" rel="external">Simple Tree Model Example</a></h1><h1 id="qmenu"><a href="#QMenu" class="headerlink" title="QMenu"></a><a href="http://doc.qt.io/qt-4.8/qmenu.html#details" target="_blank" rel="external">QMenu</a></h1><blockquote>
+<ul>
+<li>A menu consists of a list of action items:<ul>
+<li>four kinds of action items: <code>separators</code>, <code>actions that show a submenu</code>, <code>widgets</code> and <code>actions that perform an action</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="create-qstring-interactively"><a href="#Create-QString-interactively" class="headerlink" title="Create QString interactively"></a><a href="https://stackoverflow.com/questions/4784155/how-to-format-a-qstring" target="_blank" rel="external">Create QString interactively</a></h1><h1 id="qt-resource-system"><a href="#Qt-Resource-System" class="headerlink" title="Qt Resource System"></a><a href="http://doc.qt.io/qt-4.8/resources.html" target="_blank" rel="external">Qt Resource System</a></h1><blockquote>
+<ul>
+<li>Resource Collection Files (.qrc)</li>
+</ul>
+</blockquote>
+<h1 id="qframe-vs-qlayout"><a href="#QFrame-vs-QLayout" class="headerlink" title="QFrame vs QLayout"></a>QFrame vs QLayout</h1><blockquote>
+<ul>
+<li>QFrame is a base class of widgets that can have a frame</li>
+<li>QLayout is a layout manager which manages the positioning and resizing of widgets inside a parent widget</li>
+</ul>
+</blockquote>
+<h1 id="control-the-row-and-column-display-of-qtableviewqtreeview"><a href="#Control-the-row-and-column-display-of-QTableView-QTreeView" class="headerlink" title="Control the row and column display of QTableView/QTreeView"></a>Control the row and column display of QTableView/QTreeView</h1><blockquote>
+<ul>
+<li><a href="http://doc.qt.io/qt-4.8/qheaderview.html#details" target="_blank" rel="external">QHeaderView</a></li>
+<li>useful method <code>void QHeaderView::setSectionResizeMode (ResizeMode mode)</code></li>
+</ul>
+</blockquote>
+<h1 id="qabstractproxymodel"><a href="#QAbstractProxyModel" class="headerlink" title="QAbstractProxyModel"></a><a href="http://doc.qt.io/qt-4.8/qabstractproxymodel.html#details" target="_blank" rel="external">QAbstractProxyModel</a></h1><blockquote>
+<p>-<a href="http://imaginativethinking.ca/use-qt-qsortfilterproxymodel/" target="_blank" rel="external">tutorial</a></p>
+<ul>
+<li>QAbstractProxyModel class: sorting, filtering or other data processing tasks whose sole role is to allow the data to be manipulated without affecting the source data model; this way the source data model can be used by any number of different proxy modes and each proxy model can manipulate the data in different ways without effecting each other.</li>
+<li>subclass: QIdentityProxyModel: proxies its source model unmodified<ul>
+<li>can be used to forward the structure of a source model exactly, with no sorting, filtering or other transformation. This is similar in concept to an identity matrix where A.I = A.</li>
+</ul>
+</li>
+<li>sublcass: QSortFilterProxyModel:support for sorting and filtering data passed between another model and a view<ul>
+<li>can be used for sorting items, filtering out items, or both. The model transforms the structure of a source model by mapping the model indexes it supplies to new indexes, corresponding to different locations, for views to use. This approach allows a given source model to be restructured as far as views are concerned without requiring any transformations on the underlying data, and without duplicating the data in memory.</li>
+<li>By default, the model does not dynamically re-sort and re-filter data whenever the original model changes. This behavior can be changed by setting the <code>dynamicSortFilter</code> property.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="qwidget-and-qlayout"><a href="#QWidget-and-QLayout" class="headerlink" title="QWidget and QLayout"></a>QWidget and QLayout</h1><blockquote>
+<ul>
+<li>Normally, you should always add a QLayout for QWidget. Otherwise when you add this widget to some parent widget, it would not display properly.(Learned when add terrainExtraction from PointsBuilder to ModelBuilder)</li>
+</ul>
+</blockquote>
+<h1 id="qnetworkaccessmanager"><a href="#QNetworkAccessManager" class="headerlink" title="QNetworkAccessManager"></a><a href="http://doc.qt.io/qt-5/qnetworkaccessmanager.html#details" target="_blank" rel="external">QNetworkAccessManager</a></h1><blockquote>
+<ul>
+<li>It allows the application to send network requests and receive replies</li>
+<li>constructor it + connect signal + call get method</li>
+<li><a href="http://www.macieira.org/blog/2011/09/qurl-in-qt-5-encoding/" target="_blank" rel="external">QUrl in Qt5</a></li>
+<li><a href="https://stackoverflow.com/questions/24343582/convert-qurl-with-percent-encoding-into-string" target="_blank" rel="external">Convert QUrl with percent encoding into string</a></li>
+</ul>
+</blockquote>
+<h1 id="json-in-qt"><a href="#Json-in-qt" class="headerlink" title="Json in qt"></a><a href="http://doc.qt.io/qt-5/json.html" target="_blank" rel="external">Json in qt</a></h1><blockquote>
+<ul>
+<li>text representation of JSON encloses arrays in square brackets ([&#x2026;])</li>
+<li>objects in curly brackets ({})</li>
+<li>entries in arrays and objects are separated by commas</li>
+</ul>
+</blockquote>
+<h1 id="qsettings"><a href="#QSettings" class="headerlink" title="QSettings"></a><a href="http://doc.qt.io/qt-5/qsettings.html#details" target="_blank" rel="external">QSettings</a></h1><blockquote>
+<ul>
+<li>Store a pair: Qstring -&gt; QVariant</li>
+<li>Use <code>beginGroup</code> and <code>endGroup</code> to specify the prefix</li>
+<li><a href="https://stackoverflow.com/questions/2452893/save-qlistint-to-qsettings" target="_blank" rel="external">Save Qlist to QSettings</a></li>
+</ul>
+</blockquote>
+<h1 id="delete-entity"><a href="#Delete-Entity" class="headerlink" title="Delete Entity"></a>Delete Entity</h1><p>``c++<br>for (auto widget: ui-&gt;myWidget::findChildren<qwidget*><br>                                            (QString(), Qt::FindDirectChildrenOnly))<br>  delete widget;<br>```</qwidget*></p>
+<h1 id="qbuttongroup"><a href="#qButtonGroup" class="headerlink" title="qButtonGroup"></a><a href="http://doc.qt.io/qt-5/qbuttongroup.html#details" target="_blank" rel="external">qButtonGroup</a></h1><blockquote>
+<ul>
+<li>Manage the states of each of the buttons in the group</li>
+<li><a href="http://doc.qt.io/qt-5/qgroupbox.html#details" target="_blank" rel="external">QGroupBox</a>: A widget provides a group box with a title</li>
+</ul>
+</blockquote>
+<h1 id="qdialogbuttonbox"><a href="#QDialogButtonBox" class="headerlink" title="QDialogButtonBox"></a><a href="http://doc.qt.io/qt-5/qdialogbuttonbox.html" target="_blank" rel="external">QDialogButtonBox</a></h1><blockquote>
+<ul>
+<li>allows a developer to add buttons to it and will automatically use the appropriate layout for the user&#x2019;s desktop environment.</li>
+<li>Ex. <code>Cancel</code>, <code>Save</code>, <code>Save and apply</code></li>
+<li>Group Box <a href="http://doc.qt.io/qt-5/qtwidgets-widgets-groupbox-example.html" target="_blank" rel="external">example</a></li>
+</ul>
+</blockquote>
+<h1 id="qstackedwidget"><a href="#QStackedWidget" class="headerlink" title="QStackedWidget"></a><a href="http://doc.qt.io/qt-5/qstackedwidget.html#details" target="_blank" rel="external">QStackedWidget</a></h1><blockquote>
+<ul>
+<li>The QStackedWidget class provides a stack of widgets where only one widget is visible at a time.</li>
+<li>user can switch page via singal/slot through QStackWidget::setCurrentIndex or just call QStackWidget::setCurrentWidget</li>
+</ul>
+</blockquote>
+<h1 id="qcomplete"><a href="#QComplete" class="headerlink" title="QComplete"></a><a href="http://doc.qt.io/qt-5/qcompleter.html" target="_blank" rel="external">QComplete</a></h1><blockquote>
+<ul>
+<li><a href="http://doc.qt.io/qt-5/qtwidgets-tools-completer-example.html" target="_blank" rel="external">Example</a></li>
+</ul>
+</blockquote>
+<h1 id="graphics-view-framework"><a href="#Graphics-View-Framework" class="headerlink" title="Graphics View Framework"></a><a href="http://doc.qt.io/qt-5/graphicsview.html" target="_blank" rel="external">Graphics View Framework</a></h1><blockquote>
+<ul>
+<li>Graphics View provides a surface for managing and interacting with a large number of custom-made 2D graphical items, and a view widget for visualizing the items, with support for zooming and rotation</li>
+<li>Three coordinate system: item coordinates, scene coordinates and view coordinates</li>
+<li>Key Features:<ul>
+<li>Zooming and rotating</li>
+<li>Printing</li>
+<li>Drag and Drop</li>
+<li>Cursors and Tooltips</li>
+<li>OpenGL Rendering<h2 id="qgraphicsview"><a href="#QgraphicsView" class="headerlink" title="QgraphicsView"></a><a href="http://doc.qt.io/qt-5/qgraphicsview.html" target="_blank" rel="external">QgraphicsView</a></h2></li>
+</ul>
+</li>
+<li>Provides a widget for displaying the contents of a QGraphicsScene</li>
+<li><a href="http://doc.qt.io/qt-5/graphicsview.html" target="_blank" rel="external">Introduction</a></li>
+<li><a href="https://doc.qt.io/qt-5/examples-graphicsview.html" target="_blank" rel="external">Examples</a><h2 id="qgraphicsscene"><a href="#QGraphicsScene" class="headerlink" title="QGraphicsScene"></a><a href="http://doc.qt.io/qt-5/qgraphicsscene.html" target="_blank" rel="external">QGraphicsScene</a></h2></li>
+<li>Works like a container for QGraphicsItem objects<h2 id="qgraphicsitem"><a href="#QGraphicsItem" class="headerlink" title="QGraphicsItem"></a><a href="http://doc.qt.io/qt-5/qgraphicsitem.html" target="_blank" rel="external">QGraphicsItem</a></h2></li>
+<li>Mouse event + keyboard input + Drag and drop + Collision detection</li>
+<li>You can try QGraphicsWidget which provides extra functionality from QWidget</li>
+</ul>
+</blockquote>
+<h2 id="add-a-layout-on-qtabwidget"><a href="#Add-a-layout-on-QTabWidget" class="headerlink" title="Add a layout on QTabWidget"></a>Add a layout on QTabWidget</h2><blockquote>
+<ul>
+<li>Add something into it</li>
+<li>Right click -&gt;Lay out -&gt;pick one</li>
+</ul>
+</blockquote>
+<h2 id="a-a-watch-break-point-in-qtcreator"><a href="#A-a-watch-break-point-in-QtCreator" class="headerlink" title="A a watch break point in QtCreator"></a>A a watch break point in QtCreator</h2><blockquote>
+<ul>
+<li><a href="https://stackoverflow.com/questions/24786421/does-qt-have-a-watch-variable-debugging-function" target="_blank" rel="external">link</a></li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/C/">C++</a> <a class="tag tag--primary tag--small t-link" href="/tags/Qt/">Qt</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/gdbStudy/"  data-tooltip="15213-gdbStudy">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/MPIStudy/" data-tooltip="MPIStudy">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/07/08/QtStudy/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/07/08/QtStudy/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/07/08/QtStudy/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/gdbStudy/"  data-tooltip="15213-gdbStudy">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/08/MPIStudy/" data-tooltip="MPIStudy">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/07/08/QtStudy/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/07/08/QtStudy/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/07/08/QtStudy/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>

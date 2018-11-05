@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en,zh-Hanz,default">
+    
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="LBTING&#39; Blog">
+    <title>pythonUsefulCodes - LBTING&#39; Blog</title>
+    <meta name="author" content="LBTING">
+    <meta name="description" content="LBTING&#39; Blog">
+    <link rel="icon" href="/assets/images/null">
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="atom.xml">
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!--STYLES END-->
+    
+    
+<script type="text/javascript">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ff152264e7864a4f4c07a049eae5646e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</script>
+
+</head>
+
+    <body>
+        <div id="blog">
+            <header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="http://lbting.com">LBTING&#39; Blog</a>
+    </h1>
+    
+        <a class="header-right-picture" href="/#about">
+            <img class="header-picture" src="/assets/images/42.jpg"/>
+        </a>
+    
+</header>
+            <nav id="sidebar" data-behavior="1">
+    
+    <div class="sidebar-profile">
+        <a href="/#about">
+            
+            <img class="sidebar-profile-picture" src="/assets/images/42.jpg"/>
+            
+        </a>
+        <span class="sidebar-profile-name">LBTING</span>
+    </div>
+    
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-categories">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/all-tags">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link st-search-show-outputs" href="/#search">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/#about">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-street-view"></i>
+                    <span class="sidebar-button-desc">About me</span>
+                </a>
+        </li>
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="http://blog.blaulan.com/" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-beer"></i>
+                    <span class="sidebar-button-desc">Eric</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="https://github.com/lbtinglb/lbtinglb.github.io" target="_blank">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+    <ul class="sidebar-buttons">
+        
+        <li class="sidebar-button">
+            
+                <a  class="sidebar-button-link " href="/atom.xml">
+            
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+            <div id="main" data-behavior="1">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <div class="post-header main-content-wrap">
+    
+        <h1 class="post-title" itemprop="headline">pythonUsefulCodes</h1>
+    
+    <div class="post-meta">
+    <time  itemprop="datePublished" content="Wed Jul 27 2016 14:50:35 GMT-0400">
+        Jul 27, 2016
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Kitware/">Kitware</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown main-content-wrap" itemprop="articleBody">
+        <p>Useful code blocks for python<br><img src="https://cdn.datafloq.com/blog_pictures/5-Best-Python-Libraries-For-Data-Science.png" alt="teaser"><br><a id="more"></a></p>
+<h1 id="python-useful-codes"><a href="#python-useful-codes" class="headerlink" title="python useful codes"></a>python useful codes</h1><!-- toc -->
+<ul>
+<li><a href="#file-io">file I/O</a></li>
+<li><a href="#python-advance">Python Advance</a><ul>
+<li><a href="#yield-and-generators"><code>yield</code> and generators</a></li>
+</ul>
+</li>
+<li><a href="#condahttpscondaiodocstest-drivehtmlmanaging-conda"><a href="https://conda.io/docs/test-drive.html#managing-conda" target="_blank" rel="external">conda</a></a><ul>
+<li><a href="#1managing-conda">1.Managing conda</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1 id="file-io"><a href="#file-I-O" class="headerlink" title="file I/O"></a>file I/O</h1><blockquote>
+<ul>
+<li><a href="http://stackoverflow.com/questions/3207219/how-to-list-all-files-of-a-directory-in-python" target="_blank" rel="external">list all the files in current folder</a></li>
+</ul>
+</blockquote>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">files = [f <span class="keyword">for</span> f <span class="keyword">in</span> os.listdir(<span class="string">&apos;.&apos;</span>) <span class="keyword">if</span> os.path.isfile(f)]</div><div class="line"><span class="comment"># cool solution</span></div><div class="line"><span class="keyword">import</span> glob</div><div class="line"><span class="keyword">print</span> glob.glob(<span class="string">&quot;/home/adam/*.txt&quot;</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>get all the paths within the give path </li>
+</ul>
+</blockquote>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> os</div><div class="line"><span class="keyword">import</span> sys</div><div class="line">walk_dir = <span class="string">&quot;/var/www/html/mrskin/Britney Spears&quot;</span></div><div class="line"><span class="keyword">for</span> root, subdirs, files <span class="keyword">in</span> os.walk(walk_dir):</div><div class="line">    <span class="keyword">print</span> root</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>read &amp; write file</li>
+</ul>
+</blockquote>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">readFile</span><span class="params">(filename, mode=<span class="string">&quot;rt&quot;</span>)</span>:</span></div><div class="line">    <span class="comment"># rt = &quot;read text&quot;</span></div><div class="line">    <span class="keyword">with</span> open(filename, mode) <span class="keyword">as</span> fin:</div><div class="line">        <span class="keyword">return</span> fin.read()</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">readFileByLineAsList</span><span class="params">(filename, mode=<span class="string">&quot;rt&quot;</span>)</span>:</span></div><div class="line">    <span class="keyword">with</span> open (filename,mode) <span class="keyword">as</span> fin:</div><div class="line">        <span class="keyword">return</span> [x.strip(<span class="string">&apos;\n&apos;</span>) <span class="keyword">for</span> x <span class="keyword">in</span> fin.readlines()] </div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">writeFile</span><span class="params">(filename, contents, mode=<span class="string">&quot;wt&quot;</span>)</span>:</span></div><div class="line">    <span class="comment"># wt = &quot;write text&quot;</span></div><div class="line">    <span class="keyword">with</span> open(filename, mode) <span class="keyword">as</span> fout:</div><div class="line">        fout.write(contents)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">readWebPage</span><span class="params">(url)</span>:</span></div><div class="line">    <span class="keyword">assert</span>(url.startswith(<span class="string">&quot;http://&quot;</span>))</div><div class="line">    <span class="keyword">with</span> contextlib.closing(urllib.urlopen(url)) <span class="keyword">as</span> fin:</div><div class="line">        <span class="keyword">return</span> fin.read()</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>regular expression<br>  +&gt;     + see workReflection.md</li>
+</ul>
+</blockquote>
+<h1 id="python-advance"><a href="#Python-Advance" class="headerlink" title="Python Advance"></a>Python Advance</h1><h2 id="yield-and-generators"><a href="#yield-and-generators" class="headerlink" title="yield and generators"></a><code>yield</code> and generators</h2><blockquote>
+<ul>
+<li>subroutines VS coroutines<ul>
+<li>subroutines: a function simply returns a single value, any work done by the funtion and stored in local variables is lost<ul>
+<li><code>return</code> implies that the function is returning control of the execution to the point where the function was called</li>
+</ul>
+</li>
+<li>coroutines: a function able to yield a series of values.<ul>
+<li><code>yield</code> implies that the transfer of control is temporary and voluntary, and our function expects to regain it in the future.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In python, &#x201C;functions&#x201D; with these capabilities are called <strong>generators</strong>.</li>
+<li>Extremely useful when dealing with infinite sequences<ul>
+<li>Ex. the input would consusme all of the system&#x2019;s memory, you can not use subroutine.</li>
+<li>for a normal function, you have only one single <code>entry point</code>: the first line. <code>generator</code> allows you to enter at anyline you want</li>
+</ul>
+</li>
+<li><code>Generator</code>: <ul>
+<li>it&#x2019;s defined as a normal function. But whenever it needs to generate a value, it does so with the <code>yield</code> keyword rather than <code>return</code>.</li>
+<li><code>generator</code> is a special case of <code>iterator</code><ul>
+<li><code>__next__()</code> must be defined. To get the next value from a generator, we use the same built-in function as for <code>iterators : next()</code>(next() tkaes care of calling the generator&#x2019;s <strong>next</strong>() method. Since a generator is a type of iterator, it can be used in a <code>for</code> loop)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>a python example of prime sum generator:</li>
+</ul>
+</blockquote>
+<pre><code class="python"><span class="function"><span class="keyword">def</span> <span class="title">get_primes</span><span class="params">(number)</span>:</span>
+    <span class="keyword">while</span> <span class="keyword">True</span>: <span class="comment"># prevent the generator from exhausted. It&apos;s a common idiom when dealing with infinite series</span>
+        <span class="keyword">if</span> is_prime(number):
+            <span class="keyword">yield</span> number
+        number += <span class="number">1</span>
+</code></pre>
+<blockquote>
+<ul>
+<li>when <code>generator function</code> calls <code>return</code> or reaches the end its definition, a <code>StopIteration</code> exception is raised. </li>
+<li><code>other = yield foo</code> means, yielf foo and, when a value is sent to me, set <code>other</code>to that value</li>
+<li>When you&#x2019;re using send to &#x201C;start&#x201D; a generator (that is, execute the code from the first line of the generator function up to the first yield statement), you must send None<br>-second half(TBD)</li>
+</ul>
+</blockquote>
+<h1 id="conda"><a href="#conda" class="headerlink" title="conda"></a><a href="https://conda.io/docs/test-drive.html#managing-conda" target="_blank" rel="external">conda</a></h1><blockquote>
+<ul>
+<li>a cross-platefrom package and environment manager that installs, runs and updates packages and their dependencies. It allows you to easily set up and switch between environments on your local computer.</li>
+</ul>
+</blockquote>
+<h2 id="1managing-conda"><a href="#1-Managing-conda" class="headerlink" title="1.Managing conda"></a>1.Managing conda</h2><blockquote>
+<ul>
+<li>create an environment: <code>conda create --name name-of-environment your-desired-libraries</code></li>
+<li>activate an new environment: <code>source activate name-of-environment</code></li>
+<li>copy an environment: <code>conda create --name new-name-of-environment --clone name-of-environment</code></li>
+<li>delete an environment: <code>conda remove --name name-of-environment --all</code></li>
+</ul>
+</blockquote>
+
+        
+            
+        
+    </div>
+    <div class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/python/">python</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/08/04/Haskell/"  data-tooltip="Haskell">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/21/makefile/" data-tooltip="makefile">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/07/27/pythonUsefulCodes/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/07/27/pythonUsefulCodes/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/07/27/pythonUsefulCodes/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 LBTING. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/08/04/Haskell/"  data-tooltip="Haskell">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/21/makefile/" data-tooltip="makefile">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://lbting.com/2016/07/27/pythonUsefulCodes/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://lbting.com/2016/07/27/pythonUsefulCodes/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://lbting.com/2016/07/27/pythonUsefulCodes/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/42.jpg"/>
+        
+            <h4 id="about-card-name">LBTING</h4>
+        
+            <h5 id="about-card-bio"><p>“They’re both convinced that a sudden passion joined them.Such certainty is beautiful.But uncertainty is more beautiful still.</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>R&amp;D Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Albany USA
+            </h5>
+        
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+</html>
